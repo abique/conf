@@ -160,6 +160,12 @@ With optional argument, move forward N-1 lines first."
 (global-set-key [f8] 'next-error)
 (global-set-key [f12] (lambda () (interactive) (manual-entry (current-word))))
 (global-set-key "\C-a" 'beginning-of-line-context)
+;; Navigation
+(global-set-key [M-left] 'windmove-left)                ; move to left windnow
+(global-set-key [M-right] 'windmove-right)              ; move to right window
+(global-set-key [M-up] 'windmove-up)                    ; move to upper window
+(global-set-key [M-down] 'windmove-down)
+;;(global-set-key [(control tab)] 'other-window)          ; Ctrl-Tab = Next buffer
 
 
 (defun indent-buffer()

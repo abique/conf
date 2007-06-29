@@ -54,6 +54,8 @@ alias ps='ps -fx'
 alias ssh_rootmetest='ssh root@10.227.42.101'
 # gcc
 alias xgcc='gcc -W -Wall'
+alias dsss='~/local/bin/dsss'
+alias rebuild='~/local/bin/rebuild'
 
 export EDITOR="nano"
 export ECHANGELOG_USER="Alexandre Bique (BabaLi) <bique.alexandre@gmail.com>"
@@ -68,6 +70,9 @@ export LC_PAPER="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export PATH="~/local/bin/:${PATH}:/sbin/:/usr/sbin/"
 export COLORTERM="yes"
+export http_proxy='http://bique_a:17.RmDpu@proxies.epita.fr:3128'
+export ftp_proxy='http://bique_a:17.RmDpu@proxies.epita.fr:3128'
+export RSYNC_PROXY='bique_a:17.RmDpu@proxies.epita.fr:3128'
 
 function prompt_babali()
 {
