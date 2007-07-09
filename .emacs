@@ -86,8 +86,8 @@
 (color-theme-initialize)
 ;(color-theme-charcoal-black)
 ;(color-theme-comidia)
-;(color-theme-taylor)
-(color-theme-classic)
+(color-theme-taylor)
+;(color-theme-classic)
 
 (defun insert-header-guard ()
   (interactive)
