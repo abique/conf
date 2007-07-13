@@ -21,6 +21,11 @@ else
     eval `dircolors -b /etc/DIR_COLORS`
 fi
 
+if [[ $TERM = "linux" ]]; then
+  unicode_start
+fi
+
+
 alias ls="ls --all --color=auto --human-readable -F"
 
 # This line was appended by KDE
