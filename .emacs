@@ -2,6 +2,14 @@
 (load "/usr/share/emacs/site-lisp/site-gentoo")
 (load "~/emacs.d/d-mode.el")
 
+;; UTF-8
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+;; END OF UTF-8 :p
+
 ;============================
 ; Emacs customization script
 ;============================
