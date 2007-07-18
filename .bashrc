@@ -25,9 +25,6 @@ if [[ $TERM = "linux" ]]; then
   unicode_start
 fi
 
-
-alias ls="ls --all --color=auto --human-readable -F"
-
 # This line was appended by KDE
 # Make sure our customised gtkrc file is loaded.
 export GTK2_RC_FILES=$HOME/.gtkrc-2.0
@@ -43,7 +40,11 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0:$HOME/.kde/share/config/gtkrc-2.0:/etc/gt
 ######################################
 
 # ls/df/du human readable
-alias ls='ls -Fh --color'
+if [[ `uname -s` = "FreeBSD" ]]; then
+    alias ls="ls -GhF"
+elif [[ `uname -s` = "Linux" ]]; then
+    alias ls="ls --color=auto -hF"
+fi
 alias la='ls -a'
 alias l='ls -l'
 alias ll='la -l'
