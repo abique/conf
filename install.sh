@@ -10,13 +10,14 @@ function install()
     printf "\e[33mInstalling\e[m ${HOME}/\e[32m$1\e[m\n"
 }
 
-for file in	\
-    .bashrc	\
-    .emacs	\
-    emacs.d	\
-    .toprc	\
-    .beryl	\
-    .beryl-managerrc
+for file in		\
+    .bashrc		\
+    .beryl		\
+    .beryl-managerrc	\
+    .emacs		\
+    emacs.d		\
+    .toprc		\
+
 do
     install ${file}
 done
