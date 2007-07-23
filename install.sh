@@ -14,7 +14,9 @@ for file in	\
     .bashrc	\
     .emacs	\
     emacs.d	\
-    .toprc
+    .toprc	\
+    .beryl	\
+    .beryl-managerrc
 do
     install ${file}
 done

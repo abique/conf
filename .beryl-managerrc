@@ -1,0 +1,14 @@
+
+[wm-settings]
+active_wm=0
+fallback_wm=1
+active_dm=0
+iconsize=24
+use_fallback_wm=false
+
+[beryl-settings]
+render_path=0
+cow_mode=0
+rendering_mode=0
+platform=0
+binding=0

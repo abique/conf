@@ -76,9 +76,10 @@ export LC_PAPER="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export PATH="~/local/bin/:${PATH}:/sbin/:/usr/sbin/"
 export COLORTERM="yes"
-export http_proxy='http://bique_a:17.RmDpu@proxies.epita.fr:3128'
-export ftp_proxy='http://bique_a:17.RmDpu@proxies.epita.fr:3128'
-export RSYNC_PROXY='bique_a:17.RmDpu@proxies.epita.fr:3128'
+
+#export http_proxy='http://bique_a:17.RmDpu@proxies.epita.fr:3128'
+#export ftp_proxy='http://bique_a:17.RmDpu@proxies.epita.fr:3128'
+#export RSYNC_PROXY='bique_a:17.RmDpu@proxies.epita.fr:3128'
 
 function prompt_babali()
 {
