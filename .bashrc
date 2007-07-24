@@ -48,22 +48,22 @@ fi
 alias la='ls -a'
 alias l='ls -l'
 alias ll='la -l'
-alias em='emacs -nw'
 alias ssh_epita='ssh -X bique_a@ssh.epita.fr'
 alias df='df -h'
 alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
 alias emacs='emacs -fn 7x14'
 alias e='emacs -Q -nw'
+alias em='e'
 alias ..='cd ..'
 alias ps='ps -fx'
 alias ssh_rootmetest='ssh root@10.227.42.101'
-# gcc
+alias screen="screen -U"
 alias xgcc='gcc -W -Wall'
 alias dsss='~/local/bin/dsss'
 alias rebuild='~/local/bin/rebuild'
 
-export EDITOR="nano"
+export EDITOR="emacs -nw -Q"
 export ECHANGELOG_USER="Alexandre Bique (BabaLi) <bique.alexandre@gmail.com>"
 export LC_ALL="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
@@ -77,9 +77,16 @@ export LANG="en_US.UTF-8"
 export PATH="~/local/bin/:${PATH}:/sbin/:/usr/sbin/"
 export COLORTERM="yes"
 
-#export http_proxy='http://bique_a:17.RmDpu@proxies.epita.fr:3128'
-#export ftp_proxy='http://bique_a:17.RmDpu@proxies.epita.fr:3128'
-#export RSYNC_PROXY='bique_a:17.RmDpu@proxies.epita.fr:3128'
+if [[ -f ~/.bash.d/proxy ]] ; then
+    source ~/.bash.d/proxy
+fi
+
+if [[ -d ~/.bash_completion.d ]] ; then
+    for file in ~/.bash_completion.d/*
+    do
+	source "${file}"
+    done
+fi
 
 function prompt_babali()
 {

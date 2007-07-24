@@ -19,7 +19,10 @@ for file in		\
     .fluxbox            \
     .indent.pro         \
     .toprc		\
+    .screenrc           \
     .Xdefaults          \
+    .xinitrc		\
+    .xsession		\
 
 do
     install ${file}
