@@ -22,7 +22,7 @@ else
 fi
 
 if [[ $TERM = "linux" ]]; then
-  unicode_start
+    unicode_start
 fi
 
 # This line was appended by KDE
@@ -84,15 +84,33 @@ export COLORTERM="yes"
 function prompt_babali()
 {
     RET=$?
+
+    let promptsize=$(echo -n "`uname -s` ${USER}@${HOSTNAME}:${PWD}" |
+	wc -c | tr -d " ")
+    fillsize=$((${COLUMNS} - ((${promptsize} + 5) % ${COLUMNS})))
+    fill=""
+    # Make the filler if prompt isn't as wide as the terminal:
+    while [ ${fillsize} -gt "0" ]
+    do
+	fill="${fill} "
+   # The A with the umlaut over it (it will appear as a long dash if
+   # you're using a VGA font) is \304, but I cut and pasted it in
+   # because Bash will only do one substitution - which in this case is
+   # putting $fill in the prompt.
+	let fillsize=${fillsize}-1
+    done
+
     if [ $RET -eq 0 ] ; then
 	PS1="\[\033[0;0m\]\[\033[1;33m\]`uname -s` "\
-"\[\033[1;36m\]\u@\H:\[\033[1;34m\]\w\n"\
+"\[\033[1;36m\]\u@\H:\[\033[1;34m\]\w"\
+"\[\033[1;33m\]${fill}$(date +%H:%M)\n"\
 "\[\033[1;34m\][\[\033[1;32m\]OK\[\033[1;34m\]]"\
 "\[\033[1;34m\][jobs:\[\033[1;36m\]\j\[\033[1;34m\]]"\
 "\[\033[0;0m\]\[\033[0;32m\]>>\[\033[0;0m\]"
     else
 	PS1="\[\033[0;0m\]\[\033[1;33m\]`uname -s` "\
-"\[\033[1;36m\]\u@\H:\[\033[1;34m\]\w\n"\
+"\[\033[1;36m\]\u@\H:\[\033[1;34m\]\w"\
+"\[\033[1;31m\]${fill}$(date +%H:%M)\n"\
 "\[\033[1;34m\][\[\033[1;31m\]$RET\[\033[1;34m\]]"\
 "\[\033[1;34m\][jobs:\[\033[1;36m\]\j\[\033[1;34m\]]"\
 "\[\033[0;0m\]\[\033[0;32m\]>>\[\033[0;0m\]"
