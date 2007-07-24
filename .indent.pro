@@ -1,0 +1,1 @@
+-bad -bap -bbo -br -bs -brs -ce -cdw -cli0 -cbi0 -cs -di3 -nss -npcs -nbfda -nbfde -i3 -lp -saf -sai -saw -ts3 -ppi1 -l85 -nut

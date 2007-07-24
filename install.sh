@@ -17,7 +17,9 @@ for file in		\
     .emacs		\
     emacs.d		\
     .fluxbox            \
+    .indent.pro         \
     .toprc		\
+    .Xdefaults          \
 
 do
     install ${file}
