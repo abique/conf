@@ -39,4 +39,3 @@ Mod4 k		:Exec xkill
 Mod4 i		:Exec firefox
 Mod4 m		:Exec thunderbird
 Mod4 w		:Exec /home/babali/wallpapers/random_wallpaper.sh
-Mod4 y		:Exec /home/babali/epita/NoSoucy/NoSoucy
