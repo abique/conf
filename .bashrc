@@ -54,7 +54,7 @@ alias df='df -h'
 alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
 alias emacs='emacs -fn 7x14'
-alias e='emacs -nw'
+alias e='emacs -Q -nw'
 alias ..='cd ..'
 alias ps='ps -fx'
 alias ssh_rootmetest='ssh root@10.227.42.101'

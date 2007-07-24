@@ -16,6 +16,7 @@ for file in		\
     .beryl-managerrc	\
     .emacs		\
     emacs.d		\
+    .fluxbox            \
     .toprc		\
 
 do
