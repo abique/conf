@@ -35,3 +35,6 @@ UXTerm*color12:     #4186be
 UXTerm*color13:     #cf9ebe
 UXTerm*color14:     #71bebe
 UXTerm*color15:     #ffffff
+
+XTerm*metaSendsEscape: yes
+UXTerm*metaSendsEscape: yes
