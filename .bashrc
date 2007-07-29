@@ -81,11 +81,13 @@ if [[ -f ~/.bash.d/proxy ]] ; then
     source ~/.bash.d/proxy
 fi
 
-if [[ -d ~/.bash_completion.d ]] ; then
-    for file in ~/.bash_completion.d/*
-    do
-	source "${file}"
-    done
+if false; then
+    if [[ -d ~/.bash_completion.d ]] ; then
+	for file in ~/.bash_completion.d/*
+	do
+	    source "${file}"
+	done
+    fi
 fi
 
 function prompt_babali()
