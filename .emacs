@@ -1,5 +1,8 @@
 ;; Load gentoo site
-(load "/usr/share/emacs/site-lisp/site-gentoo")
+(if (file-readable-p "/usr/share/emacs/site-lisp/site-gentoo")
+    (load "/usr/share/emacs/site-lisp/site-gentoo"))
+(if (file-readable-p "/usr/share/emacs/site-lisp/debian-startup.el")
+    (load "/usr/share/emacs/site-lisp/debian-startup"))
 (load "~/emacs.d/d-mode.el")
 
 ;; UTF-8
@@ -91,7 +94,7 @@
 ;;;; COLOR THEME
 ;(add-to-list 'load-path "~/emacs.d/color-theme")
 (require 'color-theme)
-(color-theme-initialize)
+;(color-theme-initialize)
 ;(color-theme-charcoal-black)
 ;(color-theme-comidia)
 (color-theme-taylor)
