@@ -20,7 +20,7 @@ if [[ -f ~/.dir_colors ]]; then
 elif [[ -f ~/DIR_COLORS ]]; then
     eval `dircolors -b /etc/DIR_COLORS`
 else
-    eval `dircolors -b /etc/DIR_COLORS`
+    eval `dircolors -b`
 fi
 
 if [[ $TERM = "linux" ]]; then
