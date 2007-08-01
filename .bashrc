@@ -41,6 +41,8 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0:$HOME/.kde/share/config/gtkrc-2.0:/etc/gt
 ## My configuration
 ######################################
 
+unalias -a
+
 # ls/df/du human readable
 if [[ `uname -s` = "FreeBSD" ]]; then
     alias ls="ls -GhF"
@@ -58,7 +60,11 @@ alias emacs='emacs -fn 7x14'
 alias e='emacs -Q -nw'
 alias em='e'
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias ps='ps -fx'
+alias grep="grep --color"
 alias ssh_rootmetest='ssh root@10.227.42.101'
 alias screen="screen -U"
 alias xgcc='gcc -W -Wall'
