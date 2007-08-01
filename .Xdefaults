@@ -60,5 +60,16 @@ UXTerm*metaSendsEscape: yes
 *Rxvt*color15:     #ffffff
 *Rxvt*font:	   7x14
 *Rxvt*scrollBar: false
+*Rxvt*transparent: true
+*Rxvt*tintingType: true
+*Rxvt*tinting: #ffffff
+*Rxvt*shading: 50
+
+
+Aterm*scrollBar: false
+Aterm*transparent: true
+Aterm*tintingType: true
+Aterm*tinting: #ffffff
+Aterm*shading: 50
 
 Emacs*font: 7x14
