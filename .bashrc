@@ -64,7 +64,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ps='ps -fx'
-alias grep="grep --color"
+alias grep="grep --color --exclude='*.svn*'"
 alias ssh_rootmetest='ssh root@10.227.42.101'
 alias screen="screen -U"
 alias xgcc='gcc -W -Wall'
