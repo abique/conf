@@ -16,20 +16,20 @@
 #     session.menuFile: /home/you/.fluxbox/my-menu
 
 [begin] (BabaLi)
-      [commanddialog] (Run) 
-      [exec] (xterm) {xterm} 
-      [exec] (firefox) {firefox} 
-      [separator] 
-      [config] (Configure) 
+      [commanddialog] (Run)
+      [exec] (xterm) {xterm}
+      [exec] (firefox) {firefox}
+      [separator]
+      [config] (Configure)
 [submenu] (User Styles)
-      [stylesdir] (~/.fluxbox/styles) 
+      [stylesdir] (~/.fluxbox/styles)
 [end]
-      [workspaces] (Workspace List) 
-      [separator] 
-      [reconfig] (Reload config) 
-      [exec] (Reload .Xdefaults) {xrdb -load /home/babali/.Xdefaults} 
-      [restart] (Restart) 
-      [separator] 
-      [exec] (Lock screen) {xscreensaver-command -lock} 
-      [exit] (Exit) 
+      [workspaces] (Workspace List)
+      [separator]
+      [reconfig] (Reload config)
+      [exec] (Reload .Xdefaults) {xrdb -merge ~/.Xdefaults}
+      [restart] (Restart)
+      [separator]
+      [exec] (Lock screen) {xscreensaver-command -lock}
+      [exit] (Exit)
 [end]
