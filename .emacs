@@ -84,6 +84,11 @@
        '("u_\\sw+")
        '("f_\\sw+")
        '("e_\\sw+")
+       '("\\sw+_t")
+       '("\\sw+_s")
+       '("\\sw+_u")
+       '("\\sw+_f")
+       '("\\sw+_e")
        c-font-lock-extra-types))
 (setq c-mode-hook
       '(lambda()
