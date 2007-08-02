@@ -30,14 +30,14 @@
 (line-number-mode t)                  ; display line number in modeline
 (column-number-mode t)                ; display column number in modeline
 ;(setq display-time-day-and-date t)    ; display date in modeline
-;(setq display-time-24hr-format t)     ; european 24h format
-;(display-time)                        ; display time in modeline
+(setq display-time-24hr-format t)     ; european 24h format
+(display-time)                        ; display time in modeline
 (auto-compression-mode t)             ; open compressed files
 (mouse-wheel-mode t)                  ; enable mouse wheel
 (fset 'yes-or-no-p 'y-or-n-p)         ; y or n will do
 (setq default-major-mode 'text-mode)  ; change default major mode to text
 (setq ring-bell-function 'ignore)     ; turn the alarm totally off
-;(setq-default indent-tabs-mode nil)   ; spaces instead of tabs
+(setq-default indent-tabs-mode nil)   ; spaces instead of tabs
 (setq make-backup-files nil)          ; no backupfile
 (setq delete-auto-save-files t)       ; delete unnecessary autosave files
 (setq delete-old-versions t)          ; delete oldversion file
