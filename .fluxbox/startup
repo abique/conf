@@ -23,6 +23,8 @@ xset -b
 #
 # Increase the keyboard repeat-rate:
 xset r rate 195 35
+
+xrdb -load ~/.Xdefaults
 #
 # Your own fonts-dir:
 # xset +fp "/home/babali/.fonts"

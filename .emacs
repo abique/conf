@@ -61,6 +61,8 @@
               (insert "\n"))))
 ; Start code folding mode in C/C++ mode
 (add-hook 'c-mode-common-hook (lambda () (hs-minor-mode 1) (hs-hide-all)))
+; Highlight trailing withespaces
+(add-hook 'c-mode-common-hook (lambda () (highlight-regexp " +$" "hi-yellow")))
 
 ;; file extensions
 (add-to-list 'auto-mode-alist '("\\.l$" . flex-mode))

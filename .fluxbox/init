@@ -75,7 +75,7 @@ session.screen0.rootCommand:
 session.screen0.reversewheeling:	false
 session.screen0.focusLastWindow:	true
 session.screen0.clickRaises:	true
-session.styleFile:	/home/babali/.fluxbox/styles/laser_blue
+session.styleFile:	~/.fluxbox/styles/laser_blue
 session.imageDither:	True
 session.modKey:	Mod1
 session.tabsAttachArea:	Window
@@ -96,5 +96,5 @@ session.ignoreBorder:	false
 session.opaqueMove:	False
 session.cacheMax:	200l
 session.menuFile:	~/.fluxbox/menu
-session.slitlistFile:	/home/babali/.fluxbox/slitlist
+session.slitlistFile:	~/.fluxbox/slitlist
 session.focusTabMinWidth:	0

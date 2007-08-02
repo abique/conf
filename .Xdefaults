@@ -63,7 +63,7 @@ UXTerm*metaSendsEscape: yes
 *Rxvt*transparent: true
 *Rxvt*tintingType: true
 *Rxvt*tinting: #ffffff
-*Rxvt*shading: 50
+*Rxvt*shading: 80
 
 
 Aterm*scrollBar: false
