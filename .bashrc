@@ -70,6 +70,7 @@ alias screen="screen -U"
 alias xgcc='gcc -W -Wall'
 alias dsss='~/local/bin/dsss'
 alias rebuild='~/local/bin/rebuild'
+alias fixme='grep -rn FIXME .'
 
 export EDITOR="emacs -nw -Q"
 export ECHANGELOG_USER="Alexandre Bique (BabaLi) <bique.alexandre@gmail.com>"
