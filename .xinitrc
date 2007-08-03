@@ -3,7 +3,7 @@ if [[ $1 = "kde" ]] ; then
 elif [[ $1 = "openbox" ]] ; then
     exec openbox-session
 elif [[ $1 = "fluxbox" ]] ; then
-    exec fluxbox
+    exec startfluxbox
 else
-    exec fluxbox
+    exec startfluxbox
 fi
