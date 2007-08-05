@@ -5,6 +5,13 @@ OnDesktop Mouse3 :rootMenu
 OnDesktop Mouse4 :nextWorkspace
 OnDesktop Mouse5 :prevWorkspace
 
+!mouse actions added by fluxbox-update_configs
+OnDesktop Mouse1 :hideMenus
+OnDesktop Mouse2 :workspaceMenu
+OnDesktop Mouse3 :rootMenu
+OnDesktop Mouse4 :nextWorkspace
+OnDesktop Mouse5 :prevWorkspace
+
 Mod4 Tab	:NextWindow
 Mod4 Shift Tab	:PrevWindow
 Mod4 F1		:SendToWorkspace 1
@@ -27,14 +34,14 @@ Mod4 f		:MaximizeWindow
 Mod4 a		:ArrangeWindows
 Mod4 Shift a	:ShowDesktop
 Mod4 Shift f	:Fullscreen
-Mod4 Left	:ResizeHorizontal -1
-Mod4 Right	:ResizeHorizontal 1
-Mod4 Up		:ResizeVertical -1
-Mod4 Down	:ResizeVertical 1
-Mod4 Shift Left	:MoveLeft 2
-Mod4 Shift Right :MoveRight 2
-Mod4 Shift Up	:MoveUp 2
-Mod4 Shift Down	:MoveDown 2
+Mod4 Left	:ResizeHorizontal -5
+Mod4 Right	:ResizeHorizontal 5
+Mod4 Up		:ResizeVertical -5
+Mod4 Down	:ResizeVertical 5
+Mod4 Shift Left	:MoveLeft 5
+Mod4 Shift Right :MoveRight 5
+Mod4 Shift Up	:MoveUp 5
+Mod4 Shift Down	:MoveDown 5
 Mod4 q		:Close
 Mod4 d		:ToggleDecor
 Mod4 s		:RootMenu
@@ -47,3 +54,4 @@ Mod4 i		:Exec firefox
 Mod4 m		:Exec thunderbird
 Mod4 w		:Exec /home/babali/wallpapers/random_wallpaper.sh
 Mod4 l          :Exec xscreensaver-command -lock
+

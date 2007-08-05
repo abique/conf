@@ -4,3 +4,6 @@
 [app] (class=Kopete)
   [Position]	(UPPERLEFT)	{972 19}
 [end]
+[app] (class=Xchat)
+  [Sticky]	{yes}
+[end]
