@@ -15,15 +15,15 @@ if [[ $- != *i* ]] ; then
 fi
 
 # Enable colors for ls, etc.  Prefer ~/.dir_colors #64489
-if [[ -f ~/.dir_colors ]]; then
+if [[ -f ~/.dir_colors ]] ; then
     eval `dircolors -b ~/.dir_colors`
-elif [[ -f ~/DIR_COLORS ]]; then
+elif [[ -f ~/DIR_COLORS ]] ; then
     eval `dircolors -b /etc/DIR_COLORS`
 else
     eval `dircolors -b`
 fi
 
-if [[ $TERM = "linux" ]]; then
+if [[ $TERM = "linux" ]] ; then
     unicode_start
 fi
 
@@ -36,7 +36,6 @@ export GTK2_RC_FILES=$HOME/.gtkrc-2.0
 # Make sure our customised gtkrc file is loaded.
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0:$HOME/.kde/share/config/gtkrc-2.0:/etc/gtk-2.0/gtkrc"
 
-
 ######################################
 ## My configuration
 ######################################
@@ -44,9 +43,9 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0:$HOME/.kde/share/config/gtkrc-2.0:/etc/gt
 unalias -a
 
 # ls/df/du human readable
-if [[ `uname -s` = "FreeBSD" ]]; then
+if [[ `uname -s` = "FreeBSD" ]] ; then
     alias ls="ls -GhF"
-elif [[ `uname -s` = "Linux" ]]; then
+elif [[ `uname -s` = "Linux" ]] ; then
     alias ls="ls --color=auto -hF"
 fi
 alias la='ls -a'
@@ -73,6 +72,8 @@ alias rebuild='~/local/bin/rebuild'
 alias fixme='grep -rn FIXME .'
 
 export EDITOR="emacs -nw -Q"
+export DEBEMAIL="alexandre.bique@smartjog.com"
+export DEBFULLNAME="Alexandre Bique"
 export ECHANGELOG_USER="Alexandre Bique (BabaLi) <bique.alexandre@gmail.com>"
 export LC_ALL="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
@@ -86,17 +87,21 @@ export LANG="en_US.UTF-8"
 export PATH="${HOME}/local/bin/:${PATH}:/sbin/:/usr/sbin/"
 export COLORTERM="yes"
 
-if [[ -f ~/.bash.d/proxy ]] ; then
+if [[ -r ~/.bash.d/proxy ]] ; then
     source ~/.bash.d/proxy
 fi
 
-if false; then
+if false ; then
     if [[ -d ~/.bash_completion.d ]] ; then
 	for file in ~/.bash_completion.d/*
 	do
 	    source "${file}"
 	done
     fi
+fi
+
+if [[ -r /etc/bash_completion ]] ; then
+    source /etc/bash_completion
 fi
 
 function prompt_babali()
