@@ -84,7 +84,12 @@ export LC_NUMERIC="en_US.UTF-8"
 export LC_TIME="en_US.UTF-8"
 export LC_PAPER="en_US.UTF-8"
 export LANG="en_US.UTF-8"
-export PATH="${HOME}/local/bin/:${PATH}:/sbin/:/usr/sbin/"
+if ! echo "${PATH}" 1>/dev/null 2>&1 | grep "^${HOME}/local/bin" ; then
+    export PATH="${HOME}/local/bin:${PATH}"
+fi
+if ! echo "${PATH}" 1>/dev/null 2>&1 | grep ":/sbin:/usr/sbin\$" ; then
+    export PATH="${PATH}:/sbin:/usr/sbin"
+fi
 export COLORTERM="yes"
 
 if [[ -r ~/.bash.d/proxy ]] ; then
