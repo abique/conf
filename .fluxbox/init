@@ -49,7 +49,7 @@ session.screen0.decorateTransient:	false
 session.screen0.clickRaises:	true
 session.screen0.edgeSnapThreshold:	5
 session.screen0.windowScrollReverse:	false
-session.screen0.followModel:	Ignore
+session.screen0.followModel:	Follow
 session.screen0.opaqueMove:	false
 session.screen0.focusModel:	ClickFocus
 session.screen0.rootCommand:	
