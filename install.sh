@@ -17,7 +17,7 @@ for file in		\
     .emacs		\
     emacs.d		\
     .fluxbox            \
-    .htop		\
+    .htoprc		\
     .indent.pro         \
     .toprc		\
     .screenrc           \
