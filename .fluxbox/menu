@@ -21,9 +21,9 @@
       [exec] (firefox) {firefox}
       [separator]
       [config] (Configure)
-[submenu] (User Styles)
-      [stylesdir] (~/.fluxbox/styles)
-[end]
+      [submenu] (User Styles)
+                [stylesdir] (~/.fluxbox/styles)
+      [end]
       [workspaces] (Workspace List)
       [separator]
       [reconfig] (Reload config)

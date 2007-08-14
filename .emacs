@@ -291,3 +291,19 @@ With optional argument, move forward N-1 lines first."
 (desktop-read)
 
 (load "~/.emacs.local" t)
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(jabber-default-status "Working")
+ '(jabber-nickname "Alexandre Bique")
+ '(jabber-password nil)
+ '(jabber-server "jabber")
+ '(jabber-username "alexandre.bique"))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ )

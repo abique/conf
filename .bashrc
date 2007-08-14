@@ -70,6 +70,7 @@ alias xgcc='gcc -W -Wall'
 alias dsss='~/local/bin/dsss'
 alias rebuild='~/local/bin/rebuild'
 alias fixme='grep -rn FIXME .'
+alias valgrind_mleak='valgrind --leak-check=full --leak-resolution=high --show-reachable=yes'
 
 export EDITOR="emacs -nw -Q"
 export DEBEMAIL="alexandre.bique@smartjog.com"
