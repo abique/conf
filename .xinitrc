@@ -9,7 +9,7 @@ elif [[ $1 = "openbox" ]] ; then
     exec openbox-session
 elif [[ $1 = "fluxbox" ]] ; then
     exec startfluxbox
-elif [[ $1 = "enlightenment" ]]; then
+elif [[ $1 = "e" ]]; then
     exec enlightenment_start
 else
     exec startfluxbox
