@@ -3,7 +3,7 @@
     (load "/usr/share/emacs/site-lisp/site-gentoo"))
 (if (file-readable-p "/usr/share/emacs/site-lisp/debian-startup.el")
     (load "/usr/share/emacs/site-lisp/debian-startup"))
-(load "~/emacs.d/d-mode.el")
+;;(load "~/emacs.d/d-mode.el")
 
 ;; UTF-8
 (setq locale-coding-system 'utf-8)
@@ -48,6 +48,8 @@
 (dynamic-completion-mode)              ; dynamic completion
 (when (string-match "^22." emacs-version)
   (ido-mode t))
+(when (string-match "^23." emacs-version)
+  (ido-mode t))
 
 ;; C/C++ HL mode
 ;;(add-hook 'c-mode-common-hook (lambda () (highline-local-mode 1)))
@@ -73,7 +75,7 @@
 (add-to-list 'auto-mode-alist '("\\.d$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.di$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.pro$" . sh-mode)) ; Qt .pro files
-(add-to-list 'auto-mode-alist '("^CMakeLists.txt$" . cmake-mode))
+(add-to-list 'auto-mode-alist '("CMakeLists.txt$" . cmake-mode))
 
 
 ; C mode
