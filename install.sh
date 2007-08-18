@@ -23,6 +23,7 @@ for file in		\
     .screenrc           \
     .Xdefaults          \
     .xinitrc		\
+    .xmodmaprc		\
     .xsession		\
 
 do

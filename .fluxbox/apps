@@ -6,3 +6,5 @@
 [end]
 [app] (class=Xchat)
 [end]
+[app] (class=psi)
+[end]
