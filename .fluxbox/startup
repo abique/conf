@@ -33,7 +33,7 @@ xrdb -merge ~/.Xdefaults
 # xsetroot -cursor_name right_ptr
 #
 # Change your keymap:
-# xmodmap "/home/babali/.Xmodmap"
+xmodmap ~/.xmodmaprc
 
 
 
