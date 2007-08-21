@@ -85,11 +85,14 @@ export LC_NUMERIC="en_US.UTF-8"
 export LC_TIME="en_US.UTF-8"
 export LC_PAPER="en_US.UTF-8"
 export LANG="en_US.UTF-8"
-if ! echo "${PATH}" 1>/dev/null 2>&1 | grep "^${HOME}/local/bin" ; then
+if ! echo "${PATH}" | grep "^${HOME}/local/bin" 1>/dev/null 2>&1 ; then
     export PATH="${HOME}/local/bin:${PATH}:/usr/local/bin"
 fi
-if ! echo "${PATH}" 1>/dev/null 2>&1 | grep ":/sbin:/usr/sbin\$" ; then
+if ! echo "${PATH}" | grep ":/sbin:/usr/sbin\$" 1>/dev/null 2>&1 ; then
     export PATH="${PATH}:/sbin:/usr/sbin"
+fi
+if ! echo "${LD_LIBRARY_PATH}" | grep "^${HOME}/local/lib" 1>/dev/null 2>&1 ; then
+    export LD_LIBRARY_PATH="${HOME}/local/lib:${LD_LIBRARY_PATH}"
 fi
 export COLORTERM="yes"
 

@@ -11,7 +11,7 @@
 
 # /usr/bin/fbsetroot -solid black
 #(cd /home/babali/wallpapers;./random_wallpapers.sh)
-
+fbsetbg -r ~/wallpapers/fractals/
 
 # This shows the fluxbox-splash-screen
 # fbsetbg -C /usr/share/fluxbox/splash.jpg
