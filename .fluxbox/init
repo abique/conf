@@ -75,7 +75,7 @@ session.tabPadding:	0
 session.ignoreBorder:	false
 session.keyFile:	/home/babali/.fluxbox/keys
 session.tabsAttachArea:	Window
-session.modKey:	Mod1
+session.modKey:	Mod4
 session.autoRaiseDelay:	0
 session.slitlistFile:	/home/babali/.fluxbox/slitlist
 session.cacheLife:	5l
