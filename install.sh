@@ -19,6 +19,7 @@ for file in		\
     .fluxbox            \
     .htoprc		\
     .indent.pro         \
+    .inputrc		\
     .toprc		\
     .screenrc           \
     .Xdefaults          \
