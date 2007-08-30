@@ -72,7 +72,7 @@ alias rebuild='~/local/bin/rebuild'
 alias fixme='grep -rn FIXME .'
 alias valgrind_mleak='valgrind --leak-check=full --leak-resolution=high --show-reachable=yes'
 
-export EDITOR="emacs -nw -Q"
+export EDITOR='emacs -nw -Q -eval "(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)"'
 export DEBEMAIL="alexandre.bique@smartjog.com"
 export DEBFULLNAME="Alexandre Bique"
 export ECHANGELOG_USER="Alexandre Bique (BabaLi) <bique.alexandre@gmail.com>"
