@@ -1,0 +1,41 @@
+################################################################################
+
+.font:                                  sans-7
+menu.frame.font:			sans-7
+menu.title.font:			sans-7
+toolbar.clock.font:			sans-7
+toolbar.workspace.font:			sans-7
+toolbar.iconbar.focused.font:		sans-7
+toolbar.iconbar.unfocused.font:		sans-7
+window.font:				sans-7
+
+################################################################################
+
+menu.bevelWidth:			0
+menu.borderWidth:			0
+menu.bullet.position:			Right
+menu.frame.justify:			center
+menu.title.justify:			center
+menu.bullet:				triangle
+
+################################################################################
+
+toolbar.bevelWidth:			0
+toolbar.borderWidth:			0
+toolbar.height:				14
+toolbar.justify:			center
+toolbar.clock.justify:			Center
+toolbar.workspace.justify:		Center
+toolbar.iconbar.focused.justify:	center
+toolbar.iconbar.unfocused.justify:	center
+
+################################################################################
+
+window.bevelWidth:			0
+window.shade:				true
+window.borderWidth:			1
+window.justify:				Center
+window.title.height:			14
+window.handleWidth:			0
+
+################################################################################
