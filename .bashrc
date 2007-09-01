@@ -64,13 +64,13 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ps='ps -fx'
 alias grep="grep --color --exclude='*.svn*'"
-alias ssh_rootmetest='ssh root@10.227.42.101'
 alias screen="screen -U"
 alias xgcc='gcc -W -Wall'
 alias dsss='~/local/bin/dsss'
 alias rebuild='~/local/bin/rebuild'
 alias fixme='grep -rn FIXME .'
 alias valgrind_mleak='valgrind --leak-check=full --leak-resolution=high --show-reachable=yes'
+alias svn2cl='svn2cl --break-before-msg=2'
 
 export EDITOR='emacs -nw -Q -eval "(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)"'
 export DEBEMAIL="alexandre.bique@smartjog.com"
@@ -98,15 +98,6 @@ export COLORTERM="yes"
 
 if [[ -r ~/.bash.d/proxy ]] ; then
     source ~/.bash.d/proxy
-fi
-
-if false ; then
-    if [[ -d ~/.bash_completion.d ]] ; then
-	for file in ~/.bash_completion.d/*
-	do
-	    source "${file}"
-	done
-    fi
 fi
 
 if [[ -r /etc/bash_completion ]] ; then
