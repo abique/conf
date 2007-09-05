@@ -22,6 +22,7 @@ for file in		\
     .inputrc		\
     .toprc		\
     .screenrc           \
+    .vimrc              \
     .Xdefaults          \
     .xinitrc		\
     .xmodmaprc		\
