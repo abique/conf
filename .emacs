@@ -109,8 +109,8 @@
 (require 'color-theme)
 (if (fboundp 'color-theme-initialize) (color-theme-initialize))
 ;(color-theme-charcoal-black)
-;(color-theme-comidia)
-(color-theme-taylor)
+(color-theme-comidia)
+;(color-theme-taylor)
 ;(color-theme-classic)
 
 (defun insert-header-guard ()
@@ -189,6 +189,10 @@ With optional argument, move forward N-1 lines first."
 (global-set-key [M-right] 'windmove-right)              ; move to right window
 (global-set-key [M-up] 'windmove-up)                    ; move to upper window
 (global-set-key [M-down] 'windmove-down)
+(global-set-key [M-9] 'windmove-left)                ; move to left windnow
+(global-set-key [M-0] 'windmove-right)              ; move to right window
+(global-set-key [M-\(] 'windmove-up)                    ; move to upper window
+(global-set-key [M-\)] 'windmove-down)
 ;;(global-set-key [(control tab)] 'other-window)          ; Ctrl-Tab = Next buffer
 
 
