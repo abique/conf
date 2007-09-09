@@ -38,6 +38,13 @@ Mod4 Left              :FocusLeft
 Mod4 Right             :FocusRight
 Mod4 Up                :FocusUp
 Mod4 Down              :FocusDown
+Mod4 p                 :FocusLeft
+Mod4 bracketright      :FocusRight
+Mod4 minus             :FocusUp
+Mod4 equal             :FocusUp
+Mod4 bracketleft       :FocusDown
+Mod4 Shift braceleft   :PrevTab
+Mod4 Shift braceright  :NextTab
 Mod1 Mod4 Left	       :ResizeHorizontal -5
 Mod1 Mod4 Right	       :ResizeHorizontal 5
 Mod1 Mod4 Up	       :ResizeVertical -5

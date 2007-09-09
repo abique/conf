@@ -189,10 +189,10 @@ With optional argument, move forward N-1 lines first."
 (global-set-key [M-right] 'windmove-right)              ; move to right window
 (global-set-key [M-up] 'windmove-up)                    ; move to upper window
 (global-set-key [M-down] 'windmove-down)
-(global-set-key [M-9] 'windmove-left)                ; move to left windnow
-(global-set-key [M-0] 'windmove-right)              ; move to right window
-(global-set-key [M-\(] 'windmove-up)                    ; move to upper window
-(global-set-key [M-\)] 'windmove-down)
+(global-set-key [?\C-9] 'windmove-left)                ; move to left windnow
+(global-set-key [?\C-0] 'windmove-right)              ; move to right window
+(global-set-key [?\C-(] 'windmove-up)                    ; move to upper window
+(global-set-key [?\C-)] 'windmove-down)
 ;;(global-set-key [(control tab)] 'other-window)          ; Ctrl-Tab = Next buffer
 
 
