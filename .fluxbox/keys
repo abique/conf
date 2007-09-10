@@ -32,6 +32,8 @@ Mod4 7		       :Workspace 7
 Mod4 8		       :Workspace 8
 Mod4 f		       :MaximizeWindow
 Mod4 a		       :ArrangeWindows
+!Mod4 v                 :TileVertical 3
+!Mod4 h                 :TileHorizontal 3
 Mod4 Shift a	       :ShowDesktop
 Mod4 Shift f	       :Fullscreen
 Mod4 Left              :FocusLeft
