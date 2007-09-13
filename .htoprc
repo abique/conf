@@ -12,6 +12,7 @@ highlight_base_name=1
 highlight_megabytes=1
 tree_view=1
 header_margin=1
+expand_system_time=0
 color_scheme=0
 delay=15
 left_meters=AllCPUs Memory Swap 
