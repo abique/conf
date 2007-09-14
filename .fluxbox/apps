@@ -2,3 +2,6 @@
   [Position]	(UPPERLEFT)	{331 500}
   [Deco]	{NORMAL}
 [end]
+[app] (class=UXTerm)
+  [Dimensions]	{564 368}
+[end]

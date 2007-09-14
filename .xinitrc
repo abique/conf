@@ -11,6 +11,8 @@ elif [[ $1 = "fluxbox" ]] ; then
     exec startfluxbox
 elif [[ $1 = "e" ]]; then
     exec enlightenment_start
+elif [[ $1 = "compiz" ]] ; then
+    exec compiz-start
 else
     exec startfluxbox
 fi

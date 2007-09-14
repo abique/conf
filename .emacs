@@ -109,6 +109,7 @@
 (require 'color-theme)
 (if (fboundp 'color-theme-initialize) (color-theme-initialize))
 ;(color-theme-charcoal-black)
+;(color-theme-late-night)
 (color-theme-comidia)
 ;(color-theme-taylor)
 ;(color-theme-classic)

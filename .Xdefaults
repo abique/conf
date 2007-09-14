@@ -19,7 +19,7 @@ XTerm*color15:     #ffffff
 XTerm*font:	   7x14
 XTerm*metaSendsEscape: yes
 
-UXTerm*background:  #000000
+UXTerm*background:  #202020
 UXTerm*foreground:  #7f7f7f
 UXTerm*color0:      #000000
 UXTerm*color1:      #9e1828
@@ -40,30 +40,30 @@ UXTerm*color15:     #ffffff
 UXTerm*font:	    7x14
 UXTerm*metaSendsEscape: yes
 
-*Rxvt*background:  #000000
-*Rxvt*foreground:  #7f7f7f
-*Rxvt*color0:      #000000
-*Rxvt*color1:      #9e1828
-*Rxvt*color2:      #aece92
-*Rxvt*color3:      #968a38
-*Rxvt*color4:      #414171
-*Rxvt*color5:      #963c59
-*Rxvt*color6:      #418179
-*Rxvt*color7:      #bebebe
-*Rxvt*color8:      #666666
-*Rxvt*color9:      #cf6171
-*Rxvt*color10:     #c5f779
-*Rxvt*color11:     #fff796
-*Rxvt*color12:     #4186be
-*Rxvt*color13:     #cf9ebe
-*Rxvt*color14:     #71bebe
-*Rxvt*color15:     #ffffff
-*Rxvt*font:	   7x14
-*Rxvt*scrollBar: false
-*Rxvt*transparent: true
-*Rxvt*tintingType: true
-*Rxvt*tinting: #ffffff
-*Rxvt*shading: 80
+URxvt*background:  #000000
+URxvt*foreground:  #7f7f7f
+URxvt*color0:      #000000
+URxvt*color1:      #9e1828
+URxvt*color2:      #aece92
+URxvt*color3:      #968a38
+URxvt*color4:      #414171
+URxvt*color5:      #963c59
+URxvt*color6:      #418179
+URxvt*color7:      #bebebe
+URxvt*color8:      #666666
+URxvt*color9:      #cf6171
+URxvt*color10:     #c5f779
+URxvt*color11:     #fff796
+URxvt*color12:     #4186be
+URxvt*color13:     #cf9ebe
+URxvt*color14:     #71bebe
+URxvt*color15:     #ffffff
+URxvt*font:	   7x14
+URxvt*scrollBar: false
+URxvt*transparent: true
+URxvt*tintingType: true
+URxvt*tinting: #ffffff
+URxvt*shading: 80
 
 
 Aterm*scrollBar: false

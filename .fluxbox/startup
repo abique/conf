@@ -34,7 +34,8 @@ xrdb -merge ~/.Xdefaults
 #
 # Change your keymap:
 xmodmap ~/.xmodmaprc
-
+xmodmap ~/.xmodmaprc
+xmodmap ~/.xmodmaprc
 
 
 # Applications you want to run with fluxbox.
