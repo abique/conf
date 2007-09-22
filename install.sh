@@ -6,9 +6,11 @@ CONF_PATH=`pwd`
 function install()
 {
     rm -rf ${HOME}/$1
-    ln -s ${CONF_PATH}/$1 ${HOME}/$1
+    ln -sf ${CONF_PATH}/$1 ${HOME}/$1
     printf "\e[33mInstalling\e[m ${HOME}/\e[32m$1\e[m\n"
 }
+
+[[ -d ${HOME}/.config ]] || mkdir ${HOME}/.config
 
 for file in		\
     .bashrc		\
@@ -27,6 +29,7 @@ for file in		\
     .xinitrc		\
     .xmodmaprc		\
     .xsession		\
+    .config/Trolltech.conf \
 
 do
     install ${file}
