@@ -1,4 +1,4 @@
-XTerm*background:  #000000
+XTerm*background:  #171717
 XTerm*foreground:  #7f7f7f
 XTerm*color0:      #000000
 XTerm*color1:      #9e1828
@@ -16,10 +16,11 @@ XTerm*color12:     #4186be
 XTerm*color13:     #cf9ebe
 XTerm*color14:     #71bebe
 XTerm*color15:     #ffffff
-XTerm*font:	   7x14
+XTerm*faceName:    Monospace
+XTerm*faceSize:    8
 XTerm*metaSendsEscape: yes
 
-UXTerm*background:  #202020
+UXTerm*background:  #171717
 UXTerm*foreground:  #7f7f7f
 UXTerm*color0:      #000000
 UXTerm*color1:      #9e1828
@@ -37,7 +38,8 @@ UXTerm*color12:     #4186be
 UXTerm*color13:     #cf9ebe
 UXTerm*color14:     #71bebe
 UXTerm*color15:     #ffffff
-UXTerm*font:	    7x14
+UXTerm*faceName:    Monospace
+UXTerm*faceSize:    8
 UXTerm*metaSendsEscape: yes
 
 URxvt*background:  #000000
@@ -58,7 +60,7 @@ URxvt*color12:     #4186be
 URxvt*color13:     #cf9ebe
 URxvt*color14:     #71bebe
 URxvt*color15:     #ffffff
-URxvt*font:	   7x14
+URxvt*font:	   xft:Monospace:size=8
 URxvt*scrollBar: false
 URxvt*transparent: true
 URxvt*tintingType: true
