@@ -27,14 +27,7 @@ if [[ $TERM = "linux" ]] ; then
     unicode_start
 fi
 
-# This line was appended by KDE
-# Make sure our customised gtkrc file is loaded.
 export GTK2_RC_FILES=$HOME/.gtkrc-2.0
-
-
-# This line was appended by KDE
-# Make sure our customised gtkrc file is loaded.
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0:$HOME/.kde/share/config/gtkrc-2.0:/etc/gtk-2.0/gtkrc"
 
 ######################################
 ## My configuration
@@ -142,7 +135,7 @@ function prompt_babali()
 
 # Change the window title of X terminals
     case $TERM in
-	xterm*|rxvt*|Eterm)
+	*xterm*|*rxvt*|Eterm)
 	    echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}\007"
 	    ;;
 	screen)
@@ -158,3 +151,4 @@ set completion-ignore-case on
 set print-completions-horizontally on
 set visible-stats on
 umask 0077
+
