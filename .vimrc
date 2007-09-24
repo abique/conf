@@ -32,9 +32,6 @@ set cinoptions={.5s
 set comments=s:/*,mb:**,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
 set formatoptions=tcqr
 
-"if filereadable($HOME . "/.conf/" . $ACU_NAME . "/.vimrc")
-"    so $HOME/.conf/$ACU_NAME/.vimrc
-"endif
 colorscheme delek
 set shiftwidth=4
 set shiftround
