@@ -56,7 +56,9 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ps='ps -fx'
-alias grep="grep --color --exclude='*.svn*'"
+alias egrep="egrep --color --exclude='*.svn*'"
+alias grep="egrep --color --exclude='*.svn*'"
+alias esed='sed --regexp-extended'
 alias screen="screen -U"
 alias xgcc='gcc -W -Wall'
 alias dsss='~/local/bin/dsss'
