@@ -67,4 +67,5 @@ Mod4 i		       :Exec firefox
 Mod4 m		       :Exec thunderbird
 Mod4 w		       :Exec fbsetbg -r ~/wallpapers/fractals/
 Mod4 l                 :Exec xscreensaver-command -lock
-
+Mod4 h                 :Exec uxterm -e htop
+Mod4 n                 :Exec uxterm -e slrn
