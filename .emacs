@@ -37,15 +37,15 @@
 (fset 'yes-or-no-p 'y-or-n-p)         ; y or n will do
 (setq default-major-mode 'text-mode)  ; change default major mode to text
 (setq ring-bell-function 'ignore)     ; turn the alarm totally off
-(setq-default indent-tabs-mode nil)     ; spaces instead of tabs
+(setq-default indent-tabs-mode nil)   ; spaces instead of tabs
 (setq make-backup-files nil)          ; no backupfile
 (setq delete-auto-save-files t)       ; delete unnecessary autosave files
 (setq delete-old-versions t)          ; delete oldversion file
 (setq next-line-add-newlines nil)     ; prevents new line after eof
 (setq default_indice_empty_lines t)   ; show lines at end of file
-;;(normal-erase-is-backspace-mode) ; delete touch work
-(auto-image-file-mode)                 ; to see picture in emacs
-(dynamic-completion-mode)              ; dynamic completion
+;;(normal-erase-is-backspace-mode)    ; delete touch work
+;;(auto-image-file-mode)              ; to see picture in emacs
+;;(dynamic-completion-mode)           ; dynamic completion
 (when (string-match "^22." emacs-version)
   (ido-mode t))
 (when (string-match "^23." emacs-version)
@@ -106,10 +106,10 @@
 
 ;;;; COLOR THEME
 ;(add-to-list 'load-path "~/emacs.d/color-theme")
-(require 'color-theme)
-(if (fboundp 'color-theme-initialize) (color-theme-initialize))
+;(require 'color-theme)
+;(if (fboundp 'color-theme-initialize) (color-theme-initialize))
 ;(color-theme-charcoal-black)
-(color-theme-late-night)
+;(color-theme-late-night)
 ;(color-theme-comidia)
 ;(color-theme-taylor)
 ;(color-theme-classic)
@@ -178,8 +178,8 @@ With optional argument, move forward N-1 lines first."
 
 (global-set-key [f1] 'indent-buffer)
 (global-set-key [f2] 'delete-trailing-whitespace)
-(global-set-key [f4] 'kill-this-buffer)     ; f4 = kill buffer
-(global-set-key [f5] 'compile)              ; f8 = compile
+(global-set-key [f4] 'kill-this-buffer)
+(global-set-key [f5] 'compile)
 (global-set-key [f6] 'recompile)
 (global-set-key [f7] 'prev-error)
 (global-set-key [f8] 'next-error)
@@ -300,21 +300,3 @@ With optional argument, move forward N-1 lines first."
 
 (desktop-load-default)
 (desktop-read)
-
-(load "~/.emacs.local" t)
-(custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(jabber-default-status "Working")
- '(jabber-nickname "Alexandre Bique")
- '(jabber-password nil)
- '(jabber-server "jabber")
- '(jabber-username "alexandre.bique"))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )

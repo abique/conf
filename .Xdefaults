@@ -20,7 +20,7 @@ XTerm*faceName:    Monospace
 XTerm*faceSize:    8
 XTerm*metaSendsEscape: yes
 
-UXTerm*background:  #171717
+UXTerm*background:  #000000
 UXTerm*foreground:  #7f7f7f
 UXTerm*color0:      #000000
 UXTerm*color1:      #9e1828
@@ -75,3 +75,4 @@ Aterm*tinting: #ffffff
 Aterm*shading: 50
 
 Emacs*font: 7x14
+Emacs.reverseVideo: on
