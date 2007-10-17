@@ -68,6 +68,11 @@ alias valgrind_mleak='valgrind --leak-check=full --leak-resolution=high --show-r
 alias svn2cl='svn2cl --break-before-msg=2'
 alias pwgen='pwgen --symbols --secure --num-passwords=5 --capitalize -C --ambiguous 12'
 
+function svndiff()
+{
+    svn diff $@ | vim -
+}
+
 export EDITOR="emacs -nw -Q -eval \"(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)\""
 export DEBEMAIL="alexandre.bique@smartjog.com"
 export DEBFULLNAME="Alexandre Bique"
