@@ -73,6 +73,9 @@ function svndiff()
     svn diff $@ | vim -
 }
 
+export HISTFILESIZE=10042
+export HISTIGNORE='ls:ll:la:l'
+export INPUTRC="~/.inputrc"
 export EDITOR="emacs -nw -Q -eval \"(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)\""
 export DEBEMAIL="alexandre.bique@smartjog.com"
 export DEBFULLNAME="Alexandre Bique"
@@ -109,12 +112,12 @@ function prompt_babali()
 {
     RET=$?
 
-    let promptsize=$(echo -n "`uname -s` ${USER}@${HOSTNAME}:${PWD}" |
-	wc -c | tr -d " ")
+    tmp="`uname -s` ${USER}@${HOSTNAME}:${PWD}"
+    promptsize=${#tmp}
     fillsize=$((${COLUMNS} - ((${promptsize} + 5) % ${COLUMNS})))
     fill=""
     # Make the filler if prompt isn't as wide as the terminal:
-    while [ ${fillsize} -gt "0" ]
+    while [[ ${fillsize} -gt "0" ]]
     do
 	fill="${fill} "
    # The A with the umlaut over it (it will appear as a long dash if
