@@ -70,7 +70,25 @@ alias pwgen='pwgen --symbols --secure --num-passwords=5 --capitalize -C --ambigu
 
 function svndiff()
 {
-    svn diff $@ | vim -
+    $(which svn) diff $* | vim -
+}
+
+function svnst()
+{
+    $(which svn) st $* |
+    sed 's/M\(.*\)/'$(echo -en '\e[0;32m')'M\1'$(echo -en '\e[m')'/g' |
+    sed 's/!\(.*\)/'$(echo -en '\e[0;31m')'!\1'$(echo -en '\e[m')'/g' |
+    sed 's/\?\(.*\)/'$(echo -en '\e[0;33m')'\?\1'$(echo -en '\e[m')'/g'
+}
+
+function svn()
+{
+    if [[ $1 = "st" ]] ; then
+        shift
+        svnst $@
+    else
+        $(which svn) $*
+    fi
 }
 
 export HISTFILESIZE=10042
