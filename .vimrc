@@ -32,8 +32,9 @@ set cinoptions={.5s
 set comments=s:/*,mb:**,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
 set formatoptions=tcqr
 
-colorscheme delek
+colorscheme darkblue
 set shiftwidth=4
 set shiftround
 set expandtab
 set tabstop=8
+
