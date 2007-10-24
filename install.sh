@@ -14,6 +14,7 @@ function install()
 
 for file in		\
     .bashrc		\
+    .bash.d             \
     .beryl		\
     .beryl-managerrc	\
     .emacs		\
