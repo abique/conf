@@ -5,23 +5,30 @@ function svndiff()
 
 function svnst()
 {
-    $(which svn) st $* |
-    sed 's/^\(M.*\)/'$(echo -en '\e[0;34m')'\1'$(echo -en '\e[m')'/g' |
-    sed 's/^\( M.*\)/'$(echo -en '\e[0;34m')'\1'$(echo -en '\e[m')'/g' |
-    sed 's/^\(!.*\)/'$(echo -en '\e[0;31m')'\1'$(echo -en '\e[m')'/g' |
-    sed 's/^\(\?.*\)/'$(echo -en '\e[0;33m')'\1'$(echo -en '\e[m')'/g' |
-    sed 's/^\(A.*\)/'$(echo -en '\e[0;32m')'\1'$(echo -en '\e[m')'/g'
+    $(which svn) st $* | sed '
+s/$/'${white}'/g
+s/^M/'${blue}'M/g
+s/^ M/'${blue}' M/g
+s/^!/'${red}'!/g
+s/^\?/'${yellow}'\?/g
+s/^A/'${green}'A/g
+'
+
+}
+
+function svnup()
+{
+    $(which svn) up | sed '
+s/revision \([0-9]\+\)\.$/revision '${cyan}'\1'${white}'\./g
+'
 }
 
 function svn()
 {
-    if [[ $1 = "st" ]] ; then
-        shift
-        svnst $@
-    elif [[ $1 = "diff" ]] ; then
-        shift
-        svndiff
-    else
-        $(which svn) $*
-    fi
+    case $1 in
+        st)     shift; svnst $*;;
+        diff)   shift; svndiff $*;;
+        up)     shift; svnup $*;;
+        *)      $(which svn) $*;;
+    esac
 }
