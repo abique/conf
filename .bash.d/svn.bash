@@ -13,13 +13,15 @@ s/^!/'${red}'!/g
 s/^\?/'${yellow}'\?/g
 s/^A/'${green}'A/g
 '
-
 }
 
 function svnup()
 {
-    $(which svn) up | sed '
+    $(which svn) up $* | sed '
 s/revision \([0-9]\+\)\.$/revision '${cyan}'\1'${white}'\./g
+s/$/'${white}'/g
+s/^U/'${cyan}'U/g
+s/^C/'${red}'C/g
 '
 }
 
