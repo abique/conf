@@ -18,9 +18,9 @@ s/^A/'${green}'A/g
 function svnup()
 {
     $(which svn) up "$@" | sed '
-s/At revision \([0-9]\+\)\./At revision '${cyan}'\1'${white}'\./g
+s/revision \([0-9]\+\)\.$/revision '${cyanB}'\1'${white}'\./g
 s/$/'${white}'/g
-s/^U/'${cyan}'U/g
+s/^U /'${cyan}'U /g
 s/^C/'${red}'C/g
 s/^A /'${green}'A /g
 '
