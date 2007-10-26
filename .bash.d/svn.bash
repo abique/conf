@@ -26,12 +26,22 @@ s/^A /'${green}'A /g
 '
 }
 
+function svnci()
+{
+    $(which svn) ci "$@" | sed '
+s/revision \([0-9]\+\)\.$/revision '${cyanB}'\1'${white}'\./g
+s/$/'${white}'/g
+s/^Sending /'${green}'Sending /g
+'
+}
+
 function svn()
 {
     case $1 in
         st)     shift; svnst "$@";;
         diff)   shift; svndiff "$@";;
         up)     shift; svnup "$@";;
+	ci)	shift; svnci "$@";;
         *)      $(which svn) "$@";;
     esac
 }

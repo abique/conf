@@ -61,10 +61,12 @@
               (insert-header-guard)
               (goto-line 3)
               (insert "\n"))))
+
 ; Start code folding mode in C/C++ mode
-(add-hook 'c-mode-common-hook (lambda () (hs-minor-mode 1) (hs-hide-all)))
+; (add-hook 'c-mode-common-hook (lambda () (hs-minor-mode 1) (hs-hide-all)))
 ; Highlight trailing withespaces
-(add-hook 'c-mode-common-hook (lambda () (highlight-regexp " +$" "hi-blue")))
+(add-hook 'c-mode-common-hook (lambda () (highlight-regexp " +$" "hi-pink")))
+(add-hook 'sh-mode-common-hook (lambda () (highlight-regexp " +$" "hi-pink")))
 
 ;; cmake mode
 (load-file "~/emacs.d/cmake-mode.el")
@@ -79,8 +81,8 @@
 
 
 ; C mode
-;(add-hook `c-mode-hook `rm-trailing-spaces-always)
-(c-set-offset 'substatement-open 0)   ; change '{' indentation
+(add-hook `c-mode-hook `rm-trailing-spaces-always)
+(c-set-offset 'substatement-open 2)   ; change '{' indentation
 (c-set-offset 'case-label '+)         ; make each case line indent from switch
 (c-set-offset 'brace-list-open '0)
 (c-set-offset 'statement-case-open '0)

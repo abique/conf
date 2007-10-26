@@ -38,8 +38,9 @@ UXTerm*color12:     #4186be
 UXTerm*color13:     #cf9ebe
 UXTerm*color14:     #71bebe
 UXTerm*color15:     #ffffff
-UXTerm*faceName:    Monospace
-UXTerm*faceSize:    8
+!UXTerm*faceName:    monospace
+!UXTerm*faceSize:    8
+UXTerm*font:        7x14
 UXTerm*metaSendsEscape: yes
 
 URxvt*background:  #000000
