@@ -12,6 +12,7 @@ s/^ M/'${blue}' M/g
 s/^!/'${red}'!/g
 s/^\?/'${yellow}'\?/g
 s/^A/'${green}'A/g
+s/^D /'${magenta}'D /g
 '
 }
 
@@ -21,8 +22,9 @@ function svnup()
 s/revision \([0-9]\+\)\.$/revision '${cyanB}'\1'${white}'\./g
 s/$/'${white}'/g
 s/^U /'${cyan}'U /g
-s/^C/'${red}'C/g
+s/^C /'${red}'C /g
 s/^A /'${green}'A /g
+s/^D /'${magenta}'D /g
 '
 }
 
