@@ -4,6 +4,8 @@
 # past this point for scp and rcp, and it's important to refrain from
 # outputting anything in those cases.
 
+clear
+
 if [[ $- != *i* ]] ; then
     # Shell is non-interactive.  Be done now!
     return
@@ -11,9 +13,7 @@ fi
 
 function my_source()
 {
-    if [[ -r "$1" ]] ; then
-        source "$1"
-    fi
+    test ! -r "$1" || source "$1"
 }
 
 # Enable colors for ls, etc.  Prefer ~/.dir_colors #64489

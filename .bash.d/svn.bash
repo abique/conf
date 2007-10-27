@@ -28,12 +28,21 @@ s/^D /'${magenta}'D /g
 '
 }
 
+function svnadd()
+{
+    $(which svn) add "$@" | sed '
+s/$/'${white}'/g
+s/^A /'${green}'A /g
+'
+}
+
 function svnci()
 {
     $(which svn) ci "$@" | sed '
 s/revision \([0-9]\+\)\.$/revision '${cyanB}'\1'${white}'\./g
 s/$/'${white}'/g
 s/^Sending /'${green}'Sending /g
+s/^Adding /'${yellow}'Adding /g
 '
 }
 
@@ -44,6 +53,7 @@ function svn()
         diff)   shift; svndiff "$@";;
         up)     shift; svnup "$@";;
 	ci)	shift; svnci "$@";;
+        add)    shift; svnadd "$@";;
         *)      $(which svn) "$@";;
     esac
 }
