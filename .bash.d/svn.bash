@@ -43,6 +43,7 @@ s/revision \([0-9]\+\)\.$/revision '${cyanB}'\1'${white}'\./g
 s/$/'${white}'/g
 s/^Sending /'${green}'Sending /g
 s/^Adding /'${yellow}'Adding /g
+s/^Deleting /'${red}'Deleting /g
 '
 }
 
