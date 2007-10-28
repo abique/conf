@@ -58,7 +58,7 @@ Mod4 Control Down      :MoveDown 5
 Mod4 q		       :Close
 Mod4 d		       :ToggleDecor
 
-Mod4 e		       :Exec emacs -fn 7x14
+Mod4 e		       :Exec emacs
 Mod4 t		       :Exec uxterm
 Mod4 r		       :Exec fbrun -font 7x14 -fg yellow -bg black -w 600
 Mod4 b		       :Exec fbrun -font 7x14 -fg yellow -bg black -w 600 -title "Enter the url" -text "firefox " -hf ~/.fluxbox/firefox_history
