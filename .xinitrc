@@ -4,7 +4,7 @@ elif [[ $1 = "kde-svn" ]] ; then
     source /home/babali/kde.env
     eval `dbus-launch --auto-syntax`
     xterm &
-    exec /usr/kde/svn/bin/startkde 
+    exec /usr/kde/svn/bin/startkde
 elif [[ $1 = "openbox" ]] ; then
     exec openbox-session
 elif [[ $1 = "fluxbox" ]] ; then
@@ -12,7 +12,11 @@ elif [[ $1 = "fluxbox" ]] ; then
 elif [[ $1 = "e" ]]; then
     exec enlightenment_start
 elif [[ $1 = "compiz" ]] ; then
-    exec compiz-start
+    if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+    # if not found, launch a new one
+        eval `dbus-launch --sh-syntax --exit-with-session`
+    fi
+    exec compiz-manager ccp
 else
     exec startfluxbox
 fi
