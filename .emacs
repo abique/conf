@@ -1,5 +1,5 @@
 ;; Load gentoo site
-(if (file-readable-p "/usr/share/emacs/site-lisp/site-gentoo")
+(if (file-readable-p "/usr/share/emacs/site-lisp/site-gentoo.el")
     (load "/usr/share/emacs/site-lisp/site-gentoo"))
 (if (file-readable-p "/usr/share/emacs/site-lisp/debian-startup.el")
     (load "/usr/share/emacs/site-lisp/debian-startup"))
@@ -13,9 +13,9 @@
 (prefer-coding-system 'utf-8)
 ;; END OF UTF-8 :p
 
-;============================
-; Emacs customization script
-;============================
+;;============================
+;; Emacs customization script
+;;============================
 
 (setq inhibit-startup-message t)      ; don't show the GNU splash screen
 (scroll-bar-mode nil)                 ; no scroll bar
@@ -29,7 +29,7 @@
 (delete-selection-mode t)             ; typing removes highlighted text
 (line-number-mode t)                  ; display line number in modeline
 (column-number-mode t)                ; display column number in modeline
-;(setq display-time-day-and-date t)    ; display date in modeline
+;;(setq display-time-day-and-date t)    ; display date in modeline
 (setq display-time-24hr-format t)     ; european 24h format
 (display-time)                        ; display time in modeline
 (auto-compression-mode t)             ; open compressed files
@@ -54,7 +54,7 @@
 ;; C/C++ HL mode
 ;;(add-hook 'c-mode-common-hook (lambda () (highline-local-mode 1)))
 
-; Auto insert C/C++ header guard
+;; Auto insert C/C++ header guard
 (add-hook 'find-file-hooks
           (lambda ()
             (when (and (memq major-mode '(c-mode c++-mode)) (equal (point-min) (point-max)) (string-match ".*\\.hh?" (buffer-file-name)))
@@ -62,9 +62,9 @@
               (goto-line 3)
               (insert "\n"))))
 
-; Start code folding mode in C/C++ mode
-; (add-hook 'c-mode-common-hook (lambda () (hs-minor-mode 1) (hs-hide-all)))
-; Highlight trailing withespaces
+;; Start code folding mode in C/C++ mode
+;; (add-hook 'c-mode-common-hook (lambda () (hs-minor-mode 1) (hs-hide-all)))
+;; Highlight trailing withespaces
 (add-hook 'c-mode-common-hook (lambda () (highlight-regexp " +$" "hi-pink")))
 (add-hook 'sh-mode-common-hook (lambda () (highlight-regexp " +$" "hi-pink")))
 
@@ -76,11 +76,11 @@
 (add-to-list 'auto-mode-alist '("\\.y$" . bison-mode))
 (add-to-list 'auto-mode-alist '("\\.d$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.di$" . d-mode))
-(add-to-list 'auto-mode-alist '("\\.pro$" . sh-mode)) ; Qt .pro files
+(add-to-list 'auto-mode-alist '("\\.pro$" . sh-mode)) ;; Qt .pro files
 (add-to-list 'auto-mode-alist '("CMakeLists.txt$" . cmake-mode))
 
 
-; C mode
+;; C mode
 (add-hook `c-mode-hook `rm-trailing-spaces-always)
 (c-set-offset 'substatement-open 2)   ; change '{' indentation
 (c-set-offset 'case-label '+)         ; make each case line indent from switch
@@ -106,15 +106,16 @@
 
 (add-to-list 'load-path "~/emacs.d")
 
-;;;; COLOR THEME
-;(add-to-list 'load-path "~/emacs.d/color-theme")
-;(require 'color-theme)
-;(if (fboundp 'color-theme-initialize) (color-theme-initialize))
-;(color-theme-charcoal-black)
-;(color-theme-late-night)
-;(color-theme-comidia)
-;(color-theme-taylor)
-;(color-theme-classic)
+;; COLOR THEME
+;;(add-to-list 'load-path "~/emacs.d/color-theme")
+(require 'color-theme)
+(if (fboundp 'color-theme-initialize) (color-theme-initialize))
+;;(color-theme-charcoal-black)
+;;(color-theme-late-night)
+;;(color-theme-comidia)
+;;(color-theme-taylor)
+;;(color-theme-classic)
+(color-theme-dark-blue2)
 
 (defun insert-header-guard ()
   (interactive)
@@ -150,7 +151,7 @@ With optional argument, move forward N-1 lines first."
     (when (<= prev-point (point))
       (beginning-of-line))))
 
-;;;; Doxygen
+;; Doxygen
 (require 'doxymacs)
 (add-hook 'c-mode-common-hook 'doxymacs-mode)
 ;; uncomment this line if you want the comment for the C++-style;
@@ -163,7 +164,7 @@ With optional argument, move forward N-1 lines first."
          (doxymacs-font-lock)))
    (add-hook 'font-lock-mode-hook 'my-doxymacs-font-lock-hook)
 
-; code folding
+;; code folding
 (add-hook 'c-mode-common-hook
             (lambda () (hs-minor-mode 1)))
 
@@ -176,14 +177,14 @@ With optional argument, move forward N-1 lines first."
 (add-hook 'hs-minor-mode-hook
             (lambda () (local-set-key "\C-cH" 'hs-hide-all)))
 
-; key bindings
+;; key bindings
 
 (global-set-key [f1] 'indent-buffer)
 (global-set-key [f2] 'delete-trailing-whitespace)
 (global-set-key [f4] 'kill-this-buffer)
 (global-set-key [f5] 'compile)
 (global-set-key [f6] 'recompile)
-(global-set-key [f7] 'prev-error)
+(global-set-key [f7] 'kill-compilation)
 (global-set-key [f8] 'next-error)
 (global-set-key [f12] (lambda () (interactive) (manual-entry (current-word))))
 (global-set-key "\C-a" 'beginning-of-line-context)
@@ -209,10 +210,10 @@ With optional argument, move forward N-1 lines first."
 (setq compilation-scroll-output t)
 
 
-; gnus
+;; gnus
 
-;(setq gnus-summary-line-format "%U%R%z%3t: %-25B%(%-23,23t%) %s\n")
-; elisp functions
+;;(setq gnus-summary-line-format "%U%R%z%3t: %-25B%(%-23,23t%) %s\n")
+;; elisp functions
 
 (defun yic-ignore (str)
   (or
@@ -271,28 +272,28 @@ With optional argument, move forward N-1 lines first."
 (setq user-full-name "Alexandre Bique")
 (load-file "~/emacs.d/div.el")
 
-; Our own modes repository
+;; Our own modes repository
 (setq load-path (cons "~/emacs.d/" load-path))
 
-; F6100
+;; F6100
 (if (file-exists-p "~/.emacs.d/f6100_mode.el")
     (load-file "~/.emacs.d/f6100_mode.el"))
 
-; Tiger
+;; Tiger
 (autoload 'tiger-mode "tiger-mode" "tiger editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.tig$" . tiger-mode))
 
-; Flex
+;; Flex
 (autoload 'flex-mode "flex-mode" "flex editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.l$" . flex-mode))
 (add-to-list 'auto-mode-alist '("\\.ll$" . flex-mode))
 
-; Bison
+;; Bison
 (autoload 'bison-mode "bison-mode" "bison editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.y$" . bison-mode))
 (add-to-list 'auto-mode-alist '("\\.yy$" . bison-mode))
 
-; XML and traces
+;; XML and traces
 (setq auto-mode-alist
       (cons '("\\.trace$" . sgml-mode) auto-mode-alist))
 (setq auto-mode-alist
