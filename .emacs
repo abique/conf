@@ -70,6 +70,9 @@
 
 ;; cmake mode
 (load-file "~/emacs.d/cmake-mode.el")
+;; pabbrev mode
+(load-file "~/emacs.d/pabbrev.el")
+(global-pabbrev-mode)
 
 ;; file extensions
 (add-to-list 'auto-mode-alist '("\\.l$" . flex-mode))
