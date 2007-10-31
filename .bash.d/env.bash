@@ -1,7 +1,8 @@
 export HISTFILESIZE=10042
 export HISTIGNORE='ls:ll:la:l'
 export INPUTRC="~/.inputrc"
-export EDITOR="emacs -nw -Q -eval \"(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)\""
+#export EDITOR="emacs -nw -Q -eval \"(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)\""
+export EDITOR="vim"
 export DEBEMAIL="alexandre.bique@smartjog.com"
 export DEBFULLNAME="Alexandre Bique"
 export ECHANGELOG_USER="Alexandre Bique (BabaLi) <bique.alexandre@gmail.com>"
@@ -16,3 +17,4 @@ if ! echo "${LD_LIBRARY_PATH}" | grep "^${HOME}/local/lib" 1>/dev/null 2>&1 ; th
 fi
 export COLORTERM="yes"
 export GTK2_RC_FILES=$HOME/.gtkrc-2.0
+export LS_COLORS="${LS_COLORS}:*.c=0;33:*.h=0;34:"

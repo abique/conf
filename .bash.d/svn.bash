@@ -9,10 +9,10 @@ function svnst()
 s/$/'${white}'/g
 s/^M/'${blue}'M/g
 s/^ M/'${blue}' M/g
-s/^!/'${red}'!/g
+s/^!/'${magenta}'!/g
 s/^\?/'${yellow}'\?/g
 s/^A/'${green}'A/g
-s/^D /'${magenta}'D /g
+s/^D /'${red}'D /g
 '
 }
 
