@@ -17,4 +17,4 @@ if ! echo "${LD_LIBRARY_PATH}" | grep "^${HOME}/local/lib" 1>/dev/null 2>&1 ; th
 fi
 export COLORTERM="yes"
 export GTK2_RC_FILES=$HOME/.gtkrc-2.0
-export LS_COLORS="${LS_COLORS}:*.c=0;33:*.h=0;34:"
+export LS_COLORS="${LS_COLORS}:*.c=0;33:*.cc=0;33:*.d=0;33:*.h=0;34:*.hh=0;34:"

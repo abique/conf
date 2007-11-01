@@ -23,6 +23,7 @@ s/revision \([0-9]\+\)\.$/revision '${cyanB}'\1'${white}'\./g
 s/^Restored /'${yellow}'Restored /g
 s/$/'${white}'/g
 s/^U /'${cyan}'U /g
+s/^ U /'${cyan}' U /g
 s/^C /'${red}'C /g
 s/^A /'${green}'A /g
 s/^D /'${magenta}'D /g
