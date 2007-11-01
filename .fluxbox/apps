@@ -5,3 +5,5 @@
 [app] (class=UXTerm)
   [Dimensions]	{564 368}
 [end]
+[app] (name=player) (class=Audacious) (role=player)
+[end]
