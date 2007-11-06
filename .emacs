@@ -3,7 +3,10 @@
     (load "/usr/share/emacs/site-lisp/site-gentoo"))
 (if (file-readable-p "/usr/share/emacs/site-lisp/debian-startup.el")
     (load "/usr/share/emacs/site-lisp/debian-startup"))
-;;(load "~/emacs.d/d-mode.el")
+
+;; Our own modes repository
+(setq load-path (cons "~/emacs.d/" load-path))
+(setq load-path (cons "~/emacs.d/modes" load-path))
 
 ;; UTF-8
 (setq locale-coding-system 'utf-8)
@@ -21,7 +24,7 @@
 (scroll-bar-mode nil)                 ; no scroll bar
 (menu-bar-mode -1)                    ; no menu bar
 (tool-bar-mode -1)                    ; no tool bar
-(setq frame-title-format "%b")        ; titlebar shows buffer's name
+(setq frame-title-format "<[ %b ]>")  ; titlebar shows buffer's name
 (global-font-lock-mode t)             ; syntax highlighting
 (setq font-lock-maximum-decoration t) ; maximum decoration for all modes
 (show-paren-mode t)                   ; show opposing paren while hovering
@@ -29,7 +32,7 @@
 (delete-selection-mode t)             ; typing removes highlighted text
 (line-number-mode t)                  ; display line number in modeline
 (column-number-mode t)                ; display column number in modeline
-;;(setq display-time-day-and-date t)    ; display date in modeline
+;;(setq display-time-day-and-date t)  ; display date in modeline
 (setq display-time-24hr-format t)     ; european 24h format
 (display-time)                        ; display time in modeline
 (auto-compression-mode t)             ; open compressed files
@@ -69,9 +72,9 @@
 (add-hook 'sh-mode-common-hook (lambda () (highlight-regexp " +$" "hi-pink")))
 
 ;; cmake mode
-(load-file "~/emacs.d/cmake-mode.el")
+(load-file "~/emacs.d/modes/cmake-mode.el")
 ;; pabbrev mode
-(load-file "~/emacs.d/pabbrev.el")
+(load-file "~/emacs.d/modes/pabbrev.el")
 (global-pabbrev-mode)
 
 ;; file extensions
@@ -107,6 +110,9 @@
       '(lambda()
 	 (local-set-key (kbd "<return>") 'newline-and-indent)))
 
+;; Java mode
+(setq java-basic-offset 2)
+
 (add-to-list 'load-path "~/emacs.d")
 
 ;; COLOR THEME
@@ -118,7 +124,8 @@
 ;;(color-theme-comidia)
 ;;(color-theme-taylor)
 ;;(color-theme-classic)
-(color-theme-dark-blue2)
+;;(color-theme-dark-blue2)
+;;(color-theme-clarity)
 
 (defun insert-header-guard ()
   (interactive)
@@ -181,7 +188,6 @@ With optional argument, move forward N-1 lines first."
             (lambda () (local-set-key "\C-cH" 'hs-hide-all)))
 
 ;; key bindings
-
 (global-set-key [f1] 'indent-buffer)
 (global-set-key [f2] 'delete-trailing-whitespace)
 (global-set-key [f4] 'kill-this-buffer)
@@ -191,17 +197,21 @@ With optional argument, move forward N-1 lines first."
 (global-set-key [f8] 'next-error)
 (global-set-key [f12] (lambda () (interactive) (manual-entry (current-word))))
 (global-set-key "\C-a" 'beginning-of-line-context)
-;; Navigation
-(global-set-key [M-left] 'windmove-left)                ; move to left windnow
-(global-set-key [M-right] 'windmove-right)              ; move to right window
-(global-set-key [M-up] 'windmove-up)                    ; move to upper window
-(global-set-key [M-down] 'windmove-down)
-(global-set-key [?\C-9] 'windmove-left)                ; move to left windnow
-(global-set-key [?\C-0] 'windmove-right)              ; move to right window
-(global-set-key [?\C-(] 'windmove-up)                    ; move to upper window
-(global-set-key [?\C-)] 'windmove-down)
-;;(global-set-key [(control tab)] 'other-window)          ; Ctrl-Tab = Next buffer
+(global-set-key "" 'backward-delete-char)
+(global-set-key "" 'compile)
+(global-set-key "" 'goto-line)
 
+;; Navigation
+(global-set-key [M-left] 'windmove-left)   ; move to left windnow
+(global-set-key [M-right] 'windmove-right) ; move to right window
+(global-set-key [M-up] 'windmove-up)       ; move to upper window
+(global-set-key [M-down] 'windmove-down)
+(global-set-key [?\C-9] 'windmove-left)  ; move to left windnow
+(global-set-key [?\C-0] 'windmove-right) ; move to right window
+(global-set-key [?\C-=] 'windmove-up)    ; move to upper window
+(global-set-key [?\C--] 'windmove-down)
+(global-set-key [(control tab)] 'next-buffer) ; Ctrl-Tab = Next buffer
+(global-set-key [(control backtab)] 'prev-buffer) ; Ctrl-Tab = Next buffer
 
 (defun indent-buffer()
   (interactive)
@@ -273,18 +283,6 @@ With optional argument, move forward N-1 lines first."
 ;;
 (setq user-nickname "Alexandre Bique")
 (setq user-full-name "Alexandre Bique")
-(load-file "~/emacs.d/div.el")
-
-;; Our own modes repository
-(setq load-path (cons "~/emacs.d/" load-path))
-
-;; F6100
-(if (file-exists-p "~/.emacs.d/f6100_mode.el")
-    (load-file "~/.emacs.d/f6100_mode.el"))
-
-;; Tiger
-(autoload 'tiger-mode "tiger-mode" "tiger editing mode." t)
-(add-to-list 'auto-mode-alist '("\\.tig$" . tiger-mode))
 
 ;; Flex
 (autoload 'flex-mode "flex-mode" "flex editing mode." t)
@@ -302,7 +300,4 @@ With optional argument, move forward N-1 lines first."
 (setq auto-mode-alist
       (cons '("\\.xml" . sgml-mode) auto-mode-alist))
 
-;; Sessions
-
-(desktop-load-default)
-(desktop-read)
+(load "~/emacs.d/modes/d-mode.el")
