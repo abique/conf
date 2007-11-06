@@ -1,6 +1,6 @@
 function svndiff()
 {
-    $(which svn) diff "$@" | vim -
+    $(which svn) diff "$@" | colordiff
 }
 
 function svnst()
@@ -40,7 +40,8 @@ s/^A /'${green}'A /g
 
 function svnci()
 {
-    $(which svn) ci "$@" | sed '
+    tmp=$($(which svn) ci "$@")
+    echo "${tmp}" | sed '
 s/revision \([0-9]\+\)\.$/revision '${cyanB}'\1'${white}'\./g
 s/$/'${white}'/g
 s/^Sending /'${green}'Sending /g
