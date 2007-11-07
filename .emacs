@@ -74,8 +74,8 @@
 ;; cmake mode
 (load-file "~/emacs.d/modes/cmake-mode.el")
 ;; pabbrev mode
-(load-file "~/emacs.d/modes/pabbrev.el")
-(global-pabbrev-mode)
+;;(load-file "~/emacs.d/modes/pabbrev.el")
+;;(global-pabbrev-mode)
 
 ;; file extensions
 (add-to-list 'auto-mode-alist '("\\.l$" . flex-mode))
@@ -114,6 +114,7 @@
 (setq java-basic-offset 2)
 
 (add-to-list 'load-path "~/emacs.d")
+(add-to-list 'load-path "~/emacs.d/modes")
 
 ;; COLOR THEME
 ;;(add-to-list 'load-path "~/emacs.d/color-theme")
@@ -283,6 +284,18 @@ With optional argument, move forward N-1 lines first."
 ;;
 (setq user-nickname "Alexandre Bique")
 (setq user-full-name "Alexandre Bique")
+;(load-file "~/emacs.d/modes/div.el")
+
+;; Our own modes repository
+(setq load-path (cons "~/emacs.d/" load-path))
+
+;; F6100
+(if (file-exists-p "~/.emacs.d/modes/f6100_mode.el")
+    (load-file "~/.emacs.d/modes/f6100_mode.el"))
+
+;; Tiger
+(autoload 'tiger-mode "tiger-mode" "tiger editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.tig$" . tiger-mode))
 
 ;; Flex
 (autoload 'flex-mode "flex-mode" "flex editing mode." t)

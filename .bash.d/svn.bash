@@ -1,6 +1,6 @@
 function svndiff()
 {
-    $(which svn) diff "$@" | colordiff
+    $(which svn) diff "$@" | colordiff | less -R
 }
 
 function svnst()
