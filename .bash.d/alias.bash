@@ -18,6 +18,12 @@ alias df='df -h'
 alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
 alias emacs='emacs -fn 7x14'
+
+function ema()
+{
+    emacs "$@" & disown
+}
+
 alias e='emacs -Q -nw -eval "(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)"'
 alias em='emacs -nw'
 alias ..='cd ..'
