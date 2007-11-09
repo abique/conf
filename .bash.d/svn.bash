@@ -41,7 +41,7 @@ s/^A /'${green}'A /g
 function svnci()
 {
     for i in $(seq 1 $#); do
-        if test $(eval echo \$$i) -eq '-m' ; then
+        if test $(eval echo \$$i) = '-m' ; then
             $(which svn) ci "$@" | sed '
 s/revision \([0-9]\+\)\.$/revision '${cyanB}'\1'${white}'\./g
 s/$/'${white}'/g
