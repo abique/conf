@@ -40,14 +40,19 @@ s/^A /'${green}'A /g
 
 function svnci()
 {
-    tmp=$($(which svn) ci "$@")
-    echo "${tmp}" | sed '
+    for i in $(seq 1 $#); do
+        if test $(eval echo \$$i) -eq '-m' ; then
+            $(which svn) ci "$@" | sed '
 s/revision \([0-9]\+\)\.$/revision '${cyanB}'\1'${white}'\./g
 s/$/'${white}'/g
 s/^Sending /'${green}'Sending /g
 s/^Adding /'${yellow}'Adding /g
 s/^Deleting /'${red}'Deleting /g
 '
+            return
+        fi
+    done
+    $(which svn) ci "$@"
 }
 
 function svn()
@@ -56,7 +61,7 @@ function svn()
         st)     shift; svnst "$@";;
         diff)   shift; svndiff "$@";;
         up)     shift; svnup "$@";;
-	ci)	shift; svnci "$@";;
+	ci)	shift; svnci "$@";; # breaks editors :/
         add)    shift; svnadd "$@";;
         *)      $(which svn) "$@";;
     esac
