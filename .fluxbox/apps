@@ -7,3 +7,8 @@
 [end]
 [app] (name=player) (class=Audacious) (role=player)
 [end]
+[app] (name=win) (class=Xpdf)
+  [Dimensions]	{956 994}
+  [Position]	(UPPERLEFT)	{322 14}
+[end]
+

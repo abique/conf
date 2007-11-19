@@ -1,9 +1,13 @@
 !mouse actions added by fluxbox-update_configs
+OnWindow Mod4 Mouse1 :StartMoving
+OnWindow Mod4 Mouse3 :StartResizing NearestCorner
+
+!mouse actions added by fluxbox-update_configs
 OnDesktop Mouse1        :hideMenus
 OnDesktop Mouse2        :workspaceMenu
 OnDesktop Mouse3        :rootMenu
-OnDesktop Mouse4        :nextWorkspace
-OnDesktop Mouse5        :prevWorkspace
+!OnDesktop Mouse4        :nextWorkspace
+!OnDesktop Mouse5        :prevWorkspace
 
 Control Mod4 Delete       :Reconfigure
 Control Mod4 Shift Delete :Restart
@@ -59,7 +63,7 @@ Mod4 q		       :Close
 Mod4 d		       :ToggleDecor
 
 Mod4 e		       :Exec emacs
-Mod4 t		       :Exec uxterm
+Mod4 t		       :Exec urxvtc
 Mod4 r		       :Exec fbrun -font 7x14 -fg yellow -bg black -w 600
 Mod4 b		       :Exec fbrun -font 7x14 -fg yellow -bg black -w 600 -title "Enter the url" -text "firefox " -hf ~/.fluxbox/firefox_history
 Mod4 k		       :Exec xkill
@@ -67,5 +71,6 @@ Mod4 i		       :Exec firefox
 Mod4 m		       :Exec thunderbird
 Mod4 w		       :Exec fbsetbg -r ~/wallpapers/fractals/
 Mod4 l                 :Exec xscreensaver-command -lock
-Mod4 h                 :Exec uxterm -e htop
-Mod4 n                 :Exec uxterm -e slrn
+Mod4 h                 :Exec urxvtc -e htop
+Mod4 n                 :Exec urxvtc -e slrn
+
