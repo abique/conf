@@ -92,6 +92,9 @@
 (c-set-offset 'case-label '+)         ; make each case line indent from switch
 (c-set-offset 'brace-list-open '0)
 (c-set-offset 'statement-case-open '0)
+(c-set-offset 'block-open 2)          ; after '{' indentation
+(c-set-offset 'statement-block-intro 2)
+(setq c-basic-offset 4)
 (setq default-indicate-empty-lines t) ; show the end of the file
 (setq c-font-lock-extra-types
       (append
@@ -111,7 +114,7 @@
 	 (local-set-key (kbd "<return>") 'newline-and-indent)))
 
 ;; Java mode
-(setq java-basic-offset 2)
+(setq java-basic-offset 4)
 
 (add-to-list 'load-path "~/emacs.d")
 (add-to-list 'load-path "~/emacs.d/modes")
