@@ -1,4 +1,4 @@
-XTerm*background:  #171717
+XTerm*background:  #000000
 XTerm*foreground:  #7f7f7f
 XTerm*color0:      #000000
 XTerm*color1:      #9e1828
@@ -16,8 +16,9 @@ XTerm*color12:     #4186be
 XTerm*color13:     #cf9ebe
 XTerm*color14:     #71bebe
 XTerm*color15:     #ffffff
-XTerm*faceName:    Monospace
-XTerm*faceSize:    8
+!XTerm*faceName:    Monospace
+!XTerm*faceSize:    8
+XTerm*font:        7x14
 XTerm*metaSendsEscape: yes
 
 UXTerm*background:  #000000
@@ -38,9 +39,9 @@ UXTerm*color12:     #4186be
 UXTerm*color13:     #cf9ebe
 UXTerm*color14:     #71bebe
 UXTerm*color15:     #ffffff
-UXTerm*faceName:    monospace
-UXTerm*faceSize:    8
-!UXTerm*font:        7x14
+!UXTerm*faceName:    monospace
+!UXTerm*faceSize:    8
+UXTerm*font:        7x14
 UXTerm*metaSendsEscape: yes
 
 URxvt*background:  #000000
@@ -66,14 +67,14 @@ URxvt*scrollBar: false
 URxvt*transparent: true
 URxvt*tintingType: true
 URxvt*tinting: #ffffff
-URxvt*shading: 80
-
+URxvt*shading: 17
 
 Aterm*scrollBar: false
 Aterm*transparent: true
 Aterm*tintingType: true
 Aterm*tinting: #ffffff
-Aterm*shading: 50
+Aterm*shading: 20
 
-Emacs*font: 7x14
+!Emacs.font: 7x14
+Emacs.font: Bitstream Vera Sans Mono-8
 Emacs.reverseVideo: on
