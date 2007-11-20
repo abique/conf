@@ -26,6 +26,8 @@ s/^U /'${cyan}'U /g
 s/^ U /'${cyan}' U /g
 s/^C /'${red}'C /g
 s/^A /'${green}'A /g
+s/^G /'${yellow}'G /g
+s/^ G /'${yellow}' G /g
 s/^D /'${magenta}'D /g
 '
 }
