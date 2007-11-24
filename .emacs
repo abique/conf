@@ -119,6 +119,10 @@
 (add-to-list 'load-path "~/emacs.d")
 (add-to-list 'load-path "~/emacs.d/modes")
 
+;; Theme
+(set-mouse-color "DarkSalmon")
+(set-cursor-color "DarkTurquoise")
+
 ;; COLOR THEME
 ;;(add-to-list 'load-path "~/emacs.d/color-theme")
 (require 'color-theme)
@@ -222,16 +226,14 @@ With optional argument, move forward N-1 lines first."
   (indent-region (point-min)(point-max) nil))
 
 ;; Compilation
-
 (setq compilation-window-height 14)
 (setq compilation-scroll-output t)
 
 
 ;; gnus
+(setq gnus-summary-line-format "%U%R%z%3t: %-25B%(%-23,23t%) %s\n")
 
-;;(setq gnus-summary-line-format "%U%R%z%3t: %-25B%(%-23,23t%) %s\n")
 ;; elisp functions
-
 (defun yic-ignore (str)
   (or
    (string-match "\\*Buffer List\\*" str)
