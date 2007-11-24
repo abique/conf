@@ -5,7 +5,7 @@ case "$1" in
     openbox) 
             exec openbox-session;;
     fluxbox-svn)
-            echo pouet > titi
+            export FLUXBOX_SVN="TRUE"
             exec ${HOME}/local/bin/startfluxbox;;
     e)
             exec enlightenment_start;;
@@ -16,6 +16,6 @@ case "$1" in
             exec ion3;;
     awesome)
 	    exec awesome;;
-#    fluxbox|*)
-#            exec /usr/bin/startfluxbox;;
+    fluxbox|*)
+            exec /usr/bin/startfluxbox;;
 esac
