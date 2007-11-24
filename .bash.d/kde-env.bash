@@ -1,5 +1,5 @@
 unset KDE_IS_PRELINKED
-export KDEDIR=/usr/kde/3.95.2
+export KDEDIR=/usr/kde/3.9
 export KDEDIRS=/usr:/usr/local:$KDEDIR
 export QTEST_COLORED=1
 export QT_PLUGIN_PATH=$KDEDIR/lib/kde4/plugins/
