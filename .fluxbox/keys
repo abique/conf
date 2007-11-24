@@ -65,13 +65,14 @@ Mod4 d		       :ToggleDecor
 Mod4 e		       :Exec emacs
 Mod4 t		       :Exec urxvtc
 Mod4 Shift p	       :Exec urxvtc -e python
+Mod4 Shift r	       :Exec ruxvtc -e ruby
+Mod4 h                 :Exec urxvtc -e htop
+Mod4 n                 :Exec urxvtc -e slrn
 Mod4 r		       :Exec fbrun -font 7x14 -fg yellow -bg black -w 600
 Mod4 b		       :Exec fbrun -font 7x14 -fg yellow -bg black -w 600 -title "Enter the url" -text "firefox " -hf ~/.fluxbox/firefox_history
 Mod4 k		       :Exec xkill
 Mod4 i		       :Exec firefox
-Mod4 m		       :Exec thunderbird
+Mod4 m		       :Exec icedove
 Mod4 w		       :Exec fbsetbg -r ~/wallpapers/fractals/
 Mod4 l                 :Exec xscreensaver-command -lock
-Mod4 h                 :Exec urxvtc -e htop
-Mod4 n                 :Exec urxvtc -e slrn
 
