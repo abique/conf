@@ -26,6 +26,7 @@ function ema()
 
 alias e='emacs -Q -nw -eval "(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)"'
 alias em='emacs -nw'
+alias gdb='gdb --quiet --tui'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -42,6 +43,6 @@ alias fixme='grep -rn FIXME .'
 alias valgrind_mleak='valgrind --leak-check=full --leak-resolution=high --show-reachable=yes'
 alias svn2cl='svn2cl --break-before-msg=2'
 alias pwgen='pwgen --symbols --secure --num-passwords=5 --capitalize -C --ambiguous 12'
-if which colormake >/dev/null 2>&1; then
+if which colormake >/dev/null 2>&1 && false ; then
     alias make='colormake'
 fi
