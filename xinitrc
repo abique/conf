@@ -1,21 +1,24 @@
+#urxvtd & disown
+#~/wallpapers/random_wallpaper.sh
+#{ sleep 6 && xmodmap ~/.xmodmaprc; } & disown
+
 case "$1" in
-    kde) 
-            source ~/.bash.d/kde-env.bash &&
-            exec /usr/kde/3.95.2/bin/startkde;;
-    openbox) 
-            exec openbox-session;;
+    kde)
+        source ~/.bash.d/kde-env.bash &&
+        exec ${KDEDIR}/bin/startkde;;
+    openbox)
+        exec openbox-session;;
     fluxbox-svn)
-            export FLUXBOX_SVN="TRUE"
-            exec ${HOME}/local/bin/startfluxbox;;
+        export FLUXBOX_SVN="TRUE"
+        exec ${HOME}/local/bin/startfluxbox;;
     e)
-            exec enlightenment_start;;
-    compiz) 
-            xfce4-panel &
-            exec compiz-manager;;
-    ion)
-            exec ion3;;
+        exec enlightenment_start;;
+    compiz)
+        exec compiz-manager;;
+    ion|ion3)
+        exec ion3;;
     awesome)
-	    exec awesome;;
+	exec awesome;;
     fluxbox|*)
-            exec /usr/bin/startfluxbox;;
+        exec /usr/bin/startfluxbox;;
 esac

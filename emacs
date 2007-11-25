@@ -53,6 +53,7 @@
   (ido-mode t))
 (when (string-match "^23." emacs-version)
   (ido-mode t))
+(icomplete-mode)
 
 ;; C/C++ HL mode
 ;;(add-hook 'c-mode-common-hook (lambda () (highline-local-mode 1)))
