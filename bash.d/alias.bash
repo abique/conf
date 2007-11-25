@@ -1,10 +1,5 @@
-######################################
-## My configuration
-######################################
-
 unalias -a
 
-# ls/df/du human readable
 if [[ `uname -s` = "FreeBSD" ]] ; then
     alias ls="ls -GhF"
 elif [[ `uname -s` = "Linux" ]] ; then
@@ -12,8 +7,12 @@ elif [[ `uname -s` = "Linux" ]] ; then
 fi
 alias la='ls -a'
 alias l='ls -l'
+alias lt='l -t'
 alias ll='la -l'
-alias ssh_epita='ssh -X bique_a@ssh.epita.fr'
+alias llt='ll -t'
+alias ssh_epita='ssh ssh.epita.fr ssh freebsd' # not working :/
+alias ssh_acu='ssh ssh.epita.fr ssh acu.epita.fr' # not working :/
+alias ssh_sj='ssh intranet.smartjog.net'
 alias df='df -h'
 alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"

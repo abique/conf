@@ -5,8 +5,8 @@
     (load "/usr/share/emacs/site-lisp/debian-startup"))
 
 ;; Our own modes repository
-(setq load-path (cons "~/emacs.d/" load-path))
-(setq load-path (cons "~/emacs.d/modes" load-path))
+(setq load-path (cons "~/.emacs.d/" load-path))
+(setq load-path (cons "~/.emacs.d/modes" load-path))
 
 ;; UTF-8
 (setq locale-coding-system 'utf-8)
@@ -72,9 +72,9 @@
 (add-hook 'sh-mode-common-hook (lambda () (highlight-regexp " +$" "hi-pink")))
 
 ;; cmake mode
-(load-file "~/emacs.d/modes/cmake-mode.el")
+(load-file "~/.emacs.d/modes/cmake-mode.el")
 ;; pabbrev mode
-;;(load-file "~/emacs.d/modes/pabbrev.el")
+;;(load-file "~/.emacs.d/modes/pabbrev.el")
 ;;(global-pabbrev-mode)
 
 ;; file extensions
@@ -116,15 +116,15 @@
 ;; Java mode
 (setq java-basic-offset 4)
 
-(add-to-list 'load-path "~/emacs.d")
-(add-to-list 'load-path "~/emacs.d/modes")
+(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/modes")
 
 ;; Theme
 (set-mouse-color "DarkSalmon")
-(set-cursor-color "DarkTurquoise")
+(set-cursor-color "DarkOrange3")
 
 ;; COLOR THEME
-;;(add-to-list 'load-path "~/emacs.d/color-theme")
+;;(add-to-list 'load-path "~/.emacs.d/color-theme")
 (require 'color-theme)
 (if (fboundp 'color-theme-initialize) (color-theme-initialize))
 ;;(color-theme-charcoal-black)
@@ -289,10 +289,10 @@ With optional argument, move forward N-1 lines first."
 ;;
 (setq user-nickname "Alexandre Bique")
 (setq user-full-name "Alexandre Bique")
-;(load-file "~/emacs.d/modes/div.el")
+;(load-file "~/.emacs.d/modes/div.el")
 
 ;; Our own modes repository
-(setq load-path (cons "~/emacs.d/" load-path))
+(setq load-path (cons "~/.emacs.d/" load-path))
 
 ;; F6100
 (if (file-exists-p "~/.emacs.d/modes/f6100_mode.el")
@@ -318,4 +318,4 @@ With optional argument, move forward N-1 lines first."
 (setq auto-mode-alist
       (cons '("\\.xml" . sgml-mode) auto-mode-alist))
 
-(load "~/emacs.d/modes/d-mode.el")
+(load "~/.emacs.d/modes/d-mode.el")
