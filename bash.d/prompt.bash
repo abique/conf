@@ -35,14 +35,14 @@ function prompt_babali()
     fi
 
 # Change the window title of X terminals
-    case $TERM in
-	*xterm*|*rxvt*|Eterm)
-	    echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}\007"
-	    ;;
-	screen)
-	    echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}\033\\"
-	    ;;
-    esac
+#     case $TERM in
+# 	*xterm*|*rxvt*|Eterm)
+# 	    echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}\007"
+# 	    ;;
+# 	screen)
+# 	    echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}\033\\"
+# 	    ;;
+#     esac
 }
 
 PROMPT_COMMAND="prompt_babali"
