@@ -1,8 +1,12 @@
+#! /bin/bash
+
 #urxvtd & disown
 #~/wallpapers/random_wallpaper.sh
 #{ sleep 6 && xmodmap ~/.xmodmaprc; } & disown
 
 case "$1" in
+    wmaker)
+	exec wmaker;;
     kde)
         source ~/.bash.d/kde-env.bash &&
         exec ${KDEDIR}/bin/startkde;;

@@ -62,7 +62,8 @@ URxvt*color12:     #4186be
 URxvt*color13:     #cf9ebe
 URxvt*color14:     #71bebe
 URxvt*color15:     #ffffff
-URxvt*font:	   xft:Monospace:size=8
+!URxvt*font:	   xft:Monospace:size=8
+URxvt*font:	   7x14
 URxvt*scrollBar: false
 URxvt*transparent: true
 URxvt*tintingType: true
@@ -75,6 +76,6 @@ Aterm*tintingType: true
 Aterm*tinting: #ffffff
 Aterm*shading: 20
 
-!Emacs.font: 7x14
-Emacs.font: Bitstream Vera Sans Mono-8
+Emacs.font: 7x14
+!Emacs.font: Bitstream Vera Sans Mono-8
 Emacs.reverseVideo: on

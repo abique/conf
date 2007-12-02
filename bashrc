@@ -1,3 +1,4 @@
+#! /bin/bash
 # BabaLi's bashrc <bique.alexandre@gmail.com>
 
 # Test for an interactive shell.  There is no need to set anything

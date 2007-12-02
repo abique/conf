@@ -33,7 +33,7 @@ xrdb -merge ~/.Xdefaults
 # xsetroot -cursor_name right_ptr
 #
 # Change your keymap:
-{ sleep 6 && xmodmap ~/.xmodmaprc ; } &
+{ sleep 3 && xmodmap ~/.xmodmaprc ; } &
 
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
