@@ -1,7 +1,7 @@
 "
 " Vars
 "
-let login_epita = "detour_o"	" login epita
+let login_epita = "bique_a"	" login epita
 
 "
 " General
@@ -16,7 +16,7 @@ set cf				" enable error files and erro jumping
 " Theme
 "
 syntax on			" enable syntax highlighting
-colorscheme snp			" theme: snp
+colorscheme inkpot		" theme: snp
 
 "
 " Backup
