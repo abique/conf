@@ -1,55 +1,24 @@
-# fluxbox startup-script:
-#
-# Lines starting with a '#' are ignored.
+#! /bin/bash
 
-# You can set your favourite wallpaper here if you don't want
-# to do it from your style.
-#
-# fbsetbg -f /home/babali/pictures/wallpaper.png
-#
-# This sets a black background
-
-# /usr/bin/fbsetroot -solid black
-#(cd /home/babali/wallpapers;./random_wallpapers.sh)
 fbsetbg -r ~/wallpapers/fractals/ || true
+# /usr/lib/misc/xscreensaver/busyspheres --root&
 
-# This shows the fluxbox-splash-screen
-# fbsetbg -C /usr/share/fluxbox/splash.jpg
-
-# Other examples. Check man xset for details.
-#
-# Turn off beeps:
-xset -b
-#
-# Increase the keyboard repeat-rate:
-xset r rate 195 35
+xset -b            # Turn off beeps:
+xset r rate 195 35 # Increase the keyboard repeat-rate:
 #xrandr -s 1280x1024
+
 xrdb -merge ~/.Xdefaults
-#
-# Your own fonts-dir:
-# xset +fp "/home/babali/.fonts"
-#
+
 # Your favourite mouse cursor:
 # xsetroot -cursor_name right_ptr
-#
-# Change your keymap:
-{ sleep 3 && xmodmap ~/.xmodmaprc ; } &
 
-# Applications you want to run with fluxbox.
-# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
-#
-# unclutter -idle 2 &
-# wmnd &
-# wmsmixer -w &
-# idesk &
-# /usr/lib/misc/xscreensaver/busyspheres --root&
+xmodmap ~/.xmodmaprc
+
 urxvtd -f &
+if which soulmebaby 2>/dev/null >/dev/null ; then
+   soulmebaby & disown
+fi
 
-# And last but not least we start fluxbox.
-# Because it is the last app you have to run it with ''exec'' before it.
-
-# exec /usr/bin/fluxbox
-# or if you want to keep a log:
 if [[ "${FLUXBOX_SVN}" = "TRUE" ]] ; then
     exec /home/babali/local/bin/fluxbox -log "/home/babali/.fluxbox/log"
 else

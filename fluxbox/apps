@@ -1,14 +1,16 @@
-[app] (class=FbRun)
+[app] (class=FbRun) (transient=no)
   [Position]	(UPPERLEFT)	{331 500}
   [Deco]	{NORMAL}
 [end]
-[app] (class=UXTerm)
+[app] (class=UXTerm) (transient=no)
   [Dimensions]	{564 368}
 [end]
-[app] (name=player) (class=Audacious) (role=player)
+[app] (name=player) (class=Audacious) (role=player) (transient=no)
 [end]
-[app] (name=win) (class=Xpdf)
+[app] (name=win) (class=Xpdf) (transient=no)
   [Dimensions]	{956 994}
   [Position]	(UPPERLEFT)	{322 14}
 [end]
-
+[app] (name=soulmebaby) (class=Soulmebaby) (transient=no)
+  [Dimensions]	{286 1006}
+[end]

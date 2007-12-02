@@ -25,7 +25,6 @@ if [[ $TERM = "linux" ]] ; then
 fi
 
 
-
 my_source ~/.bash.d/alias.bash
 my_source ~/.bash.d/env.bash
 my_source ~/.bash.d/colors.bash
