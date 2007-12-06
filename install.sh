@@ -26,6 +26,7 @@ for file in		\
     toprc		\
     screenrc            \
     vimrc               \
+    vim			\
     Xdefaults           \
     xinitrc		\
     xmodmaprc		\
