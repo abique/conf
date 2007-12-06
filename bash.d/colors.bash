@@ -13,3 +13,8 @@ blueB=$(echo -ne "\e[1;34m")
 magentaB=$(echo -ne "\e[1;35m")
 cyanB=$(echo -ne "\e[1;36m")
 whiteB=$(echo -ne "\e[1m")
+
+function color()
+{
+    sed s/"\($2\)"/$(eval echo -n \$$1)'\1'$(echo -en "\e[m")/g
+}
