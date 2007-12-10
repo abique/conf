@@ -13,6 +13,7 @@ s/^!/'${magenta}'!/g
 s/^\?/'${yellow}'\?/g
 s/^A/'${green}'A/g
 s/^D /'${red}'D /g
+s/^C /'${redB}'C /g
 '
 }
 

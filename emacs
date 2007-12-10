@@ -126,8 +126,8 @@
 
 ;; COLOR THEME
 ;;(add-to-list 'load-path "~/.emacs.d/color-theme")
-(require 'color-theme)
-(if (fboundp 'color-theme-initialize) (color-theme-initialize))
+;; (require 'color-theme)
+;; (if (fboundp 'color-theme-initialize) (color-theme-initialize))
 ;;(color-theme-charcoal-black)
 ;;(color-theme-late-night)
 ;;(color-theme-comidia)
@@ -284,7 +284,7 @@ With optional argument, move forward N-1 lines first."
 
 (defun do_insert_time ()
   (interactive)
- (insert-string (current-time-string)))
+ (insert (current-time-string)))
 ;;
 ;; Programation modes
 ;;
