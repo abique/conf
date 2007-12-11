@@ -1,13 +1,13 @@
 ################################################################################
 
-.font:                                  sans-7
-menu.frame.font:			sans-7
-menu.title.font:			sans-7
-toolbar.clock.font:			sans-7
-toolbar.workspace.font:			sans-7
-toolbar.iconbar.focused.font:		sans-7
-toolbar.iconbar.unfocused.font:		sans-7
-window.font:				sans-7
+.font:                                  7x13
+menu.frame.font:			7x13
+menu.title.font:			7x13
+toolbar.clock.font:			7x13
+toolbar.workspace.font:			7x13
+toolbar.iconbar.focused.font:		7x13
+toolbar.iconbar.unfocused.font:		7x13
+window.font:				7x13
 
 ################################################################################
 
