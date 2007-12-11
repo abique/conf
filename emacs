@@ -40,15 +40,15 @@
 (fset 'yes-or-no-p 'y-or-n-p)         ; y or n will do
 (setq default-major-mode 'text-mode)  ; change default major mode to text
 (setq ring-bell-function 'ignore)     ; turn the alarm totally off
-(setq-default indent-tabs-mode nil)   ; spaces instead of tabs
+;;(setq-default indent-tabs-mode nil)   ; spaces instead of tabs
 (setq make-backup-files nil)          ; no backupfile
 (setq delete-auto-save-files t)       ; delete unnecessary autosave files
 (setq delete-old-versions t)          ; delete oldversion file
 (setq next-line-add-newlines nil)     ; prevents new line after eof
 (setq default_indice_empty_lines t)   ; show lines at end of file
 ;;(normal-erase-is-backspace-mode)    ; delete touch work
-;;(auto-image-file-mode)              ; to see picture in emacs
-;;(dynamic-completion-mode)           ; dynamic completion
+(auto-image-file-mode)                ; to see picture in emacs
+(dynamic-completion-mode)             ; dynamic completion
 (when (string-match "^22." emacs-version)
   (ido-mode t))
 (when (string-match "^23." emacs-version)
@@ -319,4 +319,4 @@ With optional argument, move forward N-1 lines first."
 (setq auto-mode-alist
       (cons '("\\.xml" . sgml-mode) auto-mode-alist))
 
-(load "~/.emacs.d/modes/d-mode.el")
+;(load "~/.emacs.d/modes/d-mode.el")
