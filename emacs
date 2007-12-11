@@ -296,27 +296,27 @@ With optional argument, move forward N-1 lines first."
 (setq load-path (cons "~/.emacs.d/" load-path))
 
 ;; F6100
-(if (file-exists-p "~/.emacs.d/modes/f6100_mode.el")
-    (load-file "~/.emacs.d/modes/f6100_mode.el"))
+;;; (if (file-exists-p "~/.emacs.d/modes/f6100_mode.el")
+;;;     (load-file "~/.emacs.d/modes/f6100_mode.el"))
 
 ;; Tiger
-(autoload 'tiger-mode "tiger-mode" "tiger editing mode." t)
-(add-to-list 'auto-mode-alist '("\\.tig$" . tiger-mode))
+;;; (autoload 'tiger-mode "tiger-mode" "tiger editing mode." t)
+;;; (add-to-list 'auto-mode-alist '("\\.tig$" . tiger-mode))
 
 ;; Flex
-(autoload 'flex-mode "flex-mode" "flex editing mode." t)
-(add-to-list 'auto-mode-alist '("\\.l$" . flex-mode))
-(add-to-list 'auto-mode-alist '("\\.ll$" . flex-mode))
+;;; (autoload 'flex-mode "flex-mode" "flex editing mode." t)
+;;; (add-to-list 'auto-mode-alist '("\\.l$" . flex-mode))
+;;; (add-to-list 'auto-mode-alist '("\\.ll$" . flex-mode))
 
-;; Bison
-(autoload 'bison-mode "bison-mode" "bison editing mode." t)
-(add-to-list 'auto-mode-alist '("\\.y$" . bison-mode))
-(add-to-list 'auto-mode-alist '("\\.yy$" . bison-mode))
+;;; ;; Bison
+;;; (autoload 'bison-mode "bison-mode" "bison editing mode." t)
+;;; (add-to-list 'auto-mode-alist '("\\.y$" . bison-mode))
+;;; (add-to-list 'auto-mode-alist '("\\.yy$" . bison-mode))
 
-;; XML and traces
-(setq auto-mode-alist
-      (cons '("\\.trace$" . sgml-mode) auto-mode-alist))
-(setq auto-mode-alist
-      (cons '("\\.xml" . sgml-mode) auto-mode-alist))
+;;; ;; XML and traces
+;;; (setq auto-mode-alist
+;;;       (cons '("\\.trace$" . sgml-mode) auto-mode-alist))
+;;; (setq auto-mode-alist
+;;;       (cons '("\\.xml" . sgml-mode) auto-mode-alist))
 
 ;(load "~/.emacs.d/modes/d-mode.el")
