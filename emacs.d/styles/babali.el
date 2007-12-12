@@ -1,5 +1,5 @@
 ;; Create my personal style.
-(defconst smartjog-c-style
+(defconst babali-c-style
   '(
     (c-tab-always-indent . t)
     (c-comment-only-line-offset . 0)
@@ -11,13 +11,13 @@
                                (label after)
                                (access-label after)))
     (c-cleanup-list . (scope-operator empty-defun-braces defun-close-semi))
-    (c-basic-offset . 4)
-    (c-offsets-alist . ((substatement-open . 2)
+    (c-basic-offset . 3)
+    (c-offsets-alist . ((substatement-open . 0)
                         (case-label . +)
                         (statement-case-open . 0)
-                        (block-open . 2)
+                        (block-open . 3)
                         (brace-list-open . 0)
-                        (statement-block-intro 2)
+                        (statement-block-intro 3)
                         ))
-    (c-echo-syntactic-information-p . t)) "Smartjog Programming Style")
-(c-add-style "smartjog" smartjog-c-style)
+    (c-echo-syntactic-information-p . t)) "Babali Programming Style")
+(c-add-style "babali" babali-c-style)
