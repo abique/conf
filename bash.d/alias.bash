@@ -14,6 +14,7 @@ function lcd()
 {
     cd "$1" && ls
 }
+alias pcd='cd -P'
 alias ssh_epita='ssh ssh.epita.fr ssh freebsd' # not working :/
 alias ssh_acu='ssh ssh.epita.fr ssh acu.epita.fr' # not working :/
 alias ssh_sj='ssh intranet.smartjog.net'
