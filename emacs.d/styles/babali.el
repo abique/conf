@@ -1,7 +1,6 @@
 ;; Create my personal style.
 (defconst babali-c-style
-  '(
-    (c-tab-always-indent . t)
+  '((c-tab-always-indent . t)
     (c-comment-only-line-offset . 0)
     (c-hanging-braces-alist . ((substatement-open after)
                                (brace-list-open)))
@@ -12,12 +11,14 @@
                                (access-label after)))
     (c-cleanup-list . (scope-operator empty-defun-braces defun-close-semi))
     (c-basic-offset . 3)
-    (c-offsets-alist . ((substatement-open . 0)
-                        (case-label . +)
+    (c-offsets-alist . ((substatement . 3)
+			(substatement-open . 0)
+                        (case-label . 0)
                         (statement-case-open . 0)
                         (block-open . 3)
                         (brace-list-open . 0)
                         (statement-block-intro 3)
                         ))
-    (c-echo-syntactic-information-p . t)) "Babali Programming Style")
+    (c-echo-syntactic-information-p . t))
+  "Babali Programming Style")
 (c-add-style "babali" babali-c-style)

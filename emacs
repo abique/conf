@@ -89,13 +89,20 @@
 
 ;; C mode
 (add-hook `c-mode-hook `rm-trailing-spaces-always)
-(c-set-offset 'substatement-open 2)   ; change '{' indentation
-(c-set-offset 'case-label '+)         ; make each case line indent from switch
-(c-set-offset 'brace-list-open '0)
-(c-set-offset 'statement-case-open '0)
-(c-set-offset 'block-open 2)          ; after '{' indentation
-(c-set-offset 'statement-block-intro 2)
-(setq c-basic-offset 4)
+
+;;; (c-set-offset 'substatement-open 2)   ; change '{' indentation
+;;; (c-set-offset 'case-label '+)         ; make each case line indent from switch
+;;; (c-set-offset 'brace-list-open '0)
+;;; (c-set-offset 'statement-case-open '0)
+;;; (c-set-offset 'block-open 2)          ; after '{' indentation
+;;; (c-set-offset 'statement-block-intro 2)
+;;; (setq c-basic-offset 4)
+(if (string-equal (system-name) "dhcp-17")
+    (progn (load-file "~/.emacs.d/styles/smartjog.el")
+	   (setq c-default-style "smartjog"))
+  (progn (load-file "~/.emacs.d/styles/babali.el")
+	 (setq c-default-style "babali")))
+
 (setq default-indicate-empty-lines t) ; show the end of the file
 (setq c-font-lock-extra-types
       (append
