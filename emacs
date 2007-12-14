@@ -40,7 +40,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)         ; y or n will do
 (setq default-major-mode 'text-mode)  ; change default major mode to text
 (setq ring-bell-function 'ignore)     ; turn the alarm totally off
-;;(setq-default indent-tabs-mode nil)   ; spaces instead of tabs
+(setq-default indent-tabs-mode nil)   ; spaces instead of tabs
 (setq make-backup-files nil)          ; no backupfile
 (setq delete-auto-save-files t)       ; delete unnecessary autosave files
 (setq delete-old-versions t)          ; delete oldversion file
@@ -97,7 +97,7 @@
 ;;; (c-set-offset 'block-open 2)          ; after '{' indentation
 ;;; (c-set-offset 'statement-block-intro 2)
 ;;; (setq c-basic-offset 4)
-(if (string-equal (system-name) "dhcp-17")
+(if (string-equal (system-name) "dhcp-17.rep.sj")
     (progn (load-file "~/.emacs.d/styles/smartjog.el")
 	   (setq c-default-style "smartjog"))
   (progn (load-file "~/.emacs.d/styles/babali.el")
@@ -132,13 +132,13 @@
 (set-cursor-color "DarkOrange3")
 
 ;; COLOR THEME
-;;(add-to-list 'load-path "~/.emacs.d/color-theme")
-;; (require 'color-theme)
-;; (if (fboundp 'color-theme-initialize) (color-theme-initialize))
+(add-to-list 'load-path "~/.emacs.d/color-theme")
+(require 'color-theme)
+(if (fboundp 'color-theme-initialize) (color-theme-initialize))
 ;;(color-theme-charcoal-black)
 ;;(color-theme-late-night)
 ;;(color-theme-comidia)
-;;(color-theme-taylor)
+(color-theme-taylor)
 ;;(color-theme-classic)
 ;;(color-theme-dark-blue2)
 ;;(color-theme-clarity)

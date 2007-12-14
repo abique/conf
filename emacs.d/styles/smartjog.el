@@ -17,7 +17,7 @@
                         (statement-case-open . 0)
                         (block-open . 2)
                         (brace-list-open . 0)
-                        (statement-block-intro 2)
+                        (statement-block-intro . 2)
                         ))
     (c-echo-syntactic-information-p . t)) "Smartjog Programming Style")
 (c-add-style "smartjog" smartjog-c-style)
