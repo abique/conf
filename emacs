@@ -327,3 +327,23 @@ With optional argument, move forward N-1 lines first."
 ;;;       (cons '("\\.xml" . sgml-mode) auto-mode-alist))
 
 ;(load "~/.emacs.d/modes/d-mode.el")
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(ecb-auto-expand-tag-tree (quote all))
+ '(ecb-compile-window-height 10)
+ '(ecb-compile-window-temporally-enlarge (quote after-selection))
+ '(ecb-compile-window-width (quote edit-window))
+ '(ecb-layout-name "left3")
+ '(ecb-options-version "2.32")
+ '(ecb-source-path (quote ("/home/babali/epita/yaka/Chess2009/work/ref" "/home/babali/develop/netsoul")))
+ '(ecb-tree-expand-symbol-before t)
+ '(ecb-windows-width 45))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ )
