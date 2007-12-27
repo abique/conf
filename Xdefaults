@@ -65,8 +65,8 @@ URxvt*color15:     #ffffff
 !URxvt*font:	   xft:Monospace:size=8
 URxvt*font:	   7x13
 URxvt*scrollBar: false
-URxvt*transparent: true
-URxvt*tintingType: true
+URxvt*transparent: false
+URxvt*tintingType: false
 URxvt*tinting: #ffffff
 URxvt*shading: 17
 
@@ -76,6 +76,6 @@ Aterm*tintingType: true
 Aterm*tinting: #ffffff
 Aterm*shading: 20
 
-Emacs.font: 7x13
+Emacs.font: 7x13bold
 !Emacs.font: Bitstream Vera Sans Mono-8
-Emacs.reverseVideo: on
+Emacs.reverseVideo: off
