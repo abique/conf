@@ -50,3 +50,4 @@ alias pwgen='pwgen --symbols --secure --num-passwords=5 --capitalize -C --ambigu
 if which colormake >/dev/null 2>&1 && false ; then
     alias make='colormake'
 fi
+alias soulmebaby_sql='sqlite3 ~/.config/soulmebaby/database.sqlite'
