@@ -1,7 +1,7 @@
 export HISTFILESIZE=10042
 export HISTIGNORE='ls:ll:la:l'
 export INPUTRC="~/.inputrc"
-export EDITOR="emacs -nw -Q -eval \"(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)\""
+export EDITOR="emacs -nw -Q -eval '(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)'"
 #export EDITOR="vim"
 export DEBEMAIL="alexandre.bique@smartjog.com"
 export DEBFULLNAME="Alexandre Bique"
@@ -18,3 +18,13 @@ fi
 export COLORTERM="yes"
 export GTK2_RC_FILES=$HOME/.gtkrc-2.0
 export LS_COLORS="${LS_COLORS}:*.c=0;33:*.cc=0;33:*.d=0;33:*.h=0;36:*.hh=0;36:*.pkg.sj=1;35:*.mxf=0;35:*.xml=0;34"
+
+export MANWIDTH='79'
+
+export LESS_TERMCAP_mb=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;44;33m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;32m'
