@@ -340,10 +340,11 @@ With optional argument, move forward N-1 lines first."
  '(ecb-options-version "2.32")
  '(ecb-source-path (quote ("/home/babali/epita/yaka/Chess2009/work/ref" "/home/babali/develop/netsoul")))
  '(ecb-tree-expand-symbol-before t)
- '(ecb-windows-width 45))
+ '(ecb-windows-width 45)
+ '(highlight-current-line-globally t nil (highlight-current-line)))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- )
+ '(highlight-current-line-face ((t (:background "grey10" :inverse-video nil)))))
