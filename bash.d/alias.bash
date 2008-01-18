@@ -51,3 +51,26 @@ if which colormake >/dev/null 2>&1 && false ; then
     alias make='colormake'
 fi
 alias soulmebaby_sql='sqlite3 ~/.config/soulmebaby/database.sqlite'
+
+function b16b64()
+{
+    if [[ $# -eq 0 ]] ; then
+	read HASH
+	HASH=$(echo -n "${HASH}" | cut -f 1 -d ' ')
+    else
+	HASH="$1"
+    fi
+
+    python <<EOF
+import base64
+print base64.b64encode(base64.b16decode('${HASH}', True))
+EOF
+}
+
+function b64b16()
+{
+    python <<EOF
+import base64
+print base64.b16encode(base64.b64decode('$1'))
+EOF
+}
