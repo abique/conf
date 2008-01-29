@@ -54,10 +54,10 @@ Mod4 0                    :FocusRight
 Mod4 plus                 :FocusUp
 Mod4 minus                :FocusDown
 
-Mod4 Control 9            :MoveLeft 5
-Mod4 Control 0            :MoveRight 5
-Mod4 Control minus	  :MoveDown 5
-Mod4 Control equal	  :MoveUp 5
+Mod4 Control 9            :MoveLeft 10
+Mod4 Control 0            :MoveRight 10
+Mod4 Control minus	  :MoveDown 10
+Mod4 Control equal	  :MoveUp 10
 
 Mod4 Shift 9              :ResizeHorizontal -1
 Mod4 Shift 0              :ResizeHorizontal 1
