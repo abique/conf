@@ -41,34 +41,41 @@ Mod4 a                    :ArrangeWindows
 !Mod4 h                   :TileHorizontal 3
 Mod4 Shift a              :ShowDesktop
 Mod4 Shift f              :Fullscreen
+Mod4 q                    :Close
+Mod4 d                    :ToggleDecor
+
 Mod4 Left                 :FocusLeft
 Mod4 Right                :FocusRight
 Mod4 Up                   :FocusUp
 Mod4 Down                 :FocusDown
-Mod4 p                    :FocusLeft
-Mod4 bracketright         :FocusRight
-Mod4 minus                :FocusUp
-Mod4 equal                :FocusUp
-Mod4 bracketleft          :FocusDown
 
-Mod4 Control p            :MoveLeft 5
-Mod4 Control bracketright :MoveRight 5
-Mod4 Control minus	  :MoveUp 5
+Mod4 9                    :FocusLeft
+Mod4 0                    :FocusRight
+Mod4 plus                 :FocusUp
+Mod4 minus                :FocusDown
+
+Mod4 Control 9            :MoveLeft 5
+Mod4 Control 0            :MoveRight 5
+Mod4 Control minus	  :MoveDown 5
 Mod4 Control equal	  :MoveUp 5
-Mod4 Control bracketleft  :MoveDown 5
 
-Mod4 Shift braceleft      :PrevTab
-Mod4 Shift braceright     :NextTab
+Mod4 Shift 9              :ResizeHorizontal -1
+Mod4 Shift 0              :ResizeHorizontal 1
+Mod4 Shift minus	  :ResizeVertical -1
+Mod4 Shift equal	  :ResizeVertical 1
+
+Mod4 braceleft            :PrevTab
+Mod4 braceright           :NextTab
+
 Mod1 Mod4 Left            :ResizeHorizontal -1
 Mod1 Mod4 Right           :ResizeHorizontal 1
 Mod1 Mod4 Up              :ResizeVertical -1
 Mod1 Mod4 Down            :ResizeVertical 1
+
 Mod4 Control Left         :MoveLeft 5
 Mod4 Control Right        :MoveRight 5
 Mod4 Control Up           :MoveUp 5
 Mod4 Control Down         :MoveDown 5
-Mod4 q                    :Close
-Mod4 d                    :ToggleDecor
 
 Mod4 e                    :Exec emacs
 Mod4 t                    :Exec urxvtc
