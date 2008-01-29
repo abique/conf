@@ -1,12 +1,13 @@
 ;; Load gentoo site
-(if (file-readable-p "/usr/share/emacs/site-lisp/site-gentoo.el")
-    (load "/usr/share/emacs/site-lisp/site-gentoo"))
-(if (file-readable-p "/usr/share/emacs/site-lisp/debian-startup.el")
-    (load "/usr/share/emacs/site-lisp/debian-startup"))
+;; (if (file-readable-p "/usr/share/emacs/site-lisp/site-gentoo.el")
+;;     (load "/usr/share/emacs/site-lisp/site-gentoo"))
+;; (if (file-readable-p "/usr/share/emacs/site-lisp/debian-startup.el")
+;;     (load "/usr/share/emacs/site-lisp/debian-startup"))
 
 ;; Our own modes repository
 (setq load-path (cons "~/.emacs.d/" load-path))
 (setq load-path (cons "~/.emacs.d/modes" load-path))
+(setq load-path (cons "~/.emacs.d/modes/color-theme" load-path))
 
 ;; UTF-8
 (setq locale-coding-system 'utf-8)
@@ -342,6 +343,7 @@ With optional argument, move forward N-1 lines first."
  '(ecb-tree-expand-symbol-before t)
  '(ecb-windows-width 45)
  '(highlight-current-line-globally t nil (highlight-current-line)))
+
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
