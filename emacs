@@ -56,6 +56,9 @@
   (ido-mode t))
 (icomplete-mode)
 
+
+;; (highline-mode)
+
 ;; C/C++ HL mode
 ;;(add-hook 'c-mode-common-hook (lambda () (highline-local-mode 1)))
 
@@ -339,9 +342,11 @@ With optional argument, move forward N-1 lines first."
  '(ecb-compile-window-width (quote edit-window))
  '(ecb-layout-name "left3")
  '(ecb-options-version "2.32")
- '(ecb-source-path (quote ("/home/babali/epita/yaka/Chess2009/work/ref" "/home/babali/develop/netsoul")))
+ '(ecb-source-path (quote (("/home/babali/develop/netsoul/libdesoul" "libdesoul") ("/home/babali/develop/netsoul/soulmebaby" "soulmebaby"))))
  '(ecb-tree-expand-symbol-before t)
  '(ecb-windows-width 45)
+ '(speedbar-default-position (quote left))
+ '(speedbar-frame-parameters (quote ((minibuffer) (width . 42) (border-width . 0) (menu-bar-lines . 0) (tool-bar-lines . 0) (unsplittable . t) (left-fringe . 0))))
  '(highlight-current-line-globally t nil (highlight-current-line)))
 
 (custom-set-faces
