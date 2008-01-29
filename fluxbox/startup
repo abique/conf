@@ -18,13 +18,18 @@ xmodmap ~/.xmodmaprc
 
 urxvtd -f &
 
-if which soulmebaby 2>/dev/null >/dev/null ; then
-   soulmebaby & disown
-fi
+#if which soulmebaby 2>/dev/null >/dev/null ; then
+#   soulmebaby & disown
+#fi
 
-if which psi 2>/dev/null >/dev/null ; then
-   psi & disown
-fi
+# if which psi 2>/dev/null >/dev/null ; then
+#    psi & disown
+# fi
+
+# if [[ "$HOSTNAME" = "Vortex" ]] ; then
+#     xchat & disown
+#     thunderbird & disown
+# fi
 
 if [[ "${FLUXBOX_SVN}" = "TRUE" ]] ; then
     exec /home/babali/local/bin/fluxbox -log "/home/babali/.fluxbox/log"
