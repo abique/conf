@@ -15,13 +15,14 @@ function lcd()
     cd "$1" && ls
 }
 alias pcd='cd -P'
-alias ssh_epita='ssh ssh.epita.fr ssh freebsd' # not working :/
+alias ssh_epita='ssh ssh.epita.fr' # not working :/
 alias ssh_acu='ssh ssh.epita.fr ssh acu.epita.fr' # not working :/
 alias ssh_sj='ssh intranet.smartjog.net'
 alias df='df -h'
 alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
 alias emacs='emacs -fn 7x14'
+alias my_date="date +'%Y%m%d%H%M'"
 
 function ema()
 {
@@ -50,6 +51,8 @@ alias pwgen='pwgen --symbols --secure --num-passwords=5 --capitalize -C --ambigu
 if which colormake >/dev/null 2>&1 && false ; then
     alias make='colormake'
 fi
+
+alias soulmebaby_tail='tail -f -n 50 ~/.config/soulmebaby/log'
 alias soulmebaby_sql='sqlite3 ~/.config/soulmebaby/database.sqlite'
 
 function b16b64()
