@@ -1,3 +1,10 @@
+# start tabbing windows together
+OnTitlebar Mouse2 :StartTabbing
+
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Double Mouse1 :Shade
+OnTitlebar Mouse3 :WindowMenu
+
 
 !mouse actions added by fluxbox-update_configs
 OnWindow Mod4 Mouse1      :StartMoving
@@ -90,3 +97,4 @@ Mod4 i                    :Exec firefox
 Mod4 m                    :Exec icedove
 Mod4 w                    :Exec fbsetbg -r ~/wallpapers/fractals/
 Mod4 l                    :Exec xscreensaver-command -lock
+

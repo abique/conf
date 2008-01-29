@@ -65,10 +65,10 @@ URxvt*color15:     #ffffff
 URxvt*font:	   xft:Monospace:size=9
 !URxvt*font:	   7x13
 URxvt*scrollBar: false
-URxvt*transparent: false
+URxvt*transparent: true
 URxvt*tintingType: false
 URxvt*tinting: #ffffff
-URxvt*shading: 17
+URxvt*shading: 10
 
 Aterm*scrollBar: false
 Aterm*transparent: true
