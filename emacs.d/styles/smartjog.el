@@ -1,4 +1,4 @@
-;; Create my personal style.
+;; SmartJog style
 (defconst smartjog-c-style
   '(
     (c-tab-always-indent . t)

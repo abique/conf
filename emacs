@@ -347,4 +347,4 @@ With optional argument, move forward N-1 lines first."
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(highlight-current-line-face ((t (:background "dark slate blue" :inverse-video nil)))))
+ '(highlight-current-line-face ((t (:background "#032333" :inverse-video nil)))))
