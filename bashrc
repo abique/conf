@@ -25,15 +25,15 @@ if [[ $TERM = "linux" ]] ; then
     unicode_start
 fi
 
+my_source /etc/bash_completion
 my_source ~/.bash.d/alias.bash
 my_source ~/.bash.d/env.bash
 my_source ~/.bash.d/colors.bash
-my_source ~/.bash.d/local.bash
-my_source ~/.bash.d/proxy.bash
 my_source ~/.bash.d/prompt.bash
 my_source ~/.bash.d/svn.bash
 my_source ~/.bash.d/smartjog.bash
-my_source /etc/bash_completion
+my_source ~/.bash.d/proxy.bash
+my_source ~/.bash.d/local.bash
 
 complete -d cd
 set completion-ignore-case on
