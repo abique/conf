@@ -101,11 +101,10 @@
 ;;; (c-set-offset 'block-open 2)          ; after '{' indentation
 ;;; (c-set-offset 'statement-block-intro 2)
 ;;; (setq c-basic-offset 4)
-(if (string-equal (system-name) "dhcp-17.rep.sj")
-    (progn (load-file "~/.emacs.d/styles/smartjog.el")
-	   (setq c-default-style "smartjog"))
-  (progn (load-file "~/.emacs.d/styles/babali.el")
-	 (setq c-default-style "babali")))
+
+(load-file "~/.emacs.d/styles/babali.el")
+(load-file "~/.emacs.d/styles/epita.el")
+(setq c-default-style "epita")
 
 (setq default-indicate-empty-lines t) ; show the end of the file
 (setq c-font-lock-extra-types
@@ -136,13 +135,13 @@
 (set-cursor-color "DarkOrange3")
 
 ;; COLOR THEME
-(add-to-list 'load-path "~/.emacs.d/color-theme")
-(require 'color-theme)
-(if (fboundp 'color-theme-initialize) (color-theme-initialize))
+;; (add-to-list 'load-path "~/.emacs.d/color-theme")
+;; (require 'color-theme)
+;; (if (fboundp 'color-theme-initialize) (color-theme-initialize))
 ;;(color-theme-charcoal-black)
 ;;(color-theme-late-night)
 ;;(color-theme-comidia)
-(color-theme-taylor)
+;; (color-theme-taylor)
 ;;(color-theme-classic)
 ;;(color-theme-dark-blue2)
 ;;(color-theme-clarity)
