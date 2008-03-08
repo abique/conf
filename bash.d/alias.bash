@@ -31,7 +31,7 @@ function ema()
 
 alias e='emacs -Q -nw -eval "(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)"'
 alias em='emacs -nw'
-alias gdb='gdb --quiet --tui'
+alias gdb='gdb --quiet' # --tui'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'

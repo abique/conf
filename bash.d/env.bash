@@ -37,3 +37,9 @@ export LC_NUMERIC="en_US.UTF-8"
 export LC_TIME="en_US.UTF-8"
 export LC_PAPER="en_US.UTF-8"
 export LANG="en_US.UTF-8"
+
+export KANETON_PYTHON=python
+export KANETON_ARCHITECTURE=ia32/educational
+export KANETON_PLATFORM=ibm-pc
+export KANETON_USER=alexandre.bique
+export KANETON_HOST=linux/ia32
