@@ -1,7 +1,7 @@
 export HISTFILESIZE=10042
 export HISTIGNORE='ls:ll:la:l'
 export INPUTRC="~/.inputrc"
-export EDITOR="emacs -nw -Q -eval '(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)'"
+export EDITOR="emacs -nw -Q --load ~/.emacs.d/quick.el"
 #export EDITOR="vim"
 export DEBEMAIL="alexandre.bique@smartjog.com"
 export DEBFULLNAME="Alexandre Bique"
@@ -38,7 +38,7 @@ export LC_TIME="en_US.UTF-8"
 export LC_PAPER="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
-export KANETON_PYTHON=python
+export KANETON_PYTHON=/usr/bin/python
 export KANETON_ARCHITECTURE=ia32/educational
 export KANETON_PLATFORM=ibm-pc
 export KANETON_USER=alexandre.bique
