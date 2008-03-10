@@ -49,7 +49,8 @@
 (icomplete-mode)
 
 (load-file "~/.emacs.d/styles/epita.el")
-(setq c-default-style "epita")
+(load-file "~/.emacs.d/styles/kaneton.el")
+(setq c-default-style "kaneton")
 
 (setq default-indicate-empty-lines t) ; show the end of the file
 (setq c-font-lock-extra-types
