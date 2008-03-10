@@ -58,15 +58,14 @@
 (set-cursor-color "DarkOrange3")
 
 ;; COLOR THEME
-;; (add-to-list 'load-path "~/.emacs.d/color-theme")
-;; (require 'color-theme)
-;; (if (fboundp 'color-theme-initialize) (color-theme-initialize))
+(require 'color-theme)
+(if (fboundp 'color-theme-initialize) (color-theme-initialize))
 ;;(color-theme-charcoal-black)
 ;;(color-theme-late-night)
 ;;(color-theme-comidia)
-;; (color-theme-taylor)
+;;(color-theme-taylor)
 ;;(color-theme-classic)
-;;(color-theme-dark-blue2)
+(color-theme-dark-blue2)
 ;;(color-theme-clarity)
 
 (defun insert-header-guard ()

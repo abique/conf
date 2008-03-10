@@ -76,9 +76,9 @@ Aterm*tintingType: true
 Aterm*tinting: #ffffff
 Aterm*shading: 20
 
-!Emacs.font: 7x13bold
+Emacs.font: 7x14
 !Emacs.font: Bitstream Vera Sans Mono-8
-Emacs.font: monospace-9
+!Emacs.font: monospace-9
 Emacs.reverseVideo: off
 
 fbpager.alpha: 255
