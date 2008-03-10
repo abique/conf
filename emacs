@@ -11,6 +11,12 @@
 (setq load-path (cons "~/.emacs.d/modes" load-path))
 (setq load-path (cons "~/.emacs.d/modes/color-theme" load-path))
 
+(setq ispell-dictionary "francais"
+      ispell-skip-sgml t)
+(autoload 'flyspell-mode "flyspell" "On-the-fly spelling checking" t)
+(setq flyspell-default-dictionary "francais")
+(add-hook 'latex-mode-hook (lambda () (flyspell-mode 1)))
+
 ;; Auto insert C/C++ header guard
 (add-hook 'find-file-hooks
           (lambda ()
