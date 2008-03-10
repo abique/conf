@@ -1,3 +1,4 @@
+;; -*- mode: Lisp; -*-
 ;; Create my personal style.
 (defconst babali-c-style
   '((c-tab-always-indent . t)

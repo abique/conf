@@ -51,7 +51,7 @@
 
 (load-file "~/.emacs.d/styles/epita.el")
 (load-file "~/.emacs.d/styles/kaneton.el")
-(setq c-default-style "kaneton")
+(setq c-default-style "epita")
 
 (setq default-indicate-empty-lines t) ; show the end of the file
 (setq c-font-lock-extra-types

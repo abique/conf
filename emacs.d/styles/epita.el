@@ -1,3 +1,4 @@
+;; -*- mode: Lisp; -*-
 (defconst epita-c-style
   '((c-tab-always-indent . t)
     (c-comment-only-line-offset . 0)

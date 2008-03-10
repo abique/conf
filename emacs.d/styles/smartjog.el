@@ -1,3 +1,4 @@
+;; -*- mode: Lisp; -*-
 ;; SmartJog style
 (defconst smartjog-c-style
   '(
