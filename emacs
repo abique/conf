@@ -1,3 +1,4 @@
+;; -*- mode: Lisp; -*-
 ;; Load gentoo site
 ;; (if (file-readable-p "/usr/share/emacs/site-lisp/site-gentoo.el")
 ;;     (load "/usr/share/emacs/site-lisp/site-gentoo"))

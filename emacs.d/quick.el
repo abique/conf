@@ -1,3 +1,4 @@
+;; -*- mode: Lisp; -*-
 (setq user-nickname "Alexandre Bique")
 (setq user-full-name "Alexandre Bique")
 
