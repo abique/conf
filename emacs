@@ -4,63 +4,12 @@
 ;; (if (file-readable-p "/usr/share/emacs/site-lisp/debian-startup.el")
 ;;     (load "/usr/share/emacs/site-lisp/debian-startup"))
 
+(load-file "~/.emacs.d/quick.el")
+
 ;; Our own modes repository
 (setq load-path (cons "~/.emacs.d/" load-path))
 (setq load-path (cons "~/.emacs.d/modes" load-path))
 (setq load-path (cons "~/.emacs.d/modes/color-theme" load-path))
-
-;; UTF-8
-(setq locale-coding-system 'utf-8)
-(set-terminal-coding-system 'utf-8)
-(set-keyboard-coding-system 'utf-8)
-(set-selection-coding-system 'utf-8)
-(prefer-coding-system 'utf-8)
-;; END OF UTF-8 :p
-
-;;============================
-;; Emacs customization script
-;;============================
-
-(setq inhibit-startup-message t)      ; don't show the GNU splash screen
-(scroll-bar-mode nil)                 ; no scroll bar
-(menu-bar-mode -1)                    ; no menu bar
-(tool-bar-mode -1)                    ; no tool bar
-(setq frame-title-format "<[ %b ]>")  ; titlebar shows buffer's name
-(global-font-lock-mode t)             ; syntax highlighting
-(setq font-lock-maximum-decoration t) ; maximum decoration for all modes
-(show-paren-mode t)                   ; show opposing paren while hovering
-(setq scroll-step 1)                  ; smooth scrolling
-(delete-selection-mode t)             ; typing removes highlighted text
-(line-number-mode t)                  ; display line number in modeline
-(column-number-mode t)                ; display column number in modeline
-;;(setq display-time-day-and-date t)  ; display date in modeline
-(setq display-time-24hr-format t)     ; european 24h format
-(display-time)                        ; display time in modeline
-(auto-compression-mode t)             ; open compressed files
-(mouse-wheel-mode t)                  ; enable mouse wheel
-(fset 'yes-or-no-p 'y-or-n-p)         ; y or n will do
-(setq default-major-mode 'text-mode)  ; change default major mode to text
-(setq ring-bell-function 'ignore)     ; turn the alarm totally off
-(setq-default indent-tabs-mode nil)   ; spaces instead of tabs
-(setq make-backup-files nil)          ; no backupfile
-(setq delete-auto-save-files t)       ; delete unnecessary autosave files
-(setq delete-old-versions t)          ; delete oldversion file
-(setq next-line-add-newlines nil)     ; prevents new line after eof
-(setq default_indice_empty_lines t)   ; show lines at end of file
-;;(normal-erase-is-backspace-mode)    ; delete touch work
-(auto-image-file-mode)                ; to see picture in emacs
-(dynamic-completion-mode)             ; dynamic completion
-(when (string-match "^22." emacs-version)
-  (ido-mode t))
-(when (string-match "^23." emacs-version)
-  (ido-mode t))
-(icomplete-mode)
-
-
-;; (highline-mode)
-
-;; C/C++ HL mode
-;;(add-hook 'c-mode-common-hook (lambda () (highline-local-mode 1)))
 
 ;; Auto insert C/C++ header guard
 (add-hook 'find-file-hooks
@@ -103,32 +52,6 @@
 ;;; (setq c-basic-offset 4)
 
 (load-file "~/.emacs.d/styles/babali.el")
-(load-file "~/.emacs.d/styles/epita.el")
-(setq c-default-style "epita")
-
-(setq default-indicate-empty-lines t) ; show the end of the file
-(setq c-font-lock-extra-types
-      (append
-       '("t_\\sw+")
-       '("s_\\sw+")
-       '("u_\\sw+")
-       '("f_\\sw+")
-       '("e_\\sw+")
-       '("\\sw+_t")
-       '("\\sw+_s")
-       '("\\sw+_u")
-       '("\\sw+_f")
-       '("\\sw+_e")
-       c-font-lock-extra-types))
-(setq c-mode-hook
-      '(lambda()
-	 (local-set-key (kbd "<return>") 'newline-and-indent)))
-
-;; Java mode
-(setq java-basic-offset 4)
-
-(add-to-list 'load-path "~/.emacs.d")
-(add-to-list 'load-path "~/.emacs.d/modes")
 
 ;; Theme
 (set-mouse-color "DarkSalmon")
@@ -298,8 +221,6 @@ With optional argument, move forward N-1 lines first."
 ;;
 ;; Programation modes
 ;;
-(setq user-nickname "Alexandre Bique")
-(setq user-full-name "Alexandre Bique")
 ;(load-file "~/.emacs.d/modes/div.el")
 
 ;; Our own modes repository
@@ -308,10 +229,6 @@ With optional argument, move forward N-1 lines first."
 ;; F6100
 ;;; (if (file-exists-p "~/.emacs.d/modes/f6100_mode.el")
 ;;;     (load-file "~/.emacs.d/modes/f6100_mode.el"))
-
-;; Tiger
-;;; (autoload 'tiger-mode "tiger-mode" "tiger editing mode." t)
-;;; (add-to-list 'auto-mode-alist '("\\.tig$" . tiger-mode))
 
 ;; Flex
 ;;; (autoload 'flex-mode "flex-mode" "flex editing mode." t)
