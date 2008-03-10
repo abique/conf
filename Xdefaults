@@ -18,7 +18,7 @@ XTerm*color14:     #71bebe
 XTerm*color15:     #ffffff
 !XTerm*faceName:    Monospace
 !XTerm*faceSize:    8
-XTerm*font:        7x13
+XTerm*font:        7x14
 XTerm*metaSendsEscape: yes
 
 UXTerm*background:  #000000
@@ -41,7 +41,7 @@ UXTerm*color14:     #71bebe
 UXTerm*color15:     #ffffff
 !UXTerm*faceName:    monospace
 !UXTerm*faceSize:    8
-UXTerm*font:        7x13
+UXTerm*font:        7x14
 UXTerm*metaSendsEscape: yes
 
 URxvt*background:  #000000
@@ -62,10 +62,10 @@ URxvt*color12:     #4186be
 URxvt*color13:     #cf9ebe
 URxvt*color14:     #71bebe
 URxvt*color15:     #ffffff
-URxvt*font:	   xft:Monospace:size=9
-!URxvt*font:	   7x13
+!URxvt*font:	   xft:Monospace:size=9
+URxvt*font:	   7x14
 URxvt*scrollBar: false
-URxvt*transparent: true
+URxvt*transparent: false
 URxvt*tintingType: false
 URxvt*tinting: #ffffff
 URxvt*shading: 10
