@@ -38,6 +38,8 @@ export LC_TIME="en_US.UTF-8"
 export LC_PAPER="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
+export EMACS_SERVER_FILE=$HOME/.emacs.d/server
+
 export KANETON_PYTHON=/usr/bin/python
 export KANETON_ARCHITECTURE=ia32/educational
 export KANETON_PLATFORM=ibm-pc

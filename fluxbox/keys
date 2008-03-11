@@ -95,6 +95,6 @@ Mod4 b                    :Exec fbrun -font 7x13 -fg yellow -bg black -w 600 -po
 Mod4 k                    :Exec xkill
 Mod4 i                    :Exec firefox
 Mod4 m                    :Exec icedove
-Mod4 w                    :Exec fbsetbg -r ~/wallpapers/fractals/
+Mod4 w                    :Exec fbsetbg -c -r ~/wallpapers/fractals/
 Mod4 l                    :Exec xscreensaver-command -lock
 
