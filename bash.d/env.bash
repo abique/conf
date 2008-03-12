@@ -1,4 +1,4 @@
-export HISTFILESIZE=10042
+export HISTFILESIZE=100420
 export HISTIGNORE='ls:ll:la:l'
 export INPUTRC="~/.inputrc"
 export EDITOR="emacs -nw -Q --load ~/.emacs.d/quick.el"
