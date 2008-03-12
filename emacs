@@ -71,8 +71,8 @@
 ;;(color-theme-late-night)
 ;;(color-theme-comidia)
 ;;(color-theme-taylor)
-;;(color-theme-classic)
-(color-theme-dark-blue2)
+(color-theme-classic)
+;;(color-theme-dark-blue2)
 ;;(color-theme-clarity)
 
 (defun insert-header-guard ()
