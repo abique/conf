@@ -49,14 +49,7 @@
 
 ;; C mode
 (add-hook `c-mode-hook `rm-trailing-spaces-always)
-
-;;; (c-set-offset 'substatement-open 2)   ; change '{' indentation
-;;; (c-set-offset 'case-label '+)         ; make each case line indent from switch
-;;; (c-set-offset 'brace-list-open '0)
-;;; (c-set-offset 'statement-case-open '0)
-;;; (c-set-offset 'block-open 2)          ; after '{' indentation
-;;; (c-set-offset 'statement-block-intro 2)
-;;; (setq c-basic-offset 4)
+(add-hook `c-mode-hook `cwarn-mode)
 
 (load-file "~/.emacs.d/styles/babali.el")
 
@@ -69,9 +62,9 @@
 (if (fboundp 'color-theme-initialize) (color-theme-initialize))
 ;;(color-theme-charcoal-black)
 ;;(color-theme-late-night)
-;;(color-theme-comidia)
+(color-theme-comidia)
 ;;(color-theme-taylor)
-(color-theme-classic)
+;;(color-theme-classic)
 ;;(color-theme-dark-blue2)
 ;;(color-theme-clarity)
 
@@ -143,6 +136,7 @@ With optional argument, move forward N-1 lines first."
 (global-set-key [f6] 'recompile)
 (global-set-key [f7] 'kill-compilation)
 (global-set-key [f8] 'next-error)
+(global-set-key [f9] 'revert-buffer)
 (global-set-key [f12] (lambda () (interactive) (manual-entry (current-word))))
 (global-set-key "\C-a" 'beginning-of-line-context)
 (global-set-key "" 'backward-delete-char)
