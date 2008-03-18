@@ -20,6 +20,7 @@ for file in		\
     emacs		\
     emacs.d		\
     fluxbox             \
+    gitconfig		\
     htoprc		\
     indent.pro          \
     inputrc		\
