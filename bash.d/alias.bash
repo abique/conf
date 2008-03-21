@@ -38,7 +38,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ps='ps -fx'
 alias egrep="egrep --color --exclude='*.svn*'"
-alias grep="egrep --color --exclude='*.svn*'"
+alias grep="grep --color --exclude='*.svn*'"
 alias esed='sed --regexp-extended'
 alias screen="screen -U"
 alias xgcc='gcc -W -Wall'
@@ -76,4 +76,10 @@ function b64b16()
 import base64
 print base64.b16encode(base64.b64decode('$1'))
 EOF
+}
+
+function x-ssh-agent()
+{
+    eval $(ssh-agent)
+    ssh-add
 }
