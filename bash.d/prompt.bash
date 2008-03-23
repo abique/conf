@@ -5,7 +5,11 @@ function prompt_babali()
     system=$(uname -s)
     tmp="${system} ${USER}@${HOSTNAME}:${PWD}"
     promptsize=${#tmp}
-    fillsize=$((${COLUMNS} - ((${promptsize} + 5) % ${COLUMNS})))
+    if [[ "${COLUMNS}" = "" ]] ; then
+	fillsize=$((80 - ((${promptsize} + 5) % 80)))
+    else	
+	fillsize=$((${COLUMNS} - ((${promptsize} + 5) % ${COLUMNS})))
+    fi
     fill=""
     # Make the filler if prompt isn't as wide as the terminal:
     while [[ ${fillsize} -gt "0" ]]

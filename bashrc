@@ -1,6 +1,7 @@
-#! /bin/bash
+#! /usr/local/bin/bash
 # BabaLi's bashrc <bique.alexandre@gmail.com>
 
+sleep 1
 clear
 
 # Test for an interactive shell.  There is no need to set anything
@@ -19,7 +20,9 @@ function my_source()
 }
 
 # Enable colors for ls, etc.  Prefer ~/.dir_colors #64489
-eval `dircolors -b`
+if which dircolors ; then
+    eval `dircolors -b`
+fi
 
 if [[ $TERM = "linux" ]] ; then
     unicode_start
