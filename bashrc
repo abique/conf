@@ -20,7 +20,7 @@ function my_source()
 }
 
 # Enable colors for ls, etc.  Prefer ~/.dir_colors #64489
-if which dircolors ; then
+if which dircolors >/dev/null ; then
     eval `dircolors -b`
 fi
 
