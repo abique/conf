@@ -226,6 +226,12 @@ With optional argument, move forward N-1 lines first."
 ;; Our own modes repository
 (setq load-path (cons "~/.emacs.d/" load-path))
 
+(require 'compile)
+(add-to-list
+ 'compilation-error-regexp-alist
+ '("^\\([^ \n]+\\)(\\([0-9]+\\)): \\(?:error\\|.\\|warnin\\(g\\)\\|remar\\(k\\)\\)"
+   1 2 nil (3 . 4)))
+
 ;; F6100
 ;;; (if (file-exists-p "~/.emacs.d/modes/f6100_mode.el")
 ;;;     (load-file "~/.emacs.d/modes/f6100_mode.el"))

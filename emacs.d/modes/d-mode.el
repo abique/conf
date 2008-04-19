@@ -2,9 +2,10 @@
 ;;;               Requires a cc-mode of version 5.30 or greater
 
 ;; Author:     2007 William Baxter
+;; Contributors: Andrei Alexandrescu
 ;; Maintainer: William Baxter
 ;; Created:    March 2007
-;; Version:    2.0.1
+;; Version:    2.0.4 (February 2008)
 ;; Keywords:   D programming language emacs cc-mode
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -42,19 +43,19 @@
 ;;
 ;;
 ;; TODO:
-;;   * "else static if" doesn't work properly. 
-;;     (Incidentally "static else if" is fine, but unfortunately it's
-;;      not valid D syntax.)
-;;
 ;;   * I tried making "with" "version" and "extern" be their own
 ;;     c-other-block-decl-kwds.  Which is supposed to mean that you
 ;;     can control the indentation on the block following them
 ;;     individually.  It didn't seem to work right though.
 ;;
 ;; History:
-;;   * 2007 March 3 - Release of 2.0.0 version
-;;   * 2007 March 3 - Verision 2.0.1 - bugfixes for emacs 21 &
+;;   * 2008 February - 2.0.4 - fixed "else static if" indentation problem, 
+;;      and also a problem with "debug if()" indentation.
+;;      Some D2 additions (invariant as type modifier etc).
+;;   * 2007 April - 2.0.3 - new 'ref' and 'macro' keywords.
+;;   * 2007 March 3 - Verision 2.0.1 - bugfixes for emacs 21 and
 ;;      user-installed cc-mode.  Byte compilation was failing.
+;;   * 2007 March 3 - Release of 2.0.0 version
 
 ;;----------------------------------------------------------------------------
 ;; Code:
@@ -66,6 +67,7 @@
 ;; related constants could additionally be put inside an
 ;; (eval-after-load "font-lock" ...) but then some trickery is
 ;; necessary to get them compiled.)
+;; Coment out 'when-compile part for debugging
 (eval-when-compile
   (require 'cc-langs)
   (require 'cc-fonts)
@@ -113,7 +115,7 @@
 parenthesis syntax classes that have uses other than as expression
 operators."
   d (append '("/+" "+/" "..." ".." "!" "*" "&")
-	    '("{" "}" "(" ")" "[" "]" ";" ":" "," "=" "/*" "*/" "//")))
+	    (c-lang-const c-other-op-syntax-tokens)))
   
 (c-lang-defconst c-block-comment-starter d "/*")
 (c-lang-defconst c-block-comment-ender   d "*/")
@@ -121,12 +123,13 @@ operators."
 (c-lang-defconst c-comment-start-regexp  d "/[*+/]")
 (c-lang-defconst c-block-comment-start-regexp d "/[*+]")
 (c-lang-defconst c-literal-start-regexp 
- ;; Regexp to match the start of comments and string literals.
- d "/[*+/]\\|\"\\|`")
+  ;; Regexp to match the start of comments and string literals.
+  d "/[*+/]\\|\"\\|`")
+;;(c-lang-defconst c-comment-prefix-regexp d "//+\\|\\**")
 
 (c-lang-defconst c-doc-comment-start-regexp
  ;; doc comments for D use "///",  "/**" or doxygen's "/*!" "//!"
- d "/\\(\\*[*!]\\|/[/!]\\)")
+ d "/\\*[*!]\\|//[/!]")
 
 ;;----------------------------------------------------------------------------
 
@@ -148,11 +151,11 @@ operators."
   ;; contains another declaration level that should be considered a class.
   d '("class" "struct" "union" "interface" "template"))
 
-(c-lang-defconst c-brace-list-decl-kwds
-  d '("enum"))
+;; (c-lang-defconst c-brace-list-decl-kwds
+;;   d '("enum"))
 
 (c-lang-defconst c-type-modifier-kwds
-  d '("const" "lazy" "volatile")
+  d '("const" "lazy" "volatile" "invariant" "enum")
 )
 (c-lang-defconst c-type-prefix-kwds
   ;; Keywords where the following name - if any - is a type name, and
@@ -171,8 +174,7 @@ operators."
 ;;  d '("with" "version" "extern"))
 
 (c-lang-defconst c-typedef-decl-kwds
-  d (append (append (c-lang-const c-class-decl-kwds)
-		    (c-lang-const c-brace-list-decl-kwds))
+  d (append (c-lang-const c-typedef-decl-kwds)
 	    '("typedef" "alias")))
 
 (c-lang-defconst c-decl-hangon-kwds
@@ -203,7 +205,7 @@ operators."
 (c-lang-defconst c-paren-nontype-kwds
   ;;Keywords that may be followed by a parenthesis expression that doesn't
   ;; contain type identifiers.
-  d '("version" "extern"))
+  d '("version" "extern" "macro" "mixin"))
 
 (c-lang-defconst c-paren-type-kwds
   ;; Keywords that may be followed by a parenthesis expression containing
@@ -212,13 +214,13 @@ operators."
 
 (c-lang-defconst c-block-stmt-1-kwds
   ;; Statement keywords followed directly by a substatement.
-  ;; 'static' is there for the "else static if (...) {}" usage.
-  d '("do" "else" "finally" "try" "in" "out" "debug" "body"))
+  d '("do" "else" "finally" "try" "in" "out" "body"))
 
 (c-lang-defconst c-block-stmt-2-kwds
   ;; Statement keywords followed by a paren sexp and then by a substatement.
   d '("for" "if" "switch" "while" "catch" "synchronized" "scope"
-      "foreach" "foreach_reverse" "with"))
+      "foreach" "foreach_reverse" "with" "unittest" 
+      "else static if" "else"))
 
 (c-lang-defconst c-simple-stmt-kwds
   ;; Statement keywords followed by an expression or nothing.
@@ -374,7 +376,7 @@ Key bindings:
   (c-run-mode-hooks 'c-mode-common-hook 'd-mode-hook)
   (c-update-modeline))
 
+
 (provide 'd-mode)
 
 ;;; d-mode.el ends here
-
