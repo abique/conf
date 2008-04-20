@@ -21,6 +21,7 @@ for file in		\
     emacs.d		\
     fluxbox             \
     gitconfig		\
+    hgrc		\
     htoprc		\
     indent.pro          \
     inputrc		\

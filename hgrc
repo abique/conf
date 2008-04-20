@@ -1,0 +1,15 @@
+[ui]
+username = Alexandre Bique <bique.alexandre@gmail.com>
+
+[extensions]
+hgext.extdiff =
+
+[defaults]
+cdiff = -q
+
+[extdiff]
+cmd.cdiff = colordiff
+opts.cdiff = -uprN
+
+cmd.vdiff = vim
+opts.vdiff = -f '+next' '+execute "DirDiff" argv(0) argv(1)'
