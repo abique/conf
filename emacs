@@ -231,6 +231,9 @@ With optional argument, move forward N-1 lines first."
 ;; Our own modes repository
 (setq load-path (cons "~/.emacs.d/" load-path))
 
+
+;; d-mode
+(load-file "~/.emacs.d/modes/d-mode.el")
 (require 'compile)
 (add-to-list
  'compilation-error-regexp-alist
