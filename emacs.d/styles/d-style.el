@@ -11,14 +11,14 @@
                                (label after)
                                (access-label after)))
     (c-cleanup-list . (scope-operator empty-defun-braces defun-close-semi))
-    (c-basic-offset . 3)
-    (c-offsets-alist . ((substatement . 3)
+    (c-basic-offset . 4)
+    (c-offsets-alist . ((substatement . 4)
 			(substatement-open . 0)
                         (case-label . 0)
                         (statement-case-open . 0)
-                        (block-open . 3)
+                        (block-open . 4)
                         (brace-list-open . 0)
-                        (statement-block-intro . 3)
+                        (statement-block-intro . 4)
 			(inline-open . 0)
                         (label . 0)
                         ))
@@ -38,8 +38,8 @@
   ;; (set-selection-coding-system 'utf-8)
   ;; (prefer-coding-system 'utf-8)
 
-  (setq indent-tabs-mode t) ;; Tabs instead of spaces
-  (setq tab-width 3) ;; display tabs as 3 spaces
+  (setq indent-tabs-mode f) ;; no tabs
+  (setq tab-width 4) ;; display tabs as 4 spaces
   )
 
 (add-hook 'd-mode-hook 'dstyle-d-mode-hook)
