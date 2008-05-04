@@ -134,8 +134,8 @@ With optional argument, move forward N-1 lines first."
             (lambda () (local-set-key "\C-cH" 'hs-hide-all)))
 
 ;; key bindings
-(global-set-key [f1] 'indent-buffer)
-(global-set-key [f2] 'delete-trailing-whitespace)
+(global-set-key [f2] 'indent-buffer)
+(global-set-key [f3] 'delete-trailing-whitespace)
 (global-set-key [f4] 'kill-this-buffer)
 (global-set-key [f5] 'compile)
 (global-set-key [f6] 'recompile)
@@ -223,14 +223,9 @@ With optional argument, move forward N-1 lines first."
 (defun do_insert_time ()
   (interactive)
  (insert (current-time-string)))
-;;
-;; Programation modes
-;;
-;(load-file "~/.emacs.d/modes/div.el")
 
 ;; Our own modes repository
 (setq load-path (cons "~/.emacs.d/" load-path))
-
 
 ;; d-mode
 (load-file "~/.emacs.d/modes/d-mode.el")
@@ -240,27 +235,6 @@ With optional argument, move forward N-1 lines first."
  '("^\\([^ \n]+\\)(\\([0-9]+\\)): \\(?:error\\|.\\|warnin\\(g\\)\\|remar\\(k\\)\\)"
    1 2 nil (3 . 4)))
 
-;; F6100
-;;; (if (file-exists-p "~/.emacs.d/modes/f6100_mode.el")
-;;;     (load-file "~/.emacs.d/modes/f6100_mode.el"))
-
-;; Flex
-;;; (autoload 'flex-mode "flex-mode" "flex editing mode." t)
-;;; (add-to-list 'auto-mode-alist '("\\.l$" . flex-mode))
-;;; (add-to-list 'auto-mode-alist '("\\.ll$" . flex-mode))
-
-;;; ;; Bison
-;;; (autoload 'bison-mode "bison-mode" "bison editing mode." t)
-;;; (add-to-list 'auto-mode-alist '("\\.y$" . bison-mode))
-;;; (add-to-list 'auto-mode-alist '("\\.yy$" . bison-mode))
-
-;;; ;; XML and traces
-;;; (setq auto-mode-alist
-;;;       (cons '("\\.trace$" . sgml-mode) auto-mode-alist))
-;;; (setq auto-mode-alist
-;;;       (cons '("\\.xml" . sgml-mode) auto-mode-alist))
-
-;(load "~/.emacs.d/modes/d-mode.el")
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
