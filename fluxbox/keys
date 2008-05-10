@@ -66,6 +66,9 @@ Mod4 Control 0            :MoveRight 10
 Mod4 Control minus	  :MoveDown 10
 Mod4 Control equal	  :MoveUp 10
 
+Mod4 v                    :MaximizeVertical
+Mod4 h                    :MaximizeHorizontal
+
 Mod4 Shift 9              :ResizeHorizontal -1
 Mod4 Shift 0              :ResizeHorizontal 1
 Mod4 Shift minus	  :ResizeVertical -1
@@ -88,7 +91,7 @@ Mod4 e                    :Exec emacs
 Mod4 t                    :Exec urxvtc
 Mod4 Shift p              :Exec urxvtc -e ipython
 Mod4 Shift r              :Exec ruxvtc -e ruby
-Mod4 h                    :Exec urxvtc -e htop
+Mod4 Shift h              :Exec urxvtc -e htop
 Mod4 n                    :Exec urxvtc -e slrn
 Mod4 r                    :Exec fbrun -font 7x14 -fg yellow -bg black -w 600 -pos 493 504
 Mod4 b                    :Exec fbrun -font 7x13 -fg yellow -bg black -w 600 -pos 493 504 -title "Enter the url" -text "firefox " -hf ~/.fluxbox/firefox_history
@@ -96,5 +99,5 @@ Mod4 k                    :Exec xkill
 Mod4 i                    :Exec firefox
 Mod4 m                    :Exec icedove
 Mod4 w                    :Exec fbsetbg -c -r ~/wallpapers/fractals/
-Mod4 l                    :Exec xscreensaver-command -lock
+Mod4 l                    :Exec xscreensaver-command -lock || xscreensaver & disown && sleep .5 && xscreensaver-command -lock
 
