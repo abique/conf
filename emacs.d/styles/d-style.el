@@ -23,7 +23,7 @@
                         (label . 0)
                         ))
     (c-echo-syntactic-information-p . t))
-  "Babali Programming Style")
+  "D Programming Style")
 (c-add-style "dstyle" dstyle-c-style)
 
 (defun dstyle-d-mode-hook ()
