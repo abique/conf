@@ -64,12 +64,13 @@
 ;;(color-theme-late-night)
 
 (if window-system
-    (color-theme-billw)
+    (color-theme-dark-blue2)
   (color-theme-hober))
 ;;(color-theme-subtle-hacker)
 ;;(color-theme-comidia)
 ;;(color-theme-taylor)
 ;;(color-theme-classic)
+;;(color-theme-billw)
 ;;(color-theme-dark-blue2)
 ;;(color-theme-clarity)
 
