@@ -30,6 +30,7 @@
 ;; (add-hook 'c-mode-common-hook (lambda () (hs-minor-mode 1) (hs-hide-all)))
 ;; Highlight trailing withespaces
 (add-hook 'c-mode-common-hook (lambda () (highlight-regexp " +$" "hi-pink")))
+(add-hook 'c-mode-common-hook (lambda () (highlight-regexp "FIXME" "hi-red-b")))
 (add-hook 'sh-mode-common-hook (lambda () (highlight-regexp " +$" "hi-pink")))
 
 ;; cmake mode
