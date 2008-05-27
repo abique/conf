@@ -44,6 +44,7 @@
 (add-to-list 'auto-mode-alist '("\\.y$" . bison-mode))
 (add-to-list 'auto-mode-alist '("\\.d$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.di$" . d-mode))
+(add-to-list 'auto-mode-alist '("\\.apd$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.pro$" . sh-mode)) ;; Qt .pro files
 (add-to-list 'auto-mode-alist '("CMakeLists.txt$" . cmake-mode))
 
