@@ -23,6 +23,7 @@ alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
 alias emacs='emacs -fn 7x14'
 alias my_date="date +'%Y%m%d%H%M'"
+alias gt='git'
 
 function ema()
 {
@@ -36,6 +37,9 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias .......='cd ../../../../../..'
+alias ........='cd ../../../../../../..'
 alias ps='ps -fx'
 alias egrep="egrep --color --exclude='*.svn*'"
 alias grep="grep --color --exclude='*.svn*'"
