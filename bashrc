@@ -40,3 +40,5 @@ set completion-ignore-case on
 set print-completions-horizontally on
 set visible-stats on
 umask 0077
+
+~/.bash.d/xtiff.pl
