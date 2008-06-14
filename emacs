@@ -12,6 +12,10 @@
 (setq load-path (cons "~/.emacs.d/modes" load-path))
 (setq load-path (cons "~/.emacs.d/modes/color-theme" load-path))
 
+(require 'company-mode)
+(require 'company-bundled-completions)
+(company-install-bundled-completions-rules)
+
 (setq ispell-dictionary "francais"
       ispell-skip-sgml t)
 (autoload 'flyspell-mode "flyspell" "On-the-fly spelling checking" t)

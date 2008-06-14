@@ -96,8 +96,7 @@ Mod4 n                    :Exec urxvtc -e slrn
 Mod4 r                    :Exec export PATH="$HOME/local/bin:$PATH" && fbrun -font 7x14 -fg yellow -bg black -w 600 -pos 493 504
 Mod4 b                    :Exec fbrun -font 7x13 -fg yellow -bg black -w 600 -pos 493 504 -title "Enter the url" -text "firefox " -hf ~/.fluxbox/firefox_history
 Mod4 k                    :Exec xkill
-Mod4 i                    :Exec firefox
+Mod4 i                    :Exec opera
 Mod4 m                    :Exec icedove
 Mod4 w                    :Exec fbsetbg -f -r ~/wallpapers/fractals/
 Mod4 l                    :Exec xscreensaver-command -lock || xscreensaver & disown && sleep .5 && xscreensaver-command -lock
-
