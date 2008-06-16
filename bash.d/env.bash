@@ -1,11 +1,10 @@
 export HISTFILESIZE=100420
+export HISTSIZE=10000
 export HISTIGNORE='ls:ll:la:l'
 export INPUTRC="~/.inputrc"
 export EDITOR="emacs -nw -Q --load ~/.emacs.d/quick.el"
 #export EDITOR="vim"
-export DEBEMAIL="alexandre.bique@smartjog.com"
-export DEBFULLNAME="Alexandre Bique"
-export ECHANGELOG_USER="Alexandre Bique (BabaLi) <bique.alexandre@gmail.com>"
+
 if ! echo "${PATH}" | grep "^${HOME}/local/bin" 1>/dev/null 2>&1 ; then
     export PATH="${HOME}/local/bin:${PATH}:/usr/local/bin"
 fi
@@ -39,9 +38,3 @@ export LC_PAPER="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
 export EMACS_SERVER_FILE=$HOME/.emacs.d/server
-
-export KANETON_PYTHON=/usr/bin/python
-export KANETON_ARCHITECTURE=ia32/educational
-export KANETON_PLATFORM=ibm-pc
-export KANETON_USER=alexandre.bique
-export KANETON_HOST=linux/ia32
