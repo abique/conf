@@ -9,7 +9,7 @@ if ! echo "${PATH}" | grep "^${HOME}/local/bin" 1>/dev/null 2>&1 ; then
     export PATH="${HOME}/local/bin:${PATH}:/usr/local/bin"
 fi
 if ! echo "${PATH}" | grep ":/sbin:/usr/sbin\$" 1>/dev/null 2>&1 ; then
-    export PATH="${PATH}:/sbin:/usr/sbin"
+    export PATH="${PATH}:$HOME/develop/driver_wifi/rtems-toolchain/bin:/sbin:/usr/sbin"
 fi
 if ! echo "${LD_LIBRARY_PATH}" | grep "^${HOME}/local/lib" 1>/dev/null 2>&1 ; then
     export LD_LIBRARY_PATH="${HOME}/local/lib:${LD_LIBRARY_PATH}"
@@ -38,3 +38,5 @@ export LC_PAPER="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
 export EMACS_SERVER_FILE=$HOME/.emacs.d/server
+
+export NXT_MAC="00:16:53:01:E5:2C"
