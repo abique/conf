@@ -88,11 +88,11 @@ Mod4 Control Up           :MoveUp 5
 Mod4 Control Down         :MoveDown 5
 
 Mod4 e                    :Exec emacs
-Mod4 t                    :Exec urxvtc
-Mod4 Shift p              :Exec urxvtc -e ipython
-Mod4 Shift r              :Exec ruxvtc -e ruby
-Mod4 Shift h              :Exec urxvtc -e htop
-Mod4 n                    :Exec urxvtc -e slrn
+Mod4 t                    :Exec urxvt
+Mod4 Shift p              :Exec urxvt -e ipython
+Mod4 Shift r              :Exec urxvt -e ruby
+Mod4 Shift h              :Exec urxvt -e htop
+Mod4 n                    :Exec urxvt -e slrn
 Mod4 r                    :Exec export PATH="$HOME/local/bin:$PATH" && fbrun -font 7x14 -fg yellow -bg black -w 600 -pos 493 504
 Mod4 b                    :Exec fbrun -font 7x13 -fg yellow -bg black -w 600 -pos 493 504 -title "Enter the url" -text "firefox " -hf ~/.fluxbox/firefox_history
 Mod4 k                    :Exec xkill
