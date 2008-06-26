@@ -71,7 +71,7 @@
 ;;(color-theme-late-night)
 
 (if window-system
-    (color-theme-dark-blue2)
+    (color-theme-ld-dark)
   (color-theme-hober))
 ;;(color-theme-subtle-hacker)
 ;;(color-theme-comidia)
