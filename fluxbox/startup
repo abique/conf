@@ -2,8 +2,11 @@
 
 source ~/.bashrc
 
-fbsetbg -r ~/wallpapers/fractals/ || true
+which numlockx && numlockx
+
+#fbsetbg -r ~/wallpapers/fractals/ || true
 # /usr/lib/misc/xscreensaver/busyspheres --root&
+feh --bg-center ~/wallpapers/current
 
 xset -b            # Turn off beeps:
 xset r rate 195 35 # Increase the keyboard repeat-rate:

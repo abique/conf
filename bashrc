@@ -29,7 +29,7 @@ my_source /etc/bash_completion
 my_source ~/.bash.d/alias.bash
 my_source ~/.bash.d/env.bash
 my_source ~/.bash.d/colors.bash
-my_source ~/.bash.d/prompt.bash
+my_source ~/.bash.d/prompt2.bash
 my_source ~/.bash.d/svn.bash
 my_source ~/.bash.d/smartjog.bash
 my_source ~/.bash.d/proxy.bash
@@ -39,6 +39,8 @@ complete -d cd
 set completion-ignore-case on
 set print-completions-horizontally on
 set visible-stats on
+shopt -s cdspell
+shopt -s extglob
 umask 0077
 
 ~/.bash.d/xtiff.pl

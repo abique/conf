@@ -8,7 +8,6 @@ case "$1" in
     wmaker)
 	exec wmaker;;
     kde)
-        source ~/.bash.d/kde-env.bash &&
         exec ${KDEDIR}/bin/startkde;;
     openbox)
         exec openbox-session;;

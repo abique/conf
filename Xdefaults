@@ -63,7 +63,7 @@ URxvt*color13:     #cf9ebe
 URxvt*color14:     #71bebe
 URxvt*color15:     #ffffff
 !URxvt*font:	   xft:Monospace:size=9
-URxvt*font:	   7x13
+URxvt*font:	   7x14
 URxvt*scrollBar: false
 URxvt*transparent: false
 URxvt*tintingType: false
@@ -76,7 +76,7 @@ Aterm*tintingType: true
 Aterm*tinting: #ffffff
 Aterm*shading: 20
 
-Emacs.font: 7x13bold
+Emacs.font: 7x14
 !Emacs.font: Bitstream Vera Sans Mono-8
 !Emacs.font: monospace-9
 Emacs.reverseVideo: off
@@ -108,3 +108,10 @@ fbpager.currentBackgroundColor: darkgray
 fbpager.multiClickTime: 250
 fbpager.icons: true
 fbpager.windowBorderWidth: 1
+
+.xmessage.form.okay.shapeStyle: rectangle
+.xmessage.form.okay.background: #777777
+.xmessage.form.okay.foreground: snow
+!xmessage*message*background: snow
+xmessage*defaultButton: okay
+Xmessage.form.message.Scroll:  WhenNeeded
