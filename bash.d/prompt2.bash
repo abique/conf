@@ -17,7 +17,7 @@ function prompt_babali()
 
     my_pwd=$(sed 's,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
 
-    PS1="$RET$JOBS\[$cyan\]\u@\H:\[$blue\]$my_pwd\[$green\]\$\[$white\] "
+    PS1="$RET$JOBS\[$cyan\]\u@\H:\[$blue\]$my_pwd\[$yellow\]> \[$white\]"
 
 # Change the window title of X terminals
     case $TERM in
