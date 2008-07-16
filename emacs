@@ -71,7 +71,7 @@
 ;;(color-theme-late-night)
 
 (if window-system
-    (color-theme-ld-dark)
+    (color-theme-hober)
   (color-theme-hober))
 ;;(color-theme-subtle-hacker)
 ;;(color-theme-comidia)
@@ -80,6 +80,7 @@
 ;;(color-theme-billw)
 ;;(color-theme-dark-blue2)
 ;;(color-theme-clarity)
+;;(color-theme-ld-dark)
 
 (defun insert-header-guard ()
   (interactive)
