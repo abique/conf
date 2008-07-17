@@ -1,13 +1,13 @@
 ################################################################################
 
-.font:                                  monospace-8
-menu.frame.font:			monospace-8
-menu.title.font:			monospace-8
-toolbar.clock.font:			monospace-8
-toolbar.workspace.font:			monospace-8
-toolbar.iconbar.focused.font:		monospace-8
-toolbar.iconbar.unfocused.font:		monospace-8
-window.font:				monospace-8
+.font:                                  fixed-9
+menu.frame.font:			fixed-9
+menu.title.font:			fixed-9
+toolbar.clock.font:			fixed-9
+toolbar.workspace.font:			fixed-9
+toolbar.iconbar.focused.font:		fixed-9
+toolbar.iconbar.unfocused.font:		fixed-9
+window.font:				fixed-9
 
 ################################################################################
 
