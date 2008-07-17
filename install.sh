@@ -32,6 +32,7 @@ for file in		\
     Xdefaults           \
     xinitrc		\
     xmodmaprc		\
+    xscreensaver	\
     xsession		\
     config/Trolltech.conf \
 
