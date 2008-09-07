@@ -1,6 +1,10 @@
 function svndiff()
 {
-    $(which svn) diff "$@" | colordiff | less -R
+    if which colordiff >/dev/null 2>&1; then
+	$(which svn) diff "$@" | colordiff | less -R
+    else
+	$(which svn) diff "$@" | less
+    fi
 }
 
 function svnst()
@@ -37,7 +41,7 @@ function svnadd()
 {
     $(which svn) add "$@" | sed '
 s/$/'${white}'/g
-s/^A /'${green}'A /g
+s/^Add /'${green}'A /g
 '
 }
 

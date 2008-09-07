@@ -15,8 +15,9 @@ function lcd()
     cd "$1" && ls
 }
 alias pcd='cd -P'
-alias ssh_epita='ssh ssh.epita.fr' # not working :/
+alias ssh_epita='ssh ssh.epita.fr'
 alias ssh_acu='ssh ssh.epita.fr ssh acu.epita.fr' # not working :/
+alias ssh_gistr='ssh bique_a@10.226.7.15'
 alias ssh_sj='ssh intranet.smartjog.net'
 alias df='df -h'
 alias du='du -h --max-depth=1'
