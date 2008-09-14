@@ -1,6 +1,7 @@
 ;; -*- mode: Lisp; -*-
 (setq user-nickname "Alexandre Bique")
 (setq user-full-name "Alexandre Bique")
+(setq user-mail-address "bique_a@epita.fr")
 
 ;; UTF-8
 (setq locale-coding-system 'utf-8)

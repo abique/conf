@@ -23,5 +23,5 @@ case "$1" in
     awesome)
 	exec awesome;;
     fluxbox|*)
-        exec /usr/bin/startfluxbox;;
+        exec startfluxbox;;
 esac

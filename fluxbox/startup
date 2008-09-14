@@ -37,5 +37,5 @@ urxvtd -f &
 if [[ "${FLUXBOX_SVN}" = "TRUE" ]] ; then
     exec ~/local/bin/fluxbox -log "~/.fluxbox/log"
 else
-    exec /usr/bin/fluxbox -log "~/.fluxbox/log"
+    fluxbox -log "~/.fluxbox/log"
 fi

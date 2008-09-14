@@ -244,24 +244,6 @@ With optional argument, move forward N-1 lines first."
  '("^\\([^ \n]+\\)(\\([0-9]+\\)): \\(?:error\\|.\\|warnin\\(g\\)\\|remar\\(k\\)\\)"
    1 2 nil (3 . 4)))
 
-(custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(ecb-auto-expand-tag-tree (quote all))
- '(ecb-compile-window-height 10)
- '(ecb-compile-window-temporally-enlarge (quote after-selection))
- '(ecb-compile-window-width (quote edit-window))
- '(ecb-layout-name "left3")
- '(ecb-options-version "2.32")
- '(ecb-source-path (quote (("/home/babali/develop/netsoul/libdesoul" "libdesoul") ("/home/babali/develop/netsoul/soulmebaby" "soulmebaby"))))
- '(ecb-tree-expand-symbol-before t)
- '(ecb-windows-width 45)
- '(speedbar-default-position (quote left))
- '(speedbar-frame-parameters (quote ((minibuffer) (width . 42) (border-width . 0) (menu-bar-lines . 0) (tool-bar-lines . 0) (unsplittable . t) (left-fringe . 0))))
- '(highlight-current-line-globally t nil (highlight-current-line)))
-
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
