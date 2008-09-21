@@ -1,10 +1,16 @@
-# start tabbing windows together
+!mouse actions added by fluxbox-update_configs
 OnTitlebar Mouse2 :StartTabbing
 
 !mouse actions added by fluxbox-update_configs
 OnTitlebar Double Mouse1 :Shade
 OnTitlebar Mouse3 :WindowMenu
 
+# start tabbing windows together
+OnTitlebar Mouse2 :StartTabbing
+
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Double Mouse1 :Shade
+OnTitlebar Mouse3 :WindowMenu
 
 !mouse actions added by fluxbox-update_configs
 OnWindow Mod4 Mouse1      :StartMoving
@@ -97,7 +103,7 @@ Mod4 r                    :Exec export PATH="$HOME/local/bin:$PATH" && fbrun -fo
 Mod4 b                    :Exec fbrun -font 7x13 -fg yellow -bg black -w 600 -pos 493 504 -title "Enter the url" -text "firefox " -hf ~/.fluxbox/firefox_history
 Mod4 k                    :Exec xkill
 Mod4 i                    :Exec opera
-Mod4 m                    :Exec icedove
+Mod4 m                    :Exec kmail
 Mod4 w                    :Exec fbsetbg -f -r ~/wallpapers/fractals/
 Mod4 l                    :Exec xscreensaver-command -lock || xscreensaver & disown && sleep .5 && xscreensaver-command -lock
 
