@@ -17,7 +17,12 @@ function prompt_babali()
 
     my_pwd=$(sed 's,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
 
-    PS1="$RET$JOBS\[$cyan\]\u@\H:\[$blue\]$my_pwd\[$yellow\]> \[$white\]"
+    vcs=""
+    if [[ -d .svn ]] ; then
+        vcs=" svn:$(svn info | grep Revision | sed 's/.* \(.*\)/\1/g')"
+    fi
+
+    PS1="$RET$JOBS\[$cyan\]\u@\H:\[$blue\]$my_pwd\[$yellow\]$vcs> \[$white\]"
 
 # Change the window title of X terminals
     case $TERM in
