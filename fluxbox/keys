@@ -106,6 +106,5 @@ Mod4 i                    :Exec opera
 Mod4 m                    :Exec kmail
 Mod4 w                    :Exec fbsetbg -f -r ~/wallpapers/fractals/
 Mod4 l                    :Exec xscreensaver-command -lock || xscreensaver & disown && sleep .5 && xscreensaver-command -lock
-
 Mod4 z                    :Exec zlock -immed
 Mod4 x                    :Exec xterm

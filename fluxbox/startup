@@ -6,7 +6,9 @@ which numlockx && numlockx
 
 #fbsetbg -r ~/wallpapers/fractals/ || true
 # /usr/lib/misc/xscreensaver/busyspheres --root&
-feh --bg-center ~/wallpapers/current
+if [[ -r ~/wallpapers/current ]] ; then
+    feh --bg-center ~/wallpapers/current
+fi
 
 xset -b            # Turn off beeps:
 xset r rate 195 35 # Increase the keyboard repeat-rate:
