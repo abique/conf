@@ -15,7 +15,8 @@ function prompt_babali()
         JOBS=""
     fi
 
-    my_pwd=$(sed 's,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
+    my_pwd=$(sed "s,$HOME,~,g"'
+s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
 
     vcs=""
     if [[ -d .svn ]] ; then

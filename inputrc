@@ -10,3 +10,22 @@ set page-completions on
 set print-completions-horizontally off
 set show-all-if-ambiguous on
 set visible-stats on
+
+# prepare to type a quoted word --
+# insert open and close double quotes
+# and move to just after the open quote
+"\C-x\"": "\"\"\C-b"
+"\C-x\'": "''\C-b"
+# insert a backslash (testing backslash escapes
+# in sequences and macros)
+"\C-x\\": "\\"
+"\C-xk": kill-whole-line
+
+$if Bash
+# Quote the current or previous word
+"\C-xq": "\eb\"\ef\""
+"\C-xl": " | less"
+"\C-xt": "tail -f "
+"\C-xd": "cd ~/develop\n"
+"\M-i": "\t"
+$endif
