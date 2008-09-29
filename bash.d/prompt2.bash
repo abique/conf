@@ -20,7 +20,7 @@ s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
 
     vcs=""
     if [[ -d .svn ]] ; then
-        vcs=" svn:$(svn info | grep Revision | sed 's/.* \(.*\)/\1/g')"
+        vcs=" svn:$yellowB$(svn info | grep Revision | sed 's/.* \(.*\)/\1/g')$green"
     fi
 
     PS1="$RET$JOBS\[$cyan\]\u@\H:\[$blue\]$my_pwd\[$yellow\]$vcs> \[$white\]"
