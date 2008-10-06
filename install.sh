@@ -13,6 +13,8 @@ function install()
 [[ -d ${HOME}/.config ]] || mkdir ${HOME}/.config
 
 for file in		\
+    awesome		\
+    awesome.d		\
     bashrc		\
     bash.d              \
     beryl		\
@@ -34,6 +36,7 @@ for file in		\
     xmodmaprc		\
     xscreensaver	\
     xsession		\
+    config/openbox \
     config/Trolltech.conf \
 
 do
