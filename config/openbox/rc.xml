@@ -33,7 +33,7 @@
     <monitor>Any</monitor>
   </placement>
   <theme>
-    <name>Bamboo</name>
+    <name>M0nst4-sky</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
        avaible characters are NDSLIMC, each can occur at most once.
@@ -158,7 +158,6 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
-
     <keybind key="W-F1">
       <action name="SendToDesktop">
         <desktop>1</desktop>
@@ -207,8 +206,6 @@
         <follow>false</follow>
       </action>
     </keybind>
-
-
     <keybind key="W-1">
       <action name="Desktop">
         <desktop>1</desktop>
@@ -249,8 +246,6 @@
         <desktop>8</desktop>
       </action>
     </keybind>
-
-
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
@@ -304,9 +299,6 @@
       </action>
     </keybind>
   </keyboard>
-
-
-
   <mouse>
     <dragThreshold>8</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
