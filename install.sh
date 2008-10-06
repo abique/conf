@@ -19,6 +19,7 @@ for file in		\
     bash.d              \
     beryl		\
     beryl-managerrc	\
+    bmpanel		\
     emacs		\
     emacs.d		\
     fluxbox             \
