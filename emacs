@@ -56,6 +56,9 @@
 ;; C mode
 (add-hook `c-mode-hook `rm-trailing-spaces-always)
 (add-hook `c-mode-hook `cwarn-mode)
+;; C++ mode
+(add-hook `c++-mode-hook `rm-trailing-spaces-always)
+(add-hook `c++-mode-hook `cwarn-mode)
 
 (load-file "~/.emacs.d/styles/babali.el")
 
@@ -95,10 +98,10 @@
                       (upcase name))))
              )
           (goto-char (point-min))
-          (insert "#ifndef " macro "_\n")
-          (insert "# define " macro "_\n\n")
+          (insert "#ifndef " macro "\n")
+          (insert "# define " macro "\n\n")
           (goto-char (point-max))
-          (insert "\n#endif /* !" macro "_ */\n")
+          (insert "\n#endif /* !" macro " */\n")
           )
       )
     )
