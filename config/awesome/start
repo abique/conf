@@ -1,4 +1,0 @@
-#! /bin/bash
-
-xmodmap ~/.xmodmaprc
-feh --bg-scale /home/bique_a/wallpapers/current
