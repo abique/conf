@@ -2,6 +2,8 @@
 ;; Load gentoo site
 ;; (if (file-readable-p "/usr/share/emacs/site-lisp/site-gentoo.el")
 ;;     (load "/usr/share/emacs/site-lisp/site-gentoo"))
+(if (file-readable-p "/usr/share/emacs/site-lisp/lua-mode.el")
+    (load "/usr/share/emacs/site-lisp/lua-mode"))
 ;; (if (file-readable-p "/usr/share/emacs/site-lisp/debian-startup.el")
 ;;     (load "/usr/share/emacs/site-lisp/debian-startup"))
 
