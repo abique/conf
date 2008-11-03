@@ -7,7 +7,7 @@ require("beautiful")
 
 -- {{{ Variable definitions
 -- This is a file path to a theme file which will defines colors.
-theme_path = "/usr/share/awesome/themes/default"
+theme_path = "/home/bique_a/.config/awesome/theme"
 
 -- This is used later as the default terminal to run.
 terminal = "urxvt"
@@ -46,6 +46,8 @@ floatapps =
     ["pinentry"] = true,
     ["gimp"] = true,
     ["soulmebaby"] = true,
+    ["psi"] = true,
+    ["kopete"] = true,
     -- by instance
     ["mocp"] = true
 }
@@ -54,10 +56,14 @@ floatapps =
 -- Use the screen and tags indices.
 apptags =
 {
-    -- ["Firefox"] = { screen = 1, tag = 2 },
+["emacs"] = { screen = 1, tag = 1},
+["Firefox"] = { screen = 1, tag = 4 },
 ["arora"] = { screen = 1, tag = 4 },
-["opera"] = { screen = 1, tag = 4 }
-["soulmebaby"] = { screen = 1, tag = 9 }
+["opera"] = { screen = 1, tag = 4 },
+["xchat"] = { screen = 1, tag = 8 },
+["soulmebaby"] = { screen = 1, tag = 9 },
+["kopete"] = { screen = 1, tag = 9 },
+["psi"] = { screen = 1, tag = 9 },
     -- ["mocp"] = { screen = 2, tag = 4 },
 }
 
@@ -119,10 +125,6 @@ mytextbox = widget({ type = "textbox", name = "mytextbox", align = "right" })
 mytextbox.text = "<b><small> awesome " .. AWESOME_VERSION .. " </small></b>"
 mypromptbox = widget({ type = "textbox", name = "mypromptbox", align = "left" })
 
--- Create an iconbox widget
-myiconbox = widget({ type = "textbox", name = "myiconbox", align = "left" })
-myiconbox.text = "<bg image=\"/usr/share/awesome/icons/awesome16.png\" resize=\"true\"/>"
-
 -- Create a systray
 mysystray = widget({ type = "systray", name = "mysystray", align = "right" })
 
@@ -146,21 +148,20 @@ for s = 1, screen.count() do
     -- Add widgets to the statusbar - order matters
     mystatusbar[s]:widgets({
         mytaglist,
-        mytasklist,
-        myiconbox,
-        mypromptbox,
-        mytextbox,
         mylayoutbox[s],
-        s == 1 and mysystray or nil
+        mypromptbox,
+        mytasklist,
+        mysystray,
+        mytextbox,
     })
     mystatusbar[s].screen = s
 end
 -- }}}
 
 -- {{{ Mouse bindings
-awesome.mouse_add(mouse({ }, 3, function () awful.spawn(terminal) end))
-awesome.mouse_add(mouse({ }, 4, awful.tag.viewnext))
-awesome.mouse_add(mouse({ }, 5, awful.tag.viewprev))
+-- awesome.mouse_add(mouse({ }, 3, function () awful.spawn(terminal) end))
+-- awesome.mouse_add(mouse({ }, 4, awful.tag.viewnext))
+-- awesome.mouse_add(mouse({ }, 5, awful.tag.viewprev))
 -- }}}
 
 -- {{{ Key bindings
@@ -213,12 +214,13 @@ keybinding({ modkey }, "Escape", awful.tag.history.restore):add()
 
 -- Standard program
 keybinding({ modkey }, "Return", function () awful.spawn(terminal) end):add()
+-- keybinding({ modkey }, "t", function () awful.spawn(terminal) end):add()
 
 keybinding({ modkey, "Control" }, "r", awesome.restart):add()
 keybinding({ modkey, "Shift" }, "q", awesome.quit):add()
 
 -- Client manipulation
-keybinding({ modkey }, "m", awful.client.maximize):add()
+keybinding({ modkey }, "f", awful.client.maximize):add()
 keybinding({ modkey, "Shift" }, "c", function () client.focus:kill() end):add()
 keybinding({ modkey }, "j", function () awful.client.focusbyidx(1); client.focus:raise() end):add()
 keybinding({ modkey }, "k", function () awful.client.focusbyidx(-1);  client.focus:raise() end):add()
@@ -244,7 +246,7 @@ keybinding({ modkey }, "space", function () awful.layout.inc(layouts, 1) end):ad
 keybinding({ modkey, "Shift" }, "space", function () awful.layout.inc(layouts, -1) end):add()
 
 -- Prompt
-keybinding({ modkey }, "F1", function ()
+keybinding({ modkey }, "r", function ()
                                  awful.prompt.run({ prompt = "Run: " }, mypromptbox, awful.spawn, awful.completion.bash,
 os.getenv("HOME") .. "/.cache/awesome/history") end):add()
 keybinding({ modkey }, "F4", function ()
