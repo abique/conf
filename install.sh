@@ -39,7 +39,7 @@ for file in		\
     xsession		\
     config/openbox \
     config/Trolltech.conf \
-
+    warsow
 do
     install ${file}
 done
