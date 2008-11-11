@@ -43,4 +43,4 @@ shopt -s cdspell
 shopt -s extglob
 umask 0077
 
-~/.bash.d/xtiff.pl
+#~/.bash.d/xtiff.pl
