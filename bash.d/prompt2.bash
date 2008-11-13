@@ -23,7 +23,7 @@ s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
         vcs=" svn:\[$yellowB\]$(svn info | grep Revision | sed 's/.* \(.*\)/\1/g')\[$green\]"
     fi
 
-    PS1="$RET$JOBS\[$cyan\]\u@\H:\[$blue\]$my_pwd\[$yellow\]$vcs> \[$white\]"
+    PS1="$RET$JOBS\[$cyanB\]\u@\H:\[$blueB\]$my_pwd\[$yellowB\]$vcs> \[$white\]"
 
 # Change the window title of X terminals
     case $TERM in

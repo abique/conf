@@ -37,8 +37,9 @@ for file in		\
     xmodmaprc		\
     xscreensaver	\
     xsession		\
-    config/openbox \
+    config/openbox      \
     config/Trolltech.conf \
+    config/fish         \
     warsow
 do
     install ${file}
