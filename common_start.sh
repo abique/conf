@@ -8,7 +8,7 @@ xmodmap ~/.xmodmaprc
 xrdb -load ~/.Xdefaults
 
 xset -b
-xset r rate 195 35
+xset r rate 175 30
 
 if which soulmebaby.sh 2>/dev/null >/dev/null ; then
     soulmebaby.sh & disown
