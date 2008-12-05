@@ -4,7 +4,12 @@ which numlockx && numlockx
 if [[ -r ~/wallpapers/current ]] ; then
     feh --bg-center ~/wallpapers/current
 fi
-xmodmap ~/.xmodmaprc
+
+#xmodmap ~/.xmodmaprc
+
+setxkbmap -model evdev -layout us -variant altgr-intl
+setxkbmap -option -option ctrl:nocaps
+
 xrdb -load ~/.Xdefaults
 
 xset -b

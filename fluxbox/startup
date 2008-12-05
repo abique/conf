@@ -1,40 +1,6 @@
 #! /bin/bash
 
-source ~/.bashrc
-
-which numlockx && numlockx
-
-#fbsetbg -r ~/wallpapers/fractals/ || true
-# /usr/lib/misc/xscreensaver/busyspheres --root&
-if [[ -r ~/wallpapers/current ]] ; then
-    feh --bg-center ~/wallpapers/current
-fi
-
-xset -b            # Turn off beeps:
-xset r rate 195 35 # Increase the keyboard repeat-rate:
-#xrandr -s 1280x1024
-
-xrdb -merge ~/.Xdefaults
-
-# Your favourite mouse cursor:
-# xsetroot -cursor_name right_ptr
-
-xmodmap ~/.xmodmaprc
-
-urxvtd -f &
-
-#if which soulmebaby 2>/dev/null >/dev/null ; then
-#   soulmebaby & disown
-#fi
-
-# if which psi 2>/dev/null >/dev/null ; then
-#    psi & disown
-# fi
-
-# if [[ "$HOSTNAME" = "Vortex" ]] ; then
-#     xchat & disown
-#     thunderbird & disown
-# fi
+~/conf/common_start.sh
 
 if [[ "${FLUXBOX_SVN}" = "TRUE" ]] ; then
     exec ~/local/bin/fluxbox -log "~/.fluxbox/log"
