@@ -4,10 +4,9 @@ require("beautiful")
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
--- The default is a dark theme
 -- theme_path = "/usr/share/awesome/themes/default/theme"
--- Uncommment this for a lighter theme
-theme_path = "/usr/share/awesome/themes/sky/theme"
+-- theme_path = "/usr/share/awesome/themes/sky/theme"
+theme_path = "/home/bique_a/.config/awesome/theme"
 
 -- Actually load theme
 beautiful.init(theme_path)
