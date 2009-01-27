@@ -90,3 +90,8 @@ function x-ssh-agent()
     eval $(ssh-agent)
     ssh-add
 }
+
+function tg()
+{
+    "$@" >/dev/null 2>/dev/null
+}
