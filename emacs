@@ -25,6 +25,8 @@
 
 ;; d-mode
 (load-file "~/.emacs.d/modes/d-mode.el")
+(load-file "~/.emacs.d/modes/llvm-mode.el")
+(load-file "~/.emacs.d/modes/tablegen-mode.el")
 
 (require 'company-mode)
 (require 'company-bundled-completions)
@@ -42,13 +44,19 @@
 ;;(global-pabbrev-mode)
 
 ;; file extensions
-(add-to-list 'auto-mode-alist '("\\.l$" . flex-mode))
-(add-to-list 'auto-mode-alist '("\\.y$" . bison-mode))
+;; (add-to-list 'auto-mode-alist '("\\.l$" . flex-mode))
+;; (add-to-list 'auto-mode-alist '("\\.y$" . bison-mode))
 (add-to-list 'auto-mode-alist '("\\.d$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.di$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.apd$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.pro$" . sh-mode)) ;; Qt .pro files
 (add-to-list 'auto-mode-alist '("CMakeLists.txt$" . cmake-mode))
+(add-to-list 'auto-mode-alist '("\\.y$" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.l$" . c++-mode))
 
 ;; gnus
 (setq gnus-summary-line-format "%U%R%z%3t: %-25B%(%-23,23t%) %s\n")
+
+;; transparancy
+(set-frame-parameter (selected-frame) 'alpha '(85 50))
+(add-to-list 'default-frame-alist '(alpha 85 50))
