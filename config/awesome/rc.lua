@@ -34,7 +34,7 @@ layouts =
    "fairv",
    "magnifier",
    "max",
-   "fullscreen",
+--   "fullscreen",
    "spiral",
    "dwindle",
    "floating"
@@ -63,6 +63,9 @@ apptags = {
    ["Firefox"] = { screen = 1, tag = 4 },
    ["arora"] = { screen = 1, tag = 4 },
    ["opera"] = { screen = 1, tag = 4 },
+   ["kontact"] = { screen = 1, tag = 8 },
+   ["kmail"] = { screen = 1, tag = 8 },
+   ["knode"] = { screen = 1, tag = 8 },
    ["xchat"] = { screen = 1, tag = 8 },
    ["soulmebaby"] = { screen = 1, tag = 9 },
    ["kopete"] = { screen = 1, tag = 9 },
@@ -86,7 +89,10 @@ for s = 1, screen.count() do
       -- Add tags to screen one by one
       tags[s][tagnumber].screen = s
    end
+   tags[1][1].layout = "max"
    tags[1][4].layout = "max"
+   tags[1][7].layout = "max"
+   tags[1][8].layout = "max"
    tags[1][9].layout = "floating"
    -- I'm sure you want to see at least one tag.
    tags[s][1].selected = true
