@@ -13,8 +13,6 @@ function install()
 [[ -d ${HOME}/.config ]] || mkdir ${HOME}/.config
 
 for file in		\
-    awesome		\
-    awesome.d		\
     bashrc		\
     bash.d              \
     beryl		\
@@ -40,6 +38,7 @@ for file in		\
     config/openbox      \
     config/Trolltech.conf \
     config/fish         \
+    config/awesome      \
     warsow
 do
     install ${file}
