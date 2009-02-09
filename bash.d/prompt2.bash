@@ -21,6 +21,8 @@ s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
     vcs=""
     if [[ -d .svn ]] ; then
         vcs=" svn:\[$yellowB\]$(svn info | grep Revision | sed 's/.* \(.*\)/\1/g')\[$green\]"
+    elif [[ -d .git ]] ; then
+	vcs=" git:\[$yellowB\]$(git log --pretty=format:%h | wc -l)\[$green\]"
     fi
 
     PS1="$RET$JOBS\[$cyanB\]\u@\H:\[$blueB\]$my_pwd\[$yellowB\]$vcs> \[$white\]"
