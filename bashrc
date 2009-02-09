@@ -33,6 +33,7 @@ my_source ~/.bash.d/prompt2.bash
 my_source ~/.bash.d/svn.bash
 my_source ~/.bash.d/smartjog.bash
 my_source ~/.bash.d/proxy.bash
+my_source ~/.bash.d/mobile-phone.bash
 my_source ~/.bash.d/local.bash
 
 complete -d cd
