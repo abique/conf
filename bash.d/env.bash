@@ -2,7 +2,7 @@ export HISTFILESIZE=100420
 export HISTSIZE=10000
 export HISTIGNORE='ls:ll:la:l:[bf]g:'
 export INPUTRC="~/.inputrc"
-export EDITOR="emacs -nw -Q --load ~/.emacs.d/quick.el"
+export EDITOR="$HOME/.bash.d/emacs-quick.bash"
 #export EDITOR="vim"
 
 if ! echo "${PATH}" | grep "^${HOME}/local/bin" 1>/dev/null 2>&1 ; then
@@ -41,3 +41,5 @@ export LANG="en_US.UTF-8"
 export EMACS_SERVER_FILE=$HOME/.emacs.d/server
 
 export NXT_MAC="00:16:53:01:E5:2C"
+
+#export CSCOPE_LINEFLAG_AFTER_FILE=no

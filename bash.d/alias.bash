@@ -27,6 +27,8 @@ alias reload="source ~/.bashrc"
 alias emacs='emacs -fn 7x14'
 alias my_date="date +'%Y%m%d%H%M'"
 alias gt='git'
+alias cdozulis='cd ~/develop/ozulis'
+alias cdioem='cd ~/develop/xen/ioemu'
 
 function ema()
 {
@@ -44,8 +46,8 @@ alias ......='cd ../../../../..'
 alias .......='cd ../../../../../..'
 alias ........='cd ../../../../../../..'
 alias ps='ps -fx'
-alias egrep="egrep --color --exclude='*.svn*'"
-alias grep="grep --color --exclude='*.svn*'"
+alias grep="egrep --color --exclude='*.svn*' --exclude='*.o' --exclude=TAGS"
+alias egrep="grep -E"
 alias esed='sed --regexp-extended'
 alias screen="screen -U"
 alias xgcc='gcc -W -Wall'
@@ -58,6 +60,10 @@ alias pwgen='pwgen --symbols --secure --num-passwords=5 --capitalize -C --ambigu
 if which colormake >/dev/null 2>&1 && false ; then
     alias make='colormake'
 fi
+
+alias p='sudo pacman-color'
+alias pu='p -Syu'
+alias y='sudo yaourt'
 
 alias soulmebaby_tail='tail -f -n 50 ~/.config/soulmebaby/log'
 alias soulmebaby_sql='sqlite3 ~/.config/soulmebaby/database.sqlite'
