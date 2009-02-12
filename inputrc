@@ -26,6 +26,9 @@ $if Bash
 "\C-xq": "\eb\"\ef\""
 "\C-xl": " | less"
 "\C-xt": "tail -f "
-"\C-xd": "cd ~/develop\n"
+"\C-x\C-d": "cd ~/develop\n"
+"\C-xdq": "cd ~/develop/qemu\n"
+"\C-xdo": "cd ~/develop/ozulis\n"
+"\C-xps": "cd /proc/scsi/sg/\n"
 "\M-i": "\t"
 $endif
