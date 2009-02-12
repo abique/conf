@@ -55,6 +55,7 @@
 (load-file "~/.emacs.d/styles/d-style.el")
 (load-file "~/.emacs.d/styles/gostai.el")
 (load-file "~/.emacs.d/styles/arora.el")
+(load-file "~/.emacs.d/styles/qemu.el")
 (setq c-default-style "epita")
 
 (setq default-indicate-empty-lines t) ; show the end of the file
