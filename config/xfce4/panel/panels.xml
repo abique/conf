@@ -15,10 +15,10 @@
 			<property name="activetrans" value="0"/>
 		</properties>
 		<items>
-			<item name="showdesktop" id="1"/>
 			<item name="pager" id="2"/>
 			<item name="tasklist" id="3"/>
 			<item name="systray" id="4"/>
+			<item name="clock" id="12356793540"/>
 		</items>
 	</panel>
 </panels>
