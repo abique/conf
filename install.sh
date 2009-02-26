@@ -5,7 +5,7 @@ CONF_PATH=`pwd`
 
 function install()
 {
-    rm -rf ${HOME}/$1
+    rm -rf ${HOME}/.$1
     ln -sf ${CONF_PATH}/$1 ${HOME}/.$1
     printf "\e[33mInstalling\e[m ${HOME}/\e[32m$1\e[m\n"
 }
@@ -13,11 +13,18 @@ function install()
 [[ -d ${HOME}/.config ]] || mkdir ${HOME}/.config
 
 for file in		\
-    bashrc		\
+    Xdefaults           \
     bash.d              \
+    bashrc		\
     beryl		\
     beryl-managerrc	\
     bmpanel		\
+    config/Trolltech.conf \
+    config/awesome      \
+    config/fish         \
+    config/openbox      \
+    config/xfce4	\
+    config/xfce4-session \
     emacs		\
     emacs.d		\
     fluxbox             \
@@ -26,20 +33,16 @@ for file in		\
     htoprc		\
     indent.pro          \
     inputrc		\
-    toprc		\
+    q3a			\
     screenrc            \
-    vimrc               \
+    toprc		\
     vim			\
-    Xdefaults           \
+    vimrc               \
+    warsow		\
     xinitrc		\
     xmodmaprc		\
     xscreensaver	\
-    xsession		\
-    config/openbox      \
-    config/Trolltech.conf \
-    config/fish         \
-    config/awesome      \
-    warsow
+    xsession
 do
     install ${file}
 done
