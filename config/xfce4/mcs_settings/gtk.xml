@@ -3,7 +3,7 @@
 
 <mcs-option>
 	<option name="Gtk/CanChangeAccels" type="int" value="0"/>
-	<option name="Gtk/CursorThemeName" type="string" value="default"/>
+	<option name="Gtk/CursorThemeName" type="string" value="Oxygen_Blue"/>
 	<option name="Gtk/CursorThemeSize" type="int" value="16"/>
 	<option name="Gtk/FontName" type="string" value="Sans 9"/>
 	<option name="Gtk/KeyThemeName" type="string" value="Emacs"/>
