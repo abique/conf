@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shortcuts-theme name="babali">
+	<shortcut command="aumix -v+10" keys="XF86AudioRaiseVolume"/>
+	<shortcut command="aumix -v-10" keys="XF86AudioLowerVolume"/>
+	<shortcut command="aumix -v0" keys="XF86AudioMute"/>
+	<shortcut command="urxvt" keys="Super+t"/>
+	<shortcut command="xfce4-popup-menu" keys="Control+Escape"/>
+	<shortcut command="xfhelp4" keys="Alt+F1"/>
+	<shortcut command="xflock4" keys="Control+Alt+Delete"/>
+	<shortcut command="xfrun4" keys="Alt+F2"/>
+	<shortcut command="xkill" keys="Control+Alt+Escape"/>
+</shortcuts-theme>
