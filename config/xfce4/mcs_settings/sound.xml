@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mcs-option SYSTEM "mcs-option.dtd">
+
+<mcs-option>
+	<option name="Sound/Mixer/DefaultDevice" type="string" value="default"/>
+	<option name="Sound/Mixer/Useful:#0: HDA Intel" type="string" value="@Master,0@Headphone,0@PCM,0@Front,0@Front Mic,0@Front Mic Boost,0@Capture,0@Capture,1@Capture,2@Digital,0@Input Source,0@Input Source,1@Input Source,2@"/>
+	<option name="Sound/Mixer/Useful:#1: pcsp" type="string" value="@Master,0@PC Speaker,0@BaseFRQ,0@"/>
+	<option name="Sound/Mixer/Useful:default" type="string" value="@Master,0@Headphone,0@PCM,0@Front,0@Front Mic,0@Front Mic Boost,0@Capture,0@Capture,1@Capture,2@Digital,0@Input Source,0@Input Source,1@Input Source,2@"/>
+</mcs-option>
