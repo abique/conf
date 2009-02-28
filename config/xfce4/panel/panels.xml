@@ -5,10 +5,10 @@
 		<properties>
 			<property name="size" value="24"/>
 			<property name="monitor" value="0"/>
-			<property name="screen-position" value="2"/>
+			<property name="screen-position" value="11"/>
 			<property name="fullwidth" value="1"/>
 			<property name="xoffset" value="0"/>
-			<property name="yoffset" value="0"/>
+			<property name="yoffset" value="998"/>
 			<property name="handlestyle" value="0"/>
 			<property name="autohide" value="0"/>
 			<property name="transparency" value="20"/>
@@ -17,8 +17,9 @@
 		<items>
 			<item name="pager" id="2"/>
 			<item name="tasklist" id="3"/>
+			<item name="cpugraph" id="12358580700"/>
 			<item name="systray" id="4"/>
-			<item name="clock" id="12356793540"/>
+			<item name="datetime" id="12358581281"/>
 		</items>
 	</panel>
 </panels>
