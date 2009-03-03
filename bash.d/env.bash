@@ -12,7 +12,11 @@ if ! echo "${PATH}" | grep ":/sbin:/usr/sbin\$" 1>/dev/null 2>&1 ; then
     export PATH="${PATH}:$HOME/develop/driver_wifi/rtems-toolchain/bin:/sbin:/usr/sbin"
 fi
 if ! echo "${LD_LIBRARY_PATH}" | grep "^${HOME}/local/lib" 1>/dev/null 2>&1 ; then
-    export LD_LIBRARY_PATH="${HOME}/local/lib:${LD_LIBRARY_PATH}"
+    if [[ -z "${LD_LIBRARY_PATH}" ]] ; then
+    	export LD_LIBRARY_PATH="${HOME}/local/lib"
+    else
+	export LD_LIBRARY_PATH="${HOME}/local/lib:${LD_LIBRARY_PATH}"
+    fi
 fi
 
 export COLORTERM="yes"
