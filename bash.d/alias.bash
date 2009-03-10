@@ -64,6 +64,7 @@ fi
 alias p='sudo pacman-color'
 alias pu='p -Syu'
 alias y='sudo yaourt'
+alias poweroff='sudo poweroff'
 
 alias soulmebaby_tail='tail -f -n 50 ~/.config/soulmebaby/log'
 alias soulmebaby_sql='sqlite3 ~/.config/soulmebaby/database.sqlite'
