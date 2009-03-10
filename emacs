@@ -53,6 +53,7 @@
 (add-to-list 'auto-mode-alist '("CMakeLists.txt$" . cmake-mode))
 (add-to-list 'auto-mode-alist '("\\.y$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.l$" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.doch$" . c++-mode))
 
 ;; gnus
 (setq gnus-summary-line-format "%U%R%z%3t: %-25B%(%-23,23t%) %s\n")
