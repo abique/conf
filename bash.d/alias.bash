@@ -69,6 +69,16 @@ alias poweroff='sudo poweroff'
 alias soulmebaby_tail='tail -f -n 50 ~/.config/soulmebaby/log'
 alias soulmebaby_sql='sqlite3 ~/.config/soulmebaby/database.sqlite'
 
+function ssh_vnc_tunnel()
+{
+    if [[ $# -eq 0 ]] ; then
+	return
+    fi
+    ssh -L5901:localhost:5901 root@"$1" -N &
+    vncviewer localhost:1
+    wait $!
+}
+
 function b16b64()
 {
     if [[ $# -eq 0 ]] ; then
