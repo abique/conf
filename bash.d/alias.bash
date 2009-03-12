@@ -113,3 +113,8 @@ function tg()
 {
     "$@" >/dev/null 2>/dev/null
 }
+
+function lr()
+{
+    "$@" 2>&1 | less -R
+}
