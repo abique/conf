@@ -24,6 +24,7 @@
 (load-file "~/.emacs.d/doxygen.el")
 
 ;; d-mode
+(autoload 'nsi-mode "nsi-mode" "nsi editing mode." t)
 (load-file "~/.emacs.d/modes/d-mode.el")
 (load-file "~/.emacs.d/modes/llvm-mode.el")
 (load-file "~/.emacs.d/modes/tablegen-mode.el")
@@ -54,6 +55,7 @@
 (add-to-list 'auto-mode-alist '("\\.y$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.l$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.doch$" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.nsi$" . nsi-mode))
 
 ;; gnus
 (setq gnus-summary-line-format "%U%R%z%3t: %-25B%(%-23,23t%) %s\n")
