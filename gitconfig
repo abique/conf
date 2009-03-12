@@ -1,6 +1,6 @@
 [user]
     name = Alexandre Bique
-    email = alexandre.bique@citrix.com
+    email = bique.alexandre@gmail.com
 
 [alias]
     ci = commit -a
