@@ -25,7 +25,7 @@ s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
 	vcs=" git:\[$yellowB\]$(git log --pretty=format:%h | wc -l)\[$green\]"
     fi
 
-    PS1="[lenny] $RET$JOBS\[$cyanB\]\u@\H:\[$blueB\]$my_pwd\[$yellowB\]$vcs> \[$white\]"
+    PS1="$RET$JOBS\[$cyanB\]\u@\H:\[$blueB\]$my_pwd\[$yellowB\]$vcs> \[$white\]"
 
 # Change the window title of X terminals
     case $TERM in
