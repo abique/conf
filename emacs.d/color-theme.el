@@ -1,6 +1,6 @@
 ;; Theme
-(set-mouse-color "DarkSalmon")
-(set-cursor-color "DarkOrange3")
+;;(set-mouse-color "DarkSalmon")
+;;(set-cursor-color "DarkOrange3")
 
 ;; COLOR THEME
 (require 'color-theme)

@@ -22,6 +22,7 @@ for file in		\
     config/Trolltech.conf \
     config/awesome      \
     config/fish         \
+    config/qtcurvestylerc \
     config/openbox      \
     config/xfce4	\
     config/xfce4-session \
