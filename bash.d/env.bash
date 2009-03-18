@@ -2,8 +2,8 @@ export HISTFILESIZE=100420
 export HISTSIZE=10000
 export HISTIGNORE='ls:ll:la:l:[bf]g:'
 export INPUTRC="~/.inputrc"
-export EDITOR="$HOME/.bash.d/emacs-quick.bash"
-#export EDITOR="vim"
+#export EDITOR="$HOME/.bash.d/emacs-quick.bash"
+export EDITOR="vim"
 
 if ! echo "${PATH}" | grep "^${HOME}/local/bin" 1>/dev/null 2>&1 ; then
     export PATH="${HOME}/local/bin:${HOME}/local/dmd/bin:${PATH}"
@@ -25,12 +25,12 @@ export LS_COLORS="${LS_COLORS}:*.c=0;33:*.cc=0;33:*.d=0;33:*.h=0;36:*.hh=0;36:*.
 export MANWIDTH='79'
 
 export LESS_TERMCAP_mb=$'\E[01;31m'
-export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;33m'
 export LESS_TERMCAP_me=$'\E[0m'
 export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;32m'
+export LESS_TERMCAP_us=$'\E[01;34m'
 
 export LC_ALL="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
