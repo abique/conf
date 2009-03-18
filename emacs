@@ -12,7 +12,7 @@
 (load-file "~/.emacs.d/compilation.el")
 (load-file "~/.emacs.d/c.el")
 (load-file "~/.emacs.d/helpers.el")
-(load-file "~/.emacs.d/color-theme.el")
+;;(load-file "~/.emacs.d/color-theme.el")
 (load-file "~/.emacs.d/doxygen.el")
 (load-file "~/.emacs.d/keys.el")
 

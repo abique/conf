@@ -118,3 +118,11 @@ function lr()
 {
     "$@" 2>&1 | less -R
 }
+
+function check_colors()
+{
+    for i in $(seq 30 37)
+    do
+        echo -e $((i - 30)): "\e[0;${i}mbande\e[m", "\e[1;${i}mbande\e[m"
+    done
+}

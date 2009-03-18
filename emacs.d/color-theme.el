@@ -9,7 +9,7 @@
 ;;(color-theme-late-night)
 
 (if window-system
-    (color-theme-taylor)
+    (color-theme-taylor))
   (color-theme-clarity))
 ;;(color-theme-subtle-hacker)
 ;;(color-theme-comidia)
