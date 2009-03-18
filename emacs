@@ -12,12 +12,13 @@
 (load-file "~/.emacs.d/compilation.el")
 (load-file "~/.emacs.d/c.el")
 (load-file "~/.emacs.d/helpers.el")
-(load-file "~/.emacs.d/keys.el")
 (load-file "~/.emacs.d/color-theme.el")
 (load-file "~/.emacs.d/doxygen.el")
+(load-file "~/.emacs.d/keys.el")
 
 ;; d-mode
 (autoload 'nsi-mode "nsi-mode" "nsi editing mode." t)
+(load-file "~/.emacs.d/modes/cmake-mode.el")
 (load-file "~/.emacs.d/modes/d-mode.el")
 (load-file "~/.emacs.d/modes/llvm-mode.el")
 (load-file "~/.emacs.d/modes/tablegen-mode.el")
@@ -29,7 +30,6 @@
 (add-hook 'latex-mode-hook (lambda () (flyspell-mode 1)))
 
 ;; cmake mode
-(load-file "~/.emacs.d/modes/cmake-mode.el")
 
 ;; pabbrev & completion mode
 ;;(require 'company-mode)

@@ -1,11 +1,11 @@
 ;; code folding
-(add-hook 'c-mode-common-hook
-            (lambda () 
-              ((hs-minor-mode)
-               (local-set-key "\C-cs" 'hs-show-block)
-               (local-set-key "\C-ch" 'hs-hide-block)
-               (local-set-key "\C-cS" 'hs-show-all)
-               (local-set-key "\C-cH" 'hs-hide-all))))
+;; (add-hook 'c-mode-common-hook
+;;             (lambda () 
+;;               ((hs-minor-mode)
+;;                (local-set-key "\C-cs" 'hs-show-block)
+;;                (local-set-key "\C-ch" 'hs-hide-block)
+;;                (local-set-key "\C-cS" 'hs-show-all)
+;;                (local-set-key "\C-cH" 'hs-hide-all))))
 
 ;; key bindings
 (global-set-key [f2] 'indent-buffer)
@@ -23,11 +23,12 @@
 (global-set-key "" 'goto-line)
 
 ;; Navigation
-(global-set-key [M-left] 'windmove-left)   ; move to left windnow
+(global-set-key [M-left] 'windmove-left)   ; move to left window
 (global-set-key [M-right] 'windmove-right) ; move to right window
 (global-set-key [M-up] 'windmove-up)       ; move to upper window
-(global-set-key [M-down] 'windmove-down)
-(global-set-key [?\C-9] 'windmove-left)  ; move to left windnow
+(global-set-key [M-down] 'windmove-down)   ; move to bottom window
+  ; move to left windnow
+(global-set-key [?\C-9] 'windmove-left)
 (global-set-key [?\C-0] 'windmove-right) ; move to right window
 (global-set-key [?\C-=] 'windmove-up)    ; move to upper window
 (global-set-key [?\C--] 'windmove-down)
