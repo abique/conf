@@ -36,7 +36,7 @@ function ema()
 }
 
 alias v='vim'
-alias e='emacs -Q -nw -eval "(setq make-backup-files nil)(setq delete-auto-save-files t)(setq delete-old-versions t)"'
+alias e='~/.bash.d/emacs-quick.bash'
 alias em='emacs -nw'
 alias gdb='gdb --quiet' # --tui'
 alias ..='cd ..'

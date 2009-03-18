@@ -12,6 +12,7 @@
 (add-hook 'c-mode-common-hook (lambda () (highlight-regexp " +$" "hi-pink")))
 (add-hook 'c-mode-common-hook (lambda () (highlight-regexp "FIXME" "hi-red-b")))
 (add-hook 'c-mode-common-hook (lambda () (highlight-regexp "TODO" "hi-red-b")))
+(add-hook `c-mode-hook `rm-trailing-spaces-always)
 (add-hook 'sh-mode-common-hook (lambda () (highlight-regexp " +$" "hi-pink")))
 
 ;; C mode
@@ -20,3 +21,6 @@
 ;; C++ mode
 (add-hook `c++-mode-hook `rm-trailing-spaces-always)
 (add-hook `c++-mode-hook `cwarn-mode)
+;(add-hook 'c++-mode-hook (lambda () (highlight-regexp " +$" "hi-pink")))
+;(add-hook 'c++-mode-hook (lambda () (highlight-regexp "FIXME" "hi-red-b")))
+;(add-hook 'c++-mode-hook (lambda () (highlight-regexp "TODO" "hi-red-b")))

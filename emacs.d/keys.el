@@ -1,7 +1,7 @@
 ;; code folding
 (add-hook 'c-mode-common-hook
             (lambda () 
-              ((hs-minor-mode 1)
+              ((hs-minor-mode)
                (local-set-key "\C-cs" 'hs-show-block)
                (local-set-key "\C-ch" 'hs-hide-block)
                (local-set-key "\C-cS" 'hs-show-all)

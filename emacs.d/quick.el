@@ -1,7 +1,7 @@
 ;; -*- mode: Lisp; -*-
 (setq user-nickname "Alexandre Bique")
 (setq user-full-name "Alexandre Bique")
-(setq user-mail-address "bique_a@epita.fr")
+(setq user-mail-address "bique.alexandre@gmail.com")
 
 ;; UTF-8
 (setq locale-coding-system 'utf-8)
@@ -16,7 +16,7 @@
 ;;============================
 
 (setq inhibit-startup-message t)      ; don't show the GNU splash screen
-(scroll-bar-mode nil)                 ; no scroll bar
+(scroll-bar-mode -1)                  ; no scroll bar
 (menu-bar-mode -1)                    ; no menu bar
 (tool-bar-mode -1)                    ; no tool bar
 (setq frame-title-format "<[ %b ]>")  ; titlebar shows buffer's name
@@ -40,15 +40,13 @@
 (setq delete-auto-save-files t)       ; delete unnecessary autosave files
 (setq delete-old-versions t)          ; delete oldversion file
 (setq next-line-add-newlines nil)     ; prevents new line after eof
-(setq default_indice_empty_lines t)   ; show lines at end of file
+;;(setq default_indice_empty_lines t)   ; show lines at end of file
+(setq default-indicate-empty-lines t) ; show the end of the file
 ;;(normal-erase-is-backspace-mode)    ; delete touch work
-(auto-image-file-mode)                ; to see picture in emacs
-(dynamic-completion-mode)             ; dynamic completion
-(when (string-match "^22." emacs-version)
-  (ido-mode t))
-(when (string-match "^23." emacs-version)
-  (ido-mode t))
-(icomplete-mode)
+;;(auto-image-file-mode)              ; to see picture in emacs
+;;(dynamic-completion-mode)           ; dynamic completion
+(ido-mode t)			      ; good open file
+(icomplete-mode)		      ; good M-x
 
 (load-file "~/.emacs.d/styles/epita.el")
 (load-file "~/.emacs.d/styles/kaneton.el")
@@ -58,7 +56,6 @@
 (load-file "~/.emacs.d/styles/qemu.el")
 (setq c-default-style "epita")
 
-(setq default-indicate-empty-lines t) ; show the end of the file
 (setq c-font-lock-extra-types
       (append
        '("t_\\sw+")

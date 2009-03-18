@@ -1,14 +1,7 @@
 ;; -*- mode: Lisp; -*-
 
-;; Load gentoo site
-;; (if (file-readable-p "/usr/share/emacs/site-lisp/site-gentoo.el")
-;;     (load "/usr/share/emacs/site-lisp/site-gentoo"))
-
 (if (file-readable-p "/usr/share/emacs/site-lisp/lua-mode.el")
     (load "/usr/share/emacs/site-lisp/lua-mode"))
-
-;; (if (file-readable-p "/usr/share/emacs/site-lisp/debian-startup.el")
-;;     (load "/usr/share/emacs/site-lisp/debian-startup"))
 
 ;; Our own modes repository
 (setq load-path (cons "~/.emacs.d/" load-path))
@@ -29,9 +22,6 @@
 (load-file "~/.emacs.d/modes/llvm-mode.el")
 (load-file "~/.emacs.d/modes/tablegen-mode.el")
 
-(require 'company-mode)
-(require 'company-bundled-completions)
-(company-install-bundled-completions-rules)
 (setq ispell-dictionary "francais"
       ispell-skip-sgml t)
 (autoload 'flyspell-mode "flyspell" "On-the-fly spelling checking" t)
@@ -40,13 +30,15 @@
 
 ;; cmake mode
 (load-file "~/.emacs.d/modes/cmake-mode.el")
-;; pabbrev mode
+
+;; pabbrev & completion mode
+;;(require 'company-mode)
+;;(require 'company-bundled-completions)
+;;(company-install-bundled-completions-rules)
 ;;(load-file "~/.emacs.d/modes/pabbrev.el")
 ;;(global-pabbrev-mode)
 
 ;; file extensions
-;; (add-to-list 'auto-mode-alist '("\\.l$" . flex-mode))
-;; (add-to-list 'auto-mode-alist '("\\.y$" . bison-mode))
 (add-to-list 'auto-mode-alist '("\\.d$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.di$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.apd$" . d-mode))
@@ -56,10 +48,3 @@
 (add-to-list 'auto-mode-alist '("\\.l$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.doch$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.nsi$" . nsi-mode))
-
-;; gnus
-(setq gnus-summary-line-format "%U%R%z%3t: %-25B%(%-23,23t%) %s\n")
-
-;; transparancy
-(set-frame-parameter (selected-frame) 'alpha '(85 50))
-(add-to-list 'default-frame-alist '(alpha 85 50))
