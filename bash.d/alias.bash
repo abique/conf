@@ -17,6 +17,10 @@ function lcd()
     cd "$1" && ls
 }
 alias pcd='cd -P'
+alias m='make'
+alias c='cat'
+alias ce='cat -e'
+alias cn='cat -n'
 alias ssh_epita='ssh ssh.epita.fr'
 alias ssh_acu='ssh ssh.epita.fr ssh acu.epita.fr' # not working :/
 alias ssh_gistr='ssh bique_a@10.226.7.15'
