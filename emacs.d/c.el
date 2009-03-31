@@ -17,3 +17,31 @@
 (add-hook 'c-mode-hook 'cwarn-mode)
 (add-hook 'c++-mode-hook 'rm-trailing-spaces-always)
 (add-hook 'c++-mode-hook 'cwarn-mode)
+
+(setq c-mode-hook
+      '(lambda()
+	 (local-set-key (kbd "<return>") 'newline-and-indent)))
+
+(load-file "~/.emacs.d/styles/epita.el")
+(load-file "~/.emacs.d/styles/kaneton.el")
+(load-file "~/.emacs.d/styles/d-style.el")
+(load-file "~/.emacs.d/styles/gostai.el")
+(load-file "~/.emacs.d/styles/arora.el")
+(load-file "~/.emacs.d/styles/qemu.el")
+(setq c-default-style "epita")
+
+(setq c-font-lock-extra-types
+      (append
+       '("t_\\sw+")
+       '("s_\\sw+")
+       '("u_\\sw+")
+       '("f_\\sw+")
+       '("e_\\sw+")
+       '("i_\\sw+")
+       '("\\sw+_t")
+       '("\\sw+_s")
+       '("\\sw+_u")
+       '("\\sw+_f")
+       '("\\sw+_e")
+       '("\\sw+_i")
+       c-font-lock-extra-types))

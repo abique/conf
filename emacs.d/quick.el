@@ -47,29 +47,3 @@
 ;;(dynamic-completion-mode)           ; dynamic completion
 (ido-mode t)			      ; good open file
 (icomplete-mode)		      ; good M-x
-
-(load-file "~/.emacs.d/styles/epita.el")
-(load-file "~/.emacs.d/styles/kaneton.el")
-(load-file "~/.emacs.d/styles/d-style.el")
-(load-file "~/.emacs.d/styles/gostai.el")
-(load-file "~/.emacs.d/styles/arora.el")
-(load-file "~/.emacs.d/styles/qemu.el")
-(setq c-default-style "epita")
-
-(setq c-font-lock-extra-types
-      (append
-       '("t_\\sw+")
-       '("s_\\sw+")
-       '("u_\\sw+")
-       '("f_\\sw+")
-       '("e_\\sw+")
-       '("\\sw+_t")
-       '("\\sw+_s")
-       '("\\sw+_u")
-       '("\\sw+_f")
-       '("\\sw+_e")
-       c-font-lock-extra-types))
-
-(setq c-mode-hook
-      '(lambda()
-	 (local-set-key (kbd "<return>") 'newline-and-indent)))
