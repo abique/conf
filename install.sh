@@ -19,6 +19,8 @@ for file in		\
     beryl		\
     beryl-managerrc	\
     bmpanel		\
+    conkerorrc          \
+    conkeror.d          \
     config/Trolltech.conf \
     config/awesome      \
     config/fish         \
