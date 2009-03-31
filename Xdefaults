@@ -45,7 +45,7 @@ UXTerm*font:        7x14
 UXTerm*metaSendsEscape: yes
 
 ! White urxvt theme
-URxvt*background:  #ffffdd
+! URxvt*background:  #ffffdd
 ! URxvt*foreground:  #b0b0b0
 ! URxvt*color0:      #000000
 ! URxvt*color1:      #cc6666
@@ -58,40 +58,40 @@ URxvt*background:  #ffffdd
 ! URxvt*color8:      #666666
 ! URxvt*color9:      #ff6666
 ! URxvt*color10:     #66ff66
-URxvt*color11:     #9B8C03
+! URxvt*color11:     #9B8C03
 ! URxvt*color12:     #6699ff
 ! URxvt*color13:     #ff66ff
-URxvt*color14:     #4EADB2
+! URxvt*color14:     #4EADB2
 ! URxvt*color15:     #ffffff
 
 
 ! Black urxvt theme
-! URxvt*background:  #000000
-! URxvt*foreground:  #b0b0b0
-! URxvt*color0:      #000000
-! URxvt*color1:      #cc6666
-! URxvt*color2:      #33cc66
-! URxvt*color3:      #cc9933
-! URxvt*color4:      #3366cc
-! URxvt*color5:      #cc33cc
-! URxvt*color6:      #33cccc
-! URxvt*color7:      #cccccc
-! URxvt*color8:      #666666
-! URxvt*color9:      #ff6666
-! URxvt*color10:     #66ff66
-! URxvt*color11:     #ffff66
-! URxvt*color12:     #6699ff
-! URxvt*color13:     #ff66ff
-! URxvt*color14:     #33ffff
-! URxvt*color15:     #ffffff
+URxvt*background:  #000000
+URxvt*foreground:  #b0b0b0
+URxvt*color0:      #000000
+URxvt*color1:      #cc6666
+URxvt*color2:      #33cc66
+URxvt*color3:      #cc9933
+URxvt*color4:      #3366cc
+URxvt*color5:      #cc33cc
+URxvt*color6:      #33cccc
+URxvt*color7:      #cccccc
+URxvt*color8:      #666666
+URxvt*color9:      #ff6666
+URxvt*color10:     #66ff66
+URxvt*color11:     #ffff66
+URxvt*color12:     #6699ff
+URxvt*color13:     #ff66ff
+URxvt*color14:     #33ffff
+URxvt*color15:     #ffffff
 
-!URxvt*font:	   xft:Monospace:size=9
 URxvt*font:	   7x14
 URxvt*scrollBar: false
 !URxvt*transparent: true
 !URxvt*tintingType: false
 !URxvt*tinting: #ffffff
 !URxvt*shading: 20
+URxvt.perl-ext-common: default,tabbed
 
 Aterm*scrollBar: false
 Aterm*transparent: true
@@ -100,10 +100,16 @@ Aterm*tinting: #ffffff
 Aterm*shading: 20
 
 Emacs.font: 7x14
-!Emacs.font: Bitstream Vera Sans Mono-8
-!Emacs.font: monospace-9
 Emacs.reverseVideo: off
-Emacs.background: #ffffdd
+Emacs.background: #000000
+Emacs.foreground: #b0b0b0
+Emacs.BorderWidth: 0
+Emacs.internalBorder: 0
+!default colors
+Emacs.mode-line.attributeBackground: Black
+Emacs.mode-line.attributeForeground: DeepSkyBlue1
+!font locking
+Emacs.font-lock-string-face.attributeForeground: DeepSkyBlue3
 
 fbpager.alpha: 255
 fbpager.x: 0
