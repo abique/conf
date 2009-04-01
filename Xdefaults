@@ -110,6 +110,8 @@ Emacs.mode-line.attributeBackground: Black
 Emacs.mode-line.attributeForeground: DeepSkyBlue1
 !font locking
 Emacs.font-lock-string-face.attributeForeground: DeepSkyBlue3
+Emacs.font-lock-string-face.attributeUnderline: false
+Emacs.font-lock-preprocessor-face.attributeUnderline: true
 
 fbpager.alpha: 255
 fbpager.x: 0
