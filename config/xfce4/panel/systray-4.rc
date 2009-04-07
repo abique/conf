@@ -6,4 +6,8 @@ Rows=1
 
 [Applications]
 psi=false
+kontact=false
+korgac=false
+kwalletmanager=false
+audacious=false
 
