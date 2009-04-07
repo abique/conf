@@ -314,7 +314,12 @@
     </keybind>
     <keybind key="W-i">
       <action name="Execute">
-        <command>opera</command>
+        <command>firefox</command>
+      </action>
+    </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>~/.bash.d/screensaver.bash</command>
       </action>
     </keybind>
     <keybind key="W-r">
