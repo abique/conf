@@ -8,7 +8,7 @@
 			<property name="screen-position" value="11"/>
 			<property name="fullwidth" value="1"/>
 			<property name="xoffset" value="0"/>
-			<property name="yoffset" value="996"/>
+			<property name="yoffset" value="740"/>
 			<property name="handlestyle" value="0"/>
 			<property name="autohide" value="0"/>
 			<property name="transparency" value="20"/>
@@ -18,7 +18,7 @@
 			<item name="pager" id="2"/>
 			<item name="tasklist" id="3"/>
 			<item name="systray" id="4"/>
-			<item name="datetime" id="12358581281"/>
+			<item name="clock" id="12392189160"/>
 		</items>
 	</panel>
 </panels>
