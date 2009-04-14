@@ -6,4 +6,5 @@ ShowMilitary=false
 ShowMeridiem=false
 TrueBinary=false
 FlashSeparators=false
+TooltipFormat=%A %d %B %Y
 

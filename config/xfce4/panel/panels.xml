@@ -17,6 +17,8 @@
 		<items>
 			<item name="pager" id="2"/>
 			<item name="tasklist" id="3"/>
+			<item name="battmon" id="12397348170"/>
+			<item name="wavelan" id="12394454280"/>
 			<item name="systray" id="4"/>
 			<item name="clock" id="12392189160"/>
 		</items>
