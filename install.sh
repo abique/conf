@@ -36,6 +36,7 @@ for file in		\
     htoprc		\
     indent.pro          \
     inputrc		\
+    kde4                \
     q3a			\
     screenrc            \
     toprc		\
