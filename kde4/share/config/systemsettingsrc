@@ -1,0 +1,17 @@
+[DownloadDialog Settings]
+Height 768=400
+Width 1366=700
+
+[KFileDialog Settings]
+Height 768=450
+Recent Files[$e]=common_start_no_wallpaper.sh,$HOME/conf/common_start_no_wallpaper.sh
+Width 1366=700
+
+[MainWindow]
+Height 768=769
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABVYAAAKfAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+Width 1366=1367
+
+[MainWindow][Toolbar mainToolBar]
+Index=0

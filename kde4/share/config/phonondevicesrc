@@ -1,0 +1,32 @@
+[AudioDevice_:playback]
+cardName=Internal PC-Speaker (pcsp)
+deleted=true
+deviceNumber=0
+hotpluggable=false
+iconName=audio-card
+index=-1
+initialPreference=36
+isAdvanced=false
+
+[AudioDevice_pci:8086:293e:104d:9025:0:capture]
+cardName=HDA Intel (ALC262 Analog)
+deleted=false
+deviceNumber=0
+hotpluggable=false
+iconName=audio-card
+index=-3
+initialPreference=36
+isAdvanced=false
+
+[AudioDevice_pci:8086:293e:104d:9025:0:playback]
+cardName=HDA Intel (ALC262 Analog)
+deleted=false
+deviceNumber=0
+hotpluggable=false
+iconName=audio-card
+index=-2
+initialPreference=36
+isAdvanced=false
+
+[Globals]
+nextIndex=4

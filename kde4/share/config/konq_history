@@ -1,0 +1,6 @@
+[History]
+CompletionItems=unused
+
+[Location Bar]
+ComboContents[$e]=http://www.google.com/search?q=khtml&ie=UTF-8&oe=UTF-8,http://www.google.com/search?q=rekonk&ie=UTF-8&oe=UTF-8,http://mail.google.com/,http://www.google.com:80/reader/view/,http://www.google.co.uk/
+ComboIconCache[$e]=http://www.google.com/search?q=khtml&ie=UTF-8&oe=UTF-8,favicons/www.google.com,http://www.google.com/search?q=rekonk&ie=UTF-8&oe=UTF-8,favicons/www.google.com,http://mail.google.com/,text-html,http://www.google.com:80/reader/view/,favicons/www.google.com,http://www.google.co.uk/,favicons/www.google.co.uk

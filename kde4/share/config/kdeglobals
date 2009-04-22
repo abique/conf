@@ -1,0 +1,37 @@
+[$Version]
+update_info=kwin.upd:kde3.2Xinerama
+
+[DirSelect Dialog]
+DirSelectDialog Size=400,450
+History Items[$e]=file://$HOME/videos/naruto
+
+[General]
+XftHintStyle=hintmedium
+widgetStyle=qtcurve
+
+[KDE]
+ShowIconsOnPushButtons=true
+
+[KDE-Global GUI Settings]
+GraphicEffectsLevel=6
+
+[KFileDialog Settings]
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=0
+LocationCombo Completionmode=5
+PathCombo Completionmode=5
+Previews=false
+Recent URLs[$e]=$HOME/videos/naruto,$HOME/conf
+Show Bookmarks=false
+Show Full Path=false
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort reversed=false
+Speedbar Width=94
+View Style=Simple
+
+[Toolbar style]
+ToolButtonStyle=IconOnly

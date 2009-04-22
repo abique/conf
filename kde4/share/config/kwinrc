@@ -1,0 +1,75 @@
+[$Version]
+update_info=kwin3_plugin.upd:kde3.2,kwin_focus2.upd:kwin_focus2,kwin_on_off.upd:kwin_on_off,kwin_focus1.upd:kwin_focus1,kwin.upd:kde3.0r1,kwin.upd:kde3.2Xinerama
+
+[Desktops]
+Name_1=
+Name_2=
+Name_3=
+Name_4=
+Name_5=
+Name_6=
+Name_7=
+Name_8=
+Number=8
+
+[MouseBindings]
+CommandActiveTitlebar1=Raise
+CommandActiveTitlebar2=Lower
+CommandActiveTitlebar3=Operations menu
+CommandAll1=Move
+CommandAll2=Toggle raise and lower
+CommandAll3=Resize
+CommandAllKey=Meta
+CommandAllWheel=Nothing
+CommandInactiveTitlebar1=Activate and raise
+CommandInactiveTitlebar2=Activate and lower
+CommandInactiveTitlebar3=Operations menu
+CommandTitlebarWheel=Nothing
+CommandWindow1=Activate, raise and pass click
+CommandWindow2=Activate and pass click
+CommandWindow3=Activate and pass click
+
+[PopupInfo]
+ShowPopup=false
+
+[Style]
+BorderSize=1
+ButtonsOnLeft=MSLBF
+ButtonsOnRight=HIAX
+CustomButtonPositions=true
+PluginLib=kwin3_qtcurve
+ShowToolTips=true
+
+[TabBox]
+TraverseAll=false
+
+[Windows]
+ActiveMouseScreen=false
+AltTabStyle=KDE
+AutoRaise=false
+AutoRaiseInterval=750
+BorderSnapZone=10
+CenterSnapZone=0
+ClickRaise=true
+DelayFocus=false
+DelayFocusInterval=750
+ElectricBorderDelay=150
+ElectricBorders=0
+FocusPolicy=ClickToFocus
+FocusStealingPreventionLevel=1
+GeometryTip=true
+HideUtilityWindowsForInactive=true
+MaximizeButtonLeftClickCommand=Maximize
+MaximizeButtonMiddleClickCommand=Maximize (vertical only)
+MaximizeButtonRightClickCommand=Maximize (horizontal only)
+MoveMode=Transparent
+MoveResizeMaximizedWindows=false
+Placement=Smart
+ResizeMode=Transparent
+RollOverDesktops=true
+SeparateScreenFocus=false
+ShadeHover=false
+ShadeHoverInterval=250
+SnapOnlyWhenOverlapping=false
+TitlebarDoubleClickCommand=Maximize
+WindowSnapZone=10

@@ -1,0 +1,15 @@
+[$Version]
+update_info=kolab-resource.upd:kolab-contact-resource-rename
+
+[General]
+PassiveResourceKeys=
+ResourceKeys=bcVG48uyy4
+Standard=bcVG48uyy4
+
+[Resource_bcVG48uyy4]
+FileFormat=vcard
+ResourceIdentifier=bcVG48uyy4
+ResourceIsActive=true
+ResourceIsReadOnly=false
+ResourceName=Default Addressbook
+ResourceType=file

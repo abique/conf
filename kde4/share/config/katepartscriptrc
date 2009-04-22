@@ -1,0 +1,65 @@
+[Cache /usr/share/apps/katepart/script/cstyle.js]
+author=Dominik Haumann <dhdev@gmx.de>
+kate-version=3.0
+last-modified=1227089993
+license=LGPL
+name=C Style
+type=indentation
+version=1
+
+[Cache /usr/share/apps/katepart/script/jstest.js]
+functions=jstest
+last-modified=1211368000
+
+[Cache /usr/share/apps/katepart/script/lilypond.js]
+author=Wilbert Berendsen <info@wilbertberendsen.nl>
+indent-languages=lilypond
+kate-version=3.0
+last-modified=1231262860
+license=LGPL
+name=LilyPond
+required-syntax-style=lilypond
+type=indentation
+version=1
+
+[Cache /usr/share/apps/katepart/script/lisp.js]
+author=Dominik Haumann <dhdev@gmx.de>
+kate-version=3.0
+last-modified=1211368000
+license=LGPL
+name=LISP
+type=indentation
+version=1
+
+[Cache /usr/share/apps/katepart/script/python.js]
+author=Paul Giannaros <paul@giannaros.org>
+kate-version=3.0
+last-modified=1211368000
+license=LGPL
+name=Python
+type=indentation
+version=1
+
+[Cache /usr/share/apps/katepart/script/ruby.js]
+author=Robin Pedersen <robinpeder@gmail.com>
+indent-languages=ruby
+kate-version=3.0
+last-modified=1238078655
+license=LGPL
+name=Ruby
+priority=0
+required-syntax-style=ruby
+type=indentation
+version=1
+
+[Cache /usr/share/apps/katepart/script/sort.js]
+author=Dominik Haumann <dhdev@gmx.de>
+functions=sorter
+kate-version=3.0
+last-modified=1211368000
+license=LGPL
+name=C++ Indenter
+version=1
+
+[General]
+kate-version=3.2

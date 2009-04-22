@@ -1,0 +1,7 @@
+[$Version]
+update_info=kcmcddb-emailsettings.upd:kcmcddb_emailsettings
+
+[Lookup]
+FreedbLookupTransport=CDDBP
+MusicBrainzLookupEnabled=true
+port=8880

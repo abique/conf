@@ -1,0 +1,94 @@
+[Collection Browser]
+TreeCategory=2,1
+
+[Collection Folders]
+-1=./home/bique_a/musics
+
+[ContextView]
+ContextView size=376,441
+
+[Cool Streams]
+Cool StreamsEnabled=false
+
+[File Browser]
+Current Directory=file:///home/bique_a/
+Decoration position=2
+Filter History=
+Filter History Length=9
+Last Filter=
+Previews=false
+Show Preview=false
+Show hidden files=false
+Sort by=Name
+Sort reversed=false
+View Style=Simple
+
+[General]
+Debug Enabled=false
+First Run=false
+HiddenOnExit=true
+MainWindow Position=226,81
+MainWindow Size=910,512
+
+[General Options]
+External Browser=firefox
+Last Dynamic Mode=Random Playlist
+Version=2.0.2
+
+[Librivox.org]
+Librivox.orgEnabled=false
+
+[Lyricwiki]
+LyricWikiEnabled=false
+
+[OSD]
+Osd Enabled=false
+
+[Panel Sizes]
+PanelsSavedState=0,0,0,-1,0,0,0,0,0,0,0,3,0,0,1,-95,0,0,2,23,0,0,1,-104,1,0,0,0,3,1,0,0,0,1
+
+[Phonon::AudioOutput]
+Amarok_Volume=0.5
+
+[Playback]
+Master Volume=50
+
+[Playlist Search]
+MatchAlbum=true
+MatchArtist=true
+MatchTrack=true
+
+[Plugins]
+Amarok Script ConsoleEnabled=false
+Cool StreamsEnabled=true
+Librivox.orgEnabled=true
+LyricWikiEnabled=true
+amarok_service_ampacheEnabled=true
+amarok_service_jamendoEnabled=true
+amarok_service_lastfmEnabled=true
+amarok_service_magnatunestoreEnabled=true
+amarok_service_mp3tunesEnabled=true
+amarok_service_opmldirectoryEnabled=true
+amarok_service_shoutcastEnabled=true
+
+[ScriptManager]
+Running Scripts=Cool Streams,Librivox.org,Lyricwiki
+
+[Service_Mp3tunes]
+email=
+harmonyEmail=
+harmonyEnabled=false
+identifier=001A80D7E4904895500420
+partnerToken=4895500420
+password=
+pin=
+
+[Session]
+Active Browser=1
+LastPlaying=0
+Visible Browsers=0,1,2,3
+
+[SvgHints]
+widgets/amarok-containment-header-hint-apply-color-scheme=false
+widgets/amarok-currenttrack-hint-apply-color-scheme=false
+widgets/background-hint-apply-color-scheme=false

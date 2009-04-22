@@ -1,0 +1,27 @@
+[DownloadOrderPlugin]
+DownloadOrderPluginEnabled=true
+
+[InfoWidgetPlugin]
+InfoWidgetPluginEnabled=true
+
+[MainWindow]
+Height 768=351
+State=AAAA/wAAAAD9AAAAAAAAA44AAAD+AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGgBTAGUAYQByAGMAaABUAG8AbwBsAEIAYQByAQAAApf/////AAAAAAAAAAA=
+Width 1366=910
+
+[MainWindow][Toolbar SearchToolBar]
+Index=1
+ToolButtonStyle=TextBesideIcon
+
+[MainWindow][Toolbar mainToolBar]
+Index=0
+
+[ScriptingPlugin]
+ScriptingPluginEnabled=true
+
+[SearchPlugin]
+SearchPluginEnabled=true
+
+[downloads]
+oldTorrentsImported=true
+tempDir=file:///home/bique_a/.kde4/share/apps/ktorrent/
