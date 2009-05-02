@@ -1,0 +1,8 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=gv
+Name=Google Movies
+Query=http://www.google.com/search?q=movie:\\{@}&ie=UTF-8&oe=UTF-8
+ServiceTypes=SearchProvider
+Type=Service

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=enfr
+Name=WordReference.com Translation: English to French
+Query=http://www.wordreference.com/fr/Translation.asp?enfr=\\{@}
+ServiceTypes=SearchProvider
+Type=Service

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=w
+Name=Wikipedia - The Free Encyclopedia
+Query=http://en.wikipedia.org/wiki/Special:Search?search=\\{@}&go=Go
+ServiceTypes=SearchProvider
+Type=Service
