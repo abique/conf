@@ -26,6 +26,7 @@ for file in		\
     config/fish         \
     config/qtcurvestylerc \
     config/openbox      \
+    config/midori	\
     config/xfce4	\
     config/xfce4-session \
     emacs		\
