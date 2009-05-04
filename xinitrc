@@ -10,7 +10,7 @@
 wm="$1"
 
 if [[ "$wm" = "" ]] ; then
-    wm=awesome
+    wm=openbox
 fi
 
 case "$wm" in
