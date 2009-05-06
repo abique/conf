@@ -16,7 +16,6 @@
 ;;============================
 
 (setq inhibit-startup-message t)      ; don't show the GNU splash screen
-(scroll-bar-mode -1)                  ; no scroll bar
 (menu-bar-mode -1)                    ; no menu bar
 (tool-bar-mode -1)                    ; no tool bar
 (setq frame-title-format "<[ %b ]>")  ; titlebar shows buffer's name
