@@ -101,6 +101,7 @@ Aterm*shading: 20
 
 Emacs.font: 7x14
 Emacs.reverseVideo: off
+Emacs.toolBar: off
 Emacs.verticalScrollBars: off
 Emacs.background: #000000
 Emacs.foreground: #b0b0b0

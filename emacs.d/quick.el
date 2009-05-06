@@ -17,7 +17,6 @@
 
 (setq inhibit-startup-message t)      ; don't show the GNU splash screen
 (menu-bar-mode -1)                    ; no menu bar
-(tool-bar-mode -1)                    ; no tool bar
 (setq frame-title-format "<[ %b ]>")  ; titlebar shows buffer's name
 (global-font-lock-mode t)             ; syntax highlighting
 (setq font-lock-maximum-decoration t) ; maximum decoration for all modes
