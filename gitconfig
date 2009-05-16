@@ -12,11 +12,13 @@
     whitespace = strip
 
 [diff]
-    color = auto
     rename = copy
 
-[pager]
-    color = true 
-
-[status]
-    color = auto
+[color]
+    branch = true
+    diff = true
+    grep = true
+    interactive = true
+    pager = true
+    status = true
+    ui = true
