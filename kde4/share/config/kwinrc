@@ -2,14 +2,14 @@
 update_info=kwin3_plugin.upd:kde3.2,kwin_focus2.upd:kwin_focus2,kwin_on_off.upd:kwin_on_off,kwin_focus1.upd:kwin_focus1,kwin.upd:kde3.0r1,kwin.upd:kde3.2Xinerama
 
 [Desktops]
-Name_1=
-Name_2=
-Name_3=
-Name_4=
-Name_5=
-Name_6=
-Name_7=
-Name_8=
+Name_1=1
+Name_2=2
+Name_3=3
+Name_4=4
+Name_5=5
+Name_6=6
+Name_7=7
+Name_8=8
 Number=8
 
 [MouseBindings]
