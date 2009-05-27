@@ -20,12 +20,13 @@ s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
 
     vcs=""
     if [[ -d .svn ]] ; then
-        vcs=" svn:\[$yellowB\]$(svn info | grep Revision | sed 's/.* \(.*\)/\1/g')\[$green\]"
-    elif [[ -d .git ]] ; then
-	vcs=" git:\[$yellowB\]$(git log --pretty=format:%h | wc -l)\[$green\]"
+        vcs=" \[$green\]svn:\[$yellowB\]$(svn info | grep Revision | sed 's/.* \(.*\)/\1/g')"
+    elif tg git branch; then
+        git_branch="$(git branch | grep '\* ' | cut -f 2 -d ' ')"
+        vcs=" \[$green\]git:$git_branch"
     fi
 
-    PS1="$RET$JOBS\[$cyanB\]\u@\H:\[$blueB\]$my_pwd\[$yellowB\]$vcs> \[$white\]"
+    PS1="$RET$JOBS\[$cyanB\]\u@\H:\[$blueB\]$my_pwd$vcs\[$yellowB\]> \[$white\]"
 
 # Change the window title of X terminals
     case $TERM in
