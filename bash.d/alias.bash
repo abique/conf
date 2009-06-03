@@ -31,6 +31,7 @@ alias reload="source ~/.bashrc"
 alias emacs='emacs -fn 7x14'
 alias my_date="date +'%Y%m%d%H%M'"
 alias gt='git'
+alias gp='git pull'
 alias cdozulis='cd ~/develop/ozulis'
 alias cdioem='cd ~/develop/xen/ioemu'
 
@@ -61,14 +62,16 @@ alias rebuild='~/local/bin/rebuild'
 alias fixme='grep -rn FIXME .'
 alias valgrind_mleak='valgrind --leak-check=full --leak-resolution=high --show-reachable=yes'
 alias svn2cl='svn2cl --break-before-msg=2'
-alias pwgen='pwgen --symbols --secure --num-passwords=5 --capitalize -C --ambiguous 12'
+alias pwgen='pwgen --symbols --secure --num-passwords=5 --capitalize -C --ambiguous 16'
 if which colormake >/dev/null 2>&1 && false ; then
     alias make='colormake'
 fi
 
 alias p='sudo pacman-color'
+alias pS='pacman-color -Ss'
 alias pu='p -Syu'
 alias y='sudo yaourt'
+alias yS='yaourt -Ss'
 alias poweroff='sudo poweroff'
 
 alias soulmebaby_tail='tail -f -n 50 ~/.config/soulmebaby/log'
@@ -127,6 +130,8 @@ function check_colors()
 {
     for i in $(seq 30 37)
     do
-        echo -e $((i - 30)): "\e[0;${i}mbande\e[m", "\e[1;${i}mbande\e[m"
+        echo -e $((i - 30)): "\e[0;${i}mbande\e[m", "\e[1;${i}mbande\e[m", \
+            "\e[3;${i}mbande\e[m", "\e[4;${i}mbande\e[m", \
+            "\e[5;${i}mbande\e[m", "\e[7;${i}mbande\e[m"
     done
 }
