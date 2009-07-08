@@ -34,6 +34,8 @@ alias gt='git'
 alias gp='git pull'
 alias cdozulis='cd ~/develop/ozulis'
 alias cdioem='cd ~/develop/xen/ioemu'
+alias tx="tar -xf"
+alias txv="tar -xvvvf"
 
 function ema()
 {

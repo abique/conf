@@ -100,16 +100,23 @@ Aterm*tinting: #ffffff
 Aterm*shading: 20
 
 Emacs.font: 7x14
+Emacs.menuBar: off
+Emacs.minibuffer: on
+Emacs.synchronous: off
+!Emacs.font: Monospace-10
 Emacs.reverseVideo: off
 Emacs.toolBar: off
 Emacs.verticalScrollBars: off
 Emacs.background: #000000
 Emacs.foreground: #b0b0b0
 Emacs.BorderWidth: 0
+Emacs.BorderColor: DeepSkyBlue2
 Emacs.internalBorder: 0
 !default colors
 Emacs.mode-line.attributeBackground: Black
 Emacs.mode-line.attributeForeground: DeepSkyBlue1
+Emacs.pointerColor: red
+Emacs.cursorColor: green
 !font locking
 Emacs.font-lock-string-face.attributeForeground: DeepSkyBlue3
 Emacs.font-lock-string-face.attributeUnderline: false
