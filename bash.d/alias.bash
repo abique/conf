@@ -69,8 +69,12 @@ if which colormake >/dev/null 2>&1 && false ; then
     alias make='colormake'
 fi
 
-alias p='sudo pacman-color'
-alias pS='pacman-color -Ss'
+if which pacman-color 2>/dev/null 1>/dev/null ; then
+    alias p='sudo pacman-color'
+else
+    alias p='sudo pacman'
+fi
+alias pS='p -Ss'
 alias pu='p -Syu'
 alias y='sudo yaourt'
 alias yS='yaourt -Ss'
