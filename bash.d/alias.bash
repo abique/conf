@@ -141,3 +141,9 @@ function check_colors()
             "\e[5;${i}mbande\e[m", "\e[7;${i}mbande\e[m"
     done
 }
+
+function aur_get()
+{
+    wget http://aur.archlinux.org/packages/"$1"/"$1".tar.gz
+    tx "$1".tar.gz
+}

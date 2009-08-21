@@ -87,6 +87,7 @@ URxvt*color15:     #ffffff
 
 URxvt*font:	   7x14
 URxvt*scrollBar: false
+URxvt*saveLines: 25000
 !URxvt*transparent: true
 !URxvt*tintingType: false
 !URxvt*tinting: #ffffff

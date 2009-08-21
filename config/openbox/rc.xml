@@ -322,7 +322,7 @@
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-        <command>fbrun -font 7x14 -fg yellow -bg black -w 600 -pos 493 504</command>
+        <command>krunner</command>
       </action>
     </keybind>
     <keybind key="W-m">
