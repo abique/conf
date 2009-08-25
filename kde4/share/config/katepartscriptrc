@@ -1,9 +1,18 @@
 [Cache /usr/share/apps/katepart/script/cstyle.js]
 author=Dominik Haumann <dhdev@gmx.de>
 kate-version=3.0
-last-modified=1227089993
+last-modified=1244563740
 license=LGPL
 name=C Style
+type=indentation
+version=1
+
+[Cache /usr/share/apps/katepart/script/haskell.js]
+author=Erlend Hamberg <ehamberg@gmail.com>
+kate-version=3.0
+last-modified=1248189365
+license=LGPL
+name=Haskell
 type=indentation
 version=1
 
@@ -15,7 +24,7 @@ last-modified=1211368000
 author=Wilbert Berendsen <info@wilbertberendsen.nl>
 indent-languages=lilypond
 kate-version=3.0
-last-modified=1231262860
+last-modified=1245269294
 license=LGPL
 name=LilyPond
 required-syntax-style=lilypond
@@ -44,7 +53,7 @@ version=1
 author=Robin Pedersen <robinpeder@gmail.com>
 indent-languages=ruby
 kate-version=3.0
-last-modified=1238078655
+last-modified=1237370409
 license=LGPL
 name=Ruby
 priority=0
@@ -62,4 +71,4 @@ name=C++ Indenter
 version=1
 
 [General]
-kate-version=3.2
+kate-version=3.3
