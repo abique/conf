@@ -7,7 +7,7 @@ xrdb -load ~/.Xdefaults
 xset -b
 xset r rate 175 30
 nm-applet & disown
-psi & disown
-skype & disown
+# psi & disown
+# skype & disown
 krunner & disown
-kmix & disown
+kmix --keepvisibility & disown
