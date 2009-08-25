@@ -66,7 +66,8 @@ UXTerm*metaSendsEscape: yes
 
 
 ! Black urxvt theme
-URxvt*background:  #000000
+URxvt*depth:       32
+URxvt*background:  [95]#000000
 URxvt*foreground:  #b0b0b0
 URxvt*color0:      #000000
 URxvt*color1:      #cc6666
