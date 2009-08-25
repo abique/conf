@@ -3,7 +3,10 @@ update_info=kwin.upd:kde3.2Xinerama
 
 [DirSelect Dialog]
 DirSelectDialog Size=400,450
-History Items[$e]=file://$HOME/videos/naruto
+History Items[$e]=file://$HOME/videos/true-blood,file://$HOME/videos,file://$HOME/videos/naruto
+
+[Emoticons]
+emoticonsTheme=kde4
 
 [General]
 XftHintStyle=hintmedium
@@ -22,7 +25,7 @@ Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
 Previews=false
-Recent URLs[$e]=$HOME/videos/naruto,$HOME/conf
+Recent URLs[$e]=$HOME/conf,$HOME/Downloads,$HOME/develop/qemu,$HOME/conf/kde4/share/apps/korganizer,$HOME/epita,$HOME/epita/rapport,$HOME/wallpapers/fractals,$HOME/books
 Show Bookmarks=false
 Show Full Path=false
 Show Preview=false
@@ -30,8 +33,11 @@ Show Speedbar=true
 Show hidden files=false
 Sort by=Name
 Sort reversed=false
-Speedbar Width=94
+Speedbar Width=108
 View Style=Simple
+
+[KShortcutsDialog Settings]
+Dialog Size=600,480
 
 [Toolbar style]
 ToolButtonStyle=IconOnly
