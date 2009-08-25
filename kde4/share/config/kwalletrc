@@ -1,3 +1,6 @@
+[Auto Allow]
+kdewallet=KMail,Subversion,KDE Wallet Manager,KDE Daemon
+
 [Wallet]
 Close When Idle=false
 Close on Screensaver=true
