@@ -80,14 +80,15 @@ version=1.08
 author=Dominik Haumann (dhdev@gmx.de)
 extension=*.c;*.C;*.h
 hidden=false
-lastModified=1211367994
+indenter=cstyle
+lastModified=1240926446
 license=LGPL
 mimetype=text/x-csrc;text/x-c++src;text/x-chdr
 name=ANSI C89
 priority=2
 section=Sources
 style=
-version=1.09
+version=1.10
 
 [Cache /usr/share/apps/katepart/syntax/ansys.xml]
 author=Giovanni Bacci (giovanni@castellodilari.it)
@@ -104,16 +105,17 @@ version=1.1
 
 [Cache /usr/share/apps/katepart/syntax/apache.xml]
 author=Jan Janssen (medhefgo@googlemail.com)
-extension=httpd.conf;httpd2.conf;apache.conf;apache2.conf;.ht*
+extension=httpd.conf;httpd2.conf;apache.conf;apache2.conf;.htaccess*;.htpasswd*
 hidden=false
-lastModified=1211367994
+indenter=
+lastModified=1241114563
 license=LGPL
 mimetype=
 name=Apache Configuration
 priority=
 section=Configuration
 style=
-version=1.10
+version=1.11
 
 [Cache /usr/share/apps/katepart/syntax/asm-avr.xml]
 author=Roland Nagy
@@ -167,6 +169,20 @@ section=Markup
 style=
 version=1.03
 
+[Cache /usr/share/apps/katepart/syntax/asterisk.xml]
+author=UNGAR Didier
+extension=*asterisk/*.conf
+hidden=false
+indenter=
+lastModified=1240926446
+license=GPL
+mimetype=
+name=Asterisk
+priority=
+section=Configuration
+style=
+version=1.00
+
 [Cache /usr/share/apps/katepart/syntax/awk.xml]
 author=
 extension=*.awk
@@ -182,9 +198,10 @@ version=0.90
 
 [Cache /usr/share/apps/katepart/syntax/bash.xml]
 author=Wilbert Berendsen (wilbert@kde.nl)
-extension=*.sh;*.bash;*.ebuild;*.eclass;.bashrc;.bash_profile;.bash_login;.profile
+extension=*.sh;*.bash;*.ebuild;*.eclass;.bashrc;.bash_profile;.bash_login;.profile;PKGBUILD;*.install
 hidden=false
-lastModified=1231262860
+indenter=
+lastModified=1250591470
 license=LGPL
 mimetype=application/x-shellscript
 name=Bash
@@ -197,14 +214,15 @@ version=2.12
 author=Jeroen Wijnhout (Jeroen.Wijnhout@kdemail.net)+Thomas Braun (braun@physik.fu-berlin.de)
 extension=*.bib
 hidden=false
-lastModified=1229890860
+indenter=
+lastModified=1240926446
 license=LGPL
 mimetype=text/x-bib
 name=BibTeX
 priority=
 section=Markup
 style=
-version=1.14
+version=1.15
 
 [Cache /usr/share/apps/katepart/syntax/bmethod.xml]
 author=Ivo Anjo (knuckles@gmail.com)
@@ -219,18 +237,33 @@ section=Scientific
 style=
 version=0.02
 
+[Cache /usr/share/apps/katepart/syntax/boo.xml]
+author=Marc Dassonneville
+extension=*.boo
+hidden=false
+indenter=
+lastModified=1237370409
+license=LGPL
+mimetype=text/x-boo
+name=Boo
+priority=
+section=Sources
+style=
+version=0.91
+
 [Cache /usr/share/apps/katepart/syntax/c.xml]
 author=
 extension=*.c;*.C;*.h
 hidden=false
-lastModified=1214380640
+indenter=cstyle
+lastModified=1240926446
 license=
 mimetype=text/x-csrc;text/x-c++src;text/x-chdr
 name=C
 priority=5
 section=Sources
 style=
-version=1.41
+version=1.42
 
 [Cache /usr/share/apps/katepart/syntax/cg.xml]
 author=Florian Schanda (florian.schanda@schanda.de)
@@ -301,14 +334,15 @@ version=1.05
 author=Alexander Neundorf (neundorf@kde.org)
 extension=CMakeLists.txt;*.cmake;
 hidden=false
-lastModified=1227886794
+indenter=
+lastModified=1241604875
 license=LGPL
 mimetype=
 name=CMake
 priority=
 section=Other
 style=
-version=1.08
+version=1.11
 
 [Cache /usr/share/apps/katepart/syntax/coldfusion.xml]
 author=
@@ -353,14 +387,15 @@ version=1.05
 author=
 extension=*.c++;*.cxx;*.cpp;*.cc;*.C;*.h;*.hh;*.H;*.h++;*.hxx;*.hpp;*.hcc;*.moc
 hidden=false
-lastModified=1225376319
+indenter=cstyle
+lastModified=1240926446
 license=
 mimetype=text/x-c++src;text/x-c++hdr;text/x-chdr
 name=C++
 priority=9
 section=Sources
 style=
-version=1.43
+version=1.44
 
 [Cache /usr/share/apps/katepart/syntax/cs.xml]
 author=
@@ -379,7 +414,8 @@ version=1.14
 author=Wilbert Berendsen (wilbert@kde.nl)
 extension=
 hidden=true
-lastModified=1239481033
+indenter=
+lastModified=1250591606
 license=LGPL
 mimetype=
 name=CSS/PHP
@@ -431,7 +467,8 @@ version=1.61
 author=
 extension=
 hidden=false
-lastModified=1235657907
+indenter=
+lastModified=1234974575
 license=
 mimetype=
 name=Debian Changelog
@@ -496,7 +533,8 @@ version=1.2
 author=Dominik Haumann (dhdev@gmx.de)
 extension=*.dox;*.doxygen
 hidden=false
-lastModified=1220441114
+indenter=
+lastModified=1242322046
 license=LGPL
 mimetype=text/x-doxygen
 name=Doxygen
@@ -743,14 +781,15 @@ version=1.05
 author=Marcel Martin (mmar@freenet.de)
 extension=*.hs
 hidden=false
-lastModified=1211367994
+indenter=haskell
+lastModified=1241604875
 license=
-mimetype=
+mimetype=text/x-haskell
 name=Haskell
 priority=
 section=Sources
 style=
-version=1.05
+version=1.2
 
 [Cache /usr/share/apps/katepart/syntax/haxe.xml]
 author=Chad Joan
@@ -769,7 +808,8 @@ version=0.1
 author=Wilbert Berendsen (wilbert@kde.nl)
 extension=*.php;*.php3;*.wml;*.phtml;*.phtm;*.inc
 hidden=false
-lastModified=1239481033
+indenter=
+lastModified=1250591606
 license=LGPL
 mimetype=text/x-php4-src;text/x-php3-src;text/vnd.wap.wml;application/x-php
 name=PHP (HTML)
@@ -886,7 +926,8 @@ version=1.04
 author=Anders Lund (anders@alweb.dk), Joseph Wenninger (jowenn@kde.org), Whitehawk Stormchaser (zerokode@gmx.net)
 extension=
 hidden=true
-lastModified=1239481033
+indenter=
+lastModified=1250591607
 license=
 mimetype=
 name=JavaScript/PHP
@@ -975,16 +1016,17 @@ version=0.2
 
 [Cache /usr/share/apps/katepart/syntax/latex.xml]
 author=Jeroen Wijnhout (Jeroen.Wijnhout@kdemail.net)+Holger Danielsson (holger.danielsson@versanet.de)+Michel Ludwig (michel.ludwig@kdemail.net)+Thomas Braun (braun@physik.fu-berlin.de)
-extension=*.tex; *.ltx; *.dtx; *.sty; *.cls;
+extension=*.tex;*.ltx;*.dtx;*.sty;*.cls;
 hidden=false
-lastModified=1235657907
+indenter=
+lastModified=1241604875
 license=LGPL
 mimetype=text/x-tex
 name=LaTeX
 priority=10
 section=Markup
 style=
-version=1.31
+version=1.33
 
 [Cache /usr/share/apps/katepart/syntax/ldif.xml]
 author=Andreas Hochsteger (e9625392@student.tuwien.ac.at)
@@ -1016,27 +1058,29 @@ version=1.01
 author=Wilbert Berendsen (info@wilbertberendsen.nl)
 extension=*.ly;*.LY;*.ily;*.ILY;*.lyi;*.LYI
 hidden=false
-lastModified=1238078655
+indenter=lilypond
+lastModified=1240926446
 license=LGPL
 mimetype=text/x-lilypond
 name=LilyPond
 priority=
 section=Other
 style=lilypond
-version=3.02
+version=3.03
 
 [Cache /usr/share/apps/katepart/syntax/literate-haskell.xml]
 author=Marcel Martin (mmar@freenet.de)
 extension=*.lhs
 hidden=false
-lastModified=1211367994
+indenter=
+lastModified=1237370409
 license=
 mimetype=
 name=Literate Haskell
 priority=
 section=Sources
 style=
-version=1.04
+version=1.05
 
 [Cache /usr/share/apps/katepart/syntax/logtalk.xml]
 author=Paulo Moura (pmoura@logtalk.org)
@@ -1063,6 +1107,20 @@ priority=
 section=Sources
 style=
 version=0.76
+
+[Cache /usr/share/apps/katepart/syntax/lsl.xml]
+author=Rafał Rzepecki
+extension=*.lsl
+hidden=false
+indenter=
+lastModified=1240926446
+license=LGPL-3
+mimetype=text/x-lsl
+name=LSL
+priority=
+section=Scripts
+style=
+version=1.20
 
 [Cache /usr/share/apps/katepart/syntax/lua.xml]
 author=
@@ -1146,27 +1204,29 @@ version=1.04
 author=
 extension=*.m;*.M
 hidden=false
-lastModified=1211367994
+indenter=
+lastModified=1242322046
 license=
 mimetype=text/mfile
 name=Matlab
 priority=
 section=Scientific
 style=
-version=1.20
+version=1.30
 
 [Cache /usr/share/apps/katepart/syntax/maxima.xml]
 author=Alexey Beshenov <al@beshenov.ru>
 extension=*.mac;*.MAC;*.dem;*.DEM
 hidden=false
-lastModified=1221293799
+indenter=
+lastModified=1240926446
 license=LGPL
 mimetype=
 name=Maxima
 priority=
 section=Scientific
 style=
-version=0.15
+version=0.16
 
 [Cache /usr/share/apps/katepart/syntax/mediawiki.xml]
 author=
@@ -1211,14 +1271,15 @@ version=1.03
 author=Federico Zenith
 extension=*.mo
 hidden=false
-lastModified=1219940025
+indenter=
+lastModified=1240926446
 license=
 mimetype=
 name=Modelica
 priority=
 section=Sources
 style=
-version=3.0
+version=3.1
 
 [Cache /usr/share/apps/katepart/syntax/modula-2.xml]
 author=
@@ -1354,7 +1415,8 @@ version=1.01
 author=Sebastian Pipping (webmaster@hartwork.org)
 extension=*.impl;*.sign
 hidden=false
-lastModified=1232533668
+indenter=
+lastModified=1233097588
 license=
 mimetype=
 name=OPAL
@@ -1406,14 +1468,15 @@ version=2.01
 author=
 extension=
 hidden=true
-lastModified=1230827282
+indenter=
+lastModified=1239791197
 license=
 mimetype=
 name=PHP/PHP
 priority=5
 section=Scripts
 style=
-version=1.34
+version=1.35
 
 [Cache /usr/share/apps/katepart/syntax/picsrc.xml]
 author=Alain GIBAUD (alain.gibaud@univ-valenciennes.fr)
@@ -1523,14 +1586,15 @@ version=1.99.1
 author=Michael Bueker
 extension=*.py;*.pyw
 hidden=false
-lastModified=1218710782
+indenter=
+lastModified=1247064070
 license=
 mimetype=application/x-python;text/x-python
 name=Python
 priority=
 section=Scripts
 style=
-version=1.99
+version=2.00
 
 [Cache /usr/share/apps/katepart/syntax/r.xml]
 author=
@@ -1575,14 +1639,15 @@ version=1.01
 author=Richard Dale rdale@foton.es
 extension=*.rhtml;*.html.erb
 hidden=false
-lastModified=1214444000
+indenter=
+lastModified=1240926446
 license=LGPL
 mimetype=
 name=Ruby/Rails/RHTML
 priority=
 section=Markup
 style=
-version=1.00
+version=1.01
 
 [Cache /usr/share/apps/katepart/syntax/rib.xml]
 author=David Williams <david@david-williams.info>
@@ -1614,20 +1679,22 @@ version=0.11
 author=
 extension=*.spec
 hidden=false
-lastModified=1231262860
+indenter=
+lastModified=1240926446
 license=public domain
 mimetype=
 name=RPM Spec
 priority=
 section=Other
 style=
-version=1.2
+version=1.4
 
 [Cache /usr/share/apps/katepart/syntax/rsiidl.xml]
 author=Markus Fraenz (fraenz@linmpi.mpg.de)
 extension=*.pro
 hidden=false
-lastModified=1232533668
+indenter=
+lastModified=1232118418
 license=
 mimetype=text/x-rsiidl-src
 name=RSI IDL
@@ -1640,14 +1707,15 @@ version=1.04
 author=Stefan Lang (langstefan@gmx.at), Sebastian Vuorinen (sebastian.vuorinen@helsinki.fi), Robin Pedersen (robinpeder@gmail.com)
 extension=*.rb;*.rjs;*.rxml;*.xml.erb;*.js.erb
 hidden=false
-lastModified=1238078655
+indenter=ruby
+lastModified=1241114563
 license=LGPL
 mimetype=application/x-ruby
 name=Ruby
 priority=
 section=Scripts
 style=ruby
-version=1.17
+version=1.18
 
 [Cache /usr/share/apps/katepart/syntax/sather.xml]
 author=
@@ -1729,16 +1797,17 @@ version=1.05
 
 [Cache /usr/share/apps/katepart/syntax/sisu.xml]
 author=Ralph Amissah (ralph.amissah@gmail.com)
-extension=*.sst; *.ssm; *.ssi; *._sst; *.-sst;
+extension=*.sst;*.ssm;*.ssi;*._sst;*.-sst;
 hidden=false
-lastModified=1211367994
+indenter=
+lastModified=1243454081
 license=LGPL
 mimetype=
 name=SiSU
 priority=
 section=Markup
 style=
-version=1.00
+version=1.01
 
 [Cache /usr/share/apps/katepart/syntax/sml.xml]
 author=Christoph Cullmann (cullmann@kde.org)
@@ -1783,7 +1852,8 @@ version=1.09
 author=Shane Wright (me@shanewright.co.uk)
 extension=*.sql;*.SQL
 hidden=false
-lastModified=1218710782
+indenter=
+lastModified=1234434283
 license=
 mimetype=text/x-sql
 name=SQL (PostgreSQL)
@@ -1936,10 +2006,11 @@ style=
 version=1.08
 
 [Cache /usr/share/apps/katepart/syntax/vrml.xml]
-author=Volker Krause (volker.krause@rwth-aachen.de)
+author=Volker Krause (vkrause@kde.org)
 extension=*.wrl
 hidden=false
-lastModified=1211367994
+indenter=
+lastModified=1245755774
 license=LGPL
 mimetype=model/vrml
 name=VRML
@@ -2069,14 +2140,15 @@ version=1.03
 author=Dr Orlovsky MA (dr.orlovsky@gmail.com)
 extension=*.yaml;*.yml
 hidden=false
-lastModified=1228379755
+indenter=
+lastModified=1240926446
 license=LGPL
 mimetype=text/yaml
 name=YAML
 priority=
 section=Markup
 style=
-version=1.0.2
+version=1.1
 
 [Cache /usr/share/apps/katepart/syntax/zonnon.xml]
 author=
