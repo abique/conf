@@ -105,7 +105,7 @@ mute=Volume Mute,Volume Mute,Mute
 ReadMessage=Ctrl+Shift+I,Ctrl+Shift+I,Read Message
 Set_Away_Back=Ctrl+Shift+W,Ctrl+Shift+W,Set Away/Back
 ShowContactList=Ctrl+Shift+S,Ctrl+Shift+S,Show/Hide Contact List
-_k_friendly_name=Kopete
+_k_friendly_name=
 
 [krunner]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown,Ctrl+Alt+Shift+PgDown,Halt Without Confirmation
@@ -129,8 +129,8 @@ Block Global Shortcuts=none,none,Block Global Shortcuts
 Cube=Ctrl+F11,Ctrl+F11,Desktop Cube
 Cylinder=none,none,Desktop Cylinder
 Desktop Screenshot to Clipboard=Ctrl+Print,Ctrl+Print,Desktop Screenshot to Clipboard
-Expose=Ctrl+F9,Ctrl+F9,Toggle Present Windows (Current desktop)
-ExposeAll=Ctrl+F10,Ctrl+F10,Toggle Present Windows (All desktops)
+Expose=Meta+Shift+Y,Ctrl+F9,Toggle Present Windows (Current desktop)
+ExposeAll=Meta+Y,Ctrl+F10,Toggle Present Windows (All desktops)
 Kill Window=Meta+K,Ctrl+Alt+Esc,Kill Window
 Mouse Emulation=Alt+F12,Alt+F12,Mouse Emulation
 Setup Window Shortcut=none,none,Setup Window Shortcut
@@ -252,4 +252,3 @@ _k_friendly_name=KDE Keyboard Layout Switcher
 [plasma-desktop]
 Show Dashboard=Ctrl+F12,Ctrl+F12,Show Dashboard
 _k_friendly_name=Plasma Workspace
-activate widget 4=Alt+F1,Alt+F1,Activate Application Launcher Widget
