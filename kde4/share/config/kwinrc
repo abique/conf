@@ -32,6 +32,14 @@ LayoutMode=1
 ZoomDuration=100
 
 [Effect-PresentWindows]
+Accuracy=1
+DrawWindowCaptions=true
+DrawWindowIcons=true
+FillGaps=true
+IgnoreMinimized=false
+LayoutMode=0
+RearrangeDuration=0
+ShowPanel=false
 TabBox=true
 
 [MouseBindings]
