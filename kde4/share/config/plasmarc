@@ -2,14 +2,14 @@
 update_info=plasma_popupapplet_fix_groups.upd:PlasmaPopupAppletFixGroups2
 
 [Applet Browser]
-favorites=,sm_net
+favorites=
 used=,notifier,systemtray,digital-clock,tasks,pager,battery,launcher
 
 [PlasmaViews][2]
 panelVisibility=0
 
 [Theme]
-name=Glassified
+name=Clean-Blend
 
 [Theme-amarok]
 name=Amarok-Mockup
