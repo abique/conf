@@ -49,7 +49,7 @@ plugin=launcher
 zvalue=2
 
 [Containments][12][Applets][15]
-geometry=1026,1,226,21
+geometry=1104,1,148,21
 immutability=1
 plugin=systemtray
 zvalue=0
@@ -76,11 +76,11 @@ sourceAppletId=15
 sourceAppletPluginName=systemtray
 
 [Containments][12][Applets][15][PopupApplet]
-DialogHeight=75
-DialogWidth=432
+DialogHeight=8
+DialogWidth=0
 
 [Containments][12][Applets][16]
-geometry=50,1,972,21
+geometry=50,1,1050,21
 immutability=1
 plugin=tasks
 zvalue=1
