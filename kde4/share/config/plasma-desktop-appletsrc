@@ -76,8 +76,8 @@ sourceAppletId=15
 sourceAppletPluginName=systemtray
 
 [Containments][12][Applets][15][PopupApplet]
-DialogHeight=8
-DialogWidth=0
+DialogHeight=75
+DialogWidth=432
 
 [Containments][12][Applets][16]
 geometry=50,1,1050,21
