@@ -25,6 +25,7 @@ alias ssh_epita='ssh ssh.epita.fr'
 alias ssh_acu='ssh ssh.epita.fr ssh acu.epita.fr' # not working :/
 alias ssh_gistr='ssh bique_a@10.226.7.15'
 alias ssh_sj='ssh intranet.smartjog.net'
+alias dv3="ssh abique@95.211.64.16"
 alias df='df -h'
 alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
@@ -146,4 +147,9 @@ function aur_get()
 {
     wget http://aur.archlinux.org/packages/"$1"/"$1".tar.gz
     tx "$1".tar.gz
+}
+
+function _kmtrace()
+{
+    LD_PRELOAD=/usr/lib/libktrace.so MALLOC_TRACE=ktrace.out "$@"
 }
