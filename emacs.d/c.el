@@ -45,3 +45,5 @@
        '("\\sw+_e")
        '("\\sw+_i")
        c-font-lock-extra-types))
+
+(add-to-list 'auto-mode-alist '("twenga.*\\.h$" . c++-mode))
