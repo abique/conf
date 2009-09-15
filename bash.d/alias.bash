@@ -119,7 +119,8 @@ EOF
 
 function x-ssh-agent()
 {
-    eval $(ssh-agent)
+    ssh-agent >~/.bash.d/ssh-agent.bash
+    eval "$(<~/.bash.d/ssh-agent.bash)"
     ssh-add
 }
 
