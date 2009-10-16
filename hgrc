@@ -3,7 +3,17 @@ username = Alexandre Bique <bique.alexandre@gmail.com>
 
 [extensions]
 hgext.extdiff =
-color=
+hgext.churn =
+hgext.fetch =
+hgext.graphlog =
+color =
+hgk =
+hgext.highlight =
+#imerge =
+inotify =
+pager =
+parentrevspec =
+rebase = 
 
 [defaults]
 cdiff = -q
@@ -14,3 +24,9 @@ opts.cdiff = -uprN
 
 cmd.vdiff = vim
 opts.vdiff = -f '+next' '+execute "DirDiff" argv(0) argv(1)'
+
+[inotify]
+autostart = true
+
+[pager]
+pager = LESS='FSRX' less
