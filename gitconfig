@@ -8,6 +8,9 @@
     st = status -a
     praise = blame
 
+[core]
+    pager = less -FRSX
+
 [apply]
     whitespace = strip
 
