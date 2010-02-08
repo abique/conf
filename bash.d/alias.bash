@@ -29,7 +29,7 @@ alias dv3="ssh abique@85.17.216.131"
 alias df='df -h'
 alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
-alias emacs='emacs -fn 7x14'
+alias emacs="$HOME/local/emacs/bin/emacs"
 alias my_date="date +'%Y%m%d%H%M'"
 alias gt='git'
 alias gp='git pull'
@@ -153,4 +153,19 @@ function aur_get()
 function _kmtrace()
 {
     LD_PRELOAD=/usr/lib/libktrace.so MALLOC_TRACE=ktrace.out "$@"
+}
+
+function tsql()
+(
+    if [ $# -ne 0 ]; then
+        loadDbEnv "$@"
+    fi
+
+    echo "mysql --user=$TWENGA_DB_USERNAME --password=$TWENGA_DB_PASSWORD --host=$TWENGA_DB_HOST --database=$TWENGA_DB_DB"
+    mysql --user=$TWENGA_DB_USERNAME --password=$TWENGA_DB_PASSWORD --host=$TWENGA_DB_HOST --database=$TWENGA_DB_DB
+)
+
+function bprod()
+{
+    ssh bprod@batch$1
 }
