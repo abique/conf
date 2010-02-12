@@ -29,7 +29,9 @@ alias dv3="ssh abique@85.17.216.131"
 alias df='df -h'
 alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
-alias emacs="$HOME/local/emacs/bin/emacs"
+if [[ $HOSTNAME = "dv3" ]] ; then
+    alias emacs="$HOME/local/emacs/bin/emacs"
+fi
 alias my_date="date +'%Y%m%d%H%M'"
 alias gt='git'
 alias gp='git pull'
@@ -55,8 +57,7 @@ alias ......='cd ../../../../..'
 alias .......='cd ../../../../../..'
 alias ........='cd ../../../../../../..'
 alias ps='ps -fx'
-alias grep="egrep --color --exclude='*.svn*' --exclude='*.o' --exclude=TAGS"
-alias egrep="grep -E"
+alias grep="grep --color --exclude='*.svn*' --exclude='*.o' --exclude=TAGS"
 alias esed='sed --regexp-extended'
 alias screen="screen -U"
 alias xgcc='gcc -W -Wall'
