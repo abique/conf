@@ -29,7 +29,7 @@ alias dv3="ssh abique@85.17.216.131"
 alias df='df -h'
 alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
-if [[ $HOSTNAME = "dv3" ]] ; then
+if [[ $HOSTNAME = "dv3.twenga.com" ]] ; then
     alias emacs="$HOME/local/emacs/bin/emacs"
 fi
 alias my_date="date +'%Y%m%d%H%M'"
