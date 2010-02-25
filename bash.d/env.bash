@@ -6,10 +6,10 @@ export INPUTRC="~/.inputrc"
 export EDITOR="vim"
 
 if ! echo "${PATH}" | grep "^${HOME}/local/bin" 1>/dev/null 2>&1 ; then
-    export PATH="${HOME}/local/bin:${HOME}/local/dmd/bin:${PATH}"
+    export PATH="${HOME}/local/bin:${HOME}/develop/gitw:${PATH}"
 fi
 if ! echo "${PATH}" | grep ":/sbin:/usr/sbin\$" 1>/dev/null 2>&1 ; then
-    export PATH="${PATH}:$HOME/develop/driver_wifi/rtems-toolchain/bin:/sbin:/usr/sbin"
+    export PATH="${PATH}:/sbin:/usr/sbin"
 fi
 if ! echo "${LD_LIBRARY_PATH}" | grep "^${HOME}/local/lib" 1>/dev/null 2>&1 ; then
     if [[ -z "${LD_LIBRARY_PATH}" ]] ; then
@@ -44,7 +44,5 @@ export LC_PAPER="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
 export EMACS_SERVER_FILE=$HOME/.emacs.d/server
-
-export NXT_MAC="00:16:53:01:E5:2C"
 
 #export CSCOPE_LINEFLAG_AFTER_FILE=no
