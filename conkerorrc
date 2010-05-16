@@ -1,6 +1,6 @@
 // conkeror basics
 default_directory = "/home/bique_a/downloads"
-homepage = "https://www.google.com/ig"
+homepage = "https://www.google.com/"
 
 // modules
 require("new-tabs.js")
