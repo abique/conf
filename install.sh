@@ -2,13 +2,14 @@
 
 CONF_PATH=`pwd`
 
-
 function install()
 {
     rm -rf ${HOME}/.$1
     ln -sf ${CONF_PATH}/$1 ${HOME}/.$1
-    printf "\e[33mInstalling\e[m ${HOME}/\e[32m$1\e[m\n"
+    printf "\e[33mInstalling\e[m ${HOME}/\e[32m.$1\e[m\n"
 }
+
+mkdir -p ~/.quakelive/quakelive/home/baseq3
 
 [[ -d ${HOME}/.config ]] || mkdir ${HOME}/.config
 
@@ -47,7 +48,8 @@ for file in		\
     xinitrc		\
     xmodmaprc		\
     xscreensaver	\
-    xsession
+    xsession            \
+    quakelive/quakelive/home/baseq3/*.cfg
 do
     install ${file}
 done
