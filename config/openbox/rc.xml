@@ -33,7 +33,7 @@
     <monitor>Any</monitor>
   </placement>
   <theme>
-    <name>M0nst4-sky</name>
+    <name>Openbox-Human-Like</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
        avaible characters are NDSLIMC, each can occur at most once.
