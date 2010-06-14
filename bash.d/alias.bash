@@ -85,6 +85,8 @@ alias poweroff='sudo poweroff'
 alias soulmebaby_tail='tail -f -n 50 ~/.config/soulmebaby/log'
 alias soulmebaby_sql='sqlite3 ~/.config/soulmebaby/database.sqlite'
 
+alias stats='~/develop/crawler-2x/build/src/Twenga/BinUtils/tw-get-statistics --host '
+
 function ssh_vnc_tunnel()
 {
     if [[ $# -eq 0 ]] ; then
@@ -162,8 +164,10 @@ function tsql()
         loadDbEnv "$@"
     fi
 
-    echo "mysql --user=$TWENGA_DB_USERNAME --password=$TWENGA_DB_PASSWORD --host=$TWENGA_DB_HOST --database=$TWENGA_DB_DB"
-    mysql --user=$TWENGA_DB_USERNAME --password=$TWENGA_DB_PASSWORD --host=$TWENGA_DB_HOST --database=$TWENGA_DB_DB
+    if [[ -z "$TSQL_QUIET" ]] ; then
+        echo "mysql --user=$TWENGA_DB_USERNAME --password=$TWENGA_DB_PASSWORD --host=$TWENGA_DB_HOST --database=$TWENGA_DB_DB"
+    fi
+    mysql --user=$TWENGA_DB_USERNAME --password=$TWENGA_DB_PASSWORD --host=$TWENGA_DB_HOST --database=$TWENGA_DB_DB $TSQL_EXTRA_PARAMS
 )
 
 function bprod()
