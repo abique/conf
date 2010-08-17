@@ -87,6 +87,8 @@ alias soulmebaby_sql='sqlite3 ~/.config/soulmebaby/database.sqlite'
 
 alias stats='~/develop/crawler-2/build/src/Twenga/BinUtils/tw-get-statistics --host '
 
+alias debian='sudo chroot /local/debian /bin/bash -c "su abique --shell=/bin/bash"'
+
 function ssh_vnc_tunnel()
 {
     if [[ $# -eq 0 ]] ; then
