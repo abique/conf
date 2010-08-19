@@ -85,7 +85,7 @@ alias poweroff='sudo poweroff'
 alias soulmebaby_tail='tail -f -n 50 ~/.config/soulmebaby/log'
 alias soulmebaby_sql='sqlite3 ~/.config/soulmebaby/database.sqlite'
 
-alias stats='~/develop/crawler-2/build/src/Twenga/BinUtils/tw-get-statistics --host '
+alias stats='~/develop/crawler-2/build/src/twenga/BinUtils/get-stats --host '
 
 alias debian='sudo chroot /local/debian /bin/bash -c "su abique --shell=/bin/bash"'
 
