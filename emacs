@@ -20,6 +20,7 @@
 (load-file "~/.emacs.d/modes/cmake-mode.el")
 (load-file "~/.emacs.d/modes/llvm-mode.el")
 (load-file "~/.emacs.d/modes/tablegen-mode.el")
+(load-file "~/.emacs.d/modes/protobuf-mode.el")
 
 (setq ispell-dictionary "francais"
       ispell-skip-sgml t)
