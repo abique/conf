@@ -45,4 +45,9 @@ export LANG="en_US.UTF-8"
 
 export EMACS_SERVER_FILE=$HOME/.emacs.d/server
 
+export EMAIL="alexandre.bique@twenga.com"
+export DEBEMAIL="$EMAIL"
+export NAME="Alexandre Bique"
+export DEBFULLNAME="Alexandre Bique"
+
 #export CSCOPE_LINEFLAG_AFTER_FILE=no
