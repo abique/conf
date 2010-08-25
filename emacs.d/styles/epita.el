@@ -15,7 +15,7 @@
 			(substatement-open . 0)
                         (case-label . 0)
                         (statement-case-open . 0)
-                        (block-open . 2)
+                        (block-open . 0)
                         (brace-list-open . 0)
                         (inline-open . 0)
                         (statement-block-intro . 2)
