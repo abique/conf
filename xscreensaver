@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.08 for t_alexandre3 on Wed Apr 22 13:08:59 2009.
+# Written by xscreensaver-demo 5.10 for abique on Wed Nov 18 13:52:00 2009.
 # http://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
@@ -33,8 +33,8 @@ grabVideoFrames:    False
 chooseRandomImages: False
 imageDirectory:	
 
-mode:		random
-selected:	-1
+mode:		one
+selected:	171
 
 textMode:	program
 textLiteral:	XScreenSaver
@@ -313,6 +313,8 @@ programs:								      \
   GL: 				pinion -root				    \n\
   GL: 				photopile -root				    \n\
   GL: 				skytentacles -root			    \n\
+  GL: 				surfaces -root				    \n\
+  GL: 				rubikblocks -root			    \n\
 
 
 pointerPollTime:    0:00:05

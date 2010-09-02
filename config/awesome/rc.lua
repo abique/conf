@@ -293,6 +293,10 @@ awful.rules.rules = {
                      buttons = clientbuttons } },
     { rule = { class = "MPlayer" },
       properties = { floating = true } },
+    { rule = { class = "psi" },
+      properties = { floating = true, tag = tags[1][8] } },
+    { rule = { class = "chat" },
+      properties = { floating = true, tag = tags[1][8] } },
     { rule = { class = "pinentry" },
       properties = { floating = true } },
     { rule = { class = "gimp" },
@@ -302,7 +306,7 @@ awful.rules.rules = {
     { rule = { class = "emacs" },
       properties = { tag = tags[1][1] } },
     { rule = { class = "kontact" },
-      properties = { tag = tags[1][8] } },
+      properties = { tag = tags[1][9] } },
 }
 -- }}}
 

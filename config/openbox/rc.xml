@@ -312,7 +312,7 @@
     </keybind>
     <keybind key="W-i">
       <action name="Execute">
-        <command>firefox</command>
+        <command>~/.local/bin/opera</command>
       </action>
     </keybind>
     <keybind key="W-l">

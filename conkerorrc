@@ -3,7 +3,7 @@ default_directory = "/home/bique_a/downloads"
 homepage = "https://www.google.com/"
 
 // modules
-require("new-tabs.js")
+// require("new-tabs.js")
 
 // sessions
 session_pref("signon.rememberSignons", true);
