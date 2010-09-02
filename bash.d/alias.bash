@@ -88,6 +88,7 @@ alias soulmebaby_sql='sqlite3 ~/.config/soulmebaby/database.sqlite'
 alias stats='~/develop/crawler-2/build/src/twenga/BinUtils/get-stats --host '
 
 alias debian='sudo chroot /local/debian /bin/bash -c "su abique --shell=/bin/bash"'
+alias tw_deb_upload='scp *.deb *.dsc *.changes *.tar.gz abique@fs6.twenga.com:debian/ && rm *.deb *.dsc *.changes *.tar.gz'
 
 function ssh_vnc_tunnel()
 {
