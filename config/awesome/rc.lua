@@ -11,6 +11,12 @@ require("naughty")
 -- Themes define colours, icons, and wallpapers
 beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
 
+theme.wallpaper_cmd = { "awsetbg /home/abique/wallpapers/current" }
+theme.font = "fixed-7x14"
+theme.border_width = "1"
+theme.border_focus = "#C2FF3F"
+
+
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
 editor = "emacs"
@@ -24,20 +30,19 @@ editor_cmd = "emacs"
 modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
-layouts =
-{
-    awful.layout.suit.floating,
-    awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
-    awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier
+layouts = {
+   awful.layout.suit.floating,
+   awful.layout.suit.tile,
+   awful.layout.suit.tile.left,
+   awful.layout.suit.tile.bottom,
+   awful.layout.suit.tile.top,
+   awful.layout.suit.fair,
+   awful.layout.suit.fair.horizontal,
+   awful.layout.suit.spiral,
+   awful.layout.suit.spiral.dwindle,
+   awful.layout.suit.max,
+   awful.layout.suit.max.fullscreen,
+   awful.layout.suit.magnifier
 }
 -- }}}
 
@@ -61,15 +66,8 @@ awful.layout.set(awful.layout.suit.magnifier, tags[1][9])
 
 -- {{{ Menu
 -- Create a laucher widget and a main menu
-myawesomemenu = {
-   { "manual", terminal .. " -e man awesome" },
-   { "edit config", editor_cmd .. " " .. awful.util.getdir("config") .. "/rc.lua" },
-   { "restart", awesome.restart },
-   { "quit", awesome.quit }
-}
-
-mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "open terminal", terminal }
+mymainmenu = awful.menu({ items = { { "restart", awesome.restart },
+                                    { "quit", awesome.quit }
                                   }
                         })
 
@@ -79,7 +77,7 @@ mylauncher = awful.widget.launcher({ image = image(beautiful.awesome_icon),
 
 -- {{{ Wibox
 -- Create a textclock widget
-mytextclock = awful.widget.textclock({ align = "right" })
+mytextclock = awful.widget.textclock({ align = "right" }, " %Y/%m/%d %H:%M:%S ", 1)
 
 -- Create a systray
 mysystray = widget({ type = "systray" })
