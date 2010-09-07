@@ -48,6 +48,12 @@ for s = 1, screen.count() do
     -- Each screen has its own tag table.
     tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
 end
+awful.layout.set(awful.layout.suit.max, tags[1][1])
+awful.layout.set(awful.layout.suit.tile, tags[1][2])
+awful.layout.set(awful.layout.suit.tile, tags[1][3])
+awful.layout.set(awful.layout.suit.max, tags[1][4])
+awful.layout.set(awful.layout.suit.tile.top, tags[1][6])
+awful.layout.set(awful.layout.suit.magnifier, tags[1][9])
 -- }}}
 
 -- {{{ Menu
