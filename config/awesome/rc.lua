@@ -52,7 +52,10 @@ awful.layout.set(awful.layout.suit.max, tags[1][1])
 awful.layout.set(awful.layout.suit.tile, tags[1][2])
 awful.layout.set(awful.layout.suit.tile, tags[1][3])
 awful.layout.set(awful.layout.suit.max, tags[1][4])
+awful.layout.set(awful.layout.suit.tile, tags[1][5])
 awful.layout.set(awful.layout.suit.tile.top, tags[1][6])
+awful.layout.set(awful.layout.suit.max, tags[1][7])
+awful.layout.set(awful.layout.suit.floating, tags[1][8])
 awful.layout.set(awful.layout.suit.magnifier, tags[1][9])
 -- }}}
 
