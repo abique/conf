@@ -8,18 +8,18 @@
 
 -- {{{ Main
 theme = {}
-theme.wallpaper_cmd = { "awsetbg ~/wallpapers/current" }
+theme.wallpaper_cmd = { "awsetbg /home/abique/wallpapers/current" }
 -- }}}
 
 -- {{{ Styles
-theme.font      = "fixed-7x14"
+theme.font      = "sans 8"
 
 -- {{{ Colors
-theme.fg_normal = "#DCDCCC"
+theme.fg_normal = "#9D86DC"
 theme.fg_focus  = "#F0DFAF"
 theme.fg_urgent = "#CC9393"
-theme.bg_normal = "#3F3F3F"
-theme.bg_focus  = "#1E2320"
+theme.bg_normal = "#2C2728"
+theme.bg_focus  = "#0C0E2C"
 theme.bg_urgent = "#3F3F3F"
 -- }}}
 
