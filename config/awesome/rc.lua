@@ -9,13 +9,8 @@ require("naughty")
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
 
-theme.wallpaper_cmd = { "awsetbg /home/abique/wallpapers/current" }
-theme.font = "fixed-7x14"
-theme.border_width = "1"
--- theme.border_focus = "#C2FF3F"
-theme.border_focus = "#EA6912"
+beautiful.init("/home/abique/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
