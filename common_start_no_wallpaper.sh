@@ -7,7 +7,3 @@ xset -b off
 xset r rate 175 30
 
 # nm-applet & disown
-# psi & disown
-# skype & disown
-# krunner & disown
-# kmix --keepvisibility & disown
