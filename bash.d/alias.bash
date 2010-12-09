@@ -26,6 +26,7 @@ alias ssh_acu='ssh ssh.epita.fr ssh acu.epita.fr' # not working :/
 alias ssh_gistr='ssh bique_a@10.226.7.15'
 alias ssh_sj='ssh intranet.smartjog.net'
 alias dv3="ssh abique@85.17.216.131"
+alias dv6="ssh abique@95.211.74.102"
 alias df='df -h'
 alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
