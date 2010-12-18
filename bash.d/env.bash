@@ -44,6 +44,7 @@ export LC_PAPER="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
 export EMACS_SERVER_FILE=$HOME/.emacs.d/server
+export GNOME_KEYRING_SOCKET="$HOME/.gnome-keyring-socket"
 
 export EMAIL="alexandre.bique@twenga.com"
 export DEBEMAIL="$EMAIL"
