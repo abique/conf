@@ -1,0 +1,29 @@
+[global_config]
+  enabled_plugins = ,
+  focus = mouse
+  borderless = True
+[keybindings]
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#000000:#cd0000:#00cd00:#cdcd00:#1e90ff:#cd00cd:#00cdcd:#e5e5e5:#4c4c4c:#ff0000:#00ff00:#ffff00:#4682b4:#ff00ff:#00ffff:#ffffff"
+    font = Fixed 10
+    scrollback_lines = 5000
+    use_system_font = False
+  [[BabaLi]]
+    scrollbar_position = hidden
+    font = Fixed 10
+    scrollback_lines = 5000
+    use_system_font = False
+    cursor_color = "#e5be52"
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = BabaLi
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
