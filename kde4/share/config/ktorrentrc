@@ -1,27 +1,146 @@
+[ActivityListWidget]
+icon_size=32
+mode=0
+
+[ChunkDownloadView]
+state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAABkEAAAAFAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAEAAAAyAAAAAIAAAAAAAAAggAAAAEAAAAAAAAAZAAAAAEAAAAAAAAEkwAAAAEAAAAA
+
 [DownloadOrderPlugin]
 DownloadOrderPluginEnabled=true
+
+[FileSelectDlg]
+show_file_tree=true
+size=792,707
+
+[FileView]
+show_list_of_files=false
+state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAABQAAAAAAAAACAAAAAQAAAAMAAAAEAAAABQAAAAAAAAACAAAAAQAAAAMAAAAEAAAAAAAAAAAAAAYpAAAABQEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAABQAAAeUAAAABAAAAAAAAAGQAAAABAAAAAAAAAG8AAAABAAAAAAAAAGQAAAABAAAAAAAAAw0AAAABAAAAAA==
+
+[GroupView]
+Active Torrents=true
+All Torrents=true
+Custom Groups=true
+Downloads=true
+Passive Torrents=true
+Uploads=true
+visible=true
+
+[HTML Settings]
+AutomaticDetectionLanguage=1
+
+[IPFilterAutoUpdate]
+last_update_ok=true
+last_updated=2011,1,19,0,19,58
+
+[IPFilterPlugin]
+IPFilterPluginEnabled=true
 
 [InfoWidgetPlugin]
 InfoWidgetPluginEnabled=true
 
+[MagnetView]
+state=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlEAAAADAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAAyAAAAAIAAAAAAAAFiQAAAAEAAAAA
+
+[MainTabWidget]
+current_tab=0
+
 [MainWindow]
+Height 1050=999
 Height 768=351
-State=AAAA/wAAAAD9AAAAAAAAA44AAAD+AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGgBTAGUAYQByAGMAaABUAG8AbwBsAEIAYQByAQAAApf/////AAAAAAAAAAA=
+State=AAAA/wAAAAD9AAAAAAAABogAAAOQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHgBTAGgAdQB0AGQAbwB3AG4AVABvAG8AbABCAGEAcgEAAAGX/////wAAAAAAAAAAAAAAGgBTAGUAYQByAGMAaABUAG8AbwBsAEIAYQByAQAAAd7/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
 Width 1366=910
+Width 1680=1672
+activity_bar_pos=0
+current_activity=0
+hidden_on_exit=false
+menubar_hidden=false
+statusbar_hidden=false
 
 [MainWindow][Toolbar SearchToolBar]
 Index=1
-ToolButtonStyle=TextBesideIcon
 
 [MainWindow][Toolbar mainToolBar]
 Index=0
 
+[PeerView]
+state=AAAA/wAAAAAAAAABAAAAAQAAAAMBAAAAAAAAAAAAAAAAAAAAAAAABp0AAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAEAAAAZAAAAAEAAAAAAAAAkAAAAAEAAAAAAAAAlQAAAAEAAAAAAAAFFAAAAA0AAAAA
+
+[PrefDialog]
+size=916,596
+
+[QueueManagerWidget]
+search_bar_visible=false
+search_text=
+view_state=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhkAAAAEAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAEAAAAZAAAAAEAAAAAAAACWgAAAAEAAAAAAAAAZAAAAAEAAAAAAAAC9wAAAAEAAAAA
+
+[Recent Dirs]
+saveTorrentData[$e]=file://$HOME/videos/true-blood,$HOME/Documents
+
+[Scripting]
+running=
+scripts=/usr/share/apps/ktorrent/scripts/auto_remove/auto_remove.py,/usr/share/apps/ktorrent/scripts/auto_resume/auto_resume.py,/usr/share/apps/ktorrent/scripts/email_notifications/email_notifications.py,/usr/share/apps/ktorrent/scripts/tracker_groups/tracker_groups.py
+
 [ScriptingPlugin]
 ScriptingPluginEnabled=true
+
+[SearchActivity]
+current_search=0
 
 [SearchPlugin]
 SearchPluginEnabled=true
 
+[ShutdownPlugin]
+ShutdownPluginEnabled=true
+
+[TorrentActivityBottomTabBar]
+current_tab=Peers
+shrunken=false
+
+[TorrentActivitySplitters]
+hsplit=AAAA/wAAAAAAAAACAAABAgAABUwBAAAABwEAAAAB
+vsplit=AAAA/wAAAAAAAAACAAACYQAAAR8BAAAABwEAAAAC
+
+[TrackerView]
+state=AAAA/wAAAAAAAAABAAAAAAAAAAQBAAAAAAAAAAAAAAAAAAAAAAAABa8AAAAGAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAEAAACRwAAAAEAAAAAAAABQwAAAAEAAAAAAAABLAAAAAMAAAAAAAAA+QAAAAEAAAAA
+
+[UPnPDevicesList]
+state=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeoAAAADAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAADAAAA6wAAAAEAAAAAAAAAZAAAAAEAAAAAAAAEmwAAAAEAAAAA
+
+[UPnPPlugin]
+UPnPPluginEnabled=true
+
+[View0]
+state=AAAA/wAAAAAAAAABAAAAAQAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAB7IAAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAADAAABpwAAAAEAAAAAAAAAkwAAAAEAAAAAAAAFeAAAAA4AAAAA
+
+[View1]
+state=AAAA/wAAAAAAAAABAAAAAQAAAAsBAAAAEAAAAAAAAAABAAAAAgAAAAkAAAADAAAABAAAAAUAAAAGAAAABwAAAAgAAAAKAAAACwAAAAwAAAANAAAADgAAAA8AAAAQAAAAAAAAAAEAAAACAAAABAAAAAUAAAAGAAAABwAAAAgAAAAJAAAAAwAAAAoAAAALAAAADAAAAA0AAAAOAAAADwAAABAM8AAAAAYAAAAPAAAA1AAAAA4AAABkAAAADQAAAGQAAAAMAAAAZAAAAAQAAABkAAAAAgAAAGQAAAU/AAAAEAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAACAAAAawAAAABAAAAAAAAAGQAAAABAAAAAAAAAAAAAAACAAAAAAAAAfQAAAAFAAAAAAAAAGEAAAABAAAAAAAAAFwAAAABAAAAAAAAAH4AAAABAAAAAAAAAAAAAAAEAAAAAA==
+
+[ViewManager]
+current_views=Ungrouped Torrents,torrent411
+
+[WebInterfacePlugin]
+WebInterfacePluginEnabled=true
+
+[WebSeedsTab]
+state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAABaoAAAAEAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAADAAABHgAAAAEAAAAAAAAAyAAAAAIAAAAAAAADxAAAAAEAAAAA
+
 [downloads]
+checkWhenFinished=true
+completedDir=file:///home/abique
+dhtSupport=true
+fullDiskPrealloc=true
+lastSaveDir=/home/abique/videos/one-piece/
+lookUpHostnameOfPeers=false
+maxConnectingSockets=70
+maxConnections=130
+maxDownloads=8
+maxSeeds=15
+maxUploadRate=85
+numUploadSlots=5
 oldTorrentsImported=true
-tempDir=file:///home/bique_a/.kde4/share/apps/ktorrent/
+saveDir=file:///home/abique
+tempDir=file:///home/abique/conf/kde4/share/apps/ktorrent/
+torrentCopyDir=file:///home/abique
+useEncryption=true
+utpEnabled=true

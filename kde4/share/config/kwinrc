@@ -1,16 +1,27 @@
 [$Version]
-update_info=kwin3_plugin.upd:kde3.2,kwin_focus2.upd:kwin_focus2,kwin_on_off.upd:kwin_on_off,kwin_focus1.upd:kwin_focus1,kwin.upd:kde3.0r1,kwin.upd:kde3.2Xinerama
+update_info=kwin3_plugin.upd:kde3.2,kwin_focus2.upd:kwin_focus2,kwin_on_off.upd:kwin_on_off,kwin_focus1.upd:kwin_focus1,kwin.upd:kde3.0r1,kwin.upd:kde3.2Xinerama,kwin_blacklist.upd:Blacklist-4.5
+
+[Blacklist][Blur]
+Advanced Micro Devices=DRI R600:-:7.8.1,DRI R600:-:7.8.2
+Ati=Radeon HD 3650:-:3.3.9901
+NVIDIA=GeForce 6150/PCI/SSE2:-:195
+
+[Blacklist][Lanczos]
+Advanced Micro Devices=DRI R600:-:7.8.1,DRI R600:-:7.8.2
+Intel=GM45 Express Chipset GEM 20100328:-:7.8.2,GM45 Express Chipset GEM 20091221:-:7.7.1,965GM GEM 20100328 2010Q1:-:7.8.2,965GM GEM 20091221 2009Q4:-:7.7.1,Ironlake Mobile GEM 20100328:-:7.8.2
 
 [Compositing]
 AnimationSpeed=3
 Backend=OpenGL
+CheckIsSafe=true
 DisableChecks=false
-Enabled=true
+Enabled=false
 GLDirect=true
 GLMode=TFP
 GLTextureFilter=1
 GLVSync=false
 HiddenPreviews=5
+OpenGLIsUnsafe=false
 XRenderSmoothScale=false
 
 [Desktops]
@@ -24,12 +35,24 @@ Name_7=7
 Name_8=8
 Number=8
 
+[Effect-BoxSwitch]
+TabBox=false
+TabBoxAlternative=false
+
+[Effect-CoverSwitch]
+TabBox=false
+TabBoxAlternative=false
+
 [Effect-DesktopGrid]
 BorderWidth=5
 CustomLayoutRows=2
 DesktopNameAlignment=0
 LayoutMode=1
 ZoomDuration=100
+
+[Effect-FlipSwitch]
+TabBox=false
+TabBoxAlternative=false
 
 [Effect-PresentWindows]
 Accuracy=1
@@ -40,7 +63,8 @@ IgnoreMinimized=false
 LayoutMode=0
 RearrangeDuration=0
 ShowPanel=false
-TabBox=true
+TabBox=false
+TabBoxAlternative=false
 
 [MouseBindings]
 CommandActiveTitlebar1=Raise
@@ -61,7 +85,8 @@ CommandWindow3=Activate and pass click
 CommandWindowWheel=Scroll
 
 [Plugins]
-kwin4_effect_boxswitchEnabled=false
+kwin4_effect_blurEnabled=true
+kwin4_effect_boxswitchEnabled=true
 kwin4_effect_coverswitchEnabled=false
 kwin4_effect_cubeEnabled=false
 kwin4_effect_cubeslideEnabled=false
@@ -74,6 +99,7 @@ kwin4_effect_fadeEnabled=true
 kwin4_effect_fadedesktopEnabled=false
 kwin4_effect_fallapartEnabled=false
 kwin4_effect_flipswitchEnabled=false
+kwin4_effect_glideEnabled=false
 kwin4_effect_highlightwindowEnabled=false
 kwin4_effect_invertEnabled=false
 kwin4_effect_loginEnabled=true
@@ -84,6 +110,7 @@ kwin4_effect_magnifierEnabled=false
 kwin4_effect_minimizeanimationEnabled=true
 kwin4_effect_mousemarkEnabled=false
 kwin4_effect_presentwindowsEnabled=true
+kwin4_effect_resizeEnabled=false
 kwin4_effect_scaleinEnabled=false
 kwin4_effect_shadowEnabled=true
 kwin4_effect_sharpenEnabled=false
@@ -92,6 +119,7 @@ kwin4_effect_showfpsEnabled=false
 kwin4_effect_showpaintEnabled=false
 kwin4_effect_slideEnabled=true
 kwin4_effect_slidebackEnabled=false
+kwin4_effect_slidingpopupsEnabled=true
 kwin4_effect_snaphelperEnabled=false
 kwin4_effect_snowEnabled=false
 kwin4_effect_taskbarthumbnailEnabled=true
@@ -113,7 +141,33 @@ PluginLib=kwin3_laptop
 ShowToolTips=true
 
 [TabBox]
+HighlightWindows=true
+LayoutMode=0
+LayoutName=Text
+ListMode=0
+MinHeight=20
+MinWidth=20
+SelectedItem=0
+SelectedLayoutName=Text
+ShowDesktop=false
+ShowOutline=true
+ShowTabBox=false
+SwitchingMode=0
 TraverseAll=false
+
+[TabBoxAlternative]
+HighlightWindows=true
+LayoutMode=0
+LayoutName=Default
+ListMode=0
+MinHeight=20
+MinWidth=20
+SelectedItem=0
+SelectedLayoutName=Text
+ShowDesktop=false
+ShowOutline=true
+ShowTabBox=true
+SwitchingMode=0
 
 [Windows]
 ActiveMouseScreen=false

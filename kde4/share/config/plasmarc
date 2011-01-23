@@ -8,8 +8,5 @@ used=,notifier,systemtray,digital-clock,tasks,pager,battery,launcher
 [PlasmaViews][2]
 panelVisibility=0
 
-[Theme]
-name=Clean-Blend
-
 [Theme-amarok]
 name=Amarok-Mockup

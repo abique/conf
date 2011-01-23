@@ -4,7 +4,7 @@ kcminputrc_mouse_cursortheme="Oxygen_Black"
 # kcminputrc Mouse cursorSize ''
 kcminputrc_mouse_cursorsize=""
 # ksplashrc KSplash Theme Default
-ksplashrc_ksplash_theme="Default"
+ksplashrc_ksplash_theme="BlueLinuxSplash"
 # ksplashrc KSplash Engine KSplashX
 ksplashrc_ksplash_engine="KSplashX"
 # kcmrandrrc Display ApplyOnStartup false

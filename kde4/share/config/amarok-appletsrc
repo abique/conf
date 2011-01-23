@@ -1,11 +1,15 @@
 [Containments][1]
 activity=
+activityId=
+desktop=-1
 formfactor=0
-geometry=0,0,22,23
+geometry=0,0,694,885
 immutability=1
+lastDesktop=-1
+lastScreen=-1
 location=0
-plugin=context
-screen=0
+plugin=amarok_containment_vertical
+screen=-1
 zvalue=0
 
 [Containments][2]

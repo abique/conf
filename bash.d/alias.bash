@@ -68,6 +68,7 @@ alias fixme='grep -rn FIXME .'
 alias valgrind_mleak='valgrind --leak-check=full --leak-resolution=high --show-reachable=yes'
 alias svn2cl='svn2cl --break-before-msg=2'
 alias pwgen='pwgen --symbols --secure --num-passwords=5 --capitalize -C --ambiguous 16'
+alias mplayer="mplayer -ao alsa -vo vdpau"
 if which colormake >/dev/null 2>&1 && false ; then
     alias make='colormake'
 fi

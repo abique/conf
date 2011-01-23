@@ -1,2 +1,15 @@
 [$Version]
 update_info=mailtransports.upd:initial-kmail-migration,mailtransports.upd:initial-knode-migration
+
+[General]
+default-transport=114031894
+
+[Transport 114031894]
+auth=true
+encryption=SSL
+host=smtp.gmail.com
+id=114031894
+name=gmail
+port=465
+storepass=true
+user=bique.alexandre

@@ -2,8 +2,8 @@
 contactResources=
 
 [Migration]
-Version-calendar=1
-Version-contact=1
+Version-calendar=2
+Version-contact=2
 
 [Resource bcVG48uyy4]
 MigrationState=Complete

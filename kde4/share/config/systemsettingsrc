@@ -1,6 +1,26 @@
+[Classic Tree View]
+autoExpandOneLevel=false
+viewLayout=290,947
+
+[Colors]
+CurrentPalette=Forty Colors
+
+[ConfigDialog]
+Height 1050=251
+Width 1680=399
+
 [DownloadDialog Settings]
+Height 1050=705
 Height 768=400
 Width 1366=700
+Width 1680=1090
+
+[EntryDetailsDialog Settings]
+Height 1050=400
+Width 1680=700
+
+[HTML Settings]
+AutomaticDetectionLanguage=1
 
 [KFileDialog Settings]
 Height 768=450
@@ -8,10 +28,23 @@ Recent Files[$e]=common_start_no_wallpaper.sh,$HOME/conf/common_start_no_wallpap
 Width 1366=700
 
 [MainWindow]
+Height 1050=776
 Height 768=769
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAABVYAAAKfAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABYoAAALoAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
 Width 1366=1367
+Width 1680=1418
 
 [MainWindow][Toolbar mainToolBar]
 Index=0
+
+[Notification Messages]
+LanguageChangesApplyOnlyToNewlyStartedPrograms=false
+
+[Open-with settings]
+CompletionMode=5
+History=kmail -caption "%c"
+
+[Phonon::AudioOutput]
+System Settings_Volume=1

@@ -5,6 +5,7 @@ ShowStatusBar=true
 [Kate Document Defaults]
 Allow End of Line Detection=true
 Allow Simple Mode=true
+BOM=false
 Backup Config Flags=1
 Backup Prefix=
 Backup Suffix=~
@@ -13,6 +14,7 @@ Encoding=UTF-8
 End of Line=0
 Indentation Mode=
 Indentation Width=2
+On-The-Fly Spellcheck=false
 PageUp/PageDown Moves Cursor=false
 ProberType for Encoding Autodetection=0
 Search Dir Config Depth=3
@@ -21,11 +23,19 @@ Tab Width=8
 Word Wrap=false
 Word Wrap Column=80
 
+[Kate Part Defaults]
+Encoding Prober Type=1
+Fallback Encoding=ISO-8859-15
+
 [Kate Renderer Defaults]
 Schema=kwrite - Normal
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
 Word Wrap Marker=false
+
+[Kate Vi Input Mode Settings]
+Normal Mode Mapping Keys=
+Normal Mode Mappings=
 
 [Kate View Defaults]
 Auto Center Lines=0
@@ -38,20 +48,33 @@ Dynamic Word Wrap Indicators=1
 Folding Bar=true
 Icon Bar=false
 Line Numbers=false
+Maximum Search History Size=100
 Persistent Selection=false
 Replacement Text History=
 Scroll Bar Marks=false
+Scroll Past End=false
 Search Pattern History=
 Search/Replace Flags=140
+Smart Copy Cut=false
 Vi Input Mode=false
 Vi Input Mode Hide Status Bar=false
 Vi Input Mode Steal Keys=false
+Word Completion=true
+Word Completion Minimal Word Length=3
 
 [MainWindow]
+Height 1050=1029
 Height 768=769
-State=AAAA/wAAAAD9AAAAAAAABVYAAAJyAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAA0YAAAOyAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
 Width 1366=1367
+Width 1680=838
 
 [Recent Files]
 File1[$e]=$HOME/.local/share/akonadi/db_data/mysql.err
+File2[$e]=http://www.coiffure-et-beaute.com/robots.txt
+File3[$e]=http://eztv.it/
+File4[$e]=$HOME/toto
 Name1[$e]=mysql.err
+Name2[$e]=robots.txt
+Name4[$e]=toto

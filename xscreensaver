@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.10 for abique on Wed Nov 18 13:52:00 2009.
+# Written by xscreensaver-demo 5.12 for abique on Sun Nov 28 16:15:50 2010.
 # http://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
@@ -325,5 +325,6 @@ sgiSaverExtension:  True
 xidleExtension:	True
 GetViewPortIsFullOfLies:False
 procInterrupts:	True
+xinputExtensionDev: True
 overlayStderr:	True
 
