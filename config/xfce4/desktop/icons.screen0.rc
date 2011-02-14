@@ -1,40 +1,28 @@
-[Home]
-row=2
-col=1
-
-[skype-2.0.0.72]
-row=6
-col=0
-
-[Root]
-row=4
-col=0
-
-[Temp]
-row=0
-col=1
-
-[bison-glr.c-header-guard.patch]
-row=0
-col=0
-
-[skype-2.0.0.72.tar.bz2]
-row=1
-col=1
-
-[skype_static-2.0.0.72.tar.bz2]
-row=3
-col=0
-
-[skype_static-2.0.0.72]
+[Home.desktop]
 row=5
 col=0
 
-[File System]
-row=2
+[Downloads]
+row=6
+col=0
+
+[Réservé au système]
+row=4
+col=0
+
+[262 GB Filesystem]
+row=3
 col=0
 
 [Trash]
-row=3
-col=1
+row=2
+col=0
+
+[File System]
+row=1
+col=0
+
+[Home]
+row=0
+col=0
 

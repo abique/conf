@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-settings-manager" version="1.0">
-  <property name="window-width" type="int" value="1272"/>
-  <property name="window-height" type="int" value="977"/>
+  <property name="window-width" type="int" value="959"/>
+  <property name="window-height" type="int" value="546"/>
 </channel>
