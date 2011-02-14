@@ -19,7 +19,7 @@
     <property name="double_click_time" type="int" value="250"/>
     <property name="double_click_distance" type="int" value="5"/>
     <property name="double_click_action" type="string" value="shade"/>
-    <property name="easy_click" type="string" value="Meta"/>
+    <property name="easy_click" type="string" value="Mod4"/>
     <property name="focus_hint" type="bool" value="true"/>
     <property name="focus_new" type="bool" value="true"/>
     <property name="frame_opacity" type="int" value="100"/>
@@ -39,7 +39,7 @@
     <property name="repeat_urgent_blink" type="bool" value="false"/>
     <property name="resize_opacity" type="int" value="100"/>
     <property name="restore_on_move" type="bool" value="true"/>
-    <property name="scroll_workspaces" type="bool" value="true"/>
+    <property name="scroll_workspaces" type="bool" value="false"/>
     <property name="shadow_delta_height" type="int" value="0"/>
     <property name="shadow_delta_width" type="int" value="0"/>
     <property name="shadow_delta_x" type="int" value="0"/>
@@ -51,8 +51,8 @@
     <property name="show_popup_shadow" type="bool" value="false"/>
     <property name="snap_resist" type="bool" value="false"/>
     <property name="snap_to_border" type="bool" value="true"/>
-    <property name="snap_to_windows" type="bool" value="false"/>
-    <property name="snap_width" type="int" value="10"/>
+    <property name="snap_to_windows" type="bool" value="true"/>
+    <property name="snap_width" type="int" value="8"/>
     <property name="theme" type="string" value="Today"/>
     <property name="title_alignment" type="string" value="center"/>
     <property name="title_font" type="string" value="Sans Bold 9"/>
