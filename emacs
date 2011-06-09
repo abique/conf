@@ -15,12 +15,16 @@
 ;;(load-file "~/.emacs.d/color-theme.el")
 (load-file "~/.emacs.d/doxygen.el")
 (load-file "~/.emacs.d/keys.el")
+(load-file "~/.emacs.d/modes/graphviz-dot-mode.el")
 
 (autoload 'nsi-mode "nsi-mode" "nsi editing mode." t)
 (load-file "~/.emacs.d/modes/cmake-mode.el")
 (load-file "~/.emacs.d/modes/llvm-mode.el")
 (load-file "~/.emacs.d/modes/tablegen-mode.el")
 (load-file "~/.emacs.d/modes/protobuf-mode.el")
+
+(if (file-readable-p "/usr/share/go/misc/emacs/go-mode-load.el")
+    (load-file "/usr/share/go/misc/emacs/go-mode-load.el"))
 
 (setq ispell-dictionary "francais"
       ispell-skip-sgml t)
@@ -48,3 +52,18 @@
 (add-to-list 'auto-mode-alist '("\\.l$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.doch$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.nsi$" . nsi-mode))
+
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(graphviz-dot-auto-indent-on-braces t)
+ '(graphviz-dot-toggle-completions t)
+ '(graphviz-dot-view-edit-command nil))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ )
