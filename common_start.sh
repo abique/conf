@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 if [[ -r ~/wallpapers/current ]] ; then
     feh --bg-scale ~/wallpapers/current
