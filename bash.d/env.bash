@@ -51,6 +51,8 @@ export DEBEMAIL="$EMAIL"
 export NAME="Alexandre Bique"
 export DEBFULLNAME="Alexandre Bique"
 
+export MYSQL_PS1="\u@\h [\d]> "
+
 #export CSCOPE_LINEFLAG_AFTER_FILE=no
 
 # check the window size after each command and, if necessary,
