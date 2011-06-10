@@ -46,10 +46,10 @@ export LANG="en_US.UTF-8"
 export EMACS_SERVER_FILE=$HOME/.emacs.d/server
 export GNOME_KEYRING_SOCKET="$HOME/.gnome-keyring-socket"
 
-export EMAIL="alexandre.bique@twenga.com"
+export EMAIL="bique.alexandre@gmail.com"
 export DEBEMAIL="$EMAIL"
 export NAME="Alexandre Bique"
-export DEBFULLNAME="Alexandre Bique"
+export DEBFULLNAME="$NAME"
 
 export MYSQL_PS1="\u@\h [\d]> "
 
