@@ -21,23 +21,9 @@ alias m='make'
 alias c='cat'
 alias ce='cat -e'
 alias cn='cat -n'
-alias ssh_epita='ssh ssh.epita.fr'
-alias ssh_acu='ssh ssh.epita.fr ssh acu.epita.fr' # not working :/
-alias ssh_gistr='ssh bique_a@10.226.7.15'
-alias ssh_sj='ssh intranet.smartjog.net'
-alias dv3="ssh abique@dv3.twenga.com"
-alias dv6="ssh abique@dv6.twenga.com"
 alias df='df -h'
 alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
-if [[ $HOSTNAME = "dv3.twenga.com" ]] ; then
-    alias emacs="$HOME/local/emacs/bin/emacs"
-fi
-alias my_date="date +'%Y%m%d%H%M'"
-alias gt='git'
-alias gp='git pull'
-alias cdozulis='cd ~/develop/ozulis'
-alias cdioem='cd ~/develop/xen/ioemu'
 alias tx="tar -xf"
 alias txv="tar -xvvvf"
 
@@ -49,7 +35,7 @@ function ema()
 alias v='vim'
 alias e='~/.bash.d/emacs-quick.bash'
 alias em='emacs -nw'
-alias gdb='gdb --quiet' # --tui'
+alias gdb='gdb --quiet'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -57,40 +43,17 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias .......='cd ../../../../../..'
 alias ........='cd ../../../../../../..'
-alias ps='ps -fx'
 alias grep="grep --color --exclude='*.svn*' --exclude='*.o' --exclude=TAGS"
-alias esed='sed --regexp-extended'
-alias screen="screen -U"
-alias xgcc='gcc -W -Wall'
-alias dsss='~/local/bin/dsss'
-alias rebuild='~/local/bin/rebuild'
-alias fixme='grep -rn FIXME .'
 alias valgrind_mleak='valgrind --leak-check=full --leak-resolution=high --show-reachable=yes'
-alias svn2cl='svn2cl --break-before-msg=2'
 alias pwgen='pwgen --symbols --secure --num-passwords=5 --capitalize -C --ambiguous 16'
 alias mplayer="mplayer -ao alsa -vo vdpau"
-if which colormake >/dev/null 2>&1 && false ; then
-    alias make='colormake'
-fi
 
-if which pacman-color 2>/dev/null 1>/dev/null ; then
-    alias p='sudo pacman-color'
-else
-    alias p='sudo pacman'
-fi
-alias pS='p -Ss'
+alias p='sudo pacman'
 alias pu='p -Syu'
-alias y='sudo yaourt'
-alias yS='yaourt -Ss'
-alias poweroff='sudo poweroff'
-
-alias soulmebaby_tail='tail -f -n 50 ~/.config/soulmebaby/log'
-alias soulmebaby_sql='sqlite3 ~/.config/soulmebaby/database.sqlite'
 
 alias stats='~/develop/crawler-2/build/src/twenga/BinUtils/get-stats --host '
 
 alias debian='sudo chroot /local/debian /bin/bash -c "su abique --shell=/bin/bash"'
-alias tw_deb_upload='scp *.deb *.dsc *.changes *.tar.gz abique@fs6.twenga.com:debian/ && rm *.deb *.dsc *.changes *.tar.gz'
 
 function ssh_vnc_tunnel()
 {
@@ -162,35 +125,3 @@ function _kmtrace()
 {
     LD_PRELOAD=/usr/lib/libktrace.so MALLOC_TRACE=ktrace.out "$@"
 }
-
-
-# twenga
-function tsql()
-(
-    if [ $# -ne 0 ]; then
-        loadDbEnv "$@"
-    fi
-
-    if [[ -z "$TSQL_QUIET" ]] ; then
-        echo "mysql -A --user=$TWENGA_DB_USERNAME --password=$TWENGA_DB_PASSWORD --host=$TWENGA_DB_HOST --database=$TWENGA_DB_DB"
-    fi
-    mysql -A --user=$TWENGA_DB_USERNAME --password=$TWENGA_DB_PASSWORD --host=$TWENGA_DB_HOST --database=$TWENGA_DB_DB $TSQL_EXTRA_PARAMS
-)
-
-function bprod()
-{
-    ssh bprod@batch$1
-}
-
-function crawlHosts()
-{
-  for i in $(seq 1 15); do echo crawl-node$i.twenga.com; done
-  for i in $(seq 5 9); do echo crawlnode-0$i.us1.twenga.local; done
-}
-
-function integratorHosts()
-{
-  for i in $(seq 16 24); do echo crawl-node$i.twenga.com; done
-  for i in $(seq 1 4); do echo crawlnode-0$i.us1.twenga.local; done
-}
-# end twenga
