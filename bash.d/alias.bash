@@ -163,6 +163,8 @@ function _kmtrace()
     LD_PRELOAD=/usr/lib/libktrace.so MALLOC_TRACE=ktrace.out "$@"
 }
 
+
+# twenga
 function tsql()
 (
     if [ $# -ne 0 ]; then
@@ -170,12 +172,25 @@ function tsql()
     fi
 
     if [[ -z "$TSQL_QUIET" ]] ; then
-        echo "mysql --user=$TWENGA_DB_USERNAME --password=$TWENGA_DB_PASSWORD --host=$TWENGA_DB_HOST --database=$TWENGA_DB_DB"
+        echo "mysql -A --user=$TWENGA_DB_USERNAME --password=$TWENGA_DB_PASSWORD --host=$TWENGA_DB_HOST --database=$TWENGA_DB_DB"
     fi
-    mysql --user=$TWENGA_DB_USERNAME --password=$TWENGA_DB_PASSWORD --host=$TWENGA_DB_HOST --database=$TWENGA_DB_DB $TSQL_EXTRA_PARAMS
+    mysql -A --user=$TWENGA_DB_USERNAME --password=$TWENGA_DB_PASSWORD --host=$TWENGA_DB_HOST --database=$TWENGA_DB_DB $TSQL_EXTRA_PARAMS
 )
 
 function bprod()
 {
     ssh bprod@batch$1
 }
+
+function crawlHosts()
+{
+  for i in $(seq 1 15); do echo crawl-node$i.twenga.com; done
+  for i in $(seq 5 9); do echo crawlnode-0$i.us1.twenga.local; done
+}
+
+function integratorHosts()
+{
+  for i in $(seq 16 24); do echo crawl-node$i.twenga.com; done
+  for i in $(seq 1 4); do echo crawlnode-0$i.us1.twenga.local; done
+}
+# end twenga
