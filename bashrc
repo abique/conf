@@ -26,6 +26,7 @@ if [[ $TERM = "linux" ]] ; then
 fi
 
 my_source /etc/bash_completion
+my_source /etc/profile.d/go.sh
 my_source ~/.bash.d/alias.bash
 my_source ~/.bash.d/env.bash
 my_source ~/.bash.d/colors.bash
