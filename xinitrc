@@ -36,4 +36,6 @@ case "$wm" in
         exec startfluxbox;;
     wmaker)
 	exec wmaker;;
+    gnome)
+	exec ck-launch-session gnome-shell;;
 esac
