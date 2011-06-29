@@ -2,7 +2,9 @@
 
 ~/conf/common_start.sh
 
-if which fbpanel 2>/dev/null >&2 ; then
+if which tint2 2>/dev/null &2 ; then
+    tint2 & disown
+elif which fbpanel 2>/dev/null >&2 ; then
     fbpanel & disown
 elif which xfce4-panel 2>/dev/null >&2 ; then
     xfce4-panel & disown

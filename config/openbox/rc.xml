@@ -33,7 +33,7 @@
     <monitor>Any</monitor>
   </placement>
   <theme>
-    <name>Openbox-Human-Like</name>
+    <name>Mire_v2_blue</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
        avaible characters are NDSLIMC, each can occur at most once.
