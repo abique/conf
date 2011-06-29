@@ -1,7 +1,18 @@
 AutoResume=true
+PersistentProxyConnection=false
 
 [$Version]
 update_info=kioslave.upd:kde2.2/r1,kioslave.upd:kde2.2/r2,kioslave.upd:kde2.2/r3
 
 [Notification Messages]
 WarnOnLeaveSSLMode=false
+
+[Proxy Settings]
+AuthMode=0
+NoProxyFor=git.twenga.com
+Proxy Config Script=
+ProxyType=0
+ReversedException=true
+ftpProxy=http://localhost:8899
+httpProxy=http://localhost:8899
+httpsProxy=http://localhost:8899

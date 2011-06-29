@@ -34,6 +34,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="web browser"/>
+        <value type="string" value="vlc"/>
         <value type="string" value="transmission"/>
         <value type="string" value="qmmp"/>
         <value type="string" value="transmission-qt"/>

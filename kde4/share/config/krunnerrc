@@ -3,61 +3,69 @@ Screen0=630,0
 
 [General]
 FreeFloating=true
-PastQueries=uxterm,firefox-beta-bin,firefox,,psi,kontact,systemsettings,terminator,amarok,emacs,kdesu systemsettings,opera,chromium,konqueror,midori,dolphin,ktorrent,firefox-bet,kdevelop,konsole,firefox-,firef,dol,dolphing,chromi,chrom,qmmp,smplayer,qmm,kopete,skype,conkeror,knetw,kmail,knemo,xterm,systemsett,system,kto,xkill,kont,okular,urxvt
+PastQueries=qmmp,emacs,psi,chromium,firefox,ktor,,vlc,xchat,systemsettings,qtcreator,kcolorcho,colo,kcolor,skype,spotify,emacs --debug-init,kwrite,systemsett,system,prin,conkeror,chromi,ktorrent,chro,chrom,kontact,uxterm,dolphin,xsane,badoo,kopete,chromiu,spo,akonadi,kgpg,firefox-beta-bin,thunderbird,gtk-chtheme,firefox-beta-bi,amarok,terminator,kdesu systemsettings,opera,konqueror,midori,firefox-bet,kdevelop,konsole,firefox-
 
 [Interface]
 Height 1050=335
 Height 768=341
-Size=420,134
+Size=420,150
 Width 1366=420
 Width 1680=420
 
 [PlasmaRunnerManager]
-LaunchCounts=2 services_kde4-kopete.desktop,2 shell_emacs,2 services_firefox.desktop,16 services_kde4-Kontact.desktop,3 services_firefox-beta-bin.desktop,6 services_kde4-dolphin.desktop,15 shell_systemsettings,1 shell_kdesu systemsettings,10 shell_firefox-beta-bin,4 services_kde4-ktorrent.desktop,8 services_kde4-amarok.desktop,1 services_kde4-knemo.desktop,1 services_kde4-knetwalk.desktop,1 shell_xkill,15 services_qmmp.desktop,3 services_smplayer.desktop,16 shell_uxterm,1 services_kcmdolphingeneral.desktop,3 services_kde4-konqbrowser.desktop,1 shell_xterm,3 services_conkeror.desktop,1 services_bell.desktop,3 services_terminator.desktop,1 services_skype.desktop,3 services_kde4-KMail.desktop,1 windows_0_54526063,2 shell_terminator,9 services_psi.desktop,2 services_kde4-systemsettings.desktop,1 shell_opera,1 shell_konsole,4 services_chromium.desktop,1 shell_kdevelop
+LaunchCounts=1 recentdocuments_/home/babali/conf/kde4/share/apps/RecentDocuments/Akonadi.desktop,3 services_kde4-kcolorchooser.desktop,1 shell_xkill,9 services_wine-Programs-Spotify.desktop,3 shell_qtcreator,13 shell_emacs,1 services_kde4-knetwalk.desktop,17 shell_vlc,1 services_bell.desktop,1 windows_0_54526063,1 services_system-config-printer-kde.desktop,3 services_kde4-konqbrowser.desktop,2 shell_gtk-chtheme,6 services_skype.desktop,6 services_firefox.desktop,3 services_terminator.desktop,132 services_chromium.desktop,1 services_kcmdolphingeneral.desktop,1 windows_0_50331752,1 shell_opera,2 shell_conkeror,2 services_spotify.desktop,37 services_qmmp.desktop,16 shell_firefox-beta-bin,1 shell_xterm,3 services_kde4-KMail.desktop,4 services_wine-Programs-Badoo Desktop.desktop,9 services_kde4-dolphin.desktop,21 services_psi.desktop,4 services_kde4-kopete.desktop,24 shell_uxterm,3 services_smplayer.desktop,1 services_kde4-knemo.desktop,1 shell_kdesu systemsettings,30 services_kde4-Kontact.desktop,2 shell_amarok,5 services_firefox-beta-bin.desktop,3 services_kde4-systemsettings.desktop,2 services_kde4-kgpg.desktop,3 services_conkeror.desktop,1 shell_kdevelop,1 shell_emacs --debug-init,3 services_kde4-kwrite.desktop,7 shell_xchat,1 shell_psi,1 shell_kopete,11 services_kde4-ktorrent.desktop,2 shell_terminator,1 shell_konsole,1 shell_firefox,1 shell_xsane,8 services_kde4-amarok.desktop,25 shell_systemsettings
 
 [Plugins]
-PowerDevilEnabled=true
-audioplayercontrolEnabled=true
-bookmarksEnabled=true
-browserhistoryEnabled=true
-calculatorEnabled=true
+CharacterRunnerEnabled=false
+PowerDevilEnabled=false
+audioplayercontrolEnabled=false
+bookmarksEnabled=false
+browserhistoryEnabled=false
+calculatorEnabled=false
 desktopsessionsEnabled=false
-kabccontactsEnabled=true
+kabccontactsEnabled=false
 katesessionsEnabled=false
 killEnabled=true
-konquerorsessionsEnabled=true
+konquerorsessionsEnabled=false
 konsolesessionsEnabled=false
 kopete_runnerEnabled=true
-krunner_kgetEnabled=true
-krunner_spellcheckEnabled=true
-locationsEnabled=true
-nepomuksearchEnabled=true
-placesEnabled=true
-plasma-desktopEnabled=true
-recentdocumentsEnabled=true
+krunner_kgetEnabled=false
+krunner_spellcheckEnabled=false
+locationsEnabled=false
+nepomuksearchEnabled=false
+org.kde.datetimeEnabled=false
+org.kde.events_runnerEnabled=false
+org.kde.windowedwidgetsEnabled=false
+placesEnabled=false
+plasma-desktopEnabled=false
+recentdocumentsEnabled=false
 servicesEnabled=true
 shellEnabled=true
-solidEnabled=true
+solidEnabled=false
 techbaseEnabled=false
-unitconverterEnabled=true
-webshortcutsEnabled=true
+unitconverterEnabled=false
+webshortcutsEnabled=false
 wikipediaEnabled=false
 wikitravelEnabled=false
-windowsEnabled=true
+windowsEnabled=false
 
 [Runners][Bookmarks]
 dbfile=/home/abique/.mozilla/firefox/7tcx0pjl.default/places.sqlite
 
 [TaskDialog]
+Height 1050=741
 Height 768=419
 KeepAbove=false
 Width 1366=649
+Width 1680=1248
 filterState=0
-headerState=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0b\\\x02\x00\x00\x00\x05\x00\x00\x00\t\x00\x00\x00d\x00\x00\x00\x06\x00\x00\x00d\x00\x00\x00\x04\x00\x00\x00d\x00\x00\x00\x03\x00\x00\x00d\x00\x00\x00\x02\x00\x00\x00d\x00\x00\x02b\x00\x00\x00\x0b\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00dˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00»\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00<\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00H\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00k\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00´\x00\x00\x00\x01\x00\x00\x00\x00
+headerState=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0f‹3\x00\x00\x00\t\x00\x00\x00\r\x00\x00\x00d\x00\x00\x00\x0c\x00\x00\x00d\x00\x00\x00\t\x00\x00\x00d\x00\x00\x00\x08\x00\x00\x00d\x00\x00\x00\x07\x00\x00\x00d\x00\x00\x00\x06\x00\x00\x00d\x00\x00\x00\x04\x00\x00\x00d\x00\x00\x00\x03\x00\x00\x00d\x00\x00\x00\x02\x00\x00\x00d\x00\x00\x04⁄\x00\x00\x00\x0f\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00dˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\t\x00\x00\x00Ó\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00M\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00Y\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00y\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x02i\x00\x00\x00\x01\x00\x00\x00\x00
+ioInformation=5
+ioUnits=1
 normalizeCPUUsage=true
 showCommandLineOptions=false
 showTooltips=true
 showTotals=true
 units=0
 updateIntervalMSecs=2000
-version=2
+version=5

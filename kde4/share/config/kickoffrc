@@ -8,4 +8,4 @@ loadAll=false
 pluginWhiteList=places,shell,services,bookmarks,recentdocuments,locations
 
 [RecentlyUsed]
-Applications=kde4-Kontact.desktop
+Applications=wine-Programs-Badoo Desktop.desktop,spotify.desktop,wine-Programs-Spotify.desktop,xsane.desktop,startcenter.desktop

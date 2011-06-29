@@ -1,50 +1,13 @@
 [$Version]
 update_info=plasma_popupapplet_fix_groups.upd:PlasmaPopupAppletFixGroups1
 
+[ActionPlugins]
+MidButton;NoModifier=paste
+RightButton;NoModifier=contextmenu
+wheel:Vertical;NoModifier=switchdesktop
+
 [AppletGlobals][plasma_applet_pager]
-rows=2
-
-[Containments][1]
-activity=unnamed
-activityId=7e17c5f7-f5f0-4fc2-be7f-24e51a1650b0
-desktop=-1
-formfactor=0
-geometry=0,0,1680,1050
-immutability=1
-lastDesktop=-1
-lastScreen=0
-location=0
-plugin=desktop
-screen=0
-wallpaperplugin=image
-wallpaperpluginmode=SingleImage
-zvalue=0
-
-[Containments][1][Wallpaper][image]
-slideTimer=600
-slidepaths=/usr/share/wallpapers/
-userswallpapers=/home/babali/wallpapers/fractals/Sprouts_by_UltimateSensFan.jpg,/home/abique/wallpapers/fractals/behind_his_eyes_by_b33lz3bub.jpg,/home/abique/wallpapers/fractals/The_Last_Patriots_by_et149.jpg,/home/abique/wallpapers/colorwaves_light.jpg
-wallpaper=/home/abique/wallpapers/colorwaves_light.jpg
-wallpapercolor=56,111,150
-wallpaperposition=0
-
-[Containments][1][Wallpaper][marble]
-mapTheme=earth/bluemarble/bluemarble.dgml
-movement=0
-positionLatitude=27.5139364303179
-positionLongitude=15.9056234718827
-projection=0
-quality=2
-rotateLatitude=0
-rotateLongitude=0.025
-rotationTimeout=10000
-showPlacemarks=false
-zoom=1203
-
-[Containments][1][Wallpaper][pattern]
-BackgroundColor=55,116,123
-ForegroundColor=55,81,17
-Pattern=night-rock.jpg
+rows=1
 
 [Containments][12]
 activity=
@@ -58,10 +21,13 @@ lastScreen=0
 location=4
 plugin=panel
 screen=0
-zvalue=150
+zvalue=0
+
+[Containments][12][ActionPlugins]
+RightButton;NoModifier=contextmenu
 
 [Containments][12][Applets][13]
-geometry=1435,2,27,27
+geometry=1414,2,27,27
 immutability=1
 plugin=notifier
 zvalue=0
@@ -70,24 +36,11 @@ zvalue=0
 Order=3
 
 [Containments][12][Applets][13][PopupApplet]
-DialogHeight=287
-DialogWidth=264
-
-[Containments][12][Applets][14]
-geometry=0,2,27,27
-immutability=1
-plugin=launcher
-zvalue=2
-
-[Containments][12][Applets][14][LayoutInformation]
-Order=0
-
-[Containments][12][Applets][14][PopupApplet]
-DialogHeight=582
-DialogWidth=438
+DialogHeight=315
+DialogWidth=286
 
 [Containments][12][Applets][15]
-geometry=1466,2,107,27
+geometry=1445,2,128,27
 immutability=1
 plugin=systemtray
 zvalue=0
@@ -101,34 +54,35 @@ immutability=1
 plugin=notifications
 zvalue=0
 
+[Containments][12][Applets][15][Configuration][Applets][41][Configuration]
+customPosition=66,192
+customPositionAffinityHoriz=r
+customPositionAffinityVert=b
+
 [Containments][12][Applets][15][Configuration][Applets][41][Configuration][ExtenderItems][4]
 extenderIconName=dialog-information
 extenderItemName=jobGroup
 extenderItemPosition=0
-extenderTitle=
+extenderTitle=Jobs
 groupCollapsed=false
-isCollapsed=false
+isCollapsed=true
 isGroup=true
 sourceAppletId=41
 sourceAppletPluginName=notifications
 
-[Containments][12][Applets][15][Configuration][Applets][41][Configuration][ExtenderItems][5]
-extenderIconName=dialog-information
-extenderItemName=notifications
-extenderTitle=Notifications
-sourceAppletId=41
-sourceAppletPluginName=notifications
-type=notification
-
 [Containments][12][Applets][15][Configuration][Applets][41][PopupApplet]
-DialogHeight=278
-DialogWidth=459
+DialogHeight=99
+DialogWidth=154
 
 [Containments][12][Applets][15][Configuration][Applets][42]
-geometry=6,6,24,24
+geometry=9,9,24,24
 immutability=1
 plugin=notifier
 zvalue=0
+
+[Containments][12][Applets][15][Configuration][Applets][42][PopupApplet]
+DialogHeight=315
+DialogWidth=286
 
 [Containments][12][Applets][15][Configuration][ExtenderItems][1]
 extenderIconName=
@@ -158,11 +112,11 @@ Systemtray-Klipper-15=Ctrl+Alt+V
 Order=4
 
 [Containments][12][Applets][15][PopupApplet]
-DialogHeight=108
-DialogWidth=237
+DialogHeight=176
+DialogWidth=406
 
 [Containments][12][Applets][16]
-geometry=122,2,1309,27
+geometry=327,2,1083,27
 immutability=1
 plugin=tasks
 zvalue=1
@@ -210,17 +164,39 @@ sourceAppletPluginName=digital-clock
 Order=5
 
 [Containments][12][Applets][17][PopupApplet]
-DialogHeight=274
-DialogWidth=242
+DialogHeight=263
+DialogWidth=262
 
 [Containments][12][Applets][43]
-geometry=31,2,87,27
+geometry=31,2,292,27
 immutability=1
 plugin=pager
 zvalue=0
 
+[Containments][12][Applets][43][Configuration]
+Share=false
+currentDesktopSelected=0
+displayedText=2
+showWindowIcons=false
+
 [Containments][12][Applets][43][LayoutInformation]
 Order=1
+
+[Containments][12][Applets][45]
+geometry=0,2,27,27
+immutability=1
+plugin=simplelauncher
+zvalue=0
+
+[Containments][12][Applets][45][Configuration]
+Share=false
+showMenuTitles=true
+
+[Containments][12][Applets][45][LayoutInformation]
+Order=0
+
+[Containments][12][Applets][45][Shortcuts]
+global=
 
 [Containments][12][Configuration]
 maximumSize=1680,29
@@ -237,6 +213,31 @@ extenderItemPosition=0
 
 [Containments][3][Applets][9][Configuration][ExtenderItems][1]
 extenderItemPosition=0
+
+[Containments][44]
+ActionPluginsSource=Global
+activity=New Activity
+activityId=d79342ea-7982-4f25-92a8-c3b3331688a5
+desktop=-1
+formfactor=0
+geometry=0,0,1680,1050
+immutability=1
+lastDesktop=-1
+lastScreen=0
+location=0
+plugin=desktop
+screen=0
+wallpaperplugin=image
+wallpaperpluginmode=SingleImage
+zvalue=0
+
+[Containments][44][Wallpaper][image]
+slideTimer=10
+slidepaths=/usr/share/wallpapers/
+userswallpapers=
+wallpaper=/usr/share/wallpapers/Evening/
+wallpapercolor=0,0,0
+wallpaperposition=0
 
 [General]
 immutability=1

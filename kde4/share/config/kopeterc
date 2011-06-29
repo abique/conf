@@ -26,7 +26,7 @@ Server=talk.google.com
 UseSSL=true
 
 [Account_Kopete::Protocol_previewaccount]
-Identity=B8tUtyDXSV
+Identity=et4jNPLMgc
 
 [Account_WlmProtocol_bique.alexandre@gmail.com]
 AccountId=bique.alexandre@gmail.com
@@ -63,10 +63,10 @@ Width 1680=700
 
 [General Options]
 Geometry=288,999
-Height 1050=999
-Position=1390,19
+Height 1050=1051
+Position=1384,0
 ShownIdentityId=x7Sk3Gjra2
-State=AAAA/wAAAAD9AAAAAAAAASAAAAOQAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABxAHUAaQBjAGsAUwBlAGEAcgBjAGgAQgBhAHIBAAAAaP////8AAAAAAAAAAA==
+State=AAAA/wAAAAD9AAAAAAAAASAAAAOZAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHABxAHUAaQBjAGsAUwBlAGEAcgBjAGgAQgBhAHIBAAAAbv////8AAAAAAAAAAA==
 ToolBarsMovable=Disabled
 Width 1680=288
 WindowState=Shown

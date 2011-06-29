@@ -2,8 +2,8 @@
 update_info=kolab-resource.upd:kolab-calendar-resource-rename
 
 [General]
-PassiveResourceKeys=
-ResourceKeys=vqYQMQSAzd,dphCUVy38f
+PassiveResourceKeys=vqYQMQSAzd
+ResourceKeys=dphCUVy38f
 Standard=vqYQMQSAzd
 
 [Resource_dphCUVy38f]
@@ -21,7 +21,7 @@ UseCategories=false
 CalendarURL[$e]=file://$HOME/conf/kde4/share/apps/korganizer/std.ics
 Format=ical
 ResourceIdentifier=vqYQMQSAzd
-ResourceIsActive=true
+ResourceIsActive=false
 ResourceIsReadOnly=false
 ResourceName=Default Calendar
 ResourceType=file

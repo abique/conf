@@ -130,14 +130,15 @@ DisabledValue=1
 Size=32
 
 [DirSelect Dialog]
-DirSelectDialog Size=782,548
-History Items[$e]=file://$HOME/videos/tales-of-the-abyss,file://$HOME/local/twenga-libs,file://$HOME/music/tek/hardcore/conq,file://$HOME/music/tek/hardcore/conq/Conqueror-Under_Attack-CD-1993-hM,file://$HOME/backup/musique/acid,file://$HOME/videos/true-blood,file://$HOME/videos/vampire-diaries,file://$HOME/music/tek/hardcore,file://$HOME/music/classic/Mozart - Symphonie de Jupiter,file://$HOME/music/classic/Antonio Vivaldi - Die vier Jahreszeiten,file://$HOME/music/8bits,file://$HOME/music/Y'a des cigales dans la fourmilière,file://$HOME/music/tek/hardcore/Dj Korsakoff - Sound Of (2006) NLT-Release,file://$HOME/music/tek/hardcore/Outblast_and_Korsakoff_-_Face_2_Face-The_Mainstage_Mixes-2CD-2007-Noss,file://$HOME/music/tek/hardcore/Korsakoff - Unrivalled,file://$HOME/music/tek/hardcore/Korsakoff_-_Pink_Noise-(CLDG2010026)-WEB-2010-HB,file://$HOME/videos,file://$HOME/videos/naruto
+DirSelectDialog Size=1062,846
+History Items[$e]=file://$HOME/videos/true-blood,file://$HOME/develop/bluegitf-mordor/build-qt,file://$HOME/music/8bits,file://$HOME/music/tek/hardcore,file://$HOME/videos/the-experiment,file://$HOME/music/tek/hardcore/Dj Korsakoff - Sound Of (2006) NLT-Release,file://$HOME/music/tek/hardcore/conq,file://$HOME/videos/game-of-thrones,file://$HOME/music/tek/hardcore/Outblast_and_Korsakoff_-_Face_2_Face-The_Mainstage_Mixes-2CD-2007-Noss,file://$HOME/music/backup/classique/Antonio Vivaldi - Die vier Jahreszeiten,file://$HOME/music/backup/douce/evasion_ethnique,file://$HOME/music/classic/Mozart - Symphonie Salzbourg Divertimentos KV 137 et 138,file://$HOME/music/classic/Mozart - Symphonie de Jupiter,file://$HOME/develop/twenga/twenga-libs/twenga/rpc/sample,file://$HOME/develop/twenga/twenga-libs/twenga/rpc/doc,file://$HOME/develop/twenga/twenga-libs/twenga/rpc,file://$HOME/videos,file://$HOME/music/classic/Silence,file://$HOME/music/classic/Indian,file://$HOME/music/classic/Ludwig van Beethoven (1770-1827) - Schicksals-Symphonie,file://$HOME/music/classic/Golden Masters Series Greatest Themes,file://$HOME/music/classic/Dvorak - Symphonie 9 - Danses slaves,file://$HOME/music/classic/Anton Bruckner - Furtwangler - Symphony 8%20 VPO (Andante),file://$HOME/music/classic/Antonio Vivaldi - Die vier Jahreszeiten,file://$HOME/videos/vampire-diaries,file://$HOME/music/classic,file://$HOME/music/backup/tekno,file://$HOME/music/backup/KoRe - EquilibriuM,file://$HOME/music/classic/Tchaikovsky - Casse-Noisette & Souvenir de Florence,file://$HOME/music/tek/hardcore/Korsakoff_-_Pink_Noise-(CLDG2010026)-WEB-2010-HB,file://$HOME/music/tek/hardcore/Korsakoff - Unrivalled,file://$HOME/music/tek/trance,file://$HOME/music/backup/classique/Dvorak - Symphonie 9 - Danses slaves,file://$HOME/videos/tales-of-the-abyss,file://$HOME/local/twenga-libs,file://$HOME/music/tek/hardcore/conq/Conqueror-Under_Attack-CD-1993-hM,file://$HOME/backup/musique/acid,file://$HOME/music/Y'a des cigales dans la fourmilière,file://$HOME/videos/naruto
 
 [Emoticons]
 emoticonsTheme=Onigiri
 parseMode=2
 
 [General]
+BrowserApplication=chromium.desktop
 ColorScheme=QtCurve
 XftAntialias=true
 XftHintStyle=hintmedium
@@ -150,13 +151,14 @@ shadeSortColumn=true
 smallestReadableFont=Sans Serif,8,-1,5,50,0,0,0,0,0
 taskbarFont=Sans Serif,9,-1,5,50,0,0,0,0,0
 toolBarFont=Sans Serif,8,-1,5,50,0,0,0,0,0
-widgetStyle=qtcurve
+widgetStyle=plastique
 
 [Icons]
 Theme=oxygen
 
 [KDE]
 ShowDeleteCommand=false
+ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
 SingleClick=true
 contrast=5
@@ -171,7 +173,7 @@ Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
 Previews=false
-Recent URLs[$e]=$HOME/videos/vampire-diaries/,$HOME/music/tek/hardcore/,$HOME/music/tek/,$HOME/develop/twenga/nexush/,$HOME/wallpapers/
+Recent URLs[$e]=$HOME/videos/game-of-thrones/,$HOME/downloads/,$HOME/music/tek/hardcore/,$HOME/music/backup/tekno/,$HOME/music/tek/frenchcore/,$HOME/develop/bluegitf-mordor/,/usr/share/qtcreator/schemes/,$HOME/music/tek/hardcore/Outblast_and_Korsakoff_-_Face_2_Face-The_Mainstage_Mixes-2CD-2007-Noss/
 Show Bookmarks=false
 Show Full Path=false
 Show Preview=false
@@ -180,7 +182,7 @@ Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
-Speedbar Width=108
+Speedbar Width=187
 View Style=Simple
 
 [KShortcutsDialog Settings]

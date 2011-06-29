@@ -8,15 +8,15 @@ ZoomFactor=0
 Agenda Mode=3
 CalendarFilters=
 Current Filter=
-Current View=Todo
+Current View=Agenda
 Custom Categories=Appointment,Birthday,Business,Education,Holiday,Meeting,Miscellaneous,Personal,Phone Call,Special Occasion,Travel,Vacation
 
 [Internal Settings]
 DefaultResourceColorSeed=2
 
 [KOrganizer Geometry]
-Separator1=708,920
-Separator2=251,0,308,353
+Separator1=490,1179
+Separator2=253,0,311,356
 
 [MainWindow]
 Height 1050=700
@@ -26,6 +26,7 @@ Width 1680=657
 
 [Resources Colors]
 dphCUVy38f=193,212,231
+jpSCOJHRvZ=100,74,155
 vqYQMQSAzd=188,54,54
 
 [Settings]
@@ -37,7 +38,7 @@ TodoViewVisible=false
 [Sidebar Todo View]
 ColumnOrder=0,1,2,3,4,5,6
 ColumnVisibility=true,false,false,false,true,true,false
-ColumnWidths=106,0,0,0,121,100,0
+ColumnWidths=106,0,0,0,121,238,0
 FlatView=false
 SortAscending=1
 SortColumn=0
@@ -54,5 +55,5 @@ SortAscending=1
 SortColumn=0
 
 [Views]
-Separator AgendaView=192,705
+Separator AgendaView=193,711
 ShownDatesCount=7

@@ -1,12 +1,12 @@
 [Basic Settings]
 Configured repositories=main
-Start Nepomuk=false
+Start Nepomuk=true
 
 [Service-nepomukmigration1]
 autostart=false
 
 [Service-nepomukstrigiservice]
-autostart=false
+autostart=true
 
 [main Settings]
 Maximum memory=512
