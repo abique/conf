@@ -2,7 +2,7 @@
 
 ~/conf/common_start.sh
 
-if which tint2 2>/dev/null &2 ; then
+if which tint2 2>/dev/null >&2 ; then
     tint2 & disown
 elif which fbpanel 2>/dev/null >&2 ; then
     fbpanel & disown

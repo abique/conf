@@ -322,7 +322,8 @@
     </keybind>
     <keybind key="W-r">
       <action name="Execute">
-        <command>fbrun -w 420 -fg yellow -bg black -na</command>
+        <!--<command>fbrun -w 420 -fg yellow -bg black -na</command>-->
+        <command>gmrun</command>
       </action>
     </keybind>
     <keybind key="W-m">
