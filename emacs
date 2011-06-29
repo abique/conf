@@ -23,8 +23,8 @@
 (load-file "~/.emacs.d/modes/tablegen-mode.el")
 (load-file "~/.emacs.d/modes/protobuf-mode.el")
 
-(if (file-readable-p "/usr/share/go/misc/emacs/go-mode-load.el")
-    (load-file "/usr/share/go/misc/emacs/go-mode-load.el"))
+(add-to-list 'load-path "~/develop/go/misc/emacs/" t)
+(require 'go-mode-load)
 
 (setq ispell-dictionary "francais"
       ispell-skip-sgml t)
@@ -51,6 +51,7 @@
 (add-to-list 'auto-mode-alist '("\\.y$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.l$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.doch$" . c++-mode))
+(add-to-list 'auto-mode-alist '("mordor/.*\\.h$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.nsi$" . nsi-mode))
 
 (custom-set-variables
@@ -60,7 +61,12 @@
   ;; If there is more than one, they won't work right.
  '(graphviz-dot-auto-indent-on-braces t)
  '(graphviz-dot-toggle-completions t)
- '(graphviz-dot-view-edit-command nil))
+ '(graphviz-dot-view-edit-command nil)
+ '(org-fontify-done-headline t)
+ '(org-log-done (quote time) nil nil "time")
+ '(org-modules (quote (org-bbdb org-bibtex org-gnus org-info org-jsinfo org-irc org-mew org-mhe org-rmail org-vm org-wl org-w3m org-mouse org-choose)))
+ '(org-time-stamp-custom-formats (quote ("<%Y-%m-%d>" . "<%Y-%m-%d %H:%M:%S %z>")))
+ '(org-time-stamp-rounding-minutes (quote (0 0))))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
