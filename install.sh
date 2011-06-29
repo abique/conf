@@ -30,6 +30,7 @@ for file in		\
     config/midori	\
     config/xfce4	\
     config/xfce4-session \
+    config/tint2 \
     emacs		\
     emacs.d		\
     fluxbox             \
