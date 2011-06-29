@@ -58,3 +58,7 @@ export MYSQL_PS1="\u@\h [\d]> "
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
+
+export GOROOT="${HOME}/develop/go"
+export GOBIN="${HOME}/develop/go/bin"
+export PATH="${PATH}:${GOBIN}"
