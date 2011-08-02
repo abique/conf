@@ -50,6 +50,7 @@ export EMAIL="bique.alexandre@gmail.com"
 export DEBEMAIL="$EMAIL"
 export NAME="Alexandre Bique"
 export DEBFULLNAME="$NAME"
+export PACKAGER="${NAME} <${EMAIL}>"
 
 export MYSQL_PS1="\u@\h [\d]> "
 
