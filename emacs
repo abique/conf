@@ -23,8 +23,8 @@
 (load-file "~/.emacs.d/modes/tablegen-mode.el")
 (load-file "~/.emacs.d/modes/protobuf-mode.el")
 
-(add-to-list 'load-path "~/develop/go/misc/emacs/" t)
-(require 'go-mode-load)
+;; (add-to-list 'load-path "~/develop/go/misc/emacs/" t)
+;; (require 'go-mode-load)
 
 (setq ispell-dictionary "francais"
       ispell-skip-sgml t)
