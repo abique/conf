@@ -4,7 +4,7 @@
 <openbox_config xmlns="http://openbox.org/3.4/rc">
   <resistance>
     <strength>10</strength>
-    <screen_edge_strength>20</screen_edge_strength>
+    <screen_edge_strength>30</screen_edge_strength>
   </resistance>
   <focus>
     <focusNew>yes</focusNew>
@@ -114,7 +114,7 @@
       <name>7</name>
       <name>8</name>
     </names>
-    <popupTime>0</popupTime>
+    <popupTime>250</popupTime>
   </desktops>
   <resize>
     <drawContents>no</drawContents>
@@ -329,6 +329,21 @@
     <keybind key="W-m">
       <action name="ShowMenu">
         <menu>root-menu</menu>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>amixer set Master 5%+ unmute</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>amixer set Master 5%- unmute</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>amixer set Master toggle</command>
       </action>
     </keybind>
   </keyboard>
