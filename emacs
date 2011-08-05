@@ -1,5 +1,15 @@
 ;; -*- mode: Lisp; -*-
 
+;; Doxygen
+(require 'doxymacs)
+(add-hook 'c-mode-common-hook 'doxymacs-mode)
+
+(defun my-doxymacs-font-lock-hook ()
+  (if (or (eq major-mode 'c-mode) (eq major-mode 'c++-mode))
+      (doxymacs-font-lock)))
+(add-hook 'font-lock-mode-hook 'my-doxymacs-font-lock-hook)
+
+;; Lua
 (if (file-readable-p "/usr/share/emacs/site-lisp/lua-mode.el")
     (load "/usr/share/emacs/site-lisp/lua-mode"))
 
@@ -12,8 +22,6 @@
 (load-file "~/.emacs.d/compilation.el")
 (load-file "~/.emacs.d/c.el")
 (load-file "~/.emacs.d/helpers.el")
-;;(load-file "~/.emacs.d/color-theme.el")
-(load-file "~/.emacs.d/doxygen.el")
 (load-file "~/.emacs.d/keys.el")
 (load-file "~/.emacs.d/modes/graphviz-dot-mode.el")
 
