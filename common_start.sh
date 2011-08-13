@@ -1,8 +1,6 @@
 #! /bin/bash
 
-if [[ -r ~/wallpapers/current ]] ; then
-    feh --bg-scale ~/wallpapers/current
-fi
+~/conf/random_wallpaper.sh
 . ~/conf/common_start_no_wallpaper.sh
 psi & disown
 nm-applet & disown
