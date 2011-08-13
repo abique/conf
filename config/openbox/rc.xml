@@ -320,6 +320,11 @@
         <command>~/.bash.d/screensaver.bash</command>
       </action>
     </keybind>
+    <keybind key="W-w">
+      <action name="Execute">
+        <command>~/conf/random-wallpaper.sh</command>
+      </action>
+    </keybind>
     <keybind key="W-r">
       <action name="Execute">
         <!--<command>fbrun -w 420 -fg yellow -bg black -na</command>-->
