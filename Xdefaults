@@ -88,6 +88,9 @@ URxvt*color13:     #ff66ff
 URxvt*color14:     #33ffff
 URxvt*color15:     #ffffff
 
+URxvt*transparent: true
+URxvt*shading:     15
+
 URxvt*font:	   7x14
 URxvt*scrollBar: false
 URxvt*saveLines: 10000
