@@ -21,6 +21,7 @@
 (load-file "~/.emacs.d/quick.el")
 (load-file "~/.emacs.d/compilation.el")
 (load-file "~/.emacs.d/c.el")
+(load-file "~/.emacs.d/infinit.el")
 (load-file "~/.emacs.d/helpers.el")
 (load-file "~/.emacs.d/keys.el")
 (load-file "~/.emacs.d/modes/graphviz-dot-mode.el")
@@ -30,6 +31,9 @@
 (load-file "~/.emacs.d/modes/llvm-mode.el")
 (load-file "~/.emacs.d/modes/tablegen-mode.el")
 (load-file "~/.emacs.d/modes/protobuf-mode.el")
+
+(autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
+(setq auto-mode-alist (append '(("/PKGBUILD$" . pkgbuild-mode)) auto-mode-alist))
 
 ;; (add-to-list 'load-path "~/develop/go/misc/emacs/" t)
 ;; (require 'go-mode-load)
