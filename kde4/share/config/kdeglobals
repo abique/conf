@@ -157,7 +157,7 @@ widgetStyle=plastique
 Theme=oxygen
 
 [KDE]
-ShowDeleteCommand=false
+ShowDeleteCommand=true
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
 SingleClick=true

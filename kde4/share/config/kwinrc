@@ -1,5 +1,5 @@
 [$Version]
-update_info=kwin3_plugin.upd:kde3.2,kwin_focus2.upd:kwin_focus2,kwin_on_off.upd:kwin_on_off,kwin_focus1.upd:kwin_focus1,kwin.upd:kde3.0r1,kwin.upd:kde3.2Xinerama,kwin_blacklist.upd:Blacklist-4.5
+update_info=kwin3_plugin.upd:kde3.2,kwin_focus2.upd:kwin_focus2,kwin_on_off.upd:kwin_on_off,kwin_focus1.upd:kwin_focus1,kwin.upd:kde3.0r1,kwin.upd:kde3.2Xinerama,kwin_blacklist.upd:Blacklist-4.5,kwin_remove_effects.upd:kwin4.7_effects
 
 [Blacklist][Blur]
 Advanced Micro Devices=DRI R600:-:7.8.1,DRI R600:-:7.8.2
@@ -116,8 +116,6 @@ kwin4_effect_presentwindowsEnabled=true
 kwin4_effect_resizeEnabled=false
 kwin4_effect_scaleinEnabled=false
 kwin4_effect_screenshotEnabled=true
-kwin4_effect_shadowEnabled=true
-kwin4_effect_sharpenEnabled=false
 kwin4_effect_sheetEnabled=false
 kwin4_effect_showfpsEnabled=false
 kwin4_effect_showpaintEnabled=false
@@ -125,7 +123,6 @@ kwin4_effect_slideEnabled=true
 kwin4_effect_slidebackEnabled=false
 kwin4_effect_slidingpopupsEnabled=true
 kwin4_effect_snaphelperEnabled=false
-kwin4_effect_snowEnabled=false
 kwin4_effect_startupfeedbackEnabled=true
 kwin4_effect_taskbarthumbnailEnabled=true
 kwin4_effect_thumbnailasideEnabled=false

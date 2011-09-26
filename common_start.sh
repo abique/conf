@@ -6,4 +6,3 @@ psi & disown
 nm-applet & disown
 xfce4-notifyd & disown
 kmix & disown
-ibus-daemon --replace & disown
