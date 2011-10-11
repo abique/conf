@@ -13,6 +13,16 @@
 (if (file-readable-p "/usr/share/emacs/site-lisp/lua-mode.el")
     (load "/usr/share/emacs/site-lisp/lua-mode"))
 
+;; Cedet
+(if (file-readable-p "/usr/share/emacs/site-lisp/cedet/common/cedet.el")
+    (load-file "/usr/share/emacs/site-lisp/cedet/common/cedet.el"))
+(global-ede-mode 1)                      ; Enable the Project management system
+(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
+(global-srecode-minor-mode 1)            ; Enable template insertion menu
+
+(autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
+(setq auto-mode-alist (append '(("/PKGBUILD$" . pkgbuild-mode)) auto-mode-alist))
+
 ;; Our own modes repository
 (setq load-path (cons "~/.emacs.d/" load-path))
 (setq load-path (cons "~/.emacs.d/modes" load-path))
