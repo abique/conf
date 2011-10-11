@@ -35,6 +35,7 @@ for file in		\
     emacs.d		\
     fluxbox             \
     gitconfig		\
+    gtkrc-2.0		\
     hgrc		\
     htoprc		\
     indent.pro          \

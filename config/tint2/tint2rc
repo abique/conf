@@ -6,20 +6,20 @@
 # ID 1
 rounded = 7
 border_width = 2
-background_color = #000000 60
-border_color = #FFFFFF 9
+background_color = #000000 84
+border_color = #41C91C 14
 
 # ID 2
 rounded = 5
 border_width = 0
 background_color = #FFFFFF 40
-border_color = #FFFFFF 41
+border_color = #FFFFFF 40
 
 # ID 3
 rounded = 5
 border_width = 0
-background_color = #FFFFFF 9
-border_color = #FFFFFF 61
+background_color = #FFFFFF 8
+border_color = #FFFFFF 60
 
 # Panel
 panel_monitor = all
@@ -65,10 +65,10 @@ task_iconified_icon_asb = 70 0 0
 
 # Fonts
 task_font = Fixed 7
-task_font_color = #038EFF 61
+task_font_color = #038EFF 60
 task_active_font_color = #00FF29 80
 task_urgent_font_color = #FF0000 80
-task_iconified_font_color = #FFFFFF 61
+task_iconified_font_color = #FFFFFF 60
 font_shadow = 0
 
 # System Tray
@@ -82,7 +82,7 @@ systray_icon_asb = 70 0 0
 # Clock
 time1_format = %Y-%m-%d %H:%M:%S
 time1_font = Fixed 8
-clock_font_color = #F3EB2B 67
+clock_font_color = #F3EB2B 66
 clock_padding = 1 0
 clock_background_id = 0
 
@@ -108,7 +108,7 @@ battery_low_cmd = notify-send "battery low"
 battery_hide = 100
 bat1_font = sans 8
 bat2_font = sans 6
-battery_font_color = #AF78E8 67
+battery_font_color = #AF78E8 66
 battery_padding = 1 0
 battery_background_id = 0
 

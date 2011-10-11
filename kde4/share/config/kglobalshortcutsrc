@@ -152,7 +152,7 @@ Toggle mute  - Rear Mic, HDA Intel=none,none,Toggle Mute - Rear Mic\\, HDA Intel
 Toggle mute  - Side, HDA Intel=none,none,Toggle Mute - Side\\, HDA Intel
 Toggle mute  - Speaker, HDA Intel=none,none,Toggle Mute - Speaker\\, HDA Intel
 Toggle mute  - Surround, HDA Intel=none,none,Toggle Mute - Surround\\, HDA Intel
-_k_friendly_name=KMix
+_k_friendly_name=kmix
 decrease_volume=Volume Down,Volume Down,Decrease Volume
 increase_volume=Volume Up,Volume Up,Increase Volume
 mute=Volume Mute,Volume Mute,Mute
@@ -186,7 +186,7 @@ Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,Ctrl+Alt+Shift+PgUp,Reboot Witho
 _k_friendly_name=ksmserver
 
 [ktorrent]
-_k_friendly_name=ktorrent
+_k_friendly_name=KTorrent
 ktorrent-show-hide-action=Alt+Shift+T,Alt+Shift+T,Show/Hide KTorrent
 queue_pause=Alt+Shift+P,Alt+Shift+P,Pause KTorrent
 queue_suspend=,Alt+Shift+P,Suspend Torrents
