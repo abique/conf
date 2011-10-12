@@ -6,8 +6,6 @@
     ci = commit -a
     co = checkout
     st = status
-    praise = blame
-    lc = log ORIG_HEAD.. --stat --no-merges
 
 [core]
     pager = less -FRSX
@@ -16,7 +14,6 @@
     whitespace = strip
 
 [diff]
-    rename = copy
 
 [color]
     branch = true

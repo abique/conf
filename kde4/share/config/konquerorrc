@@ -1,6 +1,21 @@
 [$Version]
 update_info=kfmclient_3_2.upd:kfmclient_3_2
 
+[DownloadDialog Settings]
+Height 1050=400
+Width 1680=700
+
+[FMSettings]
+AlwaysTabbedMode=false
+KonquerorTabforExternalURL=false
+MMBOpensTab=true
+MouseMiddleClickClosesTab=false
+NewTabsInFront=false
+OpenAfterCurrentPage=false
+PermanentCloseButton=true
+PopupsWithinTabs=false
+TabCloseActivatePrevious=false
+
 [HTML Settings]
 AutomaticDetectionLanguage=1
 DownloadManager=
@@ -10,5 +25,19 @@ Height 1050=511
 Recent Files[$e]=$HOME/downloads/Wrox.Professional.Android.2.Application.Development.Mar.2010.pdf,$HOME/music/tek/hardcore/Conqueror-Under_Attack-CD-1993-hM.rar,$HOME/downloads/Apress.Pro.Android.2.Mar.2010.pdf
 Width 1680=840
 
+[KFileMetaPropsPlugin]
+Height 1050=269
+Width 1680=277
+
+[KPropertiesDialog]
+Height 1050=419
+Width 1680=466
+
+[PreviewSettings]
+Plugins=comicbookthumbnail,directorythumbnail,exrthumbnail,imagethumbnail,jpegthumbnail,svgthumbnail
+
 [Undo]
-Number of Closed Windows=2
+Number of Closed Windows=3
+
+[UserSettings]
+HomeURL=http://www.kde.org

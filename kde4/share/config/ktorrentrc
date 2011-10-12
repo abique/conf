@@ -9,7 +9,7 @@ state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAABnMAAAAFAQEAAQAAAAAAAA
 DownloadOrderPluginEnabled=true
 
 [FileSelectDlg]
-download_location_history=/home/babali/videos/one-piece/,/home/babali/videos/game-of-thrones/,/home/babali/videos/sengoku-basara/,/home/babali/videos/true-blood/,/home/babali/videos/,/home/babali/videos/camelot/,/home/babali/videos/vampire-diaries/,/home/babali/videos/the-epic-of-zektbach/,/home/babali/videos/the-experiment/
+download_location_history=/home/babali/videos/one-piece/,/home/babali/videos/game-of-thrones/,/home/babali/videos/sengoku-basara/,/home/abique/music/chansons/,/home/babali/videos/true-blood/,/home/babali/videos/,/home/abique/videos/vampire-diaries/,/home/babali/videos/camelot/,/home/babali/videos/vampire-diaries/,/home/babali/videos/the-epic-of-zektbach/,/home/babali/videos/the-experiment/,/home/abique/videos/,/home/abique/videos/the-secret-circle/
 file_view=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02ç\x00\x00\x00\x02\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00dˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x01◊\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00∂\x00\x00\x00\x01\x00\x00\x00\x00
 move_on_completion_location_history=
 show_file_tree=true
@@ -26,7 +26,7 @@ Custom Groups=true
 Downloads=true
 Passive Torrents=true
 Uploads=true
-visible=false
+visible=true
 
 [HTML Settings]
 AutomaticDetectionLanguage=1
@@ -55,7 +55,7 @@ current_tab=0
 [MainWindow]
 Height 1050=1004
 Height 768=351
-State=AAAA/wAAAAD9AAAAAAAABpAAAAOVAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHgBTAGgAdQB0AGQAbwB3AG4AVABvAG8AbABCAGEAcgEAAAEQ/////wAAAAAAAAAAAAAAHgBUAG8AcgByAGUAbgB0AHMAVABvAG8AbABCAGEAcgEAAAFX/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAABpAAAAOWAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHgBTAGgAdQB0AGQAbwB3AG4AVABvAG8AbABCAGEAcgEAAAEQ/////wAAAAAAAAAAAAAAHgBUAG8AcgByAGUAbgB0AHMAVABvAG8AbABCAGEAcgEAAAFX/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1366=910
 Width 1680=1680
@@ -79,7 +79,7 @@ group=0
 silently=false
 
 [PeerView]
-state=AAAA/wAAAAAAAAABAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAABp0AAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAEAAAAZAAAAAEAAAAAAAAAkAAAAAEAAAAAAAAAlQAAAAEAAAAAAAAFFAAAAA0AAAAA
+state=AAAA/wAAAAAAAAABAAAAAAAAAAIBAAAAAAAAAAAAAAAAAAAAAAAABtYAAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAEAAAAnQAAAAEAAAAAAAAAkAAAAAEAAAAAAAAAlQAAAAEAAAAAAAAFFAAAAA0AAAAA
 
 [PrefDialog]
 size=916,596
@@ -113,11 +113,11 @@ SearchPluginEnabled=true
 ShutdownPluginEnabled=true
 
 [TorrentActivityBottomTabBar]
-current_tab=Status
+current_tab=Peers
 shrunken=false
 
 [TorrentActivitySplitters]
-hsplit=AAAA/wAAAAAAAAACAAAA3gAABaMBAAAABwEAAAAB
+hsplit=AAAA/wAAAAAAAAACAAAAAAAABokBAAAABwEAAAAB
 vsplit=AAAA/wAAAAAAAAACAAACxwAAAL4BAAAABwEAAAAC
 
 [TrackerView]
@@ -130,16 +130,16 @@ state=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgsAAAADAQAAAQAAAAAAAA
 UPnPPluginEnabled=true
 
 [View0]
-state=AAAA/wAAAAAAAAABAAAAAQAAAAkBAAAAEAAAAAAAAAABAAAAAgAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAADAAAACwAAAAwAAAANAAAADgAAAA8AAAAQAAAAAAAAAAEAAAACAAAACgAAAAMAAAAEAAAABQAAAAYAAAAHAAAACAAAAAkAAAALAAAADAAAAA0AAAAOAAAADwAAABAk8AAAAAYAAAAPAAAAZAAAAA4AAABkAAAADQAAAGQAAAAMAAAAZAAAAAQAAABkAAAAAgAAAGQAAAaIAAAAEAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAACAAAAacAAAABAAAAAAAAAJMAAAABAAAAAAAAAAAAAAABAAAAAAAAAMgAAAACAAAAAAAAAAAAAAABAAAAAAAAAfQAAAAFAAAAAAAAAZIAAAABAAAAAAAAAAAAAAAEAAAAAA==
+state=AAAA/wAAAAAAAAABAAAAAAAAAAMBAAAAAAAAAAAAAAAAAAAAAAAAB/AAAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAADAAAB2gAAAAEAAAAAAAAFeAAAAA4AAAAAAAAAngAAAAEAAAAA
 
 [View1]
-state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAAB/AAAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAADAAAB2gAAAAEAAAAAAAAFeAAAAA4AAAAAAAAAngAAAAEAAAAA
+state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAABogAAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAF3AAAAA8AAAAAAAAArAAAAAEAAAAA
 
 [View2]
-state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAABngAAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAF3AAAAA8AAAAAAAAAnAAAAAEAAAAA
+state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAABogAAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAF3AAAAA8AAAAAAAAArAAAAAEAAAAA
 
 [ViewManager]
-current_views=torrent411,Ungrouped Torrents,All Torrents
+current_views=Ungrouped Torrents,torrent411
 
 [WebInterfacePlugin]
 WebInterfacePluginEnabled=true
@@ -152,7 +152,7 @@ checkWhenFinished=true
 completedDir=file:///home/abique
 dhtSupport=true
 fullDiskPrealloc=true
-lastSaveDir=/home/babali/videos/true-blood/
+lastSaveDir=/home/abique/music/chansons/
 lookUpHostnameOfPeers=false
 maxConnectingSockets=70
 maxConnections=130
@@ -161,7 +161,7 @@ maxSeeds=20
 numUploadSlots=5
 oldTorrentsImported=true
 saveDir=file:///home/abique
-tempDir=file:///home/babali/conf/kde4/share/apps/ktorrent/
+tempDir=file:///home/abique/conf/kde4/share/apps/ktorrent/
 torrentCopyDir=file:///home/abique
 useEncryption=true
 utpEnabled=true

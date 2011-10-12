@@ -7,6 +7,8 @@
 #xrdb -load ~/.Xdefaults
 #xmodmap ~/.xmodmaprc
 
+. ~/.bashrc
+
 wm="$1"
 
 if [[ "$wm" = "" ]] ; then

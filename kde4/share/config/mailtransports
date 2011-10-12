@@ -2,7 +2,7 @@
 update_info=mailtransports.upd:initial-kmail-migration,mailtransports.upd:initial-knode-migration
 
 [General]
-default-transport=114031894
+default-transport=1976534959
 
 [Transport 114031894]
 auth=true
@@ -10,6 +10,16 @@ encryption=SSL
 host=smtp.gmail.com
 id=114031894
 name=gmail
+port=465
+storepass=true
+user=bique.alexandre@gmail.com
+
+[Transport 1976534959]
+auth=true
+encryption=SSL
+host=smtp.googlemail.com
+id=1976534959
+name=Google Mail
 port=465
 storepass=true
 user=bique.alexandre@gmail.com
