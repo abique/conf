@@ -9,61 +9,38 @@
       (doxymacs-font-lock)))
 (add-hook 'font-lock-mode-hook 'my-doxymacs-font-lock-hook)
 
+;; Cmake
+(load-file "/usr/share/emacs/site-lisp/cmake-mode.el")
+
 ;; Lua
-(if (file-readable-p "/usr/share/emacs/site-lisp/lua-mode.el")
-    (load "/usr/share/emacs/site-lisp/lua-mode"))
+(load-file "/usr/share/emacs/site-lisp/lua-mode.elc")
 
 ;; Cedet
-(if (file-readable-p "/usr/share/emacs/site-lisp/cedet/common/cedet.el")
-    (load-file "/usr/share/emacs/site-lisp/cedet/common/cedet.el"))
-(global-ede-mode 1)                      ; Enable the Project management system
-(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
-(global-srecode-minor-mode 1)            ; Enable template insertion menu
+(load-file "/usr/share/emacs/site-lisp/cedet/common/cedet.elc")
+(global-ede-mode 1)                 ; Enable the Project management system
+(semantic-load-enable-code-helpers) ; Enable prototype help and smart completion 
+(global-srecode-minor-mode 1)       ; Enable template insertion menu
 
-(autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
-(setq auto-mode-alist (append '(("/PKGBUILD$" . pkgbuild-mode)) auto-mode-alist))
+;; Archlinux PKGBUILD
+(load-file "/usr/share/emacs/site-lisp/pkgbuild-mode.el")
 
-;; Our own modes repository
-(setq load-path (cons "~/.emacs.d/" load-path))
-(setq load-path (cons "~/.emacs.d/modes" load-path))
-(setq load-path (cons "~/.emacs.d/modes/color-theme" load-path))
-
+;; Load my split config files
 (load-file "~/.emacs.d/quick.el")
 (load-file "~/.emacs.d/compilation.el")
 (load-file "~/.emacs.d/c.el")
 (load-file "~/.emacs.d/infinit.el")
 (load-file "~/.emacs.d/helpers.el")
 (load-file "~/.emacs.d/keys.el")
-(load-file "~/.emacs.d/modes/graphviz-dot-mode.el")
 
-(autoload 'nsi-mode "nsi-mode" "nsi editing mode." t)
-(load-file "~/.emacs.d/modes/cmake-mode.el")
-(load-file "~/.emacs.d/modes/llvm-mode.el")
-(load-file "~/.emacs.d/modes/tablegen-mode.el")
-(load-file "~/.emacs.d/modes/protobuf-mode.el")
-
-(autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
-(setq auto-mode-alist (append '(("/PKGBUILD$" . pkgbuild-mode)) auto-mode-alist))
-
-;; (add-to-list 'load-path "~/develop/go/misc/emacs/" t)
-;; (require 'go-mode-load)
-
-(setq ispell-dictionary "francais"
+;; Configure spell checking
+(setq ispell-dictionary "english"
       ispell-skip-sgml t)
 (autoload 'flyspell-mode "flyspell" "On-the-fly spelling checking" t)
-(setq flyspell-default-dictionary "francais")
+(setq flyspell-default-dictionary "english")
 (add-hook 'latex-mode-hook (lambda () (flyspell-mode 1)))
 
-;; cmake mode
-
-;; pabbrev & completion mode
-;;(require 'company-mode)
-;;(require 'company-bundled-completions)
-;;(company-install-bundled-completions-rules)
-;;(load-file "~/.emacs.d/modes/pabbrev.el")
-;;(global-pabbrev-mode)
-
-;; file extensions
+;; file auto modes
+(add-to-list 'auto-mode-alist '("PKGBUILD$" . pkgbuild-mode))
 (add-to-list 'auto-mode-alist '("\\.d$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.di$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.apd$" . d-mode))
@@ -75,6 +52,10 @@
 (add-to-list 'auto-mode-alist '("\\.doch$" . c++-mode))
 (add-to-list 'auto-mode-alist '("mordor/.*\\.h$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.nsi$" . nsi-mode))
+
+;; loading local stuff
+(if (file-readable-p "~/.emacs.d/local.el")
+    (load "~/.emacs.d/local.el"))
 
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
