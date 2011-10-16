@@ -5,5 +5,3 @@ setxkbmap -model evdev -layout us -variant altgr-intl -option -option ctrl:nocap
 xrdb -load ~/.Xdefaults
 xset b off
 xset r rate 175 30
-
-# nm-applet & disown
