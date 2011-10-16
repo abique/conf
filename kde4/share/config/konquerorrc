@@ -36,8 +36,15 @@ Width 1680=466
 [PreviewSettings]
 Plugins=comicbookthumbnail,directorythumbnail,exrthumbnail,imagethumbnail,jpegthumbnail,svgthumbnail
 
+[SearchBar]
+CompletionMode=5
+CurrentEngine=google_lucky
+History list=\\0
+Mode=1
+SuggestionEnabled=true
+
 [Undo]
-Number of Closed Windows=3
+Number of Closed Windows=1
 
 [UserSettings]
 HomeURL=http://www.kde.org

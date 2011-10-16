@@ -173,7 +173,7 @@ Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
 Previews=false
-Recent URLs[$e]=$HOME/videos/game-of-thrones/,$HOME/downloads/,$HOME/music/tek/hardcore/,$HOME/music/backup/tekno/,$HOME/music/tek/frenchcore/,$HOME/develop/bluegitf-mordor/,/usr/share/qtcreator/schemes/,$HOME/music/tek/hardcore/Outblast_and_Korsakoff_-_Face_2_Face-The_Mainstage_Mixes-2CD-2007-Noss/
+Recent URLs[$e]=$HOME/downloads/,$HOME/music/tek/hardcore/,$HOME/music/backup/tekno/,$HOME/music/tek/frenchcore/,$HOME/develop/bluegitf-mordor/,/usr/share/qtcreator/schemes/,$HOME/music/tek/hardcore/Outblast_and_Korsakoff_-_Face_2_Face-The_Mainstage_Mixes-2CD-2007-Noss/,$HOME/develop/mimosa/mimosa/http/
 Show Bookmarks=false
 Show Full Path=false
 Show Preview=false
@@ -182,7 +182,7 @@ Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
-Speedbar Width=187
+Speedbar Width=186
 View Style=Simple
 
 [KShortcutsDialog Settings]

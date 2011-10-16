@@ -9,7 +9,7 @@ state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAABnMAAAAFAQEAAQAAAAAAAA
 DownloadOrderPluginEnabled=true
 
 [FileSelectDlg]
-download_location_history=/home/babali/videos/one-piece/,/home/babali/videos/game-of-thrones/,/home/babali/videos/sengoku-basara/,/home/abique/music/chansons/,/home/babali/videos/true-blood/,/home/babali/videos/,/home/abique/videos/vampire-diaries/,/home/babali/videos/camelot/,/home/babali/videos/vampire-diaries/,/home/babali/videos/the-epic-of-zektbach/,/home/babali/videos/the-experiment/,/home/abique/videos/,/home/abique/videos/the-secret-circle/
+download_location_history=/home/babali/videos/one-piece/,/home/babali/videos/game-of-thrones/,/home/babali/videos/sengoku-basara/,/home/abique/music/chansons/,/home/babali/videos/true-blood/,/home/babali/videos/,/home/abique/videos/one-piece/,/home/abique/videos/vampire-diaries/,/home/babali/videos/camelot/,/home/babali/videos/vampire-diaries/,/home/babali/videos/the-epic-of-zektbach/,/home/babali/videos/the-experiment/,/home/abique/videos/,/home/abique/videos/the-secret-circle/
 file_view=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02ç\x00\x00\x00\x02\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00dˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x01◊\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00∂\x00\x00\x00\x01\x00\x00\x00\x00
 move_on_completion_location_history=
 show_file_tree=true
@@ -17,7 +17,7 @@ size=792,707
 
 [FileView]
 show_list_of_files=false
-state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAABQAAAAAAAAACAAAAAQAAAAMAAAAEAAAABQAAAAAAAAACAAAAAQAAAAMAAAAEAAAAAAAAAAAAAAZiAAAABQEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAABQAAAeUAAAABAAAAAAAAAGQAAAABAAAAAAAAAG8AAAABAAAAAAAAAGQAAAABAAAAAAAAA0YAAAABAAAAAA==
+state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAABQAAAAAAAAACAAAAAQAAAAMAAAAEAAAABQAAAAAAAAACAAAAAQAAAAMAAAAEAAAAAAAAAAAAAAZkAAAABQEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAABQAAAeUAAAABAAAAAAAAAGQAAAABAAAAAAAAAG8AAAABAAAAAAAAAGQAAAABAAAAAAAAA0gAAAABAAAAAA==
 
 [GroupView]
 Active Torrents=true
@@ -50,7 +50,7 @@ Width 1680=840
 state=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABowAAAADAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAADAAABngAAAAEAAAAAAAAAZAAAAAEAAAAAAAAEigAAAAEAAAAA
 
 [MainTabWidget]
-current_tab=0
+current_tab=1
 
 [MainWindow]
 Height 1050=1004
@@ -113,7 +113,7 @@ SearchPluginEnabled=true
 ShutdownPluginEnabled=true
 
 [TorrentActivityBottomTabBar]
-current_tab=Peers
+current_tab=Files
 shrunken=false
 
 [TorrentActivitySplitters]
@@ -133,7 +133,7 @@ UPnPPluginEnabled=true
 state=AAAA/wAAAAAAAAABAAAAAAAAAAMBAAAAAAAAAAAAAAAAAAAAAAAAB/AAAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAADAAAB2gAAAAEAAAAAAAAFeAAAAA4AAAAAAAAAngAAAAEAAAAA
 
 [View1]
-state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAABogAAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAF3AAAAA8AAAAAAAAArAAAAAEAAAAA
+state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAQAPAAAAAEAAAADwAAAN4AAAAOAAAAZAAAAA0AAAGmAAAADAAAAGQAAAaBAAAAEAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAABwAAAc4AAAABAAAAAAAAArwAAAAHAAAAAAAAAF0AAAABAAAAAAAAAGMAAAABAAAAAAAAAGYAAAABAAAAAAAAANEAAAABAAAAAAAAAAAAAAAEAAAAAA==
 
 [View2]
 state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAABogAAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAF3AAAAA8AAAAAAAAArAAAAAEAAAAA
@@ -152,12 +152,14 @@ checkWhenFinished=true
 completedDir=file:///home/abique
 dhtSupport=true
 fullDiskPrealloc=true
-lastSaveDir=/home/abique/music/chansons/
+lastSaveDir=/home/abique/videos/one-piece/
 lookUpHostnameOfPeers=false
 maxConnectingSockets=70
-maxConnections=130
+maxConnections=150
 maxDownloads=8
 maxSeeds=20
+maxTotalConnections=150
+maxUploadRate=85
 numUploadSlots=5
 oldTorrentsImported=true
 saveDir=file:///home/abique
