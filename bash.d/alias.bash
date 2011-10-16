@@ -125,3 +125,11 @@ function _kmtrace()
 {
     LD_PRELOAD=/usr/lib/libktrace.so MALLOC_TRACE=ktrace.out "$@"
 }
+
+function emacs-byte-compile()
+{
+    for i in "$@"
+    do
+        emacs -batch -f batch-byte-compile "$i"
+    done
+}

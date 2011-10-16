@@ -16,10 +16,11 @@
 (load-file "/usr/share/emacs/site-lisp/lua-mode.elc")
 
 ;; Cedet
-(load-file "/usr/share/emacs/site-lisp/cedet/common/cedet.elc")
-(global-ede-mode 1)                 ; Enable the Project management system
-(semantic-load-enable-code-helpers) ; Enable prototype help and smart completion 
-(global-srecode-minor-mode 1)       ; Enable template insertion menu
+;; (load-file "/usr/share/emacs/site-lisp/cedet/common/cedet.elc")
+;; (global-ede-mode 1)                 ; Enable the Project management system
+;; (semantic-load-enable-code-helpers) ; Enable prototype help and smart completion 
+;; (global-srecode-minor-mode 1)       ; Enable template insertion menu
+;; (ede-enable-generic-projects)
 
 ;; Archlinux PKGBUILD
 (load-file "/usr/share/emacs/site-lisp/pkgbuild-mode.el")
@@ -67,7 +68,9 @@
  '(graphviz-dot-view-edit-command nil)
  '(org-fontify-done-headline t)
  '(org-log-done (quote time) nil nil "time")
- '(org-modules (quote (org-bbdb org-bibtex org-gnus org-info org-jsinfo org-irc org-mew org-mhe org-rmail org-vm org-wl org-w3m org-mouse org-choose)))
+ '(org-modules (quote (org-bbdb org-bibtex org-gnus org-info org-jsinfo
+                                org-irc org-mew org-mhe org-rmail org-vm org-wl
+                                org-w3m org-mouse org-choose)))
  '(org-time-stamp-custom-formats (quote ("<%Y-%m-%d>" . "<%Y-%m-%d %H:%M:%S %z>")))
  '(org-time-stamp-rounding-minutes (quote (0 0))))
 (custom-set-faces
