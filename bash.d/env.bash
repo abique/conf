@@ -3,7 +3,7 @@ export HISTSIZE=10000
 export HISTIGNORE='ls:ll:la:l:[bf]g:'
 export INPUTRC="~/.inputrc"
 #export EDITOR="$HOME/.bash.d/emacs-quick.bash"
-export EDITOR="vim"
+export EDITOR="zile"
 
 if ! echo "${PATH}" | grep "^${HOME}/local/bin" 1>/dev/null 2>&1 ; then
     export PATH="${HOME}/local/bin:${HOME}/develop/gitw:${PATH}"
