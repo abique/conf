@@ -25,6 +25,10 @@
 ;; Archlinux PKGBUILD
 (load-file "/usr/share/emacs/site-lisp/pkgbuild-mode.el")
 
+;; Git
+(load-file "/usr/share/emacs/site-lisp/git.el")
+(require 'git)
+
 ;; Load my split config files
 (load-file "~/.emacs.d/quick.el")
 (load-file "~/.emacs.d/compilation.el")
