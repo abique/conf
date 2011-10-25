@@ -37,5 +37,3 @@
 (global-set-key [M-0] 'windmove-right) ; move to right window
 (global-set-key [?\C-=] 'windmove-up)    ; move to upper window
 (global-set-key [?\C--] 'windmove-down)
-(global-set-key [(control tab)] 'next-buffer) ; Ctrl-Tab = Next buffer
-(global-set-key [(control backtab)] 'prev-buffer) ; Ctrl-Tab = Next buffer
