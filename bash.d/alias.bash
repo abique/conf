@@ -26,12 +26,6 @@ alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
 alias tx="tar -xf"
 alias txv="tar -xvvvf"
-
-function ema()
-{
-    emacs "$@" & disown
-}
-
 alias v='vim'
 alias e='~/.bash.d/emacs-quick.bash'
 alias em='emacs -nw'
