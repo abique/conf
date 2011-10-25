@@ -9,6 +9,7 @@
 
 [core]
     pager = less -FRSX
+    editor = emacs -nw
 
 [apply]
     whitespace = strip
