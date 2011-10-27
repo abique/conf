@@ -63,3 +63,4 @@ shopt -s checkwinsize
 export GOROOT="${HOME}/develop/go"
 export GOBIN="${HOME}/develop/go/bin"
 export PATH="${PATH}:${GOBIN}"
+export GNUSTEP_USER_ROOT="$HOME/.gnustep"
