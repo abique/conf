@@ -19,9 +19,9 @@ case "$wm" in
     kde)
         exec ${KDEDIR}/bin/startkde;;
     openbox)
-        exec openbox-session;;
+        exec ck-launch-session openbox-session;;
     e)
-        exec enlightenment_start;;
+        exec ck-launch-session enlightenment_start;;
     ion|ion3)
         exec ion3;;
     fluxbox)
@@ -37,7 +37,7 @@ case "$wm" in
     fluxbox)
         exec startfluxbox;;
     wmaker)
-	exec wmaker;;
+	exec ck-launch-session wmaker;;
     gnome)
 	exec ck-launch-session gnome-shell;;
 esac
