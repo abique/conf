@@ -9,15 +9,15 @@ state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAABnMAAAAFAQEAAQAAAAAAAA
 DownloadOrderPluginEnabled=true
 
 [FileSelectDlg]
-download_location_history=/home/babali/videos/one-piece/,/home/babali/videos/game-of-thrones/,/home/babali/videos/sengoku-basara/,/home/abique/music/chansons/,/home/babali/videos/true-blood/,/home/babali/videos/,/home/abique/videos/one-piece/,/home/abique/videos/vampire-diaries/,/home/babali/videos/camelot/,/home/babali/videos/vampire-diaries/,/home/babali/videos/the-epic-of-zektbach/,/home/babali/videos/the-experiment/,/home/abique/videos/,/home/abique/videos/the-secret-circle/
-file_view=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02ç\x00\x00\x00\x02\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00dˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x01◊\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00∂\x00\x00\x00\x01\x00\x00\x00\x00
+download_location_history=/home/babali/videos/one-piece/,/home/babali/videos/game-of-thrones/,/home/babali/videos/sengoku-basara/,/home/abique/music/chansons/,/home/babali/videos/true-blood/,/home/babali/videos/,/home/abique/videos/one-piece/,/home/abique/videos/vampire-diaries/,/home/abique/downloads/,/home/babali/videos/camelot/,/home/babali/videos/vampire-diaries/,/home/babali/videos/the-epic-of-zektbach/,/home/babali/videos/the-experiment/,/home/abique/videos/,/home/abique/videos/the-secret-circle/
+file_view=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02è\x00\x00\x00\x02\x01\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00dˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x01◊\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00∏\x00\x00\x00\x01\x00\x00\x00\x00
 move_on_completion_location_history=
 show_file_tree=true
 size=792,707
 
 [FileView]
 show_list_of_files=false
-state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAABQAAAAAAAAACAAAAAQAAAAMAAAAEAAAABQAAAAAAAAACAAAAAQAAAAMAAAAEAAAAAAAAAAAAAAZkAAAABQEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAABQAAAeUAAAABAAAAAAAAAGQAAAABAAAAAAAAAG8AAAABAAAAAAAAAGQAAAABAAAAAAAAA0gAAAABAAAAAA==
+state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAABQAAAAAAAAACAAAAAQAAAAMAAAAEAAAABQAAAAAAAAACAAAAAQAAAAMAAAAEAAAAAAAAAAAAAAYUAAAABQEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAABQAAAeUAAAABAAAAAAAAAGQAAAABAAAAAAAAAG8AAAABAAAAAAAAAGQAAAABAAAAAAAAAvgAAAABAAAAAA==
 
 [GroupView]
 Active Torrents=true
@@ -55,9 +55,11 @@ current_tab=1
 [MainWindow]
 Height 1050=1004
 Height 768=351
-State=AAAA/wAAAAD9AAAAAAAABpAAAAOWAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHgBTAGgAdQB0AGQAbwB3AG4AVABvAG8AbABCAGEAcgEAAAEQ/////wAAAAAAAAAAAAAAHgBUAG8AcgByAGUAbgB0AHMAVABvAG8AbABCAGEAcgEAAAFX/////wAAAAAAAAAA
+Height 900=439
+State=AAAA/wAAAAD9AAAAAAAABkAAAAL9AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHgBTAGgAdQB0AGQAbwB3AG4AVABvAG8AbABCAGEAcgEAAAEQ/////wAAAAAAAAAAAAAAHgBUAG8AcgByAGUAbgB0AHMAVABvAG8AbABCAGEAcgEAAAFX/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1366=910
+Width 1600=761
 Width 1680=1680
 activity_bar_pos=0
 current_activity=0
@@ -113,7 +115,7 @@ SearchPluginEnabled=true
 ShutdownPluginEnabled=true
 
 [TorrentActivityBottomTabBar]
-current_tab=Files
+current_tab=Peers
 shrunken=false
 
 [TorrentActivitySplitters]
@@ -133,13 +135,13 @@ UPnPPluginEnabled=true
 state=AAAA/wAAAAAAAAABAAAAAAAAAAMBAAAAAAAAAAAAAAAAAAAAAAAAB/AAAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAADAAAB2gAAAAEAAAAAAAAFeAAAAA4AAAAAAAAAngAAAAEAAAAA
 
 [View1]
-state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAQAPAAAAAEAAAADwAAAN4AAAAOAAAAZAAAAA0AAAGmAAAADAAAAGQAAAaBAAAAEAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAABwAAAc4AAAABAAAAAAAAArwAAAAHAAAAAAAAAF0AAAABAAAAAAAAAGMAAAABAAAAAAAAAGYAAAABAAAAAAAAANEAAAABAAAAAAAAAAAAAAAEAAAAAA==
+state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAQAPAAAAAEAAAADwAAAN4AAAAOAAAAZAAAAA0AAAGmAAAADAAAAGQAAAYxAAAAEAEBAAEAAAAAAAAAAAAAAABk/////wAAAIEAAAAAAAAABwAAAc4AAAABAAAAAAAAArwAAAAHAAAAAAAAAF0AAAABAAAAAAAAAGMAAAABAAAAAAAAAGYAAAABAAAAAAAAAIEAAAABAAAAAAAAAAAAAAAEAAAAAA==
 
 [View2]
 state=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAAAABogAAAAQAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAF3AAAAA8AAAAAAAAArAAAAAEAAAAA
 
 [ViewManager]
-current_views=Ungrouped Torrents,torrent411
+current_views=Ungrouped Torrents,All Torrents
 
 [WebInterfacePlugin]
 WebInterfacePluginEnabled=true
@@ -152,7 +154,7 @@ checkWhenFinished=true
 completedDir=file:///home/abique
 dhtSupport=true
 fullDiskPrealloc=true
-lastSaveDir=/home/abique/videos/one-piece/
+lastSaveDir=/home/abique/downloads/
 lookUpHostnameOfPeers=false
 maxConnectingSockets=70
 maxConnections=150
