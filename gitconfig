@@ -10,6 +10,9 @@
 [core]
     pager = less -FRSX
     editor = emacs -nw
+    compression = 9
+    loosecompression = 9
+    whitespace = blank-at-eol,space-before-tab,blank-at-eof,tabwidth=8
 
 [apply]
     whitespace = strip
@@ -24,3 +27,23 @@
     pager = true
     status = true
     ui = true
+
+[commit]
+    status = true
+
+[format]
+
+[grep]
+    lineNumber = true
+    extendedRegexp = true
+
+[i18n]
+    commitEncoding = utf-8
+    logOutputEncoding = utf-8
+
+[pack]
+    compression = 9
+    threads = 0
+
+[web]
+    browser = firefox
