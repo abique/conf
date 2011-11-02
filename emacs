@@ -29,6 +29,9 @@
 (load-file "/usr/share/emacs/site-lisp/git.el")
 (require 'git)
 
+;; protobuf
+(load-file "/usr/share/emacs/site-lisp/protobuf-mode.el")
+
 ;; Load my split config files
 (load-file "~/.emacs.d/quick.el")
 (load-file "~/.emacs.d/compilation.el")
@@ -57,6 +60,7 @@
 (add-to-list 'auto-mode-alist '("\\.doch$" . c++-mode))
 (add-to-list 'auto-mode-alist '("mordor/.*\\.h$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.nsi$" . nsi-mode))
+(add-to-list 'auto-mode-alist '("\\.proto$" . protobuf-mode))
 
 ;; loading local stuff
 (if (file-readable-p "~/.emacs.d/local.el")
