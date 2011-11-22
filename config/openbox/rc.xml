@@ -763,5 +763,22 @@
 
 	 # end of the example
 	 -->
+    <application name="Firefox*">
+      <desktop>4</desktop>
+      <maximized>yes</maximized>
+      <decor>no</decor>
+    </application>
+
+    <application name="Thunderbird*">
+      <desktop>8</desktop>
+      <maximized>yes</maximized>
+      <decor>no</decor>
+    </application>
+
+    <application name="Psi*">
+      <desktop>7</desktop>
+      <decor>no</decor>
+    </application>
+
   </applications>
 </openbox_config>
