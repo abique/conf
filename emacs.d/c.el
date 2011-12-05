@@ -14,12 +14,13 @@
 ;; Highlight trailing withespaces
 (add-hook 'c-mode-common-hook (lambda () (highlight-regexp " +$" "hi-pink")))
 (add-hook 'c-mode-common-hook (lambda () (highlight-regexp "FIXME" "hi-red-b")))
+(add-hook 'c-mode-common-hook (lambda () (highlight-regexp "XXX" "hi-red-b")))
 (add-hook 'c-mode-common-hook (lambda () (highlight-regexp "TODO" "hi-red-b")))
 (add-hook 'c-mode-common-hook 'subword-mode)
 
-;;(add-hook 'c-mode-hook 'rm-trailing-spaces-always)
+(add-hook 'c-mode-hook 'rm-trailing-spaces-always)
 (add-hook 'c-mode-hook 'cwarn-mode)
-;;(add-hook 'c++-mode-hook 'rm-trailing-spaces-always)
+(add-hook 'c++-mode-hook 'rm-trailing-spaces-always)
 (add-hook 'c++-mode-hook 'cwarn-mode)
 
 (setq c-mode-hook
