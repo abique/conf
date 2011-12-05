@@ -769,7 +769,7 @@
       <decor>no</decor>
     </application>
 
-    <application class="Thunderbird">
+    <application class="Thunderbird" name="Mail" role="3pane">
       <desktop>8</desktop>
       <maximized>yes</maximized>
       <decor>no</decor>
