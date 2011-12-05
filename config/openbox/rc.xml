@@ -784,5 +784,9 @@
       <decor>no</decor>
     </application>
 
+    <application class="Spotify">
+      <decor>no</decor>
+    </application>
+
   </applications>
 </openbox_config>
