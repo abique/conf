@@ -2,12 +2,15 @@
 (add-hook 'find-file-hooks
           (lambda ()
             (when (and (memq major-mode '(c-mode c++-mode)) 
-                       (equal (point-min) (point-max)) 
-                       (string-match ".*\\.hh?" (buffer-file-name)))
-              (insert-header-guard)
-              (goto-line 3)
-              (insert "\n"))
-            ))
+                       (equal (point-min) (point-max)))
+
+              (if (string-match "mimosa" buffer-file-name)
+                  (mimosa-generate-header)
+                (if (string-match ".*\\.hh?" buffer-file-name)
+                    (insert-header-guard)
+                  ;; (goto-line 3)
+                  )
+                ))))
 
 ;; Start code folding mode in C/C++ mode
 ;; (add-hook 'c-mode-common-hook (lambda () (hs-minor-mode 1) (hs-hide-all)))
@@ -18,9 +21,9 @@
 (add-hook 'c-mode-common-hook (lambda () (highlight-regexp "TODO" "hi-red-b")))
 (add-hook 'c-mode-common-hook 'subword-mode)
 
-(add-hook 'c-mode-hook 'rm-trailing-spaces-always)
+;(add-hook 'c-mode-hook 'rm-trailing-spaces-always)
 (add-hook 'c-mode-hook 'cwarn-mode)
-(add-hook 'c++-mode-hook 'rm-trailing-spaces-always)
+;(add-hook 'c++-mode-hook 'rm-trailing-spaces-always)
 (add-hook 'c++-mode-hook 'cwarn-mode)
 
 (setq c-mode-hook

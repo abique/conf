@@ -42,11 +42,3 @@
   (if (string-match "\\.hh$" buffer-file-name)
       (mimosa-generate-bottom-guard mimosa-hdr-guard))
   )
-
-(add-hook 'find-file-hooks
-          (lambda ()
-            (when (string-match ".*/mimosa/.*\(\.hh|\.cc\)" (buffer-file-name))
-              (when (equal (point-min) (point-max))
-                (mimosa-generate-header)
-                (newline)
-                (goto-line 11)))))
