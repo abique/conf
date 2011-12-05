@@ -763,20 +763,24 @@
 
 	 # end of the example
 	 -->
-    <application name="Firefox*">
+    <application class="Firefox" role="browser">
       <desktop>4</desktop>
       <maximized>yes</maximized>
       <decor>no</decor>
     </application>
 
-    <application name="Thunderbird*">
+    <application class="Thunderbird">
       <desktop>8</desktop>
       <maximized>yes</maximized>
       <decor>no</decor>
     </application>
 
-    <application name="Psi*">
+    <application class="psi">
       <desktop>7</desktop>
+      <decor>no</decor>
+    </application>
+
+    <application class="Emacs">
       <decor>no</decor>
     </application>
 
