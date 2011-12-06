@@ -17,6 +17,7 @@ for file in		\
     Xdefaults           \
     bash.d              \
     bashrc		\
+    bazaar		\
     beryl		\
     beryl-managerrc	\
     bmpanel		\
