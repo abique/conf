@@ -1,1 +1,5 @@
 *.elc
+bash.d/ssh-agent.bash
+emacs.d/auto-save-list/
+emacs.d/local.el
+config/tint2/snap.jpg
