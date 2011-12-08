@@ -1,1 +1,0 @@
-../../common_start_no_wallpaper.sh

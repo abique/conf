@@ -1,8 +1,0 @@
-[Desktop Entry]
-Charset=
-Hidden=false
-Keys=gl
-Name=Google (I'm Feeling Lucky)
-Query=http://www.google.com/search?q=\\{@}&btnI=I%27m+Feeling+Lucky&ie=UTF-8&oe=UTF-8
-ServiceTypes=SearchProvider
-Type=Service

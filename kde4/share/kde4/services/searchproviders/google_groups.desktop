@@ -1,8 +1,0 @@
-[Desktop Entry]
-Charset=
-Hidden=false
-Keys=gg
-Name=Google Groups
-Query=http://groups.google.com/groups?oi=djq&as_q=\\{@}
-ServiceTypes=SearchProvider
-Type=Service
