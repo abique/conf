@@ -1,4 +1,4 @@
-;; Mimosa emacs configuration
+;; Bluegitf emacs configuration
 
 (defun bluegitf-generate-namespace (nmspc indent)
   (insert (concat indent "namespace " (car nmspc)))
