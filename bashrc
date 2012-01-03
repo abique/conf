@@ -37,7 +37,6 @@ my_source ~/.bash.d/proxy.bash
 my_source ~/.bash.d/mobile-phone.bash
 my_source ~/.bash.d/local.bash
 my_source ~/.bash.d/ssh-agent.bash
-my_source ~/.bash_twenga
 
 complete -d cd
 set completion-ignore-case on
