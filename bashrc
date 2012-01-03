@@ -25,6 +25,14 @@ if [[ $TERM = "linux" ]] ; then
     unicode_start
 fi
 
+complete -d cd
+set completion-ignore-case on
+set print-completions-horizontally on
+set visible-stats on
+shopt -s cdspell
+shopt -s extglob
+umask 0077
+
 my_source /etc/bash_completion
 #my_source /etc/profile.d/go.sh
 my_source ~/.bash.d/alias.bash
@@ -37,13 +45,3 @@ my_source ~/.bash.d/proxy.bash
 my_source ~/.bash.d/mobile-phone.bash
 my_source ~/.bash.d/local.bash
 my_source ~/.bash.d/ssh-agent.bash
-
-complete -d cd
-set completion-ignore-case on
-set print-completions-horizontally on
-set visible-stats on
-shopt -s cdspell
-shopt -s extglob
-umask 0077
-
-#~/.bash.d/xtiff.pl
