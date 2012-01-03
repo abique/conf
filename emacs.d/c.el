@@ -31,11 +31,6 @@
 	 (local-set-key (kbd "<return>") 'newline-and-indent)))
 
 (load-file "~/.emacs.d/styles/epita.el")
-(load-file "~/.emacs.d/styles/kaneton.el")
-(load-file "~/.emacs.d/styles/d-style.el")
-(load-file "~/.emacs.d/styles/gostai.el")
-(load-file "~/.emacs.d/styles/arora.el")
-(load-file "~/.emacs.d/styles/qemu.el")
 (setq c-default-style "epita")
 
 (setq c-font-lock-extra-types
