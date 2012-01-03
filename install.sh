@@ -43,6 +43,7 @@ for file in		\
     inputrc		\
     q3a			\
     screenrc            \
+    sqliterc            \
     toprc		\
     vim			\
     vimrc               \
