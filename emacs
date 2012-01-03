@@ -35,8 +35,6 @@
 ;; Load my split config files
 (load-file "~/.emacs.d/quick.el")
 (load-file "~/.emacs.d/compilation.el")
-(load-file "~/.emacs.d/mimosa.el")
-(load-file "~/.emacs.d/bluegitf.el")
 (load-file "~/.emacs.d/c.el")
 (load-file "~/.emacs.d/helpers.el")
 (load-file "~/.emacs.d/keys.el")

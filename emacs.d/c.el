@@ -1,3 +1,6 @@
+(load-file "~/.emacs.d/styles/mimosa.el")
+(load-file "~/.emacs.d/styles/bluegitf.el")
+
 ;; Auto insert C/C++ header guard
 (add-hook 'find-file-hooks
           (lambda ()
