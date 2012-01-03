@@ -1,16 +1,23 @@
 ;; Auto insert C/C++ header guard
 (add-hook 'find-file-hooks
           (lambda ()
-            (when (and (memq major-mode '(c-mode c++-mode)) 
+            (when (and (memq major-mode '(c-mode c++-mode))
                        (equal (point-min) (point-max)))
 
-              (if (string-match "mimosa" buffer-file-name)
-                  (mimosa-generate-header)
-                (if (string-match ".*\\.hh?" buffer-file-name)
-                    (insert-header-guard)
-                  ;; (goto-line 3)
-                  )
-                ))))
+              (when (string-match "/mimosa/" buffer-file-name)
+                (mimosa-generate-header))
+
+              (when (string-match "/bluegitf/" buffer-file-name)
+                (bluegitf-generate-header))
+
+              (when (string-match "fbx" buffer-file-name)
+                (setq indent-tabs-mode 1)
+                (c-set-style "linux"))
+
+              (if (string-match ".*\\.hh?" buffer-file-name)
+                  (insert-header-guard))
+
+              )))
 
 ;; Start code folding mode in C/C++ mode
 ;; (add-hook 'c-mode-common-hook (lambda () (hs-minor-mode 1) (hs-hide-all)))
@@ -48,5 +55,3 @@
        '("\\sw+_e")
        '("\\sw+_i")
        c-font-lock-extra-types))
-
-(add-to-list 'auto-mode-alist '("twenga.*\\.h$" . c++-mode))
