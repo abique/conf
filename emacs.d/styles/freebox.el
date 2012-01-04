@@ -10,7 +10,7 @@
                       (upcase name)))))
         (goto-char (point-min))
         (insert "#ifndef " macro "_\n")
-        (insert "#define " macro "_\n\n")
+        (insert "# define " macro "_\n\n")
         (goto-char (point-max))
         (insert "\n#endif /* !" macro "_ */\n")
         )
@@ -20,11 +20,13 @@
 
 (defun freebox-style ()
   (interactive)
-  (setq indent-tabs-mode 1)
-  (c-set-style "linux")
 
-  (when (and (string-match ".*\\.hh?" buffer-file-name)
-             (memq major-mode '(c-mode c++-mode))
-             (equal (point-min) (point-max)))
-    (freebox-generate-header))
+  (when (memq major-mode '(c-mode c++-mode))
+    (setq indent-tabs-mode 1)
+    (c-set-style "linux")
+
+    (when (and (string-match ".*\\.hh?" buffer-file-name)
+               (equal (point-min) (point-max)))
+      (freebox-generate-header))
+    )
   )

@@ -57,11 +57,13 @@
       (bluegitf-include-header))
   )
 
-(defun mimosa-style ()
+(defun bluegitf-style ()
   (interactive)
-  (c-set-style "epita")
 
-  (when (and (memq major-mode '(c-mode c++-mode))
-             (equal (point-min) (point-max)))
-    (mimosa-generate-header))
+  (when (memq major-mode '(c-mode c++-mode))
+    (c-set-style "epita")
+
+    (when (equal (point-min) (point-max))
+      (bluegitf-generate-header))
+    )
   )
