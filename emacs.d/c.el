@@ -1,5 +1,6 @@
 (load-file "~/.emacs.d/styles/mimosa.el")
 (load-file "~/.emacs.d/styles/bluegitf.el")
+(load-file "~/.emacs.d/styles/freebox.el")
 
 ;; Auto insert C/C++ header guard
 (add-hook 'find-file-hooks
@@ -15,7 +16,8 @@
 
               (when (string-match "fbx" buffer-file-name)
                 (setq indent-tabs-mode 1)
-                (c-set-style "linux"))
+                (c-set-style "linux")
+                (freebox-generate-header))
 
               (if (string-match ".*\\.hh?" buffer-file-name)
                   (insert-header-guard))
