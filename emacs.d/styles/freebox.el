@@ -17,3 +17,14 @@
       )
     )
   )
+
+(defun freebox-style ()
+  (interactive)
+  (setq indent-tabs-mode 1)
+  (c-set-style "linux")
+
+  (when (and (string-match ".*\\.hh?" buffer-file-name)
+             (memq major-mode '(c-mode c++-mode))
+             (equal (point-min) (point-max)))
+    (freebox-generate-header))
+  )

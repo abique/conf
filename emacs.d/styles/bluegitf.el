@@ -56,3 +56,12 @@
            (file-exists-p (replace-regexp-in-string "\\.cc$" ".hh" buffer-file-name)))
       (bluegitf-include-header))
   )
+
+(defun mimosa-style ()
+  (interactive)
+  (c-set-style "epita")
+
+  (when (and (memq major-mode '(c-mode c++-mode))
+             (equal (point-min) (point-max)))
+    (mimosa-generate-header))
+  )
