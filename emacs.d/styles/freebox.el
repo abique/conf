@@ -21,6 +21,11 @@
 (defun freebox-style ()
   (interactive)
 
+  (when (memq major-mode '(sh-mode))
+    (setq indent-tabs-mode 1)
+    (setq sh-basic-offset 8)
+    )
+
   (when (memq major-mode '(c-mode c++-mode))
     (setq indent-tabs-mode 1)
     (c-set-style "linux")
