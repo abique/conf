@@ -1,5 +1,8 @@
 (defun freebox-generate-header ()
   (interactive)
+
+  (setq indent-tabs-mode 1)
+
   (save-excursion
     (when (buffer-file-name)
       (let* ((name (file-name-nondirectory buffer-file-name))
@@ -22,12 +25,10 @@
   (interactive)
 
   (when (memq major-mode '(sh-mode))
-    (setq indent-tabs-mode 1)
     (setq sh-basic-offset 8)
     )
 
   (when (memq major-mode '(c-mode c++-mode))
-    (setq indent-tabs-mode 1)
     (c-set-style "linux")
 
     (when (and (string-match ".*\\.hh?" buffer-file-name)
