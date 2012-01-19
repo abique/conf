@@ -127,3 +127,10 @@ function emacs-byte-compile()
         emacs -batch -f batch-byte-compile "$i"
     done
 }
+
+function xxx()
+{
+    find . -name '*.c' -o -name '*.h' -o -name '*.cc' -o \
+        -name '*.cpp' -o -name '*.hh' -o -name '*.hxx' | \
+        xargs grep -inC5 '\(XXX\|todo\)'
+}
