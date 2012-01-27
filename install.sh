@@ -45,7 +45,6 @@ for file in		\
     screenrc            \
     sqliterc            \
     toprc		\
-    vim			\
     vimrc               \
     warsow		\
     xinitrc		\
