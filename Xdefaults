@@ -91,7 +91,9 @@ URxvt*color15:     #ffffff
 URxvt*transparent: true
 URxvt*shading:     15
 
-URxvt*font:	   7x14
+!URxvt*font:	   7x14
+URxvt*font:	   xft:dina
+URxvt*boldFont:	   xft:dina
 URxvt*scrollBar: false
 URxvt*saveLines: 10000
 
@@ -124,8 +126,9 @@ Aterm*tintingType: true
 Aterm*tinting: #ffffff
 Aterm*shading: 20
 
-Emacs.font: 7x14
+!Emacs.font: 7x14
 !Emacs.font: Monospace-11
+Emacs.font: Dina
 Emacs.menuBar: off
 Emacs.minibuffer: on
 Emacs.synchronous: off
