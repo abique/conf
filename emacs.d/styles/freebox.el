@@ -1,8 +1,6 @@
 (defun freebox-generate-header ()
   (interactive)
 
-  (setq indent-tabs-mode 1)
-
   (save-excursion
     (when (buffer-file-name)
       (let* ((name (file-name-nondirectory buffer-file-name))
@@ -23,6 +21,8 @@
 
 (defun freebox-style ()
   (interactive)
+
+  (setq indent-tabs-mode 1)
 
   (when (memq major-mode '(sh-mode))
     (setq sh-basic-offset 8)
