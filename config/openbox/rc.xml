@@ -780,6 +780,11 @@
       <decor>no</decor>
     </application>
 
+    <application class="Xchat">
+      <desktop>7</desktop>
+      <decor>no</decor>
+    </application>
+
     <application class="Emacs">
       <decor>no</decor>
     </application>
