@@ -1,6 +1,8 @@
 (load-file "~/.emacs.d/styles/mimosa.el")
 (load-file "~/.emacs.d/styles/bluegitf.el")
 (load-file "~/.emacs.d/styles/freebox.el")
+(load-file "~/.emacs.d/styles/epita.el")
+(setq c-default-style "epita")
 
 ;; Auto insert C/C++ header guard
 (add-hook 'find-file-hooks
@@ -22,24 +24,23 @@
 
 ;; Start code folding mode in C/C++ mode
 ;; (add-hook 'c-mode-common-hook (lambda () (hs-minor-mode 1) (hs-hide-all)))
-;; Highlight trailing withespaces
-(add-hook 'c-mode-common-hook (lambda () (highlight-regexp " +$" "hi-pink")))
-(add-hook 'c-mode-common-hook (lambda () (highlight-regexp "FIXME" "hi-red-b")))
-(add-hook 'c-mode-common-hook (lambda () (highlight-regexp "XXX" "hi-red-b")))
-(add-hook 'c-mode-common-hook (lambda () (highlight-regexp "TODO" "hi-red-b")))
-(add-hook 'c-mode-common-hook 'subword-mode)
-
-;(add-hook 'c-mode-hook 'rm-trailing-spaces-always)
-(add-hook 'c-mode-hook 'cwarn-mode)
-;(add-hook 'c++-mode-hook 'rm-trailing-spaces-always)
-(add-hook 'c++-mode-hook 'cwarn-mode)
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (highlight-regexp "[\t ]+$" "hi-pink")
+            (highlight-regexp "FIXME" "hi-red-b")
+            (highlight-regexp "XXX" "hi-red-b")
+            (highlight-regexp "TODO" "hi-red-b")
+            (highlight-regexp "PTR" "hi-green-b")
+            (highlight-regexp "ADDR" "hi-green-b")
+            (highlight-regexp "SBRK" "hi-green-b")
+            (subword-mode)
+            (cwarn-mode)
+            (hs-minor-mode)
+            (hs-show-all)))
 
 (setq c-mode-hook
       '(lambda()
 	 (local-set-key (kbd "<return>") 'newline-and-indent)))
-
-(load-file "~/.emacs.d/styles/epita.el")
-(setq c-default-style "epita")
 
 (setq c-font-lock-extra-types
       (append
