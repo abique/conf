@@ -36,6 +36,7 @@
             (highlight-regexp "[^_a-zA-Z]SBRK(" "hi-green-b")
             (subword-mode)
             (cwarn-mode)
+            (flyspell-prog-mode)
             (hs-minor-mode)
             (hs-show-all)))
 
