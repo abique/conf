@@ -38,6 +38,7 @@
 (load-file "~/.emacs.d/c.el")
 (load-file "~/.emacs.d/helpers.el")
 (load-file "~/.emacs.d/keys.el")
+(load-file "~/.emacs.d/snippet.el")
 
 ;; Configure spell checking
 (setq ispell-dictionary "english"
