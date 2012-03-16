@@ -1,6 +1,8 @@
 ;; -*- mode: Lisp; -*-
 
-;; Doxygen
+;;,--------
+;;| Doxygen
+;;`--------
 (require 'doxymacs)
 (add-hook 'c-mode-common-hook 'doxymacs-mode)
 
@@ -9,30 +11,48 @@
       (doxymacs-font-lock)))
 (add-hook 'font-lock-mode-hook 'my-doxymacs-font-lock-hook)
 
-;; Cmake
-(load-file "/usr/share/emacs/site-lisp/cmake-mode.el")
+;;,------
+;;| cmake
+;;`------
+(require 'cmake-mode)
 
-;; Lua
-(load-file "/usr/share/emacs/site-lisp/lua-mode.elc")
+;;,----
+;;| Lua
+;;`----
+(require 'lua-mode)
 
-;; Cedet
-;; (load-file "/usr/share/emacs/site-lisp/cedet/common/cedet.elc")
-;; (global-ede-mode 1)                 ; Enable the Project management system
-;; (semantic-load-enable-code-helpers) ; Enable prototype help and smart completion 
-;; (global-srecode-minor-mode 1)       ; Enable template insertion menu
-;; (ede-enable-generic-projects)
+;;,-----------------
+;;| Cedet (load-file
+;;`-----------------
+;; "/usr/share/emacs/site-lisp/cedet/common/cedet.elc")
+;; (global-ede-mode 1) ; Enable the Project management system
+;; (semantic-load-enable-code-helpers) ; Enable prototype help and
+;; smart completion (global-srecode-minor-mode 1) ; Enable template
+;; insertion menu (ede-enable-generic-projects)
 
-;; Archlinux PKGBUILD
-(load-file "/usr/share/emacs/site-lisp/pkgbuild-mode.el")
+;;,-------------------
+;;| Archlinux PKGBUILD
+;;`-------------------
+(require 'pkgbuild-mode)
 
-;; Git
-(load-file "/usr/share/emacs/site-lisp/git.el")
+;;,-------
+;;| rebox2
+;;`-------
+(require 'rebox2)
+
+;;,----
+;;| Git
+;;`----
 (require 'git)
 
-;; protobuf
-(load-file "/usr/share/emacs/site-lisp/protobuf-mode.el")
+;;,---------
+;;| protobuf
+;;`---------
+(require 'protobuf-mode)
 
-;; Load my split config files
+;;,---------------------------
+;;| Load my split config files
+;;`---------------------------
 (load-file "~/.emacs.d/quick.el")
 (load-file "~/.emacs.d/compilation.el")
 (load-file "~/.emacs.d/c.el")
@@ -40,14 +60,18 @@
 (load-file "~/.emacs.d/keys.el")
 (load-file "~/.emacs.d/snippet.el")
 
-;; Configure spell checking
+;;,-------------------------
+;;| Configure spell checking
+;;`-------------------------
 (setq ispell-dictionary "english"
       ispell-skip-sgml t)
 (autoload 'flyspell-mode "flyspell" "On-the-fly spelling checking" t)
 (setq flyspell-default-dictionary "english")
 (add-hook 'latex-mode-hook (lambda () (flyspell-mode 1)))
 
-;; file auto modes
+;;,----------------
+;;| file auto modes
+;;`----------------
 (add-to-list 'auto-mode-alist '("PKGBUILD$" . pkgbuild-mode))
 (add-to-list 'auto-mode-alist '("\\.d$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.di$" . d-mode))
@@ -62,7 +86,9 @@
 (add-to-list 'auto-mode-alist '("\\.nsi$" . nsi-mode))
 (add-to-list 'auto-mode-alist '("\\.proto$" . protobuf-mode))
 
-;; loading local stuff
+;;,--------------------
+;;| loading local stuff
+;;`--------------------
 (if (file-readable-p "~/.emacs.d/local.el")
     (load "~/.emacs.d/local.el"))
 
