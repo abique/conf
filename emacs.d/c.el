@@ -40,10 +40,6 @@
             (hs-minor-mode)
             (hs-show-all)))
 
-(setq c-mode-hook
-      '(lambda()
-	 (local-set-key (kbd "<return>") 'newline-and-indent)))
-
 (setq c-font-lock-extra-types
       (append
        '("t_\\sw+")
