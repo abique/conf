@@ -12,10 +12,8 @@ alias l='ls -l'
 alias lt='l -t'
 alias ll='la -l'
 alias llt='ll -t'
-function lcd()
-{
-    cd "$1" && ls
-}
+alias lhc='l *.[hc]'
+
 alias pcd='cd -P'
 alias m='make'
 alias c='cat'
