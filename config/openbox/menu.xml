@@ -1,305 +1,398 @@
-<?xml version="1.0" encoding="utf-8"?>
-<openbox_pipe_menu>
-	<menu id="xdg-Development" label="Programming">
-		<item label="Eclipse">
-			<action name="Execute">
-				<execute>
-					/usr/share/eclipse/eclipse
-				</execute>
-			</action>
-		</item>
-		<item label="Emacs">
-			<action name="Execute">
-				<execute>
-					emacs
-				</execute>
-			</action>
-		</item>
-		<item label="Qt 4 Assistant">
-			<action name="Execute">
-				<execute>
-					/usr/bin/assistant
-				</execute>
-			</action>
-		</item>
-		<item label="Qt 4 Linguist">
-			<action name="Execute">
-				<execute>
-					/usr/bin/linguist
-				</execute>
-			</action>
-		</item>
-		<item label="Qt 4 Designer">
-			<action name="Execute">
-				<execute>
-					/usr/bin/designer
-				</execute>
-			</action>
-		</item>
-		<item label="QGit">
-			<action name="Execute">
-				<execute>
-					/usr/bin/qgit
-				</execute>
-			</action>
-		</item>
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+	<menu id="root-menu" label="OpenBox 3">
+		<menu id="1" label="Development">
+			<item label="Database browser"> <action name="Execute">
+				<execute>gda-browser-5.0</execute>
+			</action> </item>
+			<item label="Devhelp"> <action name="Execute">
+				<execute>devhelp</execute>
+			</action> </item>
+			<item label="Fluid"> <action name="Execute">
+				<execute>fluid</execute>
+			</action> </item>
+			<item label="GDB"> <action name="Execute">
+				<execute>xterm -e gdb</execute>
+			</action> </item>
+			<item label="Giggle"> <action name="Execute">
+				<execute>giggle</execute>
+			</action> </item>
+			<item label="Glade"> <action name="Execute">
+				<execute>glade</execute>
+			</action> </item>
+			<item label="GNU Octave"> <action name="Execute">
+				<execute>xterm -e octave</execute>
+			</action> </item>
+			<item label="IDLE"> <action name="Execute">
+				<execute>idle</execute>
+			</action> </item>
+			<item label="KCachegrind"> <action name="Execute">
+				<execute>kcachegrind</execute>
+			</action> </item>
+			<item label="Meld"> <action name="Execute">
+				<execute>meld</execute>
+			</action> </item>
+			<item label="Python"> <action name="Execute">
+				<execute>xterm -e python</execute>
+			</action> </item>
+			<item label="Qt Assistant"> <action name="Execute">
+				<execute>assistant</execute>
+			</action> </item>
+			<item label="Qt Designer"> <action name="Execute">
+				<execute>designer</execute>
+			</action> </item>
+			<item label="Qt Linguist"> <action name="Execute">
+				<execute>linguist</execute>
+			</action> </item>
+			<item label="Qt-Creator"> <action name="Execute">
+				<execute>qtcreator</execute>
+			</action> </item>
+		</menu>
+		<menu id="2" label="Editors">
+			<item label="AA Fire"> <action name="Execute">
+				<execute>xterm -e aafire -driver slang</execute>
+			</action> </item>
+			<item label="Emacs"> <action name="Execute">
+				<execute>xterm -e emacs</execute>
+			</action> </item>
+			<item label="Nano"> <action name="Execute">
+				<execute>xterm -e nano</execute>
+			</action> </item>
+			<item label="Vi"> <action name="Execute">
+				<execute>xterm -e vi</execute>
+			</action> </item>
+			<item label="Vim"> <action name="Execute">
+				<execute>xterm -e vim</execute>
+			</action> </item>
+			<item label="zile"> <action name="Execute">
+				<execute>xterm -e zile</execute>
+			</action> </item>
+		</menu>
+		<menu id="18" label="Games">
+			<menu id="9" label="Adventure">
+				<item label="Sclient"> <action name="Execute">
+					<execute>sclient</execute>
+				</action> </item>
+			</menu>
+			<menu id="10" label="Arcade">
+				<item label="Astromenace"> <action name="Execute">
+					<execute>astromenace</execute>
+				</action> </item>
+				<item label="Liquid War"> <action name="Execute">
+					<execute>liquidwar</execute>
+				</action> </item>
+				<item label="PacMan"> <action name="Execute">
+					<execute>pacman</execute>
+				</action> </item>
+			</menu>
+			<menu id="11" label="Board">
+				<item label="Monopoly"> <action name="Execute">
+					<execute>xterm -e monop</execute>
+				</action> </item>
+			</menu>
+			<menu id="12" label="Card">
+				<item label="PokerTH"> <action name="Execute">
+					<execute>pokerth</execute>
+				</action> </item>
+			</menu>
+		</menu>
+		<menu id="6" label="Graphics">
+			<item label="GNU Image Manipulation Program"> <action name="Execute">
+				<execute>gimp-2.6</execute>
+			</action> </item>
+			<item label="GQview"> <action name="Execute">
+				<execute>gqview</execute>
+			</action> </item>
+			<item label="Qosmic"> <action name="Execute">
+				<execute>qosmic</execute>
+			</action> </item>
+			<item label="scanimage"> <action name="Execute">
+				<execute>xterm -e scanimage</execute>
+			</action> </item>
+			<item label="The GIMP"> <action name="Execute">
+				<execute>gimp</execute>
+			</action> </item>
+			<item label="XGlyph"> <action name="Execute">
+				<execute>xglyph</execute>
+			</action> </item>
+			<item label="XSane - Scanning"> <action name="Execute">
+				<execute>xsane</execute>
+			</action> </item>
+		</menu>
+		<menu id="7" label="Multimedia">
+			<item label="ALSA mixer"> <action name="Execute">
+				<execute>xterm -e alsamixer</execute>
+			</action> </item>
+			<item label="Clementine"> <action name="Execute">
+				<execute>clementine</execute>
+			</action> </item>
+			<item label="GNOME MPlayer"> <action name="Execute">
+				<execute>gnome-mplayer</execute>
+			</action> </item>
+			<item label="Gtv"> <action name="Execute">
+				<execute>gtv</execute>
+			</action> </item>
+			<item label="Qmmp"> <action name="Execute">
+				<execute>qmmp</execute>
+			</action> </item>
+			<item label="SMPlayer"> <action name="Execute">
+				<execute>smplayer</execute>
+			</action> </item>
+			<item label="Spotify"> <action name="Execute">
+				<execute>spotify</execute>
+			</action> </item>
+			<item label="VLC media player"> <action name="Execute">
+				<execute>vlc</execute>
+			</action> </item>
+		</menu>
+		<menu id="5" label="Network">
+			<item label="Avahi SSH Server Browser"> <action name="Execute">
+				<execute>bssh</execute>
+			</action> </item>
+			<item label="Avahi VNC Server Browser"> <action name="Execute">
+				<execute>bvnc</execute>
+			</action> </item>
+			<item label="Chromium"> <action name="Execute">
+				<execute>chromium</execute>
+			</action> </item>
+			<item label="Ekiga Softphone"> <action name="Execute">
+				<execute>ekiga</execute>
+			</action> </item>
+			<item label="FireFox"> <action name="Execute">
+				<execute>firefox</execute>
+			</action> </item>
+			<item label="FTP"> <action name="Execute">
+				<execute>xterm -e ftp</execute>
+			</action> </item>
+			<item label="LFTP"> <action name="Execute">
+				<execute>xterm -e lftp</execute>
+			</action> </item>
+			<item label="Mail"> <action name="Execute">
+				<execute>xterm -e mail</execute>
+			</action> </item>
+			<item label="Opera"> <action name="Execute">
+				<execute>opera</execute>
+			</action> </item>
+			<item label="Psi"> <action name="Execute">
+				<execute>psi</execute>
+			</action> </item>
+			<item label="Qtransmission Bittorrent Client"> <action name="Execute">
+				<execute>transmission-qt</execute>
+			</action> </item>
+			<item label="Skype"> <action name="Execute">
+				<execute>skype</execute>
+			</action> </item>
+			<item label="Talk"> <action name="Execute">
+				<execute>xterm -e talk</execute>
+			</action> </item>
+			<item label="TeamSpeak 3"> <action name="Execute">
+				<execute>teamspeak3</execute>
+			</action> </item>
+			<item label="Telnet"> <action name="Execute">
+				<execute>xterm -e telnet</execute>
+			</action> </item>
+			<item label="Thunderbird"> <action name="Execute">
+				<execute>thunderbird</execute>
+			</action> </item>
+			<item label="TkVNC"> <action name="Execute">
+				<execute>xterm -e tkvnc</execute>
+			</action> </item>
+			<item label="X-Chat"> <action name="Execute">
+				<execute>xchat</execute>
+			</action> </item>
+		</menu>
+		<menu id="3" label="Office">
+			<item label="LibreOffice Impress"> <action name="Execute">
+				<execute>libreoffice</execute>
+			</action> </item>
+			<item label="PostgreSQL Database"> <action name="Execute">
+				<execute>xterm -e psql template1</execute>
+			</action> </item>
+		</menu>
+		<menu id="39" label="Other">
+			<item label="Cairo-Dock (no OpenGL)"> <action name="Execute">
+				<execute>cairo-dock -c</execute>
+			</action> </item>
+			<item label="CMake"> <action name="Execute">
+				<execute>cmake-gui</execute>
+			</action> </item>
+			<item label="ElectricSheep"> <action name="Execute">
+				<execute>electricsheep-saver</execute>
+			</action> </item>
+			<item label="GLX-Dock (Cairo-Dock with OpenGL)"> <action name="Execute">
+				<execute>cairo-dock</execute>
+			</action> </item>
+			<item label="Help"> <action name="Execute">
+				<execute>khelpcenter</execute>
+			</action> </item>
+			<item label="QT V4L2 test Utility"> <action name="Execute">
+				<execute>qv4l2</execute>
+			</action> </item>
+			<item label="Xonotic (GLX)"> <action name="Execute">
+				<execute>xonotic-glx</execute>
+			</action> </item>
+			<item label="Xonotic (SDL)"> <action name="Execute">
+				<execute>xonotic-sdl</execute>
+			</action> </item>
+			<item label="Xpdf"> <action name="Execute">
+				<execute>xpdf</execute>
+			</action> </item>
+		</menu>
+		<menu id="4" label="Science">
+			<item label="bc"> <action name="Execute">
+				<execute>xterm -e bc</execute>
+			</action> </item>
+			<item label="dc"> <action name="Execute">
+				<execute>xterm -e dc</execute>
+			</action> </item>
+		</menu>
+		<menu id="19" label="Shells">
+			<item label="Dash"> <action name="Execute">
+				<execute>xterm -e dash -i</execute>
+			</action> </item>
+			<item label="GIT"> <action name="Execute">
+				<execute>xterm -e git</execute>
+			</action> </item>
+			<item label="MC"> <action name="Execute">
+				<execute>xterm -e mc</execute>
+			</action> </item>
+			<item label="qtFM"> <action name="Execute">
+				<execute>qtfm</execute>
+			</action> </item>
+			<item label="rxvt-unicode"> <action name="Execute">
+				<execute>urxvt</execute>
+			</action> </item>
+			<item label="Xterm"> <action name="Execute">
+				<execute>xterm</execute>
+			</action> </item>
+			<item label="XTerm (Unicode)"> <action name="Execute">
+				<execute>uxterm</execute>
+			</action> </item>
+		</menu>
+		<menu id="37" label="System">
+			<menu id="36" label="Settings">
+				<menu id="21" label="GNOME">
+					<item label="Adobe Flash Player"> <action name="Execute">
+						<execute>flash-player-properties</execute>
+					</action> </item>
+				</menu>
+				<menu id="35" label="Xfce">
+					<item label="Screensaver"> <action name="Execute">
+						<execute>xscreensaver-demo</execute>
+					</action> </item>
+				</menu>
+				<item label="Database access control center"> <action name="Execute">
+					<execute>gda-control-center-5.0</execute>
+				</action> </item>
+				<item label="Manage Printing"> <action name="Execute">
+					<execute>xdg-open http://localhost:631/</execute>
+				</action> </item>
+				<item label="NVIDIA X Server Settings"> <action name="Execute">
+					<execute>nvidia-settings</execute>
+				</action> </item>
+				<item label="Openbox Configuration Manager"> <action name="Execute">
+					<execute>obconf</execute>
+				</action> </item>
+				<item label="Opera Widget Manager"> <action name="Execute">
+					<execute>opera-widget-manager</execute>
+				</action> </item>
+				<item label="Panel tint2"> <action name="Execute">
+					<execute>tint2conf</execute>
+				</action> </item>
+				<item label="Xfontsel"> <action name="Execute">
+					<execute>xfontsel</execute>
+				</action> </item>
+			</menu>
+			<item label="Avahi Zeroconf Browser"> <action name="Execute">
+				<execute>avahi-discover</execute>
+			</action> </item>
+			<item label="Cairo Composite Manager"> <action name="Execute">
+				<execute>cairo-compmgr</execute>
+			</action> </item>
+			<item label="dconf Editor"> <action name="Execute">
+				<execute>dconf-editor</execute>
+			</action> </item>
+			<item label="GParted"> <action name="Execute">
+				<execute>gparted-pkexec</execute>
+			</action> </item>
+			<item label="Grsync"> <action name="Execute">
+				<execute>grsync</execute>
+			</action> </item>
+			<item label="Htop"> <action name="Execute">
+				<execute>xterm -e htop</execute>
+			</action> </item>
+			<item label="Nepomuk Backup"> <action name="Execute">
+				<execute>nepomukbackup</execute>
+			</action> </item>
+			<item label="Nepomuk File Indexing Controller"> <action name="Execute">
+				<execute>nepomukcontroller</execute>
+			</action> </item>
+			<item label="pstree"> <action name="Execute">
+				<execute>xterm -e pstree.x11</execute>
+			</action> </item>
+			<item label="pstree"> <action name="Execute">
+				<execute>xterm -e pstree</execute>
+			</action> </item>
+			<item label="pstree"> <action name="Execute">
+				<execute>xterm -e /usr/bin/pstree.x11</execute>
+			</action> </item>
+			<item label="qps"> <action name="Execute">
+				<execute>qps</execute>
+			</action> </item>
+			<item label="Top"> <action name="Execute">
+				<execute>xterm -e top</execute>
+			</action> </item>
+			<item label="Wireshark"> <action name="Execute">
+				<execute>wireshark</execute>
+			</action> </item>
+		</menu>
+		<menu id="38" label="Utilities">
+			<item label="7-Zip FM"> <action name="Execute">
+				<execute>7zFM</execute>
+			</action> </item>
+			<item label="Activate ScreenSaver (Next)"> <action name="Execute">
+				<execute>xscreensaver-command -next</execute>
+			</action> </item>
+			<item label="Activate ScreenSaver (Previous)"> <action name="Execute">
+				<execute>xscreensaver-command -prev</execute>
+			</action> </item>
+			<item label="Activate ScreenSaver (Random)"> <action name="Execute">
+				<execute>xscreensaver-command -activate</execute>
+			</action> </item>
+			<item label="Demo Screen Hacks"> <action name="Execute">
+				<execute>xscreensaver-command -demo</execute>
+			</action> </item>
+			<item label="Disable XScreenSaver"> <action name="Execute">
+				<execute>xscreensaver-command -exit</execute>
+			</action> </item>
+			<item label="Enable XScreenSaver"> <action name="Execute">
+				<execute>xscreensaver</execute>
+			</action> </item>
+			<item label="HP Device Manager"> <action name="Execute">
+				<execute>hp-toolbox</execute>
+			</action> </item>
+			<item label="Info"> <action name="Execute">
+				<execute>xterm -e info</execute>
+			</action> </item>
+			<item label="Reinitialize XScreenSaver"> <action name="Execute">
+				<execute>xscreensaver-command -restart</execute>
+			</action> </item>
+			<item label="ScreenSaver Preferences"> <action name="Execute">
+				<execute>xscreensaver-command -prefs</execute>
+			</action> </item>
+			<item label="Xkill"> <action name="Execute">
+				<execute>xkill</execute>
+			</action> </item>
+			<item label="Xsetroot"> <action name="Execute">
+				<execute>xsetroot</execute>
+			</action> </item>
+		</menu>
+		<separator/>
+		<menu id="40" label="OpenBox">
+			<menu id="client-list-menu"/>
+			<item label="Reconfigure"> <action name="Reconfigure"/> </item>
+			<separator/>
+			<item label="Exit"> <action name="Exit"/> </item>
+		</menu>
 	</menu>
-	<menu id="xdg-Games" label="Games">
-		<item label="Elitaire">
-			<action name="Execute">
-				<execute>
-					elitaire
-				</execute>
-			</action>
-		</item>
-		<item label="XQF Game Server Browser">
-			<action name="Execute">
-				<execute>
-					xqf
-				</execute>
-			</action>
-		</item>
-		<item label="Tremulous">
-			<action name="Execute">
-				<execute>
-					/usr/bin/tremulous
-				</execute>
-			</action>
-		</item>
-	</menu>
-	<menu id="xdg-Graphics" label="Graphics">
-		<item label="GQview">
-			<action name="Execute">
-				<execute>
-					gqview -r
-				</execute>
-			</action>
-		</item>
-		<item label="Exhibit">
-			<action name="Execute">
-				<execute>
-					exhibit
-				</execute>
-			</action>
-		</item>
-		<item label="XSane - Scanning">
-			<action name="Execute">
-				<execute>
-					xsane
-				</execute>
-			</action>
-		</item>
-	</menu>
-	<menu id="xdg-Internet" label="Internet">
-		<item label="Arora">
-			<action name="Execute">
-				<execute>
-					arora
-				</execute>
-			</action>
-		</item>
-		<item label="XChat IRC">
-			<action name="Execute">
-				<execute>
-					xchat
-				</execute>
-			</action>
-		</item>
-		<item label="Firefox - Safe Mode">
-			<action name="Execute">
-				<execute>
-					firefox -safe-mode
-				</execute>
-			</action>
-		</item>
-		<item label="Firefox">
-			<action name="Execute">
-				<execute>
-					firefox
-				</execute>
-			</action>
-		</item>
-		<item label="Thunderbird">
-			<action name="Execute">
-				<execute>
-					thunderbird
-				</execute>
-			</action>
-		</item>
-		<item label="Opera">
-			<action name="Execute">
-				<execute>
-					opera
-				</execute>
-			</action>
-		</item>
-		<item label="Psi">
-			<action name="Execute">
-				<execute>
-					psi
-				</execute>
-			</action>
-		</item>
-		<item label="Quassel IRC">
-			<action name="Execute">
-				<execute>
-					quassel
-				</execute>
-			</action>
-		</item>
-		<item label="Quassel IRC (Client only)">
-			<action name="Execute">
-				<execute>
-					quasselclient
-				</execute>
-			</action>
-		</item>
-		<item label="Midori">
-			<action name="Execute">
-				<execute>
-					midori
-				</execute>
-			</action>
-		</item>
-		<item label="">
-			<action name="Execute">
-				<execute>
-					/usr/bin/bssh
-				</execute>
-			</action>
-		</item>
-		<item label="">
-			<action name="Execute">
-				<execute>
-					/usr/bin/bvnc
-				</execute>
-			</action>
-		</item>
-	</menu>
-	<menu id="xdg-Multimedia" label="Sound &amp; Video">
-		<item label="Audacious">
-			<action name="Execute">
-				<execute>
-					audacious
-				</execute>
-			</action>
-		</item>
-		<item label="VLC media player">
-			<action name="Execute">
-				<execute>
-					vlc
-				</execute>
-			</action>
-		</item>
-		<item label="Alsaplayer">
-			<action name="Execute">
-				<execute>
-					alsaplayer
-				</execute>
-			</action>
-		</item>
-		<item label="MPlayer">
-			<action name="Execute">
-				<execute>
-					gmplayer
-				</execute>
-			</action>
-		</item>
-		<item label="xine">
-			<action name="Execute">
-				<execute>
-					xine
-				</execute>
-			</action>
-		</item>
-		<item label="XMMS">
-			<action name="Execute">
-				<execute>
-					xmms
-				</execute>
-			</action>
-		</item>
-		<item label="Enqueue in SMPlayer">
-			<action name="Execute">
-				<execute>
-					smplayer -add-to-playlist
-				</execute>
-			</action>
-		</item>
-		<item label="SMPlayer">
-			<action name="Execute">
-				<execute>
-					smplayer
-				</execute>
-			</action>
-		</item>
-	</menu>
-	<menu id="xdg-Office" label="Office">
-		<item label="xpdf">
-			<action name="Execute">
-				<execute>
-					xpdf
-				</execute>
-			</action>
-		</item>
-	</menu>
-	<menu id="xdg-System" label="System Tools">
-		<item label="Shaman">
-			<action name="Execute">
-				<execute>
-					shaman
-				</execute>
-			</action>
-		</item>
-		<item label="rxvt-unicode">
-			<action name="Execute">
-				<execute>
-					urxvt
-				</execute>
-			</action>
-		</item>
-		<item label="Htop">
-			<action name="Execute">
-				<execute>
-					htop
-				</execute>
-			</action>
-		</item>
-		<item label="Synkron">
-			<action name="Execute">
-				<execute>
-					synkron
-				</execute>
-			</action>
-		</item>
-		<item label="Arxin">
-			<action name="Execute">
-				<execute>
-					arxin
-				</execute>
-			</action>
-		</item>
-		<item label="Arxin">
-			<action name="Execute">
-				<execute>
-					kdesu arxin
-				</execute>
-			</action>
-		</item>
-		<item label="Avahi Zeroconf Browser">
-			<action name="Execute">
-				<execute>
-					/usr/bin/avahi-discover
-				</execute>
-			</action>
-		</item>
-		<item label="Bluetooth Analyser">
-			<action name="Execute">
-				<execute>
-					bluetooth-analyzer
-				</execute>
-			</action>
-		</item>
-	</menu>
-</openbox_pipe_menu>
-
+</openbox_menu>

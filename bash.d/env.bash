@@ -5,7 +5,7 @@ export INPUTRC="~/.inputrc"
 export EDITOR="emacs -Q -nw"
 
 if ! echo "${PATH}" | grep "^${HOME}/local/bin" 1>/dev/null 2>&1 ; then
-    export PATH="${HOME}/local/bin:${HOME}/develop/gitw:${PATH}"
+    export PATH="${HOME}/local/bin:${PATH}:${HOME}/.npm/bin:${HOME}/.gem/ruby/1.9.1/bin"
 fi
 if ! echo "${PATH}" | grep ":/sbin:/usr/sbin\$" 1>/dev/null 2>&1 ; then
     export PATH="${PATH}:/sbin:/usr/sbin"

@@ -25,13 +25,13 @@
 	 mouse into it, also raise the window -->
   </focus>
   <placement>
-    <policy>Smart</policy>
+    <policy>UnderMouse</policy>
     <!-- 'Smart' or 'UnderMouse' -->
     <center>yes</center>
     <!-- whether to place windows in the center of the free area found or
 	 the top left corner -->
     <monitor>Any</monitor>
-    <primaryMonitor></primaryMonitor>
+    <primaryMonitor/>
   </placement>
   <theme>
     <name>Mikachu</name>
@@ -47,7 +47,7 @@
        D: omnipresent (on all desktops).
       -->
     <keepBorder>yes</keepBorder>
-    <animateIconify>no</animateIconify>
+    <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>sans</name>
       <size>8</size>
@@ -90,8 +90,8 @@
     <font place="InactiveOnScreenDisplay">
       <name>Sans</name>
       <size>8</size>
-      <weight></weight>
-      <slant></slant>
+      <weight/>
+      <slant/>
     </font>
   </theme>
   <desktops>
@@ -768,30 +768,24 @@
       <maximized>yes</maximized>
       <decor>no</decor>
     </application>
-
     <application class="Thunderbird" name="Mail" role="3pane">
       <desktop>8</desktop>
       <maximized>yes</maximized>
       <decor>no</decor>
     </application>
-
     <application class="psi">
       <desktop>7</desktop>
       <decor>no</decor>
     </application>
-
     <application class="Xchat">
       <desktop>7</desktop>
       <decor>no</decor>
     </application>
-
     <application class="Emacs">
       <decor>no</decor>
     </application>
-
     <application class="Spotify">
       <decor>no</decor>
     </application>
-
   </applications>
 </openbox_config>

@@ -135,7 +135,7 @@ Emacs.synchronous: off
 Emacs.reverseVideo: off
 Emacs.toolBar: off
 Emacs.verticalScrollBars: off
-Emacs.background: #16161b
+Emacs.background: #060812
 Emacs.foreground: #bbb
 Emacs.BorderWidth: 0
 Emacs.BorderColor: DeepSkyBlue2

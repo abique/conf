@@ -1,5 +1,6 @@
 (load-file "~/.emacs.d/styles/mimosa.el")
 (load-file "~/.emacs.d/styles/bluegitf.el")
+(load-file "~/.emacs.d/styles/hefur.el")
 (load-file "~/.emacs.d/styles/freebox.el")
 (load-file "~/.emacs.d/styles/epita.el")
 (setq c-default-style "epita")
@@ -12,6 +13,9 @@
 
             (when (string-match "/bluegitf/" buffer-file-name)
               (bluegitf-style))
+
+            (when (string-match "/hefur/" buffer-file-name)
+              (hefur-style))
 
             (when (string-match "fbx" buffer-file-name)
               (freebox-style))
