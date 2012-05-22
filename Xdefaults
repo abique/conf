@@ -39,9 +39,9 @@ UXTerm*color12:     #6699ff
 UXTerm*color13:     #ff66ff
 UXTerm*color14:     #33ffff
 UXTerm*color15:     #ffffff
-!UXTerm*faceName:    monospace
+UXTerm*faceName:    dina
 !UXTerm*faceSize:    8
-UXTerm*font:        7x14
+!UXTerm*font:        xft:dina
 UXTerm*metaSendsEscape: yes
 
 ! White urxvt theme
