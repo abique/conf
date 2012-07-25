@@ -33,7 +33,7 @@
 ;(global-set-key "\C-" 'windmove-left)
 (global-set-key [?\C-9] 'windmove-left)
 (global-set-key [?\C-0] 'windmove-right) ; move to right window
-(global-set-key [M-9] 'windmove-left)
-(global-set-key [M-0] 'windmove-right) ; move to right window
 (global-set-key [?\C-=] 'windmove-up)    ; move to upper window
 (global-set-key [?\C--] 'windmove-down)
+(global-set-key [M-9] 'windmove-left)
+(global-set-key [M-0] 'windmove-right) ; move to right window
