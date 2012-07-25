@@ -131,3 +131,31 @@ function xxx()
         -name '*.cpp' -o -name '*.hh' -o -name '*.hxx' | \
         xargs grep -inC5 '\(XXX\|todo\)'
 }
+
+function paste-binouse-send()
+(
+    host="$1"
+    src="$2"
+    temp=0
+
+    if [[ -z "$src" || "$src" = "-" ]] ; then
+        src=$(mktemp)
+        cat >"$src"
+        temp=1
+    fi
+
+    if [[ ! -r "$src" ]] ; then
+        return
+    fi
+
+    mime_type=$(file --mime-type "$src" | cut -f 2 -d ' ')
+    hdr=$(mktemp)
+    curl -D "$hdr" --data-urlencode "content-type=${mime_type}" \
+        --data-urlencode "content@${src}" "$host"
+
+    echo "$host"$(sed -n 's/location: \(.*\)/\1/p' "$hdr")
+    rm -rf "$hdr"
+    if [[ $temp -eq 1 ]] ; then
+        rm -f "$src"
+    fi
+)
