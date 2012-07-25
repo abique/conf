@@ -1,4 +1,4 @@
-export HISTFILESIZE=100420
+export HISTFILESIZE=$((1024 * 1024))
 export HISTSIZE=10000
 export HISTIGNORE='ls:ll:la:l:[bf]g:'
 export INPUTRC="~/.inputrc"
