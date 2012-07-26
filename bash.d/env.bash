@@ -59,7 +59,8 @@ export MYSQL_PS1="\u@\h [\d]> "
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-export GOROOT="${HOME}/develop/go"
-export GOBIN="${HOME}/develop/go/bin"
-export PATH="${PATH}:${GOBIN}"
+#export GOROOT="${HOME}/develop/go"
+#export GOBIN="${HOME}/develop/go/bin"
+#export PATH="${PATH}:${GOBIN}"
+export GOPATH="${HOME}/local/go"
 export GNUSTEP_USER_ROOT="$HOME/.gnustep"
