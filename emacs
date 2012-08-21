@@ -93,23 +93,26 @@
     (load "~/.emacs.d/local.el"))
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(graphviz-dot-auto-indent-on-braces t)
  '(graphviz-dot-toggle-completions t)
  '(graphviz-dot-view-edit-command nil)
  '(org-fontify-done-headline t)
  '(org-log-done (quote time) nil nil "time")
- '(org-modules (quote (org-bbdb org-bibtex org-gnus org-info org-jsinfo
-                                org-irc org-mew org-mhe org-rmail org-vm org-wl
-                                org-w3m org-mouse org-choose)))
+ '(org-modules (quote (org-bbdb org-bibtex org-gnus org-info org-jsinfo org-irc org-mew org-mhe org-rmail org-vm org-wl org-w3m org-mouse org-choose)))
  '(org-time-stamp-custom-formats (quote ("<%Y-%m-%d>" . "<%Y-%m-%d %H:%M:%S %z>")))
  '(org-time-stamp-rounding-minutes (quote (0 0))))
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(diff-added ((t (:inherit diff-changed :foreground "#99e86e"))))
+ '(diff-file-header ((t (:weight bold))))
+ '(diff-function ((t (:foreground "bisque3" :box (:line-width 1 :color "grey75" :style pressed-button)))))
+ '(diff-header ((t (:foreground "tomato"))))
+ '(diff-hunk-header ((t (:inherit diff-header :foreground "#e5aa17"))))
+ '(diff-removed ((t (:inherit diff-changed :foreground "#e87a6e")))))
