@@ -763,6 +763,11 @@
 
 	 # end of the example
 	 -->
+    <application class="Chromium" role="browser">
+      <desktop>4</desktop>
+      <maximized>yes</maximized>
+      <decor>no</decor>
+    </application>
     <application class="Firefox" role="browser">
       <desktop>4</desktop>
       <maximized>yes</maximized>
