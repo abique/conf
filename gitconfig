@@ -47,3 +47,5 @@
 
 [web]
     browser = firefox
+[push]
+	default = simple
