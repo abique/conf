@@ -9,7 +9,8 @@
 
 [core]
     pager = less -FRSX
-    editor = emacs -nw
+    #editor = /usr/bin/emacs -nw --quick
+    editor = vim
     compression = 9
     loosecompression = 9
     whitespace = blank-at-eol,space-before-tab,blank-at-eof,tabwidth=8
