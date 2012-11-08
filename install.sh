@@ -36,6 +36,7 @@ for file in		\
     emacs.d		\
     fluxbox             \
     gitconfig		\
+    gitk		\
     gtkrc-2.0		\
     hgrc		\
     htoprc		\
