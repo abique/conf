@@ -36,7 +36,7 @@ alias ......='cd ../../../../..'
 alias .......='cd ../../../../../..'
 alias ........='cd ../../../../../../..'
 alias grep="grep --color --exclude='*.svn*' --exclude='*.o' --exclude=TAGS"
-alias valgrind_mleak='valgrind --leak-check=full --leak-resolution=high --show-reachable=yes'
+alias valgrind_mleak='valgrind --leak-check=full --leak-resolution=high --show-reachable=yes --track-fds=yes'
 alias pwgen='pwgen --symbols --secure --num-passwords=5 --capitalize -C --ambiguous 16'
 
 alias p='sudo pacman'
