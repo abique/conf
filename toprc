@@ -1,5 +1,5 @@
 RCfile for "top with windows"		# shameless braggin'
-Id:a, Mode_altscr=0, Mode_irixps=1, Delay_time=3.000, Curwin=0
+Id:a, Mode_altscr=0, Mode_irixps=1, Delay_time=1.000, Curwin=0
 Def	fieldscur=AEHIOQTWKNMbcdfgjplrsuvyzX
 	winflags=32056, sortindx=10, maxtasks=0
 	summclr=2, msgsclr=6, headclr=3, taskclr=1
