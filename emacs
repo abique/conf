@@ -49,6 +49,7 @@
 ;;| protobuf
 ;;`---------
 (require 'protobuf-mode)
+(require 'ninja-mode)
 
 ;;,---------------------------
 ;;| Load my split config files

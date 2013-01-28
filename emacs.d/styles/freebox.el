@@ -1,4 +1,4 @@
-(defun freebox-generate-header ()
+(defun freebox-generate-c-header ()
   (interactive)
 
   (save-excursion
@@ -19,6 +19,18 @@
     )
   )
 
+(defun freebox-generate-python-header ()
+  (interactive)
+
+  (save-excursion
+    (when (buffer-file-name)
+      (goto-char (point-min))
+      (insert "#! /usr/bin/env python3\n")
+      (insert "# -*- coding: utf-8 -*-\n")
+      )
+    )
+  )
+
 (defun freebox-style ()
   (interactive)
 
@@ -28,11 +40,17 @@
     (setq sh-basic-offset 8)
     )
 
+  (when (memq major-mode '(python-mode))
+    (setq indent-tabs-mode nil)
+    (when (equal (point-min) (point-max))
+      (freebox-generate-python-header))
+    )
+
   (when (memq major-mode '(c-mode c++-mode))
     (c-set-style "linux")
 
     (when (and (string-match ".*\\.hh?" buffer-file-name)
                (equal (point-min) (point-max)))
-      (freebox-generate-header))
+      (freebox-generate-c-header))
     )
   )
