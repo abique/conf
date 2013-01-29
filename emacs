@@ -51,6 +51,8 @@
 (require 'protobuf-mode)
 (require 'ninja-mode)
 
+(require 'go-mode)
+
 ;;,---------------------------
 ;;| Load my split config files
 ;;`---------------------------
