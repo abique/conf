@@ -117,6 +117,7 @@
  '(diff-header ((t (:foreground "tomato"))))
  '(diff-hunk-header ((t (:inherit diff-header :foreground "#e5aa17"))))
  '(diff-removed ((t (:inherit diff-changed :foreground "#e87a6e"))))
+ '(lazy-highlight ((t (:background "paleturquoise4" :foreground "RoyalBlue4"))))
  '(rst-level-1-face ((t (:foreground "light coral"))) t)
  '(rst-level-2-face ((t (:foreground "chartreuse"))) t)
  '(rst-level-3-face ((t (:foreground "sandy brown"))) t))
