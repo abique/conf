@@ -764,7 +764,7 @@
 	 # end of the example
 	 -->
     <application class="Chromium" role="browser">
-      <desktop>3</desktop>
+      <desktop>4</desktop>
       <maximized>yes</maximized>
       <decor>no</decor>
     </application>
