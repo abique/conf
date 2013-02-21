@@ -122,4 +122,5 @@
  '(lazy-highlight ((t (:background "paleturquoise4" :foreground "RoyalBlue4"))))
  '(rst-level-1-face ((t (:foreground "light coral"))) t)
  '(rst-level-2-face ((t (:foreground "chartreuse"))) t)
- '(rst-level-3-face ((t (:foreground "sandy brown"))) t))
+ '(rst-level-3-face ((t (:foreground "sandy brown"))) t)
+ '(rst-level-4-face ((t nil)) t))
