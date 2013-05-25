@@ -1,186 +1,115 @@
-XTerm*background:  #000000
-XTerm*foreground:  #7f7f7f
-XTerm*color0:      #000000
-XTerm*color1:      #9e1828
-XTerm*color2:      #aece92
-XTerm*color3:      #968a38
-XTerm*color4:      #414171
-XTerm*color5:      #963c59
-XTerm*color6:      #2C6164
-XTerm*color7:      #bebebe
-XTerm*color8:      #666666
-XTerm*color9:      #cf6171
-XTerm*color10:     #c5f779
-XTerm*color11:     #fff796
-XTerm*color12:     #4186be
-XTerm*color13:     #cf9ebe
-XTerm*color14:     #71bebe
-XTerm*color15:     #ffffff
-!XTerm*faceName:    Monospace
-!XTerm*faceSize:    8
-XTerm*font:        7x14
-XTerm*metaSendsEscape: yes
-
-UXTerm*background:  #000000
-UXTerm*foreground:  #b0b0b0
-UXTerm*color0:      #000000
-UXTerm*color1:      #cc6666
-UXTerm*color2:      #33cc66
-UXTerm*color3:      #cc9933
-UXTerm*color4:      #3366cc
-UXTerm*color5:      #cc33cc
-UXTerm*color6:      #33cccc
-UXTerm*color7:      #cccccc
-UXTerm*color8:      #666666
-UXTerm*color9:      #ff6666
-UXTerm*color10:     #66ff66
-UXTerm*color11:     #ffff66
-UXTerm*color12:     #6699ff
-UXTerm*color13:     #ff66ff
-UXTerm*color14:     #33ffff
-UXTerm*color15:     #ffffff
-UXTerm*faceName:    dina
-!UXTerm*faceSize:    8
-!UXTerm*font:        xft:dina
-UXTerm*metaSendsEscape: yes
-
-! White urxvt theme
-! URxvt*background:  #ffffdd
-! URxvt*foreground:  #b0b0b0
-! URxvt*color0:      #000000
-! URxvt*color1:      #cc6666
-! URxvt*color2:      #33cc66
-! URxvt*color3:      #cc9933
-! URxvt*color4:      #3366cc
-! URxvt*color5:      #cc33cc
-! URxvt*color6:      #33cccc
-! URxvt*color7:      #cccccc
-! URxvt*color8:      #666666
-! URxvt*color9:      #ff6666
-! URxvt*color10:     #66ff66
-! URxvt*color11:     #9B8C03
-! URxvt*color12:     #6699ff
-! URxvt*color13:     #ff66ff
-! URxvt*color14:     #4EADB2
-! URxvt*color15:     #ffffff
-
-
-! Black urxvt theme
-URxvt.preeditType:      Root
-
-URxvt*depth:       24
-URxvt*background:  #000000
-URxvt*foreground:  #b0b0b0
-URxvt*color0:      #000000
-URxvt*color1:      #cc6666
-URxvt*color2:      #33cc66
-URxvt*color3:      #cc9933
-URxvt*color4:      #3366cc
-URxvt*color5:      #cc33cc
-URxvt*color6:      #33cccc
-URxvt*color7:      #cccccc
-URxvt*color8:      #666666
-URxvt*color9:      #ff6666
-URxvt*color10:     #66ff66
-URxvt*color11:     #ffff66
-URxvt*color12:     #6699ff
-URxvt*color13:     #ff66ff
-URxvt*color14:     #33ffff
-URxvt*color15:     #ffffff
-
-URxvt*transparent: true
-URxvt*shading:     15
-
-!URxvt*font:	   7x14
-URxvt*font:	   xft:dina
-URxvt*boldFont:	   xft:dina
-URxvt*scrollBar: false
-URxvt*saveLines: 10000
-
-!URxvt*meta8: true
-URxvt*insecure: false
-!URxvt*inputMethod: ??
-!URxvt*modifier: hyper
-! emacs: view-lossage
-URxvt*keysym.C-9: 7;5;57~
-!URxvt*keysym.C-0: \033[B\033
-
-! tabbed
-URxvt.perl-ext-common: default,tabbed
-URxvt*tabbed.tabbar-fg: 3
-URxvt*tabbed.tabbar-bg: 0
-URxvt*tabbed.tab-fg:    2
-URxvt*tabbed.tab-bg:    0
-
-! url clickable
-!URxvt.urlLauncher:      firefox
-!URxvt.matcher.button:   2
-!URxvt*matcher.pattern.1: \\b(mailto|http|https|ftp|file):[/]*[\\w-]\\.[\\w./?&@#-]*[\\w/-]
-!URxvt*matcher.pattern.2: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
-
-URxvt*metaSendsEscape: yes
-
-Aterm*scrollBar: false
-Aterm*transparent: true
-Aterm*tintingType: true
-Aterm*tinting: #ffffff
-Aterm*shading: 20
-
-!Emacs.font: 7x14
-!Emacs.font: Monospace-11
-Emacs.font: Dina
-Emacs.menuBar: off
-Emacs.minibuffer: on
-Emacs.synchronous: off
-Emacs.reverseVideo: off
-Emacs.toolBar: off
-Emacs.verticalScrollBars: off
-Emacs.background: #060812
-Emacs.foreground: #bbb
-Emacs.BorderWidth: 0
-Emacs.BorderColor: DeepSkyBlue2
-Emacs.internalBorder: 0
-!default colors
-Emacs.mode-line.attributeBackground: Black
-Emacs.mode-line.attributeForeground: DeepSkyBlue1
-Emacs.pointerColor: red
-Emacs.cursorColor: green
-!font locking
-Emacs.font-lock-string-face.attributeForeground: DeepSkyBlue3
-Emacs.font-lock-string-face.attributeUnderline: false
-Emacs.font-lock-preprocessor-face.attributeUnderline: true
-
-fbpager.alpha: 255
-fbpager.x: 0
-fbpager.y: 0
-fbpager.workspace.width: 32
-fbpager.workspace.height: 32
-fbpager.workspacesPerRow: 4
-fbpager.followDrag: false
-fbpager.followMove: false
-fbpager.changeWorkspaceButton: 1
-fbpager.raiseWindowButton: 2
-fbpager.lowerWindowButton: 3
-fbpager.closeWindowButton: 3 3 1
-fbpager.exitButton: 1 3 3
-fbpager.nextWorkspaceButton: 4
-fbpager.prevWorkspaceButton: 5
-fbpager.moveInWorkspaceButton: 1
-fbpager.dragToWorkspaceButton: 2
-fbpager.align: LeftToRight
-fbpager.color: white
-fbpager.windowColor: grey12
-fbpager.focusedWindowColor: green
-fbpager.windowBorderColor: yellow
-fbpager.backgroundColor: black
-fbpager.currentBackgroundColor: darkgray
-fbpager.multiClickTime: 250
-fbpager.icons: true
-fbpager.windowBorderWidth: 1
-
-.xmessage.form.okay.shapeStyle: rectangle
-.xmessage.form.okay.background: #777777
-.xmessage.form.okay.foreground: snow
-!xmessage*message*background: snow
-xmessage*defaultButton: okay
-Xmessage.form.message.Scroll:  WhenNeeded
+Aterm*scrollBar:	false
+Aterm*tintingType:	true
+Aterm*shading:	20
+Aterm*transparent:	true
+Aterm*tinting:	#ffffff
+xmessage.form.okay.shapeStyle:	rectangle
+xmessage.form.okay.background:	#777777
+xmessage.form.okay.foreground:	snow
+xmessage*defaultButton:	okay
+xrenoise.use_xcursors:	1
+xrenoise.display:	:0.0
+xrenoise.display_resource:	0x00,0xA6,0xB2,0xCD,0xB3,0xDE,0x17,0x85
+xrenoise.executable_path:	/usr/bin/renoise
+URxvt*keysym.C-9:	7;5;57~
+URxvt*tabbed.tabbar-fg:	3
+URxvt*tabbed.tabbar-bg:	0
+URxvt*tabbed.tab-fg:	2
+URxvt*tabbed.tab-bg:	0
+URxvt*color1:	#cc6666
+URxvt*color12:	#6699ff
+URxvt*color10:	#66ff66
+URxvt*insecure:	false
+URxvt.preeditType:	Root
+URxvt*background:	#000000
+URxvt*color13:	#ff66ff
+URxvt*color0:	#000000
+URxvt*saveLines:	10000
+URxvt*color3:	#cc9933
+URxvt*color7:	#cccccc
+URxvt.perl-ext-common:	default,tabbed
+URxvt*transparent:	true
+URxvt*depth:	24
+URxvt*color15:	#ffffff
+URxvt*font:	xft:dina
+URxvt*color11:	#ffff66
+URxvt*color6:	#33cccc
+URxvt*shading:	15
+URxvt*metaSendsEscape:	yes
+URxvt*color9:	#ff6666
+URxvt*foreground:	#b0b0b0
+URxvt*color2:	#33cc66
+URxvt*scrollBar:	false
+URxvt*boldFont:	xft:dina
+URxvt*color5:	#cc33cc
+URxvt*color8:	#666666
+URxvt*color4:	#3366cc
+URxvt*color14:	#33ffff
+XTerm*color10:	#c5f779
+XTerm*color12:	#4186be
+XTerm*color1:	#9e1828
+XTerm*background:	#000000
+XTerm*color3:	#968a38
+XTerm*color13:	#cf9ebe
+XTerm*color0:	#000000
+XTerm*color7:	#bebebe
+XTerm*color11:	#fff796
+XTerm*font:	7x14
+XTerm*color15:	#ffffff
+XTerm*color6:	#2C6164
+XTerm*color9:	#cf6171
+XTerm*metaSendsEscape:	yes
+XTerm*foreground:	#7f7f7f
+XTerm*color2:	#aece92
+XTerm*color5:	#963c59
+XTerm*color14:	#71bebe
+XTerm*color8:	#666666
+XTerm*color4:	#414171
+Xmessage.form.message.Scroll:	WhenNeeded
+fbpager.workspace.width:	32
+fbpager.workspace.height:	32
+fbpager.closeWindowButton:	3 3 1
+fbpager.followMove:	false
+fbpager.changeWorkspaceButton:	1
+fbpager.focusedWindowColor:	green
+fbpager.dragToWorkspaceButton:	2
+fbpager.backgroundColor:	black
+fbpager.moveInWorkspaceButton:	1
+fbpager.prevWorkspaceButton:	5
+fbpager.windowColor:	grey12
+fbpager.currentBackgroundColor:	darkgray
+fbpager.multiClickTime:	250
+fbpager.color:	white
+fbpager.nextWorkspaceButton:	4
+fbpager.workspacesPerRow:	4
+fbpager.y:	0
+fbpager.exitButton:	1 3 3
+fbpager.lowerWindowButton:	3
+fbpager.followDrag:	false
+fbpager.x:	0
+fbpager.raiseWindowButton:	2
+fbpager.align:	LeftToRight
+fbpager.windowBorderColor:	yellow
+fbpager.icons:	true
+fbpager.alpha:	255
+fbpager.windowBorderWidth:	1
+UXTerm*color10:	#66ff66
+UXTerm*color12:	#6699ff
+UXTerm*faceName:	dina
+UXTerm*color1:	#cc6666
+UXTerm*background:	#000000
+UXTerm*color3:	#cc9933
+UXTerm*color13:	#ff66ff
+UXTerm*color0:	#000000
+UXTerm*color7:	#cccccc
+UXTerm*color11:	#ffff66
+UXTerm*color15:	#ffffff
+UXTerm*color6:	#33cccc
+UXTerm*color9:	#ff6666
+UXTerm*metaSendsEscape:	yes
+UXTerm*foreground:	#b0b0b0
+UXTerm*color2:	#33cc66
+UXTerm*color5:	#cc33cc
+UXTerm*color14:	#33ffff
+UXTerm*color8:	#666666
+UXTerm*color4:	#3366cc

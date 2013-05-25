@@ -1,12 +1,3 @@
-;; code folding
-;; (add-hook 'c-mode-common-hook
-;;             (lambda () 
-;;               ((hs-minor-mode)
-;;                (local-set-key "\C-cs" 'hs-show-block)
-;;                (local-set-key "\C-ch" 'hs-hide-block)
-;;                (local-set-key "\C-cS" 'hs-show-all)
-;;                (local-set-key "\C-cH" 'hs-hide-all))))
-
 ;; key bindings
 (global-set-key [f2] 'indent-buffer)
 (global-set-key [f3] 'delete-trailing-whitespace)

@@ -11,57 +11,22 @@
       (doxymacs-font-lock)))
 (add-hook 'font-lock-mode-hook 'my-doxymacs-font-lock-hook)
 
-;;,------
-;;| cmake
-;;`------
 (require 'cmake-mode)
-
-;;,----
-;;| Lua
-;;`----
 (require 'lua-mode)
-
-;;,-----------------
-;;| Cedet (load-file
-;;`-----------------
-;; "/usr/share/emacs/site-lisp/cedet/common/cedet.elc")
-;; (global-ede-mode 1) ; Enable the Project management system
-;; (semantic-load-enable-code-helpers) ; Enable prototype help and
-;; smart completion (global-srecode-minor-mode 1) ; Enable template
-;; insertion menu (ede-enable-generic-projects)
-
-;;,-------------------
-;;| Archlinux PKGBUILD
-;;`-------------------
 (require 'pkgbuild-mode)
-
-;;,-------
-;;| rebox2
-;;`-------
-(require 'rebox2)
-
-;;,----
-;;| Git
-;;`----
 (require 'git)
-
-;;,---------
-;;| protobuf
-;;`---------
 (require 'protobuf-mode)
 (require 'ninja-mode)
-
 (require 'go-mode)
+(require 'compile)
 
 ;;,---------------------------
 ;;| Load my split config files
 ;;`---------------------------
 (load-file "~/.emacs.d/quick.el")
-(load-file "~/.emacs.d/compilation.el")
 (load-file "~/.emacs.d/c.el")
 (load-file "~/.emacs.d/helpers.el")
 (load-file "~/.emacs.d/keys.el")
-(load-file "~/.emacs.d/snippet.el")
 
 ;;,-------------------------
 ;;| Configure spell checking
@@ -100,25 +65,44 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(compilation-window-height 10)
+ '(compilation-scroll-output t)
+ '(font-lock-maximum-decoration t)
+ '(font-lock-maximum-size 512000)
+ '(frame-title-format "<[ %b ]>")
+ '(default-major-mode 'text-mode)
+ '(global-font-lock-mode t)
  '(graphviz-dot-auto-indent-on-braces t)
  '(graphviz-dot-toggle-completions t)
  '(graphviz-dot-view-edit-command nil)
+ '(inhibit-startup-buffer-menu t)
+ '(inhibit-startup-message t)
+ '(inhibit-startup-screen t)
+ '(menu-bar-mode nil)
  '(org-fontify-done-headline t)
  '(org-log-done (quote time) nil nil "time")
  '(org-modules (quote (org-bbdb org-bibtex org-gnus org-info org-jsinfo org-irc org-mew org-mhe org-rmail org-vm org-wl org-w3m org-mouse org-choose)))
  '(org-time-stamp-custom-formats (quote ("<%Y-%m-%d>" . "<%Y-%m-%d %H:%M:%S %z>")))
- '(org-time-stamp-rounding-minutes (quote (0 0))))
+ '(org-time-stamp-rounding-minutes (quote (0 0)))
+ '(scroll-bar-mode nil)
+ '(scroll-step 1)
+ '(show-paren-mode t)
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(cursor ((t (:background "dark orange"))))
  '(diff-added ((t (:inherit diff-changed :foreground "#99e86e"))))
  '(diff-file-header ((t (:weight bold))))
  '(diff-function ((t (:foreground "bisque3" :box (:line-width 1 :color "grey75" :style pressed-button)))))
  '(diff-header ((t (:foreground "tomato"))))
  '(diff-hunk-header ((t (:inherit diff-header :foreground "#e5aa17"))))
  '(diff-removed ((t (:inherit diff-changed :foreground "#e87a6e"))))
+ '(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face :slant italic))))
+ '(font-lock-comment-face ((t (:foreground "Firebrick" :slant italic))))
+ '(font-lock-string-face ((t (:foreground "midnight blue"))))
  '(lazy-highlight ((t (:background "paleturquoise4" :foreground "RoyalBlue4"))))
  '(rst-level-1-face ((t (:foreground "light coral"))) t)
  '(rst-level-2-face ((t (:foreground "chartreuse"))) t)

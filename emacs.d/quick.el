@@ -15,13 +15,6 @@
 ;; Emacs customization script
 ;;============================
 
-(setq inhibit-startup-message t)      ; don't show the GNU splash screen
-(menu-bar-mode -1)                    ; no menu bar
-(setq frame-title-format "<[ %b ]>")  ; titlebar shows buffer's name
-(global-font-lock-mode t)             ; syntax highlighting
-(setq font-lock-maximum-decoration t) ; maximum decoration for all modes
-(show-paren-mode t)                   ; show opposing paren while hovering
-(setq scroll-step 1)                  ; smooth scrolling
 (delete-selection-mode t)             ; typing removes highlighted text
 (line-number-mode t)                  ; display line number in modeline
 (column-number-mode t)                ; display column number in modeline
@@ -31,7 +24,6 @@
 (auto-compression-mode t)             ; open compressed files
 (mouse-wheel-mode t)                  ; enable mouse wheel
 (fset 'yes-or-no-p 'y-or-n-p)         ; y or n will do
-(setq default-major-mode 'text-mode)  ; change default major mode to text
 (setq ring-bell-function 'ignore)     ; turn the alarm totally off
 (setq-default indent-tabs-mode nil)   ; spaces instead of tabs
 (setq make-backup-files nil)          ; no backupfile
