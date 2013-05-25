@@ -1,8 +1,5 @@
 ;; -*- mode: Lisp; -*-
 
-;;,--------
-;;| Doxygen
-;;`--------
 (require 'doxymacs)
 (add-hook 'c-mode-common-hook 'doxymacs-mode)
 
