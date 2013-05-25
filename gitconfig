@@ -50,3 +50,8 @@
     browser = firefox
 [push]
 	default = simple
+[sendemail]
+	from = Alexandre BIQUE <bique.alexandre@gmail.com>
+	smtpserver = smtp.gmail.com
+	smtpuser = bique.alexandre@gmail.com
+	smtpencryption = tls
