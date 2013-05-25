@@ -64,3 +64,8 @@ shopt -s checkwinsize
 #export PATH="${PATH}:${GOBIN}"
 export GOPATH="${HOME}/local/go"
 export GNUSTEP_USER_ROOT="$HOME/.gnustep"
+
+export LADSPA_PATH=/usr/lib/ladspa:$HOME/.ladspa
+export DSSI_PATH=/usr/lib/dssi:$HOME/.dssi
+export LV2_PATH=/usr/lib/lv2:$HOME/.lv2
+export VST_PATH=/usr/lib/vst:$HOME/.vst-bridge
