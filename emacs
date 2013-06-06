@@ -62,18 +62,17 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(compilation-window-height 10)
  '(compilation-scroll-output t)
+ '(compilation-window-height 10)
+ '(default-major-mode (quote text-mode) t)
  '(font-lock-maximum-decoration t)
  '(font-lock-maximum-size 512000)
- '(frame-title-format "<[ %b ]>")
- '(default-major-mode 'text-mode)
+ '(frame-title-format "<[ %b ]>" t)
  '(global-font-lock-mode t)
  '(graphviz-dot-auto-indent-on-braces t)
  '(graphviz-dot-toggle-completions t)
  '(graphviz-dot-view-edit-command nil)
  '(inhibit-startup-buffer-menu t)
- '(inhibit-startup-message t)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
  '(org-fontify-done-headline t)
@@ -84,12 +83,14 @@
  '(scroll-bar-mode nil)
  '(scroll-step 1)
  '(show-paren-mode t)
+ '(size-indication-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "khaki1" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "unknown" :family "Dina"))))
  '(cursor ((t (:background "dark orange"))))
  '(diff-added ((t (:inherit diff-changed :foreground "#99e86e"))))
  '(diff-file-header ((t (:weight bold))))
@@ -99,8 +100,14 @@
  '(diff-removed ((t (:inherit diff-changed :foreground "#e87a6e"))))
  '(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face :slant italic))))
  '(font-lock-comment-face ((t (:foreground "Firebrick" :slant italic))))
- '(font-lock-string-face ((t (:foreground "midnight blue"))))
+ '(font-lock-preprocessor-face ((t (:inherit font-lock-builtin-face :underline t))))
+ '(font-lock-string-face ((t (:foreground "cyan4"))))
  '(lazy-highlight ((t (:background "paleturquoise4" :foreground "RoyalBlue4"))))
+ '(mode-line ((t (:background "gray4" :foreground "deep sky blue"))))
+ '(mode-line-buffer-id ((t nil)))
+ '(mode-line-emphasis ((t nil)))
+ '(mode-line-highlight ((t nil)))
+ '(mode-line-inactive ((t (:inherit mode-line :background "gray3" :foreground "gray44" :weight light))))
  '(rst-level-1-face ((t (:foreground "light coral"))) t)
  '(rst-level-2-face ((t (:foreground "chartreuse"))) t)
  '(rst-level-3-face ((t (:foreground "sandy brown"))) t)
