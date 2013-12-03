@@ -5,9 +5,3 @@ setxkbmap -model evdev -layout us -variant altgr-intl -option -option ctrl:nocap
 xrdb -load ~/.Xdefaults
 xset b off
 xset r rate 175 30
-
-# apps
-
-if which xfce4-notifyd 2>/dev/null ; then
-    xfce4-notifyd & disown
-fi

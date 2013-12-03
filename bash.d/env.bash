@@ -66,6 +66,13 @@ export GOPATH="${HOME}/local/go"
 export GNUSTEP_USER_ROOT="$HOME/.gnustep"
 
 export LADSPA_PATH=/usr/lib/ladspa:$HOME/.ladspa
-export DSSI_PATH=/usr/lib/dssi:$HOME/.dssi
+#export DSSI_PATH=/usr/lib/dssi:$HOME/.dssi
+export DSSI_PATH=$HOME/.dssi
 export LV2_PATH=/usr/lib/lv2:$HOME/.lv2
 export VST_PATH=/usr/lib/vst:$HOME/.vst-bridge
+export LXVST_PATH="$VST_PATH"
+
+# ibus support
+# export GTK_IM_MODULE=ibus
+# export XMODIFIERS=@im=ibus
+# export QT_IM_MODULE=ibus

@@ -45,6 +45,9 @@ alias pu='p -Syu'
 alias stats='~/develop/crawler-2/build/src/twenga/BinUtils/get-stats --host '
 
 alias debian='sudo chroot /local/debian /bin/bash -c "su abique --shell=/bin/bash"'
+alias reaper='cd ~/.wine/drive_c/Program\ Files/REAPER\ \(x64\)/ && wine reaper.exe'
+alias ableton='cd ~/.wine/drive_c/users/Public/Application\ Data/Ableton/Live\ 9\ Trial/Program/ && wine Ableton\ Live\ 9\ Trial.exe'
+alias diablo3='cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Diablo\ III/ && setarch i386 -3 -L -B -R wine Diablo\ III.exe -launch -opengl'
 
 function ssh_vnc_tunnel()
 {
