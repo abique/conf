@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.12 for abique on Sun Nov 28 16:15:50 2010.
+# Written by xscreensaver-demo 5.23 for abique on Tue Dec  3 21:45:11 2013.
 # http://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
@@ -25,6 +25,7 @@ captureStderr:	True
 ignoreUninstalledPrograms:False
 font:		*-medium-r-*-140-*-m-*
 dpmsEnabled:	False
+dpmsQuickOff:	False
 dpmsStandby:	2:00:00
 dpmsSuspend:	2:00:00
 dpmsOff:	4:00:00
@@ -34,7 +35,7 @@ chooseRandomImages: False
 imageDirectory:	
 
 mode:		one
-selected:	171
+selected:	135
 
 textMode:	program
 textLiteral:	XScreenSaver
@@ -315,37 +316,43 @@ programs:								      \
   GL: 				skytentacles -root			    \n\
   GL: 				surfaces -root				    \n\
   GL: 				rubikblocks -root			    \n\
-  GL:             "MatrixView"  matrixview --root                           \n\
-  GL:            "SpirographX"  spirographx --root                          \n\
-  GL:                   "Flux"  flux --root                                 \n\
-  GL:                 "Helios"  helios --root                               \n\
-  GL:               "Feedback"  feedback --root                             \n\
-  GL:                "Lattice"  lattice --root                              \n\
-  GL:                   "BioF"  biof --root                                 \n\
-  GL:          "Hufo's Tunnel"  hufo_tunnel --root                          \n\
-  GL:             "Hyperspace"  hyperspace --root                           \n\
-  GL:               "Euphoria"  euphoria --root                             \n\
-  GL:           "Hufo's Smoke"  hufo_smoke --root                           \n\
-  GL:              "Skyrocket"  skyrocket --root                            \n\
-  GL:               "Drempels"  drempels --root                             \n\
-  GL:                 "Lorenz"  lorenz --root                               \n\
-  GL:                 "Flocks"  flocks --root                               \n\
-  GL:             "Solarwinds"  solarwinds --root                           \n\
-  GL:             "Pixel City"  pixelcity --root                            \n\
-  GL:             "Fieldlines"  fieldlines --root                           \n\
-  GL:              "Colorfire"  colorfire --root                            \n\
-  GL:                "Cyclone"  cyclone --root                              \n\
-  GL:                 "Plasma"  plasma --root                               \n\
-  GL:             "Sundancer2"  sundancer2 --root                           \n\
-  GL:            "BusySpheres"  busyspheres --root                          \n\
+  GL: 		  "MatrixView" 	matrixview --root			    \n\
+  GL: 		 "SpirographX" 	spirographx --root			    \n\
+  GL: 				flux --root				    \n\
+  GL: 				helios --root				    \n\
+  GL: 				feedback --root				    \n\
+  GL: 				lattice --root				    \n\
+  GL: 			"BioF" 	biof --root				    \n\
+  GL: 	       "Hufo's Tunnel" 	hufo_tunnel --root			    \n\
+  GL: 				hyperspace --root			    \n\
+  GL: 				euphoria --root				    \n\
+  GL: 		"Hufo's Smoke" 	hufo_smoke --root			    \n\
+  GL: 				skyrocket --root			    \n\
+  GL: 				drempels --root				    \n\
+  GL: 				lorenz --root				    \n\
+  GL: 				flocks --root				    \n\
+  GL: 				solarwinds --root			    \n\
+  GL: 		  "Pixel City" 	pixelcity --root			    \n\
+  GL: 				fieldlines --root			    \n\
+  GL: 				colorfire --root			    \n\
+  GL: 				cyclone --root				    \n\
+  GL: 				plasma --root				    \n\
+  GL: 				sundancer2 --root			    \n\
+  GL: 		 "BusySpheres" 	busyspheres --root			    \n\
+  GL: 				companioncube -root			    \n\
+  GL: 				hilbert -root				    \n\
+  GL: 				tronbit -root				    \n\
+  GL: 				geodesic -root				    \n\
+				hexadrop -root				    \n\
+  GL: 				kaleidocycle -root			    \n\
+  GL: 				quasicrystal -root			    \n\
+  GL: 				unknownpleasures -root			    \n\
 
 
 pointerPollTime:    0:00:05
 pointerHysteresis:  10
 windowCreationTimeout:0:00:30
 initialDelay:	0:00:00
-sgiSaverExtension:  True
-xidleExtension:	True
 GetViewPortIsFullOfLies:False
 procInterrupts:	True
 xinputExtensionDev: True
