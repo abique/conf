@@ -31,7 +31,8 @@ URxvt.perl-ext-common:	default,tabbed
 URxvt*transparent:	true
 URxvt*depth:	24
 URxvt*color15:	#ffffff
-URxvt*font:	xft:dina
+URxvt*font:	xft:dina:size=10
+!URxvt*font:	xft:Monospace:pixelsize=14
 URxvt*color11:	#ffff66
 URxvt*color6:	#33cccc
 URxvt*shading:	15
