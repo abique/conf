@@ -19,6 +19,7 @@
                         (brace-list-open . 0)
                         (inline-open . 0)
                         (statement-block-intro . +)
+                        (statement-case-open . +)
                         ))
     (c-echo-syntactic-information-p . t))
   "Epita Programming Style")
