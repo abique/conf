@@ -1,8 +1,10 @@
 (load-file "~/.emacs.d/styles/mimosa.el")
+(load-file "~/.emacs.d/styles/scissy.el")
 (load-file "~/.emacs.d/styles/bluegitf.el")
 (load-file "~/.emacs.d/styles/hefur.el")
 (load-file "~/.emacs.d/styles/freebox.el")
 (load-file "~/.emacs.d/styles/epita.el")
+(load-file "~/.emacs.d/styles/t2m.el")
 (setq c-default-style "epita")
 
 ;; Auto insert C/C++ header guard
