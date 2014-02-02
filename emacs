@@ -74,6 +74,7 @@
  '(graphviz-dot-view-edit-command nil)
  '(inhibit-startup-buffer-menu t)
  '(inhibit-startup-screen t)
+ '(inverse-video nil)
  '(menu-bar-mode nil)
  '(org-fontify-done-headline t)
  '(org-log-done (quote time) nil nil "time")
@@ -90,7 +91,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 111 :width normal :foundry "unknown" :family "dina"))))
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "grey" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 111 :width normal :foundry "unknown" :family "dina"))))
  '(cursor ((t (:background "dark orange"))))
  '(diff-added ((t (:inherit diff-changed :foreground "#99e86e"))))
  '(diff-file-header ((t (:weight bold))))
@@ -98,6 +99,7 @@
  '(diff-header ((t (:foreground "tomato"))))
  '(diff-hunk-header ((t (:inherit diff-header :foreground "#e5aa17"))))
  '(diff-removed ((t (:inherit diff-changed :foreground "#e87a6e"))))
+ '(region ((t (:background "NavajoWhite3" :foreground "gtk_selection_fg_color"))))
  '(rst-level-1-face ((t (:foreground "light coral"))) t)
  '(rst-level-2-face ((t (:foreground "chartreuse"))) t)
  '(rst-level-3-face ((t (:foreground "sandy brown"))) t)

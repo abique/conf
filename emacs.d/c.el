@@ -1,8 +1,10 @@
 (load-file "~/.emacs.d/styles/mimosa.el")
+(load-file "~/.emacs.d/styles/scissy.el")
 (load-file "~/.emacs.d/styles/bluegitf.el")
 (load-file "~/.emacs.d/styles/hefur.el")
 (load-file "~/.emacs.d/styles/freebox.el")
 (load-file "~/.emacs.d/styles/epita.el")
+(load-file "~/.emacs.d/styles/t2m.el")
 (setq c-default-style "epita")
 
 ;; Auto insert C/C++ header guard
@@ -19,6 +21,9 @@
 
             (when (string-match "fbx" buffer-file-name)
               (freebox-style))
+
+            (when (string-match "/t2m/" buffer-file-name)
+              (t2m-style))
 
             (if (and (string-match ".*\\.hh?" buffer-file-name)
                      (memq major-mode '(c-mode c++-mode))
