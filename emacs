@@ -16,6 +16,7 @@
 (require 'ninja-mode)
 (require 'go-mode)
 (require 'compile)
+(require 'yaml-mode)
 
 ;;,---------------------------
 ;;| Load my split config files
@@ -50,6 +51,7 @@
 (add-to-list 'auto-mode-alist '("mordor/.*\\.h$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.nsi$" . nsi-mode))
 (add-to-list 'auto-mode-alist '("\\.proto$" . protobuf-mode))
+(add-to-list 'auto-mode-alist '("\.yml\'" . yaml-mode))
 
 ;;,--------------------
 ;;| loading local stuff
