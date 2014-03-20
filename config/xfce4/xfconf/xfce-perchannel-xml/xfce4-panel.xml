@@ -16,6 +16,7 @@
       </property>
       <property name="role" type="string" value="xfce4-panel-12975154150"/>
       <property name="size" type="uint" value="24"/>
+      <property name="mode" type="uint" value="0"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -23,7 +24,14 @@
       <property name="button-icon" type="string" value="xfce4-panel-menu"/>
       <property name="show-button-title" type="bool" value="false"/>
     </property>
-    <property name="plugin-2" type="string" value="actions"/>
+    <property name="plugin-2" type="string" value="actions">
+      <property name="appearance" type="uint" value="0"/>
+      <property name="invert-orientation" type="bool" value="false"/>
+      <property name="items" type="array">
+        <value type="string" value="+logout-dialog"/>
+        <value type="string" value="-switch-user"/>
+      </property>
+    </property>
     <property name="plugin-3" type="string" value="tasklist"/>
     <property name="plugin-4" type="string" value="pager"/>
     <property name="plugin-5" type="string" value="clock">
@@ -42,4 +50,5 @@
       <property name="show-frame" type="bool" value="false"/>
     </property>
   </property>
+  <property name="configver" type="int" value="2"/>
 </channel>
