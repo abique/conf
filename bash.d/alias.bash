@@ -79,6 +79,14 @@ print base64.b16encode(base64.b64decode('$1'))
 EOF
 }
 
+function b64d()
+{
+    python <<EOF
+import base64
+print(base64.b64decode('$1'))
+EOF
+}
+
 function x-ssh-agent()
 {
     ssh-agent >~/.bash.d/ssh-agent.bash
