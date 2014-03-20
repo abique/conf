@@ -47,7 +47,11 @@
             (cwarn-mode)
             (flyspell-prog-mode)
             (hs-minor-mode)
-            (hs-show-all)))
+            (hs-show-all)
+	    (auto-complete-mode 1)
+	    (when (member major-mode irony-known-modes)
+	      (irony-mode 1))
+	    ))
 
 (setq c-font-lock-extra-types
       (append

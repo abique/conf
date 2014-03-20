@@ -18,6 +18,15 @@
 (require 'compile)
 (require 'yaml-mode)
 
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/auto-complete")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories
+	     "/usr/share/emacs/site-lisp/auto-complete/dict")
+(ac-config-default)
+(require 'auto-complete)
+(require 'irony)
+(setq irony-server-executable "/usr/share/emacs/site-lisp/irony/irony-server")
+
 ;;,---------------------------
 ;;| Load my split config files
 ;;`---------------------------
