@@ -22,9 +22,6 @@
             (when (string-match "fbx" buffer-file-name)
               (freebox-style))
 
-            (when (string-match "/t2m/" buffer-file-name)
-              (t2m-style))
-
             (if (and (string-match ".*\\.hh?" buffer-file-name)
                      (memq major-mode '(c-mode c++-mode))
                      (equal (point-min) (point-max)))
