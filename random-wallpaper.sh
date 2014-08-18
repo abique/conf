@@ -1,6 +1,6 @@
 #! /bin/bash
 
-files=`find ~/wallpapers/flam3 -name '*.jpg' -o -name '*.jpeg' -o -name '*.png'`
+files=`find ~/wallpapers/ -name '*.jpg' -o -name '*.jpeg' -o -name '*.png'`
 IFS='
 '
 
