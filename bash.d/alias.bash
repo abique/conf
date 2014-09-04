@@ -167,3 +167,5 @@ function paste-binouse-send()
         rm -f "$src"
     fi
 )
+
+alias u-he-pb="paste-binouse-send http://archear.u-he:11013/"
