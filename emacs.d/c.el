@@ -5,6 +5,7 @@
 (load-file "~/.emacs.d/styles/freebox.el")
 (load-file "~/.emacs.d/styles/epita.el")
 (load-file "~/.emacs.d/styles/t2m.el")
+(load-file "~/.emacs.d/styles/u-he.el")
 (setq c-default-style "epita")
 
 ;; Auto insert C/C++ header guard
@@ -21,6 +22,9 @@
 
             (when (string-match "fbx" buffer-file-name)
               (freebox-style))
+
+            (when (string-match "u-he" buffer-file-name)
+              (u-he-style))
 
             (if (and (string-match ".*\\.hh?" buffer-file-name)
                      (memq major-mode '(c-mode c++-mode))
@@ -45,7 +49,6 @@
             (flyspell-prog-mode)
             (hs-minor-mode)
             (hs-show-all)
-	    (auto-complete-mode 1)
 	    (when (member major-mode irony-known-modes)
 	      (irony-mode 1))
 	    ))
