@@ -34,6 +34,7 @@ for file in		\
     config/tint2 \
     config/user-dirs.dirs \
     config/user-dirs.locale \
+    local/share/applications/mimeapps.list \
     emacs		\
     emacs.d		\
     fluxbox             \
