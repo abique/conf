@@ -169,3 +169,4 @@ function paste-binouse-send()
 )
 
 alias u-he-pb="paste-binouse-send http://archear.u-he:11013/"
+alias u-he-rel="rm $HOME/.u-he/*/*.so $HOME/.u-he/*/dialog $HOME/.BitwigStudio/cache/vst-metadata"

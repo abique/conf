@@ -32,6 +32,8 @@ for file in		\
     config/xfce4	\
     config/xfce4-session \
     config/tint2 \
+    config/user-dirs.dirs \
+    config/user-dirs.locale \
     emacs		\
     emacs.d		\
     fluxbox             \
