@@ -67,6 +67,7 @@
  ;; If there is more than one, they won't work right.
  '(compilation-scroll-output t)
  '(compilation-window-height 10)
+ '(css-indent-offset 2)
  '(default-major-mode (quote text-mode) t)
  '(font-lock-maximum-decoration t)
  '(font-lock-maximum-size 512000)
