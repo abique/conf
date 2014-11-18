@@ -2,8 +2,6 @@ unalias -a
 
 if [[ `uname -s` = "FreeBSD" ]] ; then
     alias ls="ls -GhF"
-    alias make=gmake
-    alias sed=gsed
 elif [[ `uname -s` = "Linux" ]] ; then
     alias ls="ls --color=auto -hF"
 fi
