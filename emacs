@@ -2,12 +2,12 @@
 
 (autoload 'cmake-mode "cmake-mode" "Major mode for cmake" 1)
 (autoload 'lua-mode "lua-mode" "Major mode for LUA" 1)
-(require 'pkgbuild-mode)
-(require 'protobuf-mode)
-(require 'ninja-mode)
-(require 'go-mode)
+(autoload 'pkgbuild-mode "pkgbuild-mode" "Major mode for PKGBUILD" 1)
+(autoload 'protobuf-mode "protobuf-mode" "Major mode for protocol buffer" 1)
+(autoload 'ninja-mode "ninja-mode" "Major mode for ninja" 1)
+(autoload 'go-mode "go-mode" "Major mode for go" 1)
+(autoload 'yaml-mode "yaml-mode" "Major mode for yaml" 1)
 (require 'compile)
-(require 'yaml-mode)
 
 ;;,---------------------------
 ;;| Load my split config files
