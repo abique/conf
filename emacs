@@ -1,17 +1,8 @@
 ;; -*- mode: Lisp; -*-
 
-(require 'doxymacs)
-(add-hook 'c-mode-common-hook 'doxymacs-mode)
-
-(defun my-doxymacs-font-lock-hook ()
-  (if (or (eq major-mode 'c-mode) (eq major-mode 'c++-mode))
-      (doxymacs-font-lock)))
-(add-hook 'font-lock-mode-hook 'my-doxymacs-font-lock-hook)
-
-(require 'cmake-mode)
-(require 'lua-mode)
+(autoload 'cmake-mode "cmake-mode" "Major mode for cmake" 1)
+(autoload 'lua-mode "lua-mode" "Major mode for LUA" 1)
 (require 'pkgbuild-mode)
-(require 'git)
 (require 'protobuf-mode)
 (require 'ninja-mode)
 (require 'go-mode)
