@@ -764,7 +764,7 @@
 	 # end of the example
 	 -->
     <application class="Chromium" role="browser">
-      <desktop>3</desktop>
+      <desktop>4</desktop>
       <maximized>yes</maximized>
       <decor>no</decor>
     </application>
@@ -782,7 +782,11 @@
       <desktop>7</desktop>
       <decor>no</decor>
     </application>
-    <application class="Xchat">
+    <application class="Hexchat">
+      <desktop>7</desktop>
+      <decor>no</decor>
+    </application>
+     <application class="Xchat">
       <desktop>7</desktop>
       <decor>no</decor>
     </application>

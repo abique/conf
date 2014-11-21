@@ -12,6 +12,8 @@ application/x-extension-xhtml=chromium.desktop
 application/x-extension-xht=chromium.desktop
 image/jpeg=gwenview.desktop
 inode/directory=dolphin.desktop
+application/pdf=okular.desktop
+application/x-dosexec=wine.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;

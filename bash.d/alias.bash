@@ -166,5 +166,23 @@ function paste-binouse-send()
     fi
 )
 
+bitwig-fifo() {
+    for i in /proc/*/exe;
+    do
+        exe=$(readlink $i)
+        if [[ "$exe" != /opt/bitwig-studio/bin/BitwigStudioEngine ]] ; then
+            continue
+        fi
+
+        for task in ${i/exe/task}/*
+        do
+            if grep -q Worker $task/comm ; then
+                pid=$(echo $task | sed -r 's,^.*/task/([0-9]+)$,\1,g')
+                chrt -f -p 99 $pid
+            fi
+        done
+    done
+}
+
 alias u-he-pb="paste-binouse-send http://archear.u-he:11013/"
 alias u-he-rel="rm $HOME/.u-he/*/*.so $HOME/.u-he/*/dialog $HOME/.BitwigStudio/cache/vst-metadata"
