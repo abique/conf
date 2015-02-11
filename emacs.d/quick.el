@@ -22,7 +22,7 @@
 (setq display-time-24hr-format t)     ; european 24h format
 (display-time)                        ; display time in modeline
 (auto-compression-mode t)             ; open compressed files
-(mouse-wheel-mode t)                  ; enable mouse wheel
+;;(mouse-wheel-mode t)                  ; enable mouse wheel
 (fset 'yes-or-no-p 'y-or-n-p)         ; y or n will do
 (setq ring-bell-function 'ignore)     ; turn the alarm totally off
 (setq-default indent-tabs-mode nil)   ; spaces instead of tabs
