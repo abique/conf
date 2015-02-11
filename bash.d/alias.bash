@@ -1,10 +1,9 @@
 unalias -a
 
-if [[ `uname -s` = "FreeBSD" ]] ; then
-    alias ls="ls -GhF"
-elif [[ `uname -s` = "Linux" ]] ; then
-    alias ls="ls --color=auto -hF"
-fi
+case `uname -s` in
+    FreeBSD|Darwin) alias ls="ls -GhF" ;;
+    Linux) alias ls="ls --color=auto -hF" ;;
+esac
 alias la='ls -a'
 alias l='ls -l'
 alias lt='l -t'
