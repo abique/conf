@@ -26,7 +26,9 @@ s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
         vcs=" \[$green\]git:$git_branch"
     fi
 
-    PS1="$RET$JOBS\[$cyanB\]\u@\H:\[$blueB\]$my_pwd$vcs\[$yellowB\]> \[$white\]"
+    curtime="\[$grey\]$(date '+%y-%m-%d %H:%M:%S') "
+
+    PS1="$curtime$RET$JOBS\[$cyanB\]\u@\H:\[$blueB\]$my_pwd$vcs\[$yellowB\]> \[$white\]"
 
 # Change the window title of X terminals
     case $TERM in

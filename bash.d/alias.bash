@@ -184,4 +184,5 @@ bitwig-fifo() {
 }
 
 alias u-he-pb="paste-binouse-send http://archear.u-he:11013/"
-alias u-he-rel="rm $HOME/.u-he/*/*.so $HOME/.u-he/*/dialog $HOME/.BitwigStudio/cache/vst-metadata"
+alias vader1="ssh bique@dslab-vader1.epfl.ch"
+alias luke2="ssh bique@dslab-luke2.epfl.ch"
