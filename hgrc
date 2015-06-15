@@ -15,6 +15,7 @@ pager =
 parentrevspec =
 rebase = 
 convert =
+share =
 
 [defaults]
 cdiff = -q
@@ -31,3 +32,6 @@ autostart = true
 
 [pager]
 pager = LESS='FSRX' less
+
+
+[tortoisehg]
