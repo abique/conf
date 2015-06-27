@@ -7,6 +7,7 @@
 (load-file "~/.emacs.d/styles/t2m.el")
 (load-file "~/.emacs.d/styles/u-he.el")
 (load-file "~/.emacs.d/styles/freebsd.el")
+(load-file "~/.emacs.d/styles/bitwig.el")
 (setq c-default-style "epita")
 
 ;; Auto insert C/C++ header guard
@@ -29,6 +30,9 @@
 
             (when (string-match "freebsd" buffer-file-name)
               (freebsd-style))
+
+            (when (string-match "bitwig" buffer-file-name)
+              (bitwig-style))
 
             (if (and (string-match ".*\\.hh?" buffer-file-name)
                      (memq major-mode '(c-mode c++-mode))
