@@ -24,6 +24,9 @@ s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
     elif tg git branch; then
         git_branch="$(git branch | grep '\* ' | cut -f 2 -d ' ')"
         vcs=" \[$green\]git:$git_branch"
+    elif tg hg branch ; then
+        hg_branch="$(hg branch)"
+        vcs=" \[$green\]hg:$hg_branch"
     fi
 
     curtime="\[$grey\]$(date '+%y-%m-%d %H:%M:%S') "
