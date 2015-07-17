@@ -1,5 +1,6 @@
 [ui]
 username = Alexandre Bique <bique.alexandre@gmail.com>
+merge = meld
 
 [extensions]
 hgext.extdiff =
@@ -16,6 +17,13 @@ parentrevspec =
 rebase = 
 convert =
 share =
+shelve =
+graphlog =
+fetch =
+record =
+bookmarks =
+histedit =
+strip =
 
 [defaults]
 cdiff = -q
@@ -35,3 +43,4 @@ pager = LESS='FSRX' less
 
 
 [tortoisehg]
+vdiff = meld
