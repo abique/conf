@@ -1,9 +1,0 @@
-#! /bin/bash
-
-~/conf/common_start.sh
-
-if [[ "${FLUXBOX_SVN}" = "TRUE" ]] ; then
-    exec ~/local/bin/fluxbox -log "~/.fluxbox/log"
-else
-    fluxbox -log "~/.fluxbox/log"
-fi

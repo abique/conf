@@ -18,40 +18,30 @@ for file in		\
     bash.d              \
     bashrc		\
     bazaar		\
-    bmpanel		\
     config/Trolltech.conf \
-    config/awesome      \
     config/fish         \
     config/qtcurvestylerc \
     config/openbox      \
-    config/midori	\
-    config/xfce4	\
-    config/xfce4-session \
     config/tint2 \
     config/user-dirs.dirs \
     config/user-dirs.locale \
     config/mimeapps.list \
     emacs		\
     emacs.d		\
-    fluxbox             \
     gitconfig		\
     gitk		\
     gtkrc-2.0		\
     hgrc		\
     htoprc		\
-    indent.pro          \
     inputrc		\
-    q3a			\
     screenrc            \
     sqliterc            \
     toprc		\
     vimrc               \
-    warsow		\
     xinitrc		\
     xmodmaprc		\
     xscreensaver	\
     xsession            \
-    quakelive/quakelive/home/baseq3/*.cfg
 do
     install ${file}
 done
