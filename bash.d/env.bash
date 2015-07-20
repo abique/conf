@@ -74,6 +74,8 @@ export LV2_PATH=/usr/lib/lv2:$HOME/.lv2
 export VST_PATH=/usr/lib/vst:$HOME/.vst
 export LXVST_PATH="$VST_PATH"
 
+export JAVA_HOME=/usr/lib/jvm/default
+
 # ibus support
 # export GTK_IM_MODULE=ibus
 # export XMODIFIERS=@im=ibus
