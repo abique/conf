@@ -118,7 +118,7 @@ function check_colors()
 
 function aur_get()
 {
-    wget http://aur.archlinux.org/packages/"${1:0:2}"/"$1"/"$1".tar.gz
+    wget https://aur4.archlinux.org/cgit/aur.git/snapshot/"$1".tar.gz
     tx "$1".tar.gz
 }
 
