@@ -18,11 +18,7 @@ for file in		\
     bash.d              \
     bashrc		\
     bazaar		\
-    beryl		\
-    beryl-managerrc	\
     bmpanel		\
-    conkerorrc          \
-    conkeror.d          \
     config/Trolltech.conf \
     config/awesome      \
     config/fish         \
@@ -34,7 +30,7 @@ for file in		\
     config/tint2 \
     config/user-dirs.dirs \
     config/user-dirs.locale \
-    local/share/applications/mimeapps.list \
+    config/mimeapps.list \
     emacs		\
     emacs.d		\
     fluxbox             \
