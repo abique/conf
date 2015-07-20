@@ -7,6 +7,7 @@
 (autoload 'ninja-mode "ninja-mode" "Major mode for ninja" 1)
 (autoload 'go-mode "go-mode" "Major mode for go" 1)
 (autoload 'yaml-mode "yaml-mode" "Major mode for yaml" 1)
+(autoload 'rust-mode "rust-mode" "Major mode for rust" 1)
 (require 'compile)
 
 ;;,---------------------------
@@ -44,6 +45,7 @@
 (add-to-list 'auto-mode-alist '("\\.nsi$" . nsi-mode))
 (add-to-list 'auto-mode-alist '("\\.proto$" . protobuf-mode))
 (add-to-list 'auto-mode-alist '("\.yml\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.rs$" . rust-mode))
 
 ;;,--------------------
 ;;| loading local stuff
