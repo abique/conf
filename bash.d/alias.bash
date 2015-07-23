@@ -198,3 +198,7 @@ fix-clock-skew() {
     find . -cnewer ./___currtime___ -print0 | xargs -0 touch
     rm ___currtime___
 }
+
+find-sources() {
+  find . -name '*.h' -o -name '*.hh' -o -name '*.hxx' -o -name '*.cpp' -o -name '*.cc' -o -name '*.cpp' -o -name '*.C' -o -name '*.c'
+}
