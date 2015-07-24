@@ -9,7 +9,7 @@ function install()
     printf "\e[33mInstalling\e[m ${HOME}/\e[32m.$1\e[m\n"
 }
 
-mkdir -p ~/.quakelive/quakelive/home/baseq3
+mkdir -p ~/.icons/default
 
 [[ -d ${HOME}/.config ]] || mkdir ${HOME}/.config
 
@@ -33,6 +33,7 @@ for file in		\
     gtkrc-2.0		\
     hgrc		\
     htoprc		\
+    icons/default/index.theme \
     inputrc		\
     screenrc            \
     sqliterc            \
@@ -41,7 +42,7 @@ for file in		\
     xinitrc		\
     xmodmaprc		\
     xscreensaver	\
-    xsession            \
+    xsession
 do
     install ${file}
 done
