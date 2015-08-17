@@ -12,7 +12,7 @@
 wm="$1"
 
 if [[ "$wm" = "" ]] ; then
-    wm=openbox
+    wm=notion
 fi
 
 case "$wm" in
@@ -40,4 +40,6 @@ case "$wm" in
 	exec wmaker;;
     gnome)
 	exec gnome-shell;;
+    notion)
+        exec notion;;
 esac

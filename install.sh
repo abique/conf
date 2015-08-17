@@ -37,6 +37,7 @@ for file in		\
     hgrc		\
     htoprc		\
     icons/default/index.theme \
+    icons/default/cursors \
     inputrc		\
     screenrc            \
     sqliterc            \

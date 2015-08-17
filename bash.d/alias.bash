@@ -202,3 +202,7 @@ fix-clock-skew() {
 find-sources() {
   find . -name '*.h' -o -name '*.hh' -o -name '*.hxx' -o -name '*.cpp' -o -name '*.cc' -o -name '*.cpp' -o -name '*.C' -o -name '*.c'
 }
+
+find-includes() {
+  find . -name include -type d
+}
