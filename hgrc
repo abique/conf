@@ -1,6 +1,7 @@
 [ui]
 username = Alexandre Bique <bique.alexandre@gmail.com>
 merge = meld
+#merge = kdiff3
 
 [extensions]
 hgext.extdiff =

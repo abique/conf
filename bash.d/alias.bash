@@ -19,8 +19,8 @@ alias cn='cat -n'
 alias df='df -h'
 alias du='du -h --max-depth=1'
 alias reload="source ~/.bashrc"
-alias tx="tar -xf"
-alias txv="tar -xvvvf"
+alias tx="bsdtar -xf"
+alias txv="bsdtar -xvvvf"
 alias v='vim'
 alias e='~/.bash.d/emacs-quick.bash'
 alias em='emacs -nw'
@@ -205,4 +205,5 @@ find-sources() {
 
 find-includes() {
   find . -name include -type d
+  find . -name model-include -type d
 }
