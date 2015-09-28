@@ -96,7 +96,7 @@ ActiveColor=169,156,255
 ActiveColor2=0,0,0
 ActiveEffect=togamma
 ActiveSemiTransparent=false
-ActiveValue=0.7
+ActiveValue=0.699999988
 Animated=true
 DefaultColor=144,128,248
 DefaultColor2=0,0,0
@@ -128,6 +128,10 @@ DisabledEffect=togray
 DisabledSemiTransparent=true
 DisabledValue=1
 Size=32
+
+[DirSelect Dialog]
+DirSelectDialog Size=792,596
+History Items[$e]=file:///mnt/abique-data/Movies/Bleach integrale sans HS/Bleach/Bleach Arc 13 Ichigo contre Ulquiorra
 
 [General]
 ColorScheme=Breeze
@@ -181,7 +185,7 @@ ActiveColor=169,156,255
 ActiveColor2=0,0,0
 ActiveEffect=togamma
 ActiveSemiTransparent=false
-ActiveValue=0.7
+ActiveValue=0.699999988
 Animated=false
 DefaultColor=144,128,248
 DefaultColor2=0,0,0

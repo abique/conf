@@ -4,6 +4,10 @@ export HISTIGNORE='ls:ll:la:l:[bf]g:'
 export INPUTRC="~/.inputrc"
 export EDITOR="emacs -Q -nw"
 
+if [[ -z "$XDG_CURRENT_DESKTOP" ]] ; then
+  export XDG_CURRENT_DESKTOP=KDE
+fi
+
 if ! echo "${PATH}" | grep "^${HOME}/local/bin" 1>/dev/null 2>&1 ; then
     export PATH="${HOME}/local/bin:${PATH}"
 fi
