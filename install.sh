@@ -26,9 +26,6 @@ for file in		\
     config/user-dirs.dirs \
     config/user-dirs.locale \
     config/mimeapps.list \
-    config/kdeglobals \
-    config/kglobalshortcutsrc \
-    config/kwinrc       \
     emacs		\
     emacs.d		\
     gitconfig		\
