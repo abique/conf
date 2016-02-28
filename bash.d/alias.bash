@@ -207,3 +207,19 @@ find-includes() {
   find . -name include -type d
   find . -name model-include -type d
 }
+
+find-audio() {
+    find . -iname '*.mp3' -o -iname '*.wav' -o -name '*.flac' -o \
+         -name '*.aac' -o -name '*.ogg'
+}
+
+my-aac() (
+    in="$1"
+    out="$2"
+
+    if [[ -z "$out" ]] ; then
+        out=$(echo "$in" | sed 's/^\(.*\)\.\(wav\|flac\|ogg\|mp3\|mp4\)$/\1.aac/g')
+    fi
+
+    ffmpeg -i "$in" -c:a aac -b:a 320k -strict -2 "$out"
+)
