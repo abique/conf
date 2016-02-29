@@ -31,7 +31,7 @@
   (setq tab-width 4)
 
   (when (memq major-mode '(sh-mode))
-    (setq sh-basic-offset 8)
+    (setq sh-basic-offset 4)
     )
 
   (when (memq major-mode '(python-mode))
