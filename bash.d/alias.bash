@@ -39,14 +39,7 @@ alias pwgen='pwgen --symbols --secure --num-passwords=5 --capitalize -C --ambigu
 alias p='sudo pacman'
 alias pu='p -Syu'
 
-alias reaper='cd ~/.wine/drive_c/Program\ Files/REAPER\ \(x64\)/ && wine reaper.exe'
-alias ableton='cd ~/.wine/drive_c/users/Public/Application\ Data/Ableton/Live\ 9\ Suite/Program/ && wine Ableton\ Live\ 9\ Suite.exe'
-alias diablo3='cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Diablo\ III/ && setarch i386 -3 -L -B -R wine Diablo\ III.exe -launch -opengl'
-alias bnet='cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Battle.net/ && setarch i386 -3 -L -B -R wine Battle.net\ Launcher.exe -launch -opengl'
-alias hos='cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Heroes\ of\ the\ Storm/ && setarch i386 -3 -L -B -R wine Heroes\ of\ the\ Storm.exe -launch -opengl'
-
 alias rns='~/local/rns/renoise'
-alias rns32='~/local/rns32/renoise'
 
 function ssh_vnc_tunnel()
 {
@@ -170,24 +163,6 @@ function paste-binouse-send()
     fi
 )
 
-bitwig-fifo() {
-    for i in /proc/*/exe;
-    do
-        exe=$(readlink $i)
-        if [[ "$exe" != /opt/bitwig-studio/bin/BitwigStudioEngine ]] ; then
-            continue
-        fi
-
-        for task in ${i/exe/task}/*
-        do
-            if grep -q Worker $task/comm ; then
-                pid=$(echo $task | sed -r 's,^.*/task/([0-9]+)$,\1,g')
-                chrt -f -p 99 $pid
-            fi
-        done
-    done
-}
-
 alias u-he-pb="paste-binouse-send http://archear.u-he:11013/"
 alias vader1="ssh bique@dslab-vader1.epfl.ch"
 alias luke2="ssh bique@dslab-luke2.epfl.ch"
@@ -223,3 +198,7 @@ my-aac() (
 
     ffmpeg -i "$in" -c:a aac -b:a 320k -strict -2 "$out"
 )
+
+bw-clear-nitro() {
+    rm -rf ~/.BitwigStudio/cache/nitro
+}
