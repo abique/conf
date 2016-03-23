@@ -199,6 +199,9 @@ my-aac() (
     ffmpeg -i "$in" -c:a aac -b:a 320k -strict -2 "$out"
 )
 
+# my-mp4
+# ffmpeg -i "$in" -c:v libx265 -preset slow -x265-params crf=18 -c:a aac -strict experimental -b:a 128k "$out"
+
 bw-clear-nitro() {
     rm -rf ~/.BitwigStudio/cache/nitro
 }
