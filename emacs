@@ -76,7 +76,9 @@
  '(menu-bar-mode nil)
  '(org-fontify-done-headline t)
  '(org-log-done (quote time) nil nil "time")
- '(org-modules (quote (org-bbdb org-bibtex org-gnus org-info org-jsinfo org-irc org-mew org-mhe org-rmail org-vm org-wl org-w3m org-mouse org-choose)))
+ '(org-modules
+   (quote
+    (org-bbdb org-bibtex org-gnus org-info org-jsinfo org-irc org-mew org-mhe org-rmail org-vm org-wl org-w3m org-mouse org-choose)))
  '(org-time-stamp-custom-formats (quote ("<%Y-%m-%d>" . "<%Y-%m-%d %H:%M:%S %z>")))
  '(org-time-stamp-rounding-minutes (quote (0 0)))
  '(scroll-bar-mode nil)

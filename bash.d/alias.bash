@@ -202,3 +202,12 @@ my-aac() (
 bw-clear-nitro() {
     rm -rf ~/.BitwigStudio/cache/nitro
 }
+
+bw-install() (
+    mkdir -p ~/local/bitwig &&
+    cd ~/local/bitwig &&
+    rm -rf * &&
+    wget "$1" -O bw.deb &&
+    \bsdtar xf bw.deb &&
+    \bsdtar xf data.tar.gz
+)
