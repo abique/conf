@@ -210,7 +210,11 @@ bw-install() (
     mkdir -p ~/local/bitwig &&
     cd ~/local/bitwig &&
     rm -rf * &&
-    wget "$1" -O bw.deb &&
+    if [[ -e "$1" ]] ; then
+      ln -s "$1" bw.deb
+    else
+      wget "$1" -O bw.deb
+    fi &&
     \bsdtar xf bw.deb &&
     \bsdtar xf data.tar.gz
 )
