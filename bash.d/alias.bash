@@ -111,7 +111,7 @@ function check_colors()
 
 function aur_get()
 {
-    wget https://aur4.archlinux.org/cgit/aur.git/snapshot/"$1".tar.gz
+    git clone https://aur.archlinux.org/"$1".git
     tx "$1".tar.gz
 }
 
