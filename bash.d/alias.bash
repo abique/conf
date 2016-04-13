@@ -214,6 +214,7 @@ bw-install() (
       ln -s "$1" bw.deb
     else
       wget "$1" -O bw.deb
+      md5sum bw.deb
     fi &&
     \bsdtar xf bw.deb &&
     \bsdtar xf data.tar.gz
