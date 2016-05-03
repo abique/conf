@@ -112,7 +112,7 @@ function check_colors()
 function aur_get()
 {
     git clone https://aur.archlinux.org/"$1".git
-    tx "$1".tar.gz
+    tx "$1"
 }
 
 function _kmtrace()
