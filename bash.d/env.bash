@@ -5,7 +5,8 @@ export INPUTRC="~/.inputrc"
 export EDITOR="emacs -Q -nw"
 
 if [[ -z "$XDG_CURRENT_DESKTOP" ]] ; then
-  export XDG_CURRENT_DESKTOP=KDE
+  #export XDG_CURRENT_DESKTOP=KDE
+  export XDG_CURRENT_DESKTOP=GNOME
 fi
 
 if ! echo "${PATH}" | grep "^${HOME}/local/bin" 1>/dev/null 2>&1 ; then
