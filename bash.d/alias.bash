@@ -218,6 +218,8 @@ bw-install() (
     fi &&
     \bsdtar xf bw.deb &&
     \bsdtar xf data.tar.gz
+    rm bw.deb
+    rm data.tar.gz
 )
 
 start-jack() {
