@@ -175,7 +175,13 @@ fix-clock-skew() {
 }
 
 find-sources() {
-  find . -name '*.h' -o -name '*.hh' -o -name '*.hxx' -o -name '*.cpp' -o -name '*.cc' -o -name '*.cpp' -o -name '*.C' -o -name '*.c'
+  if [[ "$1" = "" ]] ; then
+    DIR=.
+  else
+    DIR="$1"
+  fi
+
+  find "$DIR" -name '*.h' -o -name '*.hh' -o -name '*.hxx' -o -name '*.cpp' -o -name '*.cc' -o -name '*.cpp' -o -name '*.C' -o -name '*.c' -o -name '*.mm'
 }
 
 find-includes() {
