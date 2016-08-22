@@ -224,7 +224,19 @@ bw-install() (
     fi &&
     \bsdtar xf bw.deb &&
     \bsdtar xf data.tar.gz
+    rm bw.deb
+    rm data.tar.gz
 )
+
+start-jack() {
+    /usr/bin/jackd -dalsa -dhw:USB -r48000 -p256 -n2 -s -Xseq -P &
+    sleep 2
+    pactl load-module module-jack-sink channels=2
+    pactl load-module module-jack-source channels=2
+    pacmd set-default-sink jack_out
+    pacmd set-default-source jack_in
+    fg
+}
 
 # evil
 alias reaper='cd ~/.wine/drive_c/Program\ Files/REAPER\ \(x64\)/ && wine reaper.exe'
