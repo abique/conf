@@ -224,7 +224,6 @@ bw-install() (
 
     mkdir -p "$instdir" &&
     cd "$instdir" &&
-    rm -rf * &&
     if [[ -e "$1" ]] ; then
       ln -s "$1" bw.deb
     elif [[ -e "$oldpwd/$1" ]] ; then
