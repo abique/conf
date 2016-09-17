@@ -205,8 +205,16 @@ my-aac() (
     ffmpeg -i "$in" -c:a aac -b:a 320k -strict -2 "$out"
 )
 
-# my-mp4
-# ffmpeg -i "$in" -c:v libx265 -preset slow -x265-params crf=18 -c:a aac -strict experimental -b:a 128k "$out"
+my-mp4() {
+  in="$1"
+  out="$2"
+
+  if [[ -z "$out" ]] ; then
+    out=$(echo "$in" | sed 's/^\(.*\)\.\(AVI\|avi\|MPG\|mpg\)$/\1.aac/g')
+  fi
+
+  ffmpeg -i "$in" -c:v libx265 -preset slow -x265-params crf=18 -c:a aac -strict experimental -b:a 128k "$out"
+}
 
 bw-clear-nitro() {
     rm -rf ~/.BitwigStudio/cache/nitro
