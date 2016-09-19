@@ -224,7 +224,7 @@ bw-install() (
     oldpwd="$PWD"
 
     suffix="$2"
-    if [[ \! -z "$suffix" ]] ; then
+    if [[ ! -z "$suffix" ]] ; then
       suffix="-$suffix"
     fi
 
