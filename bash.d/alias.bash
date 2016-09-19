@@ -214,8 +214,16 @@ bw-clear-nitro() {
 
 bw-install() (
     oldpwd="$PWD"
-    mkdir -p ~/local/bitwig &&
-    cd ~/local/bitwig &&
+
+    suffix="$2"
+    if [[ \! -z "$suffix" ]] ; then
+      suffix="-$suffix"
+    fi
+
+    instdir="$HOME/local/bitwig${suffix}"
+
+    mkdir -p "$instdir" &&
+    cd "$instdir" &&
     rm -rf * &&
     if [[ -e "$1" ]] ; then
       ln -s "$1" bw.deb
