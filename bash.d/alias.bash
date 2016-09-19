@@ -213,23 +213,26 @@ bw-clear-nitro() {
 }
 
 bw-install() (
+    oldpwd="$PWD"
     mkdir -p ~/local/bitwig &&
     cd ~/local/bitwig &&
     rm -rf * &&
     if [[ -e "$1" ]] ; then
       ln -s "$1" bw.deb
+    elif [[ -e "$oldpwd/$1" ]] ; then
+      ln -s "$oldpwd/$1" bw.deb
     else
       wget "$1" -O bw.deb
       md5sum bw.deb
     fi &&
     \bsdtar xf bw.deb &&
-    \bsdtar xf data.tar.gz
-    rm bw.deb
+    \bsdtar xf data.tar.gz &&
+    rm bw.deb &&
     rm data.tar.gz
 )
 
 start-jack() {
-    /usr/bin/jackd -dalsa -dhw:USB -r48000 -p256 -n2 -s -Xseq -P &
+    /usr/bin/jackd -dalsa -dhw:USB -r44100 -p256 -n2 -s -Xseq -P &
     sleep 2
     pactl load-module module-jack-sink channels=2
     pactl load-module module-jack-source channels=2
