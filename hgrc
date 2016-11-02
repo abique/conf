@@ -45,3 +45,17 @@ pager = LESS='FSRX' less
 
 [tortoisehg]
 vdiff = meld
+authorcolor = True
+longsummary = True
+graphopt = True
+tabwidth = 8
+guifork = True
+fullpath = True
+engmsg = True
+
+
+[diff]
+git = True
+
+[patch]
+eol = auto

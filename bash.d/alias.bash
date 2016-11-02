@@ -187,6 +187,7 @@ find-sources() {
 find-includes() {
   find . -name include -type d
   find . -name model-include -type d
+  echo float/pluginhost/lib/src/main/vst/
 }
 
 find-audio() {
