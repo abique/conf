@@ -257,6 +257,11 @@ start-jack() {
     fg
 }
 
+make-readable() {
+  find . -type d -exec chmod go+rx {} \;
+  find . -type f -exec chmod go+r {} \;
+}
+
 # evil
 alias reaper='cd ~/.wine/drive_c/Program\ Files/REAPER\ \(x64\)/ && wine reaper.exe'
 alias ableton='cd ~/.wine/drive_c/users/Public/Application\ Data/Ableton/Live\ 9\ Suite/Program/ && wine Ableton\ Live\ 9\ Suite.exe'
