@@ -236,7 +236,7 @@ bw-install() (
     if [[ -e "$1" ]] ; then
       ln -s "$1" bw.deb
     elif [[ -e "$oldpwd/$1" ]] ; then
-      ln -s "$oldpwd/$1" bw.deb
+      ln -sf "$oldpwd/$1" bw.deb
     else
       wget "$1" -O bw.deb
       md5sum bw.deb
