@@ -1,5 +1,5 @@
 ;; -*- mode: Lisp; -*-
-(setq user-nickname "Alexandre Bique")
+(setq user-nickname "abique")
 (setq user-full-name "Alexandre Bique")
 (setq user-mail-address "bique.alexandre@gmail.com")
 

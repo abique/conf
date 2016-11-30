@@ -27,10 +27,12 @@
 (defun u-he-style ()
   (interactive)
 
-  (setq indent-tabs-mode 1)
+  (setq indent-tabs-mode 0)
   (setq tab-width 4)
 
   (when (memq major-mode '(sh-mode))
+	(setq tab-width 8)
+	(setq indent-tabs-mode 0)
     (setq sh-basic-offset 4)
     )
 
