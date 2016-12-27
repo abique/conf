@@ -25,6 +25,7 @@ record =
 bookmarks =
 histedit =
 strip =
+keyword =
 
 [defaults]
 cdiff = -q

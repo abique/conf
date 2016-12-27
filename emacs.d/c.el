@@ -31,7 +31,7 @@
             (when (string-match "freebsd" buffer-file-name)
               (freebsd-style))
 
-            (when (string-match "bitwig" buffer-file-name)
+            (when (string-match "/bitwig/" buffer-file-name)
               (bitwig-style))
 
             (if (and (string-match ".*\\.hh?" buffer-file-name)

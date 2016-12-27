@@ -27,10 +27,14 @@
 (defun bitwig-style ()
   (interactive)
 
-  (setq indent-tabs-mode 0)
+  (setq indent-tabs-mode nil)
   (setq tab-width 8)
 
   (when (memq major-mode '(sh-mode))
+    (setq sh-basic-offset 3)
+    )
+
+  (when (or (memq major-mode '(js-mode)) (memq major-mode '(javascript-mode)))
     (setq sh-basic-offset 3)
     )
 
