@@ -217,6 +217,12 @@ my-mp4() {
   ffmpeg -i "$in" -c:v libx265 -preset slow -x265-params crf=18 -c:a aac -strict experimental -b:a 128k "$out"
 }
 
+fix-video() {
+  in="$1"
+  out="fixed-$in"
+  ffmpeg -i "$in" -c copy "$out"
+}
+
 bw-clear-nitro() {
     rm -rf ~/.BitwigStudio/cache/nitro
 }
