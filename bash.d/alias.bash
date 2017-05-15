@@ -237,10 +237,11 @@ bw-install() (
 
     instdir="$HOME/local/bitwig${suffix}"
 
+    rm -rf "$instdir" &&
     mkdir -p "$instdir" &&
     cd "$instdir" &&
     if [[ -e "$1" ]] ; then
-      ln -s "$1" bw.deb
+      ln -sf "$1" bw.deb
     elif [[ -e "$oldpwd/$1" ]] ; then
       ln -sf "$oldpwd/$1" bw.deb
     else
