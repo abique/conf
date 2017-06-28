@@ -249,9 +249,9 @@ bw-install() (
       md5sum bw.deb
     fi &&
     \bsdtar xf bw.deb &&
-    \bsdtar xf data.tar.gz &&
+    \bsdtar xf data.tar.[gx]z &&
     rm bw.deb &&
-    rm data.tar.gz
+    rm data.tar.[gx]z
 )
 
 start-jack() {
