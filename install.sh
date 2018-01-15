@@ -36,6 +36,7 @@ for file in		\
     icons/default/index.theme \
     icons/default/cursors \
     inputrc		\
+    pam_environment     \
     screenrc            \
     sqliterc            \
     toprc		\
