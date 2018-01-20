@@ -1,1 +1,1 @@
-PATH DEFAULT=${PATH}:/home/@{PAM_USER}/local/bin
+PATH DEFAULT=/bin:/sbin:${HOME}/local/bin
