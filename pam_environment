@@ -1,1 +1,4 @@
 PATH DEFAULT=/bin:/sbin:${HOME}/local/bin
+BWTEST_DATA DEFAULT=${HOME}/develop/bitwig/bwtest/test-data
+BWTEST_PLUGINS DEFAULT=${HOME}/develop/bitwig/vst-test
+QT_AUTO_SCREEN_SCALE_FACTOR=1
