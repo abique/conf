@@ -9,24 +9,18 @@ hgext.churn =
 hgext.fetch =
 hgext.graphlog =
 color =
-hgext.hgk =
-hgext.highlight =
 #imerge =
 inotify =
-pager =
 parentrevspec =
 rebase = 
-convert =
 share =
 shelve =
-graphlog =
-fetch =
-record =
 bookmarks =
 histedit =
 strip =
 keyword =
 eol = 
+relink = 
 
 [defaults]
 cdiff = -q
@@ -47,14 +41,20 @@ pager = LESS='FSRX' less
 
 [tortoisehg]
 vdiff = meld
-authorcolor = True
-longsummary = True
-graphopt = True
+authorcolor = False
+longsummary = False
+graphopt = False
 tabwidth = 8
 guifork = True
 fullpath = True
 engmsg = True
 shell = /bin/bash
+workbench.single = True
+initialrevision = current
+fullauthorname = False
+graphlimit = 150
+showfamilyline = False
+monitorrepo = localonly
 
 
 [diff]
