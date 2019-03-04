@@ -1,6 +1,7 @@
 [ui]
 username = Alexandre Bique <bique.alexandre@gmail.com>
-merge = meld
+merge = internal:merge
+editor = emacs --quick
 #merge = kdiff3
 
 [extensions]
@@ -55,6 +56,7 @@ fullauthorname = False
 graphlimit = 150
 showfamilyline = False
 monitorrepo = localonly
+editor = emacs --quick
 
 
 [diff]
