@@ -277,8 +277,9 @@ mkv-fix-srt() {
 }
 
 # evil
-alias reaper='cd ~/.wine/drive_c/Program\ Files/REAPER\ \(x64\)/ && wine reaper.exe'
+alias reaper-wine='cd ~/.wine/drive_c/Program\ Files/REAPER\ \(x64\)/ && wine reaper.exe'
 alias ableton='cd ~/.wine/drive_c/users/Public/Application\ Data/Ableton/Live\ 9\ Suite/Program/ && wine Ableton\ Live\ 9\ Suite.exe'
 alias diablo3='cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Diablo\ III/ && setarch i386 -3 -L -B -R wine Diablo\ III.exe -launch -opengl'
 alias bnet='cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Battle.net/ && setarch i386 -3 -L -B -R wine Battle.net\ Launcher.exe -launch -opengl'
 alias hos='cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Heroes\ of\ the\ Storm/ && setarch i386 -3 -L -B -R wine Heroes\ of\ the\ Storm.exe -launch -opengl'
+alias update-arch-mirrors='sudo reflector --verbose --country France --threads 4 --fastest 5 --save /etc/pacman.d/mirrorlist'
