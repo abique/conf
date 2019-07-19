@@ -211,7 +211,7 @@ my-mp4() {
   out="$2"
 
   if [[ -z "$out" ]] ; then
-    out=$(echo "$in" | sed 's/^\(.*\)\.\(AVI\|avi\|MPG\|mpg\)$/\1.aac/g')
+    out=$(echo "$in" | sed 's/^\(.*\)\.\(AVI\|avi\|MPG\|mpg\)$/\1.mp4/g')
   fi
 
   ffmpeg -i "$in" -c:v libx265 -preset slow -x265-params crf=18 -c:a aac -strict experimental -b:a 128k "$out"
@@ -283,3 +283,13 @@ alias diablo3='cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Diablo\ III/ && setarc
 alias bnet='cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Battle.net/ && setarch i386 -3 -L -B -R wine Battle.net\ Launcher.exe -launch -opengl'
 alias hos='cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Heroes\ of\ the\ Storm/ && setarch i386 -3 -L -B -R wine Heroes\ of\ the\ Storm.exe -launch -opengl'
 alias update-arch-mirrors='sudo reflector --verbose --country France --threads 4 --fastest 5 --save /etc/pacman.d/mirrorlist'
+
+oom-guard() (
+  sh <<EOF
+  echo 1000 >/proc/$$/oom_score_adj
+  renice -n 19 -p $$
+  $@
+EOF
+)
+
+alias make='oom-guard make'

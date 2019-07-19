@@ -81,6 +81,7 @@ export LXVST_PATH="$VST_PATH"
 export JAVA_HOME=/usr/lib/jvm/default
 
 export ASAN_OPTIONS=abort_on_error=1
+export UBSAN_OPTIONS=print_stacktrace=1
 
 # ibus support
 # export GTK_IM_MODULE=ibus
