@@ -22,6 +22,7 @@ strip =
 keyword =
 eol = 
 relink = 
+purge =
 
 [defaults]
 cdiff = -q
@@ -70,6 +71,8 @@ ignoreblanklines = True
 [patch]
 eol = lf
 
+[subrepos]
+git:allowed = True
 
 [annotate]
 ignorews = True
