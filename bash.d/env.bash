@@ -12,8 +12,8 @@ fi
 if ! echo "${PATH}" | grep "^${HOME}/local/bin" 1>/dev/null 2>&1 ; then
     export PATH="${HOME}/local/bin:${PATH}"
 fi
-if ! echo "${PATH}" | grep ":/sbin:/usr/sbin\$" 1>/dev/null 2>&1 ; then
-    export PATH="${PATH}:/sbin:/usr/sbin"
+if ! echo "${PATH}" | grep ":/sbin:/usr/sbin:/usr/local/sbin\$" 1>/dev/null 2>&1 ; then
+    export PATH="${PATH}:/sbin:/usr/sbin:/usr/local/sbin"
 fi
 if ! echo "${LD_LIBRARY_PATH}" | grep "^${HOME}/local/lib" 1>/dev/null 2>&1 ; then
     if [[ -z "${LD_LIBRARY_PATH}" ]] ; then
@@ -87,3 +87,11 @@ export UBSAN_OPTIONS=print_stacktrace=1
 # export GTK_IM_MODULE=ibus
 # export XMODIFIERS=@im=ibus
 # export QT_IM_MODULE=ibus
+
+if [[ $(uname) = Darwin && -r "/usr/local/etc/profile.d/bash_completion.sh" ]] ; then
+   source "/usr/local/etc/profile.d/bash_completion.sh"
+   alias lldb='PATH=/usr/bin:$PATH lldb'
+   alias bwxc='PATH=/usr/bin:$PATH open bitwig.xcworkspace'
+fi
+
+export BITWIG_DEBUG_PORT=7591
