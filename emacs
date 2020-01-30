@@ -1,5 +1,15 @@
 ;; -*- mode: Lisp; -*-
 
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+(add-to-list 'load-path "/usr/local/share/emacs/site-lisp/")
+(add-to-list 'load-path "/usr/local/share/emacs/site-lisp/cmake")
+
 (autoload 'cmake-mode "cmake-mode" "Major mode for cmake" 1)
 (autoload 'lua-mode "lua-mode" "Major mode for LUA" 1)
 (autoload 'pkgbuild-mode "pkgbuild-mode" "Major mode for PKGBUILD" 1)
@@ -91,7 +101,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "black" :foreground "grey" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "unknown" :family "bitstream vera sans mono"))))
+ '(default ((t (:inherit nil :stipple nil :background "black" :foreground "grey" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 190 :width normal))))
  '(cursor ((t (:background "dark orange"))))
  '(diff-added ((t (:inherit diff-changed :foreground "#99e86e"))))
  '(diff-file-header ((t (:weight bold))))
