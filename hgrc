@@ -78,3 +78,6 @@ git:allowed = True
 ignorews = True
 ignorewsamount = True
 ignoreblanklines = True
+
+[commands]
+status.relative = True
