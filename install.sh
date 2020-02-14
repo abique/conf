@@ -27,6 +27,7 @@ for file in		\
     config/user-dirs.dirs \
     config/user-dirs.locale \
     config/mimeapps.list \
+    config/sway         \
     emacs		\
     emacs.d		\
     gitconfig		\
