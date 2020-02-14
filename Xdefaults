@@ -58,8 +58,8 @@ URxvt*insecure:	false
 URxvt*transparent:	true
 URxvt*metaSendsEscape:	yes
 URxvt*depth:	24
-URxvt.font:     xft:bitstream vera sans mono:size=12:antialias=true
-URxvt.boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=true
+URxvt.font:     xft:bitstream vera sans mono:size=13:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=13:antialias=true
 URxvt.perl-ext-common:	default,tabbed
 URxvt*background:	#000000
 URxvt*shading:	15

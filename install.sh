@@ -17,6 +17,7 @@ for file in		\
     Xdefaults           \
     bash.d              \
     bashrc		\
+    bash_profile	\
     bazaar		\
     config/Trolltech.conf \
     config/fish         \
