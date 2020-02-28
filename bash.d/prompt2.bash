@@ -21,11 +21,11 @@ s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
     vcs=""
     if [[ -d .svn ]] ; then
         vcs=" \[$green\]svn:\[$yellowB\]$(svn info | grep Revision | sed 's/.* \(.*\)/\1/g')"
-    elif tg git branch; then
+    elif [[ -d .git ]] || git rev-parse --git-dir >/dev/null 2>&1; then
         git_branch="$(git branch --show-current --no-color)"
-        if [[ "$git_branch" = "" ]] ; then git_branch="(detached)"; fi
+        if [[ "$git_branch" = "" ]]; then git_branch="(detached)"; fi
         vcs=" \[$green\]git:$git_branch"
-    elif tg hg branch ; then
+    elif hg branch >/dev/null 2>&1; then
         hg_branch="$(hg branch)"
         vcs=" \[$green\]hg:$hg_branch"
     fi
@@ -34,7 +34,7 @@ s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
 
     PS1="$curtime$RET$JOBS\[$cyanB\]\u@\H:\[$blueB\]$my_pwd$vcs\[$yellowB\]> \[$white\]"
 
-# Change the window title of X terminals
+    # Change the window title of X terminals
     case $TERM in
 	*xterm*|*rxvt*|Eterm)
 	    echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}\007"
