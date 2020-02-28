@@ -1,4 +1,4 @@
-function prompt_babali()
+function prompt_abique()
 {
     RET=$?
 
@@ -49,4 +49,4 @@ function prompt_babali()
     esac
 }
 
-PROMPT_COMMAND="prompt_babali"
+PROMPT_COMMAND="prompt_abique"

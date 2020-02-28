@@ -1,4 +1,4 @@
-function prompt_babali()
+function prompt_abique()
 {
     RET=$?
 
@@ -22,7 +22,8 @@ s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
     if [[ -d .svn ]] ; then
         vcs=" \[$green\]svn:\[$yellowB\]$(svn info | grep Revision | sed 's/.* \(.*\)/\1/g')"
     elif tg git branch; then
-        git_branch="$(git branch | grep '\* ' | cut -f 2 -d ' ')"
+        git_branch="$(git branch --show-current --no-color)"
+        if [[ "$git_branch" = "" ]] ; then git_branch="(detached)"; fi
         vcs=" \[$green\]git:$git_branch"
     elif tg hg branch ; then
         hg_branch="$(hg branch)"
@@ -44,4 +45,4 @@ s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
     esac
 }
 
-PROMPT_COMMAND="prompt_babali"
+PROMPT_COMMAND="prompt_abique"
