@@ -23,6 +23,7 @@ keyword =
 eol = 
 relink = 
 purge =
+closehead =
 
 [defaults]
 cdiff = -q

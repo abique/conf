@@ -293,3 +293,4 @@ EOF
 )
 
 alias make='oom-guard make'
+alias hg-rev="hg parent --template '{node}\n'"

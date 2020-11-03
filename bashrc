@@ -35,6 +35,7 @@ umask 0077
 
 my_source /etc/bash_completion
 my_source /usr/share/bash-completion/bash_completion
+my_source /usr/share/clang/bash-autocomplete.sh
 #my_source /etc/profile.d/go.sh
 my_source ~/.bash.d/alias.bash
 my_source ~/.bash.d/env.bash
