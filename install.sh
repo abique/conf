@@ -2,11 +2,22 @@
 
 CONF_PATH=`pwd`
 
-function install()
+function install_cfg()
 {
+    while [[ -e "$HOME/.$1" ]]
+    do
+        printf "\e[31mOverride\e[m \e[33m.$1\e[m? (y/n) "
+        read answer
+        if [[ "$answer" = "y" ]] ; then
+            break
+        elif [[ "$answer" = "n" ]] ; then
+            return
+        fi
+    done
+
+    printf "\e[33mInstalling\e[m ${HOME}/\e[32m.$1\e[m\n"
     rm -rf ${HOME}/.$1
     ln -sf ${CONF_PATH}/$1 ${HOME}/.$1
-    printf "\e[33mInstalling\e[m ${HOME}/\e[32m.$1\e[m\n"
 }
 
 mkdir -p ~/.icons/default
@@ -48,5 +59,5 @@ for file in		\
     xscreensaver	\
     xsession
 do
-    install ${file}
+    install_cfg ${file}
 done
