@@ -4,7 +4,7 @@ CONF_PATH=`pwd`
 
 function install_cfg()
 {
-    if [[ -e "$HOME/.$1" && $(readlink "$HOME/.$1") != "$CONF_PATH/$1" ]]
+    if [[ -e "$HOME/.$1" && $(readlink "$HOME/.$1") == "$CONF_PATH/$1" ]]
     then
         printf "\e[32mOK\e[m\t$HOME/\e[33m.$1\e[m\n"
         return
