@@ -1,3 +1,9 @@
+function determine_git_branch()
+{
+    # Ideally git branch --show-current --no-color
+    git rev-parse --abbrev-ref HEAD
+}
+
 function prompt_abique()
 {
     RET=$?
@@ -22,7 +28,7 @@ s,\(/\?.\)[^/]*/,\1/,g' <<<"$PWD" )
     if [[ -d .svn ]] ; then
         vcs=" \[$green\]svn:\[$yellowB\]$(svn info | grep Revision | sed 's/.* \(.*\)/\1/g')"
     elif [[ -d .git ]] || git rev-parse --git-dir >/dev/null 2>&1; then
-        git_branch="$(git branch --show-current --no-color)"
+        git_branch="$(determine_git_branch)"
         if [[ "$git_branch" = "" ]]; then git_branch="(detached)"; fi
         vcs=" \[$green\]git:$git_branch"
     elif hg branch >/dev/null 2>&1; then
