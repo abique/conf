@@ -39,7 +39,7 @@ case "$wm" in
     wmaker)
 	exec wmaker;;
     gnome)
-	exec gnome-shell;;
+	exec gnome-session;;
     notion)
         exec notion;;
 esac
