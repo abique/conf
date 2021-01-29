@@ -104,8 +104,8 @@ function check_colors()
     for i in $(seq 30 37)
     do
         echo -e $((i - 30)): "\e[0;${i}mbande\e[m", "\e[1;${i}mbande\e[m", \
-            "\e[3;${i}mbande\e[m", "\e[4;${i}mbande\e[m", \
-            "\e[5;${i}mbande\e[m", "\e[7;${i}mbande\e[m"
+             "\e[3;${i}mbande\e[m", "\e[4;${i}mbande\e[m", \
+             "\e[5;${i}mbande\e[m", "\e[7;${i}mbande\e[m"
     done
 }
 
@@ -131,7 +131,7 @@ function emacs-byte-compile()
 function xxx()
 {
     find . -name '*.c' -o -name '*.h' -o -name '*.cc' -o \
-        -name '*.cpp' -o -name '*.hh' -o -name '*.hxx' | \
+         -name '*.cpp' -o -name '*.hh' -o -name '*.hxx' | \
         xargs grep -inC5 '\(XXX\|todo\)'
 }
 
@@ -154,7 +154,7 @@ function paste-binouse-send()
     mime_type=$(file --mime-type "$src" | cut -f 2 -d ' ')
     hdr=$(mktemp)
     curl -D "$hdr" --data-urlencode "content-type=${mime_type}" \
-        --data-urlencode "content@${src}" "$host"
+         --data-urlencode "content@${src}" "$host"
 
     echo "$host"$(sed -n 's/location: \(.*\)/\1/p' "$hdr")
     rm -rf "$hdr"
@@ -175,19 +175,19 @@ fix-clock-skew() {
 }
 
 find-sources() {
-  if [[ "$1" = "" ]] ; then
-    DIR=.
-  else
-    DIR="$1"
-  fi
+    if [[ "$1" = "" ]] ; then
+        DIR=.
+    else
+        DIR="$1"
+    fi
 
-  find "$DIR" -name '*.h' -o -name '*.hh' -o -name '*.hxx' -o -name '*.cpp' -o -name '*.cc' -o -name '*.cpp' -o -name '*.C' -o -name '*.c' -o -name '*.mm'
+    find "$DIR" -name '*.h' -o -name '*.hh' -o -name '*.hxx' -o -name '*.cpp' -o -name '*.cc' -o -name '*.cpp' -o -name '*.C' -o -name '*.c' -o -name '*.mm'
 }
 
 find-includes() {
-  find . -name include -type d
-  find . -name model-include -type d
-  echo float/pluginhost/lib/src/main/vst/
+    find . -name include -type d
+    find . -name model-include -type d
+    echo float/pluginhost/lib/src/main/vst/
 }
 
 find-audio() {
@@ -207,20 +207,20 @@ my-aac() (
 )
 
 my-mp4() {
-  in="$1"
-  out="$2"
+    in="$1"
+    out="$2"
 
-  if [[ -z "$out" ]] ; then
-    out=$(echo "$in" | sed 's/^\(.*\)\.\(AVI\|avi\|MPG\|mpg\)$/\1.mp4/g')
-  fi
+    if [[ -z "$out" ]] ; then
+        out=$(echo "$in" | sed 's/^\(.*\)\.\(AVI\|avi\|MPG\|mpg\)$/\1.mp4/g')
+    fi
 
-  ffmpeg -i "$in" -c:v libx265 -preset slow -x265-params crf=18 -c:a aac -strict experimental -b:a 128k "$out"
+    ffmpeg -i "$in" -c:v libx265 -preset slow -x265-params crf=18 -c:a aac -strict experimental -b:a 128k "$out"
 }
 
 fix-video() {
-  in="$1"
-  out="fixed-$in"
-  ffmpeg -i "$in" -c copy "$out"
+    in="$1"
+    out="fixed-$in"
+    ffmpeg -i "$in" -c copy "$out"
 }
 
 bw-clear-nitro() {
@@ -232,26 +232,26 @@ bw-install() (
 
     suffix="$2"
     if [[ ! -z "$suffix" ]] ; then
-      suffix="-$suffix"
+        suffix="-$suffix"
     fi
 
     instdir="$HOME/local/bitwig${suffix}"
 
     rm -rf "$instdir" &&
-    mkdir -p "$instdir" &&
-    cd "$instdir" &&
-    if [[ -e "$1" ]] ; then
-      ln -sf "$1" bw.deb
-    elif [[ -e "$oldpwd/$1" ]] ; then
-      ln -sf "$oldpwd/$1" bw.deb
-    else
-      wget "$1" -O bw.deb
-      md5sum bw.deb
-    fi &&
-    \bsdtar xf bw.deb &&
-    \bsdtar xf data.tar.[gx]z &&
-    rm bw.deb &&
-    rm data.tar.[gx]z
+        mkdir -p "$instdir" &&
+        cd "$instdir" &&
+        if [[ -e "$1" ]] ; then
+            ln -sf "$1" bw.deb
+        elif [[ -e "$oldpwd/$1" ]] ; then
+            ln -sf "$oldpwd/$1" bw.deb
+        else
+            wget "$1" -O bw.deb
+            md5sum bw.deb
+        fi &&
+        \bsdtar xf bw.deb &&
+        \bsdtar xf data.tar.[gx]z &&
+        rm bw.deb &&
+        rm data.tar.[gx]z
 )
 
 start-jack() {
@@ -265,8 +265,8 @@ start-jack() {
 }
 
 make-readable() {
-  find . -type d -exec chmod go+rx {} \;
-  find . -type f -exec chmod go+r {} \;
+    find . -type d -exec chmod go+rx {} \;
+    find . -type f -exec chmod go+r {} \;
 }
 
 mkv-fix-srt() {
@@ -285,7 +285,7 @@ alias hos='cd ~/.wine/drive_c/Program\ Files\ \(x86\)/Heroes\ of\ the\ Storm/ &&
 alias update-arch-mirrors='sudo reflector --verbose --country France --threads 4 --fastest 5 --save /etc/pacman.d/mirrorlist'
 
 oom-guard() (
-  sh <<EOF
+    sh <<EOF
   echo 1000 >/proc/$$/oom_score_adj
   renice -n 19 -p $$
   $@
@@ -294,3 +294,12 @@ EOF
 
 alias make='oom-guard make'
 alias hg-rev="hg parent --template '{node}\n'"
+
+my_resmoke() (
+    buildscripts/resmoke.py \
+        run \
+        --dbpathPrefix=${DBPATH:?} \
+        --log=file \
+        --basePort 22000 \
+        "$@"
+)
