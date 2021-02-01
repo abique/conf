@@ -9,12 +9,18 @@ if [[ -z "$XDG_CURRENT_DESKTOP" ]] ; then
   export XDG_CURRENT_DESKTOP=GNOME
 fi
 
+if ! echo "${PATH}" | grep "^${HOME}/.local/bin" 1>/dev/null 2>&1 ; then
+    export PATH="${HOME}/.local/bin:${PATH}"
+fi
+
 if ! echo "${PATH}" | grep "^${HOME}/local/bin" 1>/dev/null 2>&1 ; then
     export PATH="${HOME}/local/bin:${PATH}"
 fi
+
 if ! echo "${PATH}" | grep ":/sbin:/usr/sbin:/usr/local/sbin\$" 1>/dev/null 2>&1 ; then
     export PATH="${PATH}:/sbin:/usr/sbin:/usr/local/sbin"
 fi
+
 if ! echo "${LD_LIBRARY_PATH}" | grep "^${HOME}/local/lib" 1>/dev/null 2>&1 ; then
     if [[ -z "${LD_LIBRARY_PATH}" ]] ; then
     	export LD_LIBRARY_PATH="${HOME}/local/lib"
