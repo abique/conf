@@ -303,3 +303,16 @@ my_resmoke() (
         --basePort 22000 \
         "$@"
 )
+
+alias rd-boris='rdesktop -z -a 24 -e -E -B -g 1800x1012 boris.hq.bitwig.com -u buildbot -p stachenbot'
+
+alias ssh-mongo-workstation='ssh ubuntu@ec2-18-234-238-133.compute-1.amazonaws.com'
+
+function u-he-update()
+{
+  export KEEP_ARCHIVE=1
+  cd ~/develop/u-he/plugins/deployment/
+  git svn rebase
+  svnrev=$(git log -n1 | grep trunk@ | sed 's/.*trunk@\([0-9]\+\) .*/\1/g')
+  ./LinuxInstallAll.sh $svnrev
+}
