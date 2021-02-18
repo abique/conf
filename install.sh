@@ -6,13 +6,13 @@ function install_cfg()
 {
     if [[ -e "$HOME/.$1" && $(readlink "$HOME/.$1") == "$CONF_PATH/$1" ]]
     then
-        printf "\e[32mOK\e[m\t$HOME/\e[33m.$1\e[m\n"
+        printf "\e[32mOK\e[m\t $HOME/\e[33m.$1\e[m\n"
         return
     fi
 
     while [[ -e "$HOME/.$1" && $(readlink "$HOME/.$1") != "$CONF_PATH/$1" ]]
     do
-        printf "\e[31mOverride\e[m \e$HOME/[33m.$1\e[m? (y/n) "
+        printf "\e[31mOverride\e[m $HOME/\e[33m.$1\e[m? (y/n) "
         read answer
         if [[ "$answer" = "y" ]] ; then
             break
@@ -23,7 +23,7 @@ function install_cfg()
 
     rm -rf ${HOME}/.$1
     ln -sf ${CONF_PATH}/$1 ${HOME}/.$1
-    printf "\e[33mInstall\e[m\t${HOME}/\e[32m.$1\e[m\n"
+    printf "\e[33mInstall\e[m\t ${HOME}/\e[32m.$1\e[m\n"
 }
 
 mkdir -p ~/.icons/default
