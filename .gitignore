@@ -2,4 +2,5 @@
 bash.d/ssh-agent.bash
 emacs.d/auto-save-list/
 emacs.d/local.el
+emacs.d/ido.last
 config/tint2/snap.jpg

@@ -27,6 +27,7 @@ function install_cfg()
 }
 
 mkdir -p ~/.icons/default
+mkdir -p ~/.config/environment.d
 
 [[ -d ${HOME}/.config ]] || mkdir ${HOME}/.config
 
@@ -36,6 +37,7 @@ for file in		\
     bashrc		\
     bash_profile	\
     bazaar		\
+    config/environment.d/*.conf \
     config/Trolltech.conf \
     config/fish         \
     config/qtcurvestylerc \
