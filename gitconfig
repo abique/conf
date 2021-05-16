@@ -55,3 +55,5 @@
 	smtpserver = smtp.gmail.com
 	smtpuser = bique.alexandre@gmail.com
 	smtpencryption = tls
+[pull]
+	ff = only
